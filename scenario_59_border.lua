@@ -312,12 +312,12 @@ function setConstants()
 	-- TODO switch to spelling with space or dash matching the type name
 	playerShipNamesFor["MP52Hornet"] = {"Dragonfly","Scarab","Mantis","Yellow Jacket","Jimminy","Flik","Thorny","Buzz"}
 	playerShipNamesFor["Piranha"] = {"Razor","Biter","Ripper","Voracious","Carnivorous","Characid","Vulture","Predator"}
-	playerShipNamesFor["FlaviaPFalcon"] = {"Ladyhawke","Hunter","Seeker","Gyrefalcon","Kestrel","Magpie","Bandit","Buccaneer"}
-	playerShipNamesFor["PhobosM3P"] = {"Blinder","Shadow","Distortion","Diemos","Ganymede","Castillo","Thebe","Retrograde"}
+	playerShipNamesFor["Flavia P.Falcon"] = {"Ladyhawke","Hunter","Seeker","Gyrefalcon","Kestrel","Magpie","Bandit","Buccaneer"}
+	playerShipNamesFor["Phobos M3P"] = {"Blinder","Shadow","Distortion","Diemos","Ganymede","Castillo","Thebe","Retrograde"}
 	playerShipNamesFor["Atlantis"] = {"Excaliber","Thrasher","Punisher","Vorpal","Protang","Drummond","Parchim","Coronado"}
-	playerShipNamesFor["Cruiser"] = {"Excelsior","Velociraptor","Thunder","Kona","Encounter","Perth","Aspern","Panther"}
-	playerShipNamesFor["MissileCruiser"] = {"Projectus","Hurlmeister","Flinger","Ovod","Amatola","Nakhimov","Antigone"}
-	playerShipNamesFor["Fighter"] = {"Buzzer","Flitter","Zippiticus","Hopper","Molt","Stinger","Stripe"}
+	playerShipNamesFor["Player Cruiser"] = {"Excelsior","Velociraptor","Thunder","Kona","Encounter","Perth","Aspern","Panther"}
+	playerShipNamesFor["Player Missile Cr."] = {"Projectus","Hurlmeister","Flinger","Ovod","Amatola","Nakhimov","Antigone"}
+	playerShipNamesFor["Player Fighter"] = {"Buzzer","Flitter","Zippiticus","Hopper","Molt","Stinger","Stripe"}
 	playerShipNamesFor["Benedict"] = {"Elizabeth","Ford","Vikramaditya","Liaoning","Avenger","Naruebet","Washington","Lincoln","Garibaldi","Eisenhower"}
 	playerShipNamesFor["Kiriya"] = {"Cavour","Reagan","Gaulle","Paulo","Truman","Stennis","Kuznetsov","Roosevelt","Vinson","Old Salt"}
 	playerShipNamesFor["Striker"] = {"Sparrow","Sizzle","Squawk","Crow","Phoenix","Snowbird","Hawk"}
@@ -8869,12 +8869,12 @@ function setPlayers()
 						pobj:setCallSign(tableremoverandom(playerShipNamesFor["Piranha"]))
 					end
 				elseif tempPlayerType == "Flavia P.Falcon" then
-					if #playerShipNamesFor["FlaviaPFalcon"] > 0 then
-						pobj:setCallSign(tableremoverandom(playerShipNamesFor["FlaviaPFalcon"]))
+					if #playerShipNamesFor["Flavia P.Falcon"] > 0 then
+						pobj:setCallSign(tableremoverandom(playerShipNamesFor["Flavia P.Falcon"]))
 					end
 				elseif tempPlayerType == "Phobos M3P" then
-					if #playerShipNamesFor["PhobosM3P"] > 0 then
-						pobj:setCallSign(tableremoverandom(playerShipNamesFor["PhobosM3P"]))
+					if #playerShipNamesFor["Phobos M3P"] > 0 then
+						pobj:setCallSign(tableremoverandom(playerShipNamesFor["Phobos M3P"]))
 					end
 					pobj:setWarpDrive(true)
 					pobj:setWarpSpeed(500)
@@ -8883,16 +8883,16 @@ function setPlayers()
 						pobj:setCallSign(tableremoverandom(playerShipNamesFor["Atlantis"]))
 					end
 				elseif tempPlayerType == "Player Cruiser" then
-					if #playerShipNamesFor["Cruiser"] > 0 then
-						pobj:setCallSign(tableremoverandom(playerShipNamesFor["Cruiser"]))
+					if #playerShipNamesFor["Player Cruiser"] > 0 then
+						pobj:setCallSign(tableremoverandom(playerShipNamesFor["Player Cruiser"]))
 					end
 				elseif tempPlayerType == "Player Missile Cr." then
-					if #playerShipNamesFor["MissileCruiser"] > 0 then
-						pobj:setCallSign(tableremoverandom(playerShipNamesFor["MissileCruiser"]))
+					if #playerShipNamesFor["Player Missile Cr."] > 0 then
+						pobj:setCallSign(tableremoverandom(playerShipNamesFor["Player Missile Cr."]))
 					end
 				elseif tempPlayerType == "Player Fighter" then
-					if #playerShipNamesFor["Fighter"] > 0 then
-						pobj:setCallSign(tableremoverandom(playerShipNamesFor["Fighter"]))
+					if #playerShipNamesFor["Player Fighter"] > 0 then
+						pobj:setCallSign(tableremoverandom(playerShipNamesFor["Player Fighter"]))
 					end
 					pobj.autoCoolant = false
 					pobj:setJumpDrive(true)
