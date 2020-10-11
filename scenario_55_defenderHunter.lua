@@ -1,11 +1,11 @@
 -- Name: Defender Hunter
 -- Description: Defend home station and hunt down enemies
---- 
+---
 --- Initially, you're tasked with defending your home base.  Over time, you'll discover more about the enemies harassing you and you'll be ordered to find and destroy the enemies responsible.  There may be various missions given along the way, but the enemy harassment will continue.  You must balance your two missions.
 ---
 --- Designed for 1-8 cooperating player ships.  Randomization makes many details different for each game, but the primary goals remain the same.  Untimed variations can take an hour or longer for full mission completion.  Different sub-missions may be chosen by the players or will be chosen at random.  Achieving victory in a timed hunter variation is quite a challenge.  Like the Waves scenario, the enemies get harder over time.
 ---
---- Features: 
+--- Features:
 --- - Randomly selected player ship names based on type (not just the default call sign generation)
 --- - Simple mix of variations based on time and difficulty
 --- - Named stations with cargo type often related to name
@@ -73,12 +73,12 @@ function init()
 	setMovingNebulae()
 	setWormArt()
 	setConstants()
-	diagnostic = false		
+	diagnostic = false
 	helpfulWarningDiagnostic = false
 	GMDiagnosticOn = "Turn On Diagnostic"
 	addGMFunction(GMDiagnosticOn,turnOnDiagnostic)
 	default_interwave_interval = 280
-	interWave = default_interwave_interval			
+	interWave = default_interwave_interval
 	GMDelayNormalToSlow = "Delay normal to slow"
 	addGMFunction(GMDelayNormalToSlow,delayNormalToSlow)
 	buildStations()
@@ -129,7 +129,7 @@ function setConstants()
 	componentGoods = {"impulse","warp","shield","tractor","repulsor","beam","optic","robotic","filament","transporter","sensor","communication","autodoc","lifter","android","nanites","software","circuit","battery"}
 	mineralGoods = {"nickel","platinum","gold","dilithium","tritanium","cobalt"}
 	stationList = {}			--friendly and neutral stations
-	friendlyStationList = {}	
+	friendlyStationList = {}
 	enemyStationList = {}
 	tradeFood = {}				--stations that will trade food for other goods
 	tradeLuxury = {}			--stations that will trade luxury for other goods
@@ -237,7 +237,7 @@ end
 -- The slow delay is used for typical mission testing when the tester does not wish to
 -- spend all their time fighting off enemies.
 -- The second button switches from slow to fast. This facilitates testing the enemy
--- spawning routines. The third button goes from fast to normal. 
+-- spawning routines. The third button goes from fast to normal.
 function delayNormalToSlow()
 	interWave = 600
 	removeGMFunction(GMDelayNormalToSlow)
@@ -266,7 +266,7 @@ function setVariations()
 	if string.find(getScenarioVariation(),"Timed") then
 		timedIntelligenceInterval = 200
 		playWithTimeLimit = true
-		gameTimeLimit = 30*60		
+		gameTimeLimit = 30*60
 		plot6 = timedGame
 	else
 		timedIntelligenceInterval = 300
@@ -436,7 +436,7 @@ function buildStations()
 		--get adjacent list after done growing region
 		adjList = getAdjacentGridLocations(gx,gy)
 		if #adjList < 1 then
-			adjList = getAllAdjacentGridLocations(gx,gy)	
+			adjList = getAllAdjacentGridLocations(gx,gy)
 		else
 			if random(1,5) >= 2 then
 				adjList = getAllAdjacentGridLocations(gx,gy)
@@ -481,7 +481,7 @@ function buildStations()
 	end
 	adjList = getAdjacentGridLocations(gx,gy)
 	if #adjList < 1 then
-		adjList = getAllAdjacentGridLocations(gx,gy)	
+		adjList = getAllAdjacentGridLocations(gx,gy)
 	else
 		if random(1,5) >= 2 then
 			adjList = getAllAdjacentGridLocations(gx,gy)
@@ -521,7 +521,7 @@ function buildStations()
 		--get list after done growing region
 		adjList = getAdjacentGridLocations(gx,gy)
 		if #adjList < 1 then
-			adjList = getFactionAdjacentGridLocations(gx,gy)	
+			adjList = getFactionAdjacentGridLocations(gx,gy)
 			if #adjList < 1 then
 				adjList = getAllAdjacentGridLocations(gx,gy)
 			end
@@ -564,7 +564,7 @@ function buildStations()
 	end
 	adjList = getAdjacentGridLocations(gx,gy)
 	if #adjList < 1 then
-		adjList = getAllAdjacentGridLocations(gx,gy)	
+		adjList = getAllAdjacentGridLocations(gx,gy)
 	else
 		if random(1,5) >= 2 then
 			adjList = getAllAdjacentGridLocations(gx,gy)
@@ -598,7 +598,7 @@ function buildStations()
 		--get list after done growing region
 		adjList = getAdjacentGridLocations(gx,gy)
 		if #adjList < 1 then
-			adjList = getFactionAdjacentGridLocations(gx,gy)	
+			adjList = getFactionAdjacentGridLocations(gx,gy)
 			if #adjList < 1 then
 				adjList = getAllAdjacentGridLocations(gx,gy)
 			end
@@ -645,7 +645,7 @@ function buildStations()
 		--get list after done growing region
 		adjList = getAdjacentGridLocations(gx,gy)
 		if #adjList < 1 then
-			adjList = getFactionAdjacentGridLocations(gx,gy)	
+			adjList = getFactionAdjacentGridLocations(gx,gy)
 			if #adjList < 1 then
 				adjList = getAllAdjacentGridLocations(gx,gy)
 			end
@@ -726,7 +726,7 @@ function getFactionAdjacentGridLocations(lx,ly)
 			tempGrid[lx][ly-1] = 1
 			if grid[lx][ly-1] == nil then
 				table.insert(ol,{lx,ly-1})
-			elseif grid[lx][ly-1] >= fb then		
+			elseif grid[lx][ly-1] >= fb then
 				--case 2: traveling up, skip down check
 				getFactionAdjacentGridLocationsSkip(2,lx,ly-1)
 			end
@@ -844,7 +844,7 @@ function getAllAdjacentGridLocations(lx,ly)
 			tempGrid[lx][ly-1] = 1
 			if grid[lx][ly-1] == nil then
 				table.insert(ol,{lx,ly-1})
-			else		
+			else
 				--case 2: traveling up, skip down check
 				getAllAdjacentGridLocationsSkip(2,lx,ly-1)
 			end
@@ -962,7 +962,7 @@ function getAdjacentGridLocations(lx,ly)
 			tempGrid[lx][ly-1] = 1
 			if grid[lx][ly-1] == nil then
 				table.insert(ol,{lx,ly-1})
-			elseif grid[lx][ly-1] == gp then		
+			elseif grid[lx][ly-1] == gp then
 				--case 2: traveling up, skip down check
 				getAdjacentGridLocationsSkip(2,lx,ly-1)
 			end
@@ -1217,7 +1217,7 @@ function placeAlcaleica()
 	return stationAlcaleica
 end
 function placeAnderson()
-	--Anderson 
+	--Anderson
 	stationAnderson = SpaceStation():setTemplate(szt()):setFaction(stationFaction):setCommsScript(""):setCommsFunction(commsStation)
 	stationAnderson:setPosition(psx,psy):setCallSign("Anderson"):setDescription("Battery and software engineering")
     stationAnderson.comms_data = {
@@ -1243,7 +1243,7 @@ function placeAnderson()
 	return stationAnderson
 end
 function placeArcher()
-	--Archer 
+	--Archer
 	stationArcher = SpaceStation():setTemplate(szt()):setFaction(stationFaction):setCommsScript(""):setCommsFunction(commsStation)
 	stationArcher:setPosition(psx,psy):setCallSign("Archer"):setDescription("Shield and Armor Research")
     stationArcher.comms_data = {
@@ -1384,7 +1384,7 @@ function placeBarclay()
 	return stationBarclay
 end
 function placeBethesda()
-	--Bethesda 
+	--Bethesda
 	stationBethesda = SpaceStation():setTemplate(szt()):setFaction(stationFaction):setCommsScript(""):setCommsFunction(commsStation)
 	stationBethesda:setPosition(psx,psy):setCallSign("Bethesda"):setDescription("Medical research")
     stationBethesda.comms_data = {
@@ -1460,7 +1460,7 @@ function placeCalifornia()
 	return stationCalifornia
 end
 function placeCalvin()
-	--Calvin 
+	--Calvin
 	stationCalvin = SpaceStation():setTemplate(szt()):setFaction(stationFaction):setCommsScript(""):setCommsFunction(commsStation)
 	stationCalvin:setPosition(psx,psy):setCallSign("Calvin"):setDescription("Robotic research")
     stationCalvin.comms_data = {
@@ -1488,7 +1488,7 @@ function placeCalvin()
 	return stationCalvin
 end
 function placeCavor()
-	--Cavor 
+	--Cavor
 	stationCavor = SpaceStation():setTemplate(szt()):setFaction(stationFaction):setCommsScript(""):setCommsFunction(commsStation)
 	stationCavor:setPosition(psx,psy):setCallSign("Cavor"):setDescription("Advanced Material components")
     stationCavor.comms_data = {
@@ -1735,7 +1735,7 @@ function placeEvondos()
 	return stationEvondos
 end
 function placeFeynman()
-	--Feynman 
+	--Feynman
 	stationFeynman = SpaceStation():setTemplate(szt()):setFaction(stationFaction):setCommsScript(""):setCommsFunction(commsStation)
 	stationFeynman:setPosition(psx,psy):setCallSign("Feynman"):setDescription("Nanotechnology research")
     stationFeynman.comms_data = {
@@ -2156,7 +2156,7 @@ function placeMaiman()
 	return stationMaiman
 end
 function placeMarconi()
-	--Marconi 
+	--Marconi
 	stationMarconi = SpaceStation():setTemplate(szt()):setFaction(stationFaction):setCommsScript(""):setCommsFunction(commsStation)
 	stationMarconi:setPosition(psx,psy):setCallSign("Marconi"):setDescription("Energy Beam Components")
     stationMarconi.comms_data = {
@@ -2232,7 +2232,7 @@ function placeMiller()
 	return stationMiller
 end
 function placeMuddville()
-	--Muddville 
+	--Muddville
 	stationMudd = SpaceStation():setTemplate(szt()):setFaction(stationFaction):setCommsScript(""):setCommsFunction(commsStation)
 	stationMudd:setPosition(psx,psy):setCallSign("Muddville"):setDescription("Trading station")
     stationMudd.comms_data = {
@@ -2397,7 +2397,7 @@ function placeOutpost15()
 		if random(1,5) <= 1 then
 			stationOutpost15.comms_data.goods.medicine = {quantity = 5, cost = 5}
 		else
-			stationOutpost15.comms_data.trade.medicine = true		
+			stationOutpost15.comms_data.trade.medicine = true
 		end
 	else
 		stationOutpost15.comms_data.trade.food = true
@@ -2638,7 +2638,7 @@ function placeShree()
 	return stationShree
 end
 function placeSoong()
-	--Soong 
+	--Soong
 	stationSoong = SpaceStation():setTemplate(szt()):setFaction(stationFaction):setCommsScript(""):setCommsFunction(commsStation)
 	stationSoong:setPosition(psx,psy):setCallSign("Soong"):setDescription("Android components")
     stationSoong.comms_data = {
@@ -3271,7 +3271,7 @@ function placeSpot()
 	return stationSpot
 end
 function placeStarnet()
-	--Starnet 
+	--Starnet
 	stationStarnet = SpaceStation():setTemplate(szt()):setFaction(stationFaction):setCommsScript(""):setCommsFunction(commsStation)
 	stationStarnet:setPosition(psx,psy):setCallSign("Starnet"):setDescription("Automated weapons systems")
     stationStarnet.comms_data = {
@@ -3516,7 +3516,7 @@ function transportPlot(delta)
 		end
 		if #transportList < #stationList then
 			repeat
-				target = randomStation()				
+				target = randomStation()
 			until(target ~= nil)
 			rnd = irandom(1,5)
 			if rnd == 1 then
@@ -3794,7 +3794,7 @@ function handleDockedState()
 					addCommsReply("Provide cargo", function()
 						setCommsMessage("Do you have something for us?")
 						if easyCargoAboard then
-							homeStationEasyDelivery()					
+							homeStationEasyDelivery()
 						end
 						if randomCargoAboard then
 							homeStationRandomDelivery()
@@ -4329,7 +4329,7 @@ function secondIntelligenceStation()
 				plot2reminder = string.format("Investigate enemy bases in %s, %s and %s",enemyInt1:getSectorName(),enemyInt2:getSectorName(),enemyInt3:getSectorName())
 				addCommsReply("Back", commsStation)
 			end)
-			addCommsReply("Back", commsStation)				
+			addCommsReply("Back", commsStation)
 		end)
 	end
 end
@@ -4432,7 +4432,7 @@ function setOptionalOrders()
 			elseif rotateReveal == 1 then
 				optionalOrders = optionalOrders .. ifs .. string.format("Upgrade %s to auto-rotate by taking %s to %s",homeStation:getCallSign(),rotateGood,rotateBase:getCallSign())
 			elseif rotateReveal == 2 then
-				optionalOrders = optionalOrders .. ifs .. string.format("Upgrade %s to auto-rotate by taking %s to %s in %s",homeStation:getCallSign(),rotateGood,rotateBase:getCallSign(),rotateBase:getSectorName()) 
+				optionalOrders = optionalOrders .. ifs .. string.format("Upgrade %s to auto-rotate by taking %s to %s in %s",homeStation:getCallSign(),rotateGood,rotateBase:getCallSign(),rotateBase:getSectorName())
 			elseif rotateReveal == 3 then
 				optionalOrders = optionalOrders .. ifs .. string.format("Upgrade %s to auto-rotate by taking %s to %s in %s.\n    %s may bave %s",homeStation:getCallSign(),rotateGood,rotateBase:getCallSign(),rotateBase:getSectorName(),rotateGoodBase:getCallSign(),rotateGood)
 			else
@@ -4479,7 +4479,7 @@ function isAllowedTo(state)
 end
 
 function handleWeaponRestock(weapon)
-    if not comms_source:isDocked(comms_target) then 
+    if not comms_source:isDocked(comms_target) then
 		setCommsMessage("You need to stay docked for that action.")
 		return
 	end
@@ -4621,9 +4621,9 @@ function handleUndockedState()
 					if enemiesInRange > 1 then
 						setCommsMessage(string.format("Yes, we see %i enemies within 30U",enemiesInRange))
 					else
-						setCommsMessage("Yes, we see one enemy within 30U")						
+						setCommsMessage("Yes, we see one enemy within 30U")
 					end
-					comms_source:addReputationPoints(2.0)					
+					comms_source:addReputationPoints(2.0)
 				else
 					setCommsMessage("No enemies within 30U")
 					comms_source:addReputationPoints(1.0)
@@ -4901,7 +4901,7 @@ function friendlyComms(comms_data)
 					msg = msg .. missile_type .. " Missiles: " .. math.floor(comms_target:getWeaponStorage(missile_type)) .. "/" .. math.floor(comms_target:getWeaponStorageMax(missile_type)) .. "\n"
 			end
 		end
-		
+
 		setCommsMessage(msg);
 		addCommsReply("Back", commsShip)
 	end)
@@ -5442,7 +5442,7 @@ function easyDelivery(delta)
 						easyDeliverGood = goods[easyStation][gi][1]
 						gj = 1
 						matchAway = false
-						repeat			
+						repeat
 							if easyDeliverGood == goods[homeStation][gj][1] then
 								matchAway = true
 								break
@@ -6041,7 +6041,7 @@ function randomDelivery(delta)
 						randomDeliverGood = goods[randomDeliverStation][gi][1]
 						gj = 1
 						matchAway = false
-						repeat			
+						repeat
 							if randomDeliverGood == goods[homeStation][gj][1] then
 								matchAway = true
 								break
@@ -6206,7 +6206,7 @@ function cleanUpBeamTimers(delta)
 		plot4 = delayef4v2
 		p = closestPlayerTo(targetEnemyStation)
 		p:addReputationPoints(20)
-	end	
+	end
 end
 
 function hullUpgradeStart(delta)
@@ -6284,7 +6284,7 @@ function cleanUpHullers(delta)
 		plot4 = delayef4v2
 		p = closestPlayerTo(targetEnemyStation)
 		p:addReputationPoints(20)
-	end	
+	end
 end
 
 function delayef4v2(delta)
@@ -6909,7 +6909,7 @@ function helpfulWarning(delta)
 									if hl < hm then
 										if helpfulWarningDiagnostic then print("hull not fully repaired") end
 										if not shieldsDamaged then
-											p:addToShipLog("Station Status:","Red")										
+											p:addToShipLog("Station Status:","Red")
 										end
 										local hLine = string.format("   Hull: %i%% (%.1f/%i)",math.floor(hl/hm*100),hl,hm)
 										p:addToShipLog(hLine,"Red")
@@ -7038,7 +7038,7 @@ function spawnEnemies(xOrigin, yOrigin, danger, enemyFaction)
 	if enemyFaction == nil then
 		enemyFaction = "Kraylor"
 	end
-	if danger == nil then 
+	if danger == nil then
 		danger = 1
 	end
 	enemyStrength = math.max(danger * difficulty * playerPower(),5)
@@ -7051,7 +7051,7 @@ function spawnEnemies(xOrigin, yOrigin, danger, enemyFaction)
 		shipTemplateType = irandom(1,#stsl)
 		while stsl[shipTemplateType] > enemyStrength * 1.1 + 5 do
 			shipTemplateType = irandom(1,#stsl)
-		end		
+		end
 		ship = CpuShip():setFaction(enemyFaction):setTemplate(stnl[shipTemplateType]):orderRoaming()
 		enemyPosition = enemyPosition + 1
 		if deployConfig < 50 then
@@ -7098,12 +7098,12 @@ function createRandomAlongArc(object_type, amount, x, y, distance, startArc, end
 		for ndex=1,arcLen do
 			radialPoint = startArc+ndex
 			pointDist = distance + random(-randomize,randomize)
-			object_type():setPosition(x + math.cos(radialPoint / 180 * math.pi) * pointDist, y + math.sin(radialPoint / 180 * math.pi) * pointDist)			
+			object_type():setPosition(x + math.cos(radialPoint / 180 * math.pi) * pointDist, y + math.sin(radialPoint / 180 * math.pi) * pointDist)
 		end
 		for ndex=1,amount-arcLen do
 			radialPoint = random(startArc,endArcClockwise)
 			pointDist = distance + random(-randomize,randomize)
-			object_type():setPosition(x + math.cos(radialPoint / 180 * math.pi) * pointDist, y + math.sin(radialPoint / 180 * math.pi) * pointDist)			
+			object_type():setPosition(x + math.cos(radialPoint / 180 * math.pi) * pointDist, y + math.sin(radialPoint / 180 * math.pi) * pointDist)
 		end
 	else
 		for ndex=1,amount do
@@ -7790,7 +7790,7 @@ function update(delta)
 			wp66cpos = 0
 			rx, ry = vectorFromAngle(wp66cpos,6000)
 			wp66 = CpuShip():setCallSign("WP-66"):setFaction(stationFaction):setPosition(tesx+rx,tesy+ry):setTemplate("Defense platform"):orderRoaming()
-		end		
+		end
 	end
 	if difficulty > 1 then
 		if wp66:isValid() then

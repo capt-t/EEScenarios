@@ -52,27 +52,27 @@ function createSkeletonUniverse()
 	station_names = {}
 	--Icarus
 	stationIcarus = SpaceStation():setTemplate("Large Station"):setFaction("Human Navy"):setPosition(icx,icy):setCallSign("Icarus"):setDescription("Shipyard, Naval Regional Headquarters"):setCommsScript(""):setCommsFunction(commsStation)
-    stationIcarus.comms_data = {
-    	friendlyness = 75,
-        weapons = 			{Homing = "neutral",HVLI = "neutral", 		Mine = "neutral",		Nuke = "friend", 			EMP = "friend"},
-        weapon_cost =		{Homing = 2, 		HVLI = 1,				Mine = math.random(2,4),Nuke = 15,					EMP = 10 },
-        weapon_available = 	{Homing = homeAvail,HVLI = hvliAvail,		Mine = mineAvail,		Nuke = nukeAvail,			EMP = empAvail},
-        service_cost = 		{supplydrop = math.random(90,110), reinforcements = math.random(140,160)},
-        jump_overcharge =		true,
-        probe_launch_repair =	true,
-        hack_repair =			true,
-        scan_repair =			true,
-        combat_maneuver_repair=	true,
-        self_destruct_repair =	true,
-        sensor_boost = {value = 10000, cost = 0},
-        reputation_cost_multipliers = {friend = 1.0, neutral = 2.0},
-        max_weapon_refill_amount = {friend = 1.0, neutral = 0.5 },
-        goods = {	food = 		{quantity = 10,		cost = 1},
-        			medicine =	{quantity = 10,		cost = 5}	},
-        trade = {	food = false, medicine = false, luxury = false },
-        public_relations = true,
-        general_information = "Shipyard for human navy ships. Regional headquarters. Development site for the Atlantis model ship",
-    	history = "As humans ran up against more and more unfriendly races, this station became the nexus for research and development of new space ship building technologies. After a few experimental accidents involving militarily driven scientists and fabrication specialists, the station was renamed from Research-37 to Icarus referencing the mythical figure that flew too close to the sun"
+	stationIcarus.comms_data = {
+		friendlyness = 75,
+		weapons = 			{Homing = "neutral",HVLI = "neutral", 		Mine = "neutral",		Nuke = "friend", 			EMP = "friend"},
+		weapon_cost =		{Homing = 2, 		HVLI = 1,				Mine = math.random(2,4),Nuke = 15,					EMP = 10 },
+		weapon_available = 	{Homing = homeAvail,HVLI = hvliAvail,		Mine = mineAvail,		Nuke = nukeAvail,			EMP = empAvail},
+		service_cost = 		{supplydrop = math.random(90,110), reinforcements = math.random(140,160)},
+		jump_overcharge =		true,
+		probe_launch_repair =	true,
+		hack_repair =			true,
+		scan_repair =			true,
+		combat_maneuver_repair=	true,
+		self_destruct_repair =	true,
+		sensor_boost = {value = 10000, cost = 0},
+		reputation_cost_multipliers = {friend = 1.0, neutral = 2.0},
+		max_weapon_refill_amount = {friend = 1.0, neutral = 0.5 },
+		goods = {	food = 		{quantity = 10,		cost = 1},
+					medicine =	{quantity = 10,		cost = 5}	},
+		trade = {	food = false, medicine = false, luxury = false },
+		public_relations = true,
+		general_information = "Shipyard for human navy ships. Regional headquarters. Development site for the Atlantis model ship",
+		history = "As humans ran up against more and more unfriendly races, this station became the nexus for research and development of new space ship building technologies. After a few experimental accidents involving militarily driven scientists and fabrication specialists, the station was renamed from Research-37 to Icarus referencing the mythical figure that flew too close to the sun"
 	}
 	station_names[stationIcarus:getCallSign()] = {stationIcarus:getSectorName(), stationIcarus}
 	table.insert(skeleton_stations,stationIcarus)
@@ -82,88 +82,88 @@ function createSkeletonUniverse()
 	--local kentarZone = squareZone(kentar_x,kentar_y, "Kentar 2")
 	--kentarZone:setColor(0,128,0)
 	stationKentar = SpaceStation():setTemplate("Large Station"):setFaction("Human Navy"):setPosition(kentar_x,kentar_y):setCallSign("Kentar 2"):setDescription("Naval Regional Headquarters"):setCommsScript(""):setCommsFunction(commsStation)
-    stationKentar.comms_data = {
-    	friendlyness = 68,
-        weapons = 			{Homing = "neutral",HVLI = "neutral", 		Mine = "neutral",		Nuke = "friend", 			EMP = "friend"},
-        weapon_cost =		{Homing = 2, 		HVLI = 1,				Mine = math.random(3,7),Nuke = 13,					EMP = 9 },
-        weapon_available = 	{Homing = homeAvail,HVLI = hvliAvail,		Mine = mineAvail,		Nuke = nukeAvail,			EMP = empAvail},
-        service_cost = 		{supplydrop = math.random(90,110), reinforcements = math.random(140,160)},
-        jump_overcharge =		true,
-        probe_launch_repair =	true,
-        hack_repair =			true,
-        scan_repair =			true,
-        combat_maneuver_repair=	true,
-        self_destruct_repair =	true,
-        sensor_boost = {value = 10000, cost = 0},
-        reputation_cost_multipliers = {friend = 1.0, neutral = 2.0},
-        max_weapon_refill_amount = {friend = 1.0, neutral = 0.5 },
-        goods = {	food = 		{quantity = 10,		cost = 1},
-        			medicine =	{quantity = 10,		cost = 5},
-        			luxury =	{quantity = 10,		cost = math.random(80,120)}	},
-        trade = {	food = false, medicine = false, luxury = false },
-        public_relations = true,
-        general_information = "Regional headquarters. Jumping off point for actions against Kraylor activity",
-    	history = "This used to be a scientific observation and research station. As the Kraylors have grown more agressive, it's been built up and serves as a strategic cornerstone for actions against the Kraylors. The name Kentar derives from Kentauros or Centaurus, after the nearby star's prominent position in the constellation Centaurus"
+	stationKentar.comms_data = {
+		friendlyness = 68,
+		weapons = 			{Homing = "neutral",HVLI = "neutral", 		Mine = "neutral",		Nuke = "friend", 			EMP = "friend"},
+		weapon_cost =		{Homing = 2, 		HVLI = 1,				Mine = math.random(3,7),Nuke = 13,					EMP = 9 },
+		weapon_available = 	{Homing = homeAvail,HVLI = hvliAvail,		Mine = mineAvail,		Nuke = nukeAvail,			EMP = empAvail},
+		service_cost = 		{supplydrop = math.random(90,110), reinforcements = math.random(140,160)},
+		jump_overcharge =		true,
+		probe_launch_repair =	true,
+		hack_repair =			true,
+		scan_repair =			true,
+		combat_maneuver_repair=	true,
+		self_destruct_repair =	true,
+		sensor_boost = {value = 10000, cost = 0},
+		reputation_cost_multipliers = {friend = 1.0, neutral = 2.0},
+		max_weapon_refill_amount = {friend = 1.0, neutral = 0.5 },
+		goods = {	food = 		{quantity = 10,		cost = 1},
+					medicine =	{quantity = 10,		cost = 5},
+					luxury =	{quantity = 10,		cost = math.random(80,120)}	},
+		trade = {	food = false, medicine = false, luxury = false },
+		public_relations = true,
+		general_information = "Regional headquarters. Jumping off point for actions against Kraylor activity",
+		history = "This used to be a scientific observation and research station. As the Kraylors have grown more agressive, it's been built up and serves as a strategic cornerstone for actions against the Kraylors. The name Kentar derives from Kentauros or Centaurus, after the nearby star's prominent position in the constellation Centaurus"
 	}
 	table.insert(skeleton_stations,stationKentar)
 	station_names[stationKentar:getCallSign()] = {stationKentar:getSectorName(), stationKentar}
 	createFleurNebula()
 	BlackHole():setPosition(-12443,-23245)
-    BlackHole():setPosition(87747, -3384)
-    BlackHole():setPosition(80429, -10486)
-    BlackHole():setPosition(75695, 2427)
-    wormholeIcarus = WormHole():setPosition(-46716, 17958):setTargetPosition(19080, -19780)
-    wormholeIcarus.exit = "default"
-    wormholeIcarus.default_exit_point_x = 19080
-    wormholeIcarus.default_exit_point_y = -19780
-    wormholeIcarus.kentar_exit_point_x = 251000
-    wormholeIcarus.kentar_exit_point_y = 250000
-    --Astron
-    astron_x = 462523
-    astron_y = 317769
-    stationAstron = SpaceStation():setTemplate("Small Station"):setFaction("Human Navy"):setPosition(astron_x, astron_y):setCallSign("Astron"):setDescription("Military Observation Post"):setCommsScript(""):setCommsFunction(commsStation)
-    stationAstron.comms_data = {
-    	friendlyness = 68,
-        weapons = 			{Homing = "neutral",HVLI = "neutral", 		Mine = "neutral",		Nuke = "friend", 			EMP = "friend"},
-        weapon_cost =		{Homing = 2, 		HVLI = 1,				Mine = math.random(3,7),Nuke = 13,					EMP = 9 },
-        weapon_available = 	{Homing = homeAvail,HVLI = hvliAvail,		Mine = mineAvail,		Nuke = nukeAvail,			EMP = empAvail},
-        service_cost = 		{supplydrop = math.random(90,110), reinforcements = math.random(140,160)},
-        jump_overcharge =		true,
-        probe_launch_repair =	true,
-        hack_repair =			true,
-        scan_repair =			true,
-        combat_maneuver_repair=	true,
-        self_destruct_repair =	true,
-        sensor_boost = {value = 5000, cost = 0},
-        reputation_cost_multipliers = {friend = 1.0, neutral = 2.0},
-        max_weapon_refill_amount = {friend = 1.0, neutral = 0.5 },
-        goods = {	food = 		{quantity = 10,		cost = 1},
-        			medicine =	{quantity = 10,		cost = 5},
-        			luxury =	{quantity = 10,		cost = math.random(80,120)}	},
-        trade = {	food = false, medicine = false, luxury = false },
-        public_relations = true,
-        general_information = "Military observation post established to observe any hostile Ghost activity",
-    	history = "Civilian scientists and military personnel share observation facilities on this station. The scientists are interested in the nebulae, the military, the Ghosts. Other civilian personnel are evaluating the mining possibilities of the asteroids. The station is named after the astrophysical observatory that circled Earth in the mid 1980's"
+	BlackHole():setPosition(87747, -3384)
+	BlackHole():setPosition(80429, -10486)
+	BlackHole():setPosition(75695, 2427)
+	wormholeIcarus = WormHole():setPosition(-46716, 17958):setTargetPosition(19080, -19780)
+	wormholeIcarus.exit = "default"
+	wormholeIcarus.default_exit_point_x = 19080
+	wormholeIcarus.default_exit_point_y = -19780
+	wormholeIcarus.kentar_exit_point_x = 251000
+	wormholeIcarus.kentar_exit_point_y = 250000
+	--Astron
+	astron_x = 462523
+	astron_y = 317769
+	stationAstron = SpaceStation():setTemplate("Small Station"):setFaction("Human Navy"):setPosition(astron_x, astron_y):setCallSign("Astron"):setDescription("Military Observation Post"):setCommsScript(""):setCommsFunction(commsStation)
+	stationAstron.comms_data = {
+		friendlyness = 68,
+		weapons = 			{Homing = "neutral",HVLI = "neutral", 		Mine = "neutral",		Nuke = "friend", 			EMP = "friend"},
+		weapon_cost =		{Homing = 2, 		HVLI = 1,				Mine = math.random(3,7),Nuke = 13,					EMP = 9 },
+		weapon_available = 	{Homing = homeAvail,HVLI = hvliAvail,		Mine = mineAvail,		Nuke = nukeAvail,			EMP = empAvail},
+		service_cost = 		{supplydrop = math.random(90,110), reinforcements = math.random(140,160)},
+		jump_overcharge =		true,
+		probe_launch_repair =	true,
+		hack_repair =			true,
+		scan_repair =			true,
+		combat_maneuver_repair=	true,
+		self_destruct_repair =	true,
+		sensor_boost = {value = 5000, cost = 0},
+		reputation_cost_multipliers = {friend = 1.0, neutral = 2.0},
+		max_weapon_refill_amount = {friend = 1.0, neutral = 0.5 },
+		goods = {	food = 		{quantity = 10,		cost = 1},
+					medicine =	{quantity = 10,		cost = 5},
+					luxury =	{quantity = 10,		cost = math.random(80,120)}	},
+		trade = {	food = false, medicine = false, luxury = false },
+		public_relations = true,
+		general_information = "Military observation post established to observe any hostile Ghost activity",
+		history = "Civilian scientists and military personnel share observation facilities on this station. The scientists are interested in the nebulae, the military, the Ghosts. Other civilian personnel are evaluating the mining possibilities of the asteroids. The station is named after the astrophysical observatory that circled Earth in the mid 1980's"
 	}
 	table.insert(skeleton_stations,stationAstron)
 	station_names[stationAstron:getCallSign()] = {stationAstron:getSectorName(), stationAstron}
 end
 function createFleurNebula()
-    Nebula():setPosition(22028, 25793):setCallSign("Fleur")
-    Nebula():setPosition(13381, 37572)
-    Nebula():setPosition(20835, 35783)
-    Nebula():setPosition(15319, 24601)
-    Nebula():setPosition(16363, 30415)
-    Nebula():setPosition(22923, 17295)
-    Nebula():setPosition(27843, 19680)
-    Nebula():setPosition(31123, 16997)
-    --Borlan area nebula
-    Nebula():setPosition(88464, 45469)
-    Nebula():setPosition(77847, 35928)
-    Nebula():setPosition(79353, 42959)
-    Nebula():setPosition(75264, 47622)
-    Nebula():setPosition(86671, 36861)
-    Nebula():setPosition(96857, 44322)
+	Nebula():setPosition(22028, 25793):setCallSign("Fleur")
+	Nebula():setPosition(13381, 37572)
+	Nebula():setPosition(20835, 35783)
+	Nebula():setPosition(15319, 24601)
+	Nebula():setPosition(16363, 30415)
+	Nebula():setPosition(22923, 17295)
+	Nebula():setPosition(27843, 19680)
+	Nebula():setPosition(31123, 16997)
+	--Borlan area nebula
+	Nebula():setPosition(88464, 45469)
+	Nebula():setPosition(77847, 35928)
+	Nebula():setPosition(79353, 42959)
+	Nebula():setPosition(75264, 47622)
+	Nebula():setPosition(86671, 36861)
+	Nebula():setPosition(96857, 44322)
 end
 function setConstants()
 	universe=universe()
@@ -202,7 +202,7 @@ function setConstants()
 	revert_timer_interval = 7
 	revert_timer = revert_timer_interval
 	plotRevert = revertWait
-	
+
 	ship_template = {	--ordered by relative strength
 		["OClock Beam"] =		{strength = 1,	adder = false,	missiler = false,	beamer = false,	frigate = false,	chaser = false,	fighter = false,	drone = false,	unusual = true,		create = beamOverclocker},
 		["OClock Engine"] = 	{strength = 1,	adder = false,	missiler = false,	beamer = false,	frigate = false,	chaser = false,	fighter = false,	drone = false,	unusual = true,		create = engineOverclocker},
@@ -323,13 +323,13 @@ function setConstants()
 			[3] = {
 				{angle =  0, distance = 0},
 				{angle = -1, distance = 1},
-				{angle =  1, distance = 1},				
+				{angle =  1, distance = 1},
 			},
 			[4] = {
 				{angle =  0, distance = 0},
 				{angle = -1, distance = 1},
 				{angle =  1, distance = 1},
-				{angle =  0, distance = 2},	
+				{angle =  0, distance = 2},
 			},
 			[5] = {
 				{angle =  0, distance = 0},
@@ -344,7 +344,7 @@ function setConstants()
 				{angle =  1, distance = 1},
 				{angle = -2, distance = 2},
 				{angle =  2, distance = 2},
-				{angle =  0, distance = 2},	
+				{angle =  0, distance = 2},
 			},
 			[7] = {
 				{angle =  0, distance = 0},
@@ -361,7 +361,7 @@ function setConstants()
 				{angle =  1, distance = 1},
 				{angle = -2, distance = 2},
 				{angle =  2, distance = 2},
-				{angle =  0, distance = 2},	
+				{angle =  0, distance = 2},
 				{angle = -3, distance = 3},
 				{angle =  3, distance = 3},
 			},
@@ -379,7 +379,7 @@ function setConstants()
 		},
 	}
 	max_pyramid_tier = 9
-	-- square grid deployment	
+	-- square grid deployment
 	fleetPosDelta1x = {0,1,0,-1, 0,1,-1, 1,-1,2,0,-2, 0,2,-2, 2,-2,2, 2,-2,-2,1,-1, 1,-1,0, 0,3,-3,1, 1,3,-3,-1,-1, 3,-3,2, 2,3,-3,-2,-2, 3,-3,3, 3,-3,-3,4,0,-4, 0,4,-4, 4,-4,-4,-4,-4,-4,-4,-4,4, 4,4, 4,4, 4, 1,-1, 2,-2, 3,-3,1,-1,2,-2,3,-3,5,-5,0, 0,5, 5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,5, 5,5, 5,5, 5,5, 5, 1,-1, 2,-2, 3,-3, 4,-4,1,-1,2,-2,3,-3,4,-4}
 	fleetPosDelta1y = {0,0,1, 0,-1,1,-1,-1, 1,0,2, 0,-2,2,-2,-2, 2,1,-1, 1,-1,2, 2,-2,-2,3,-3,0, 0,3,-3,1, 1, 3,-3,-1,-1,3,-3,2, 2, 3,-3,-2,-2,3,-3, 3,-3,0,4, 0,-4,4,-4,-4, 4, 1,-1, 2,-2, 3,-3,1,-1,2,-2,3,-3,-4,-4,-4,-4,-4,-4,4, 4,4, 4,4, 4,0, 0,5,-5,5,-5, 5,-5, 1,-1, 2,-2, 3,-3, 4,-4,1,-1,2,-2,3,-3,4,-4,-5,-5,-5,-5,-5,-5,-5,-5,5, 5,5, 5,5, 5,5, 5}
 	-- rough hexagonal deployment
@@ -393,7 +393,7 @@ function setConstants()
 		["Unusual"]	= {letter = "U", exclude = true},
 	}
 
-	playerShipStats = {	
+	playerShipStats = {
 		["MP52 Hornet"] 		= { strength = 7, 	cargo = 3,	distance = 100,	long_range_radar = 18000, short_range_radar = 4000, tractor = false,	mining = false,	probes = 5,		pods = 1},
 		["Piranha"]				= { strength = 16,	cargo = 8,	distance = 200,	long_range_radar = 25000, short_range_radar = 6000, tractor = false,	mining = false,	probes = 6,		pods = 2},
 		["Flavia P.Falcon"]		= { strength = 13,	cargo = 15,	distance = 200,	long_range_radar = 40000, short_range_radar = 5000, tractor = true,		mining = true,	probes = 8,		pods = 4},
@@ -452,7 +452,7 @@ function setConstants()
 		["Bermuda"]				= { strength = 30,	cargo = 4,	distance = 400,	long_range_radar = 30000, short_range_radar = 4500, tractor = true,		mining = false,	probes = 14,	pods = 3},
 		["Rotor"]				= { strength = 30,	cargo = 5,	distance = 200,	long_range_radar = 25000, short_range_radar = 4000, tractor = true,		mining = false,	probes = 10,	pods = 2},
 		["Atlantis II"]			= { strength = 60,	cargo = 6,	distance = 400,	long_range_radar = 30000, short_range_radar = 5000, tractor = true,		mining = true,	probes = 11,	pods = 3},
-	}	
+	}
 	--goodsList = {	{"food",0}, {"medicine",0},	{"nickel",0}, {"platinum",0}, {"gold",0}, {"dilithium",0}, {"tritanium",0}, {"luxury",0}, {"cobalt",0}, {"impulse",0}, {"warp",0}, {"shield",0}, {"tractor",0}, {"repulsor",0}, {"beam",0}, {"optic",0}, {"robotic",0}, {"filament",0}, {"transporter",0}, {"sensor",0}, {"communication",0}, {"autodoc",0}, {"lifter",0}, {"android",0}, {"nanites",0}, {"software",0}, {"circuit",0}, {"battery",0}	}
 	attackFleetFunction = {orderFleetAttack1,orderFleetAttack2,orderFleetAttack3,orderFleetAttack4,orderFleetAttack5,orderFleetAttack6,orderFleetAttack7,orderFleetAttack8}
 	defendFleetFunction = {orderFleetDefend1,orderFleetDefend2,orderFleetDefend3,orderFleetDefend4,orderFleetDefend5,orderFleetDefend6,orderFleetDefend7,orderFleetDefend8}
@@ -466,10 +466,10 @@ function setConstants()
 								["Mine"] = 200,
 								["Asteroid"] = 200,
 								["BlackHole"] = 5200,
-								["Nebula"] = 200, 
-								["Artifact"] = 200, 
-								["ScanProbe"] = 200, 
-								["VisualAsteroid"] = 200, 
+								["Nebula"] = 200,
+								["Artifact"] = 200,
+								["ScanProbe"] = 200,
+								["VisualAsteroid"] = 200,
 								["WormHole"] = 2625,
 								["CpuShip"] = 2000}
 	spaceStationDistance = {["Small Station"] = 400, ["Medium Station"] = 1200, ["Large Station"] = 1400, ["Huge Station"] = 2000}
@@ -841,7 +841,7 @@ function setConstants()
 		["Orbit < Fast"]	= -60,
 		["Orbit < Normal"]	= -120,
 		["Orbit < Slow"]	= -600,
-	} 
+	}
 	outer_mines = "No"
 	inline_mines = 0
 	inside_mines = 0
@@ -2019,16 +2019,16 @@ function orderFleet()
 					if fm ~= nil and fm:isValid() then
 						fm:orderRoaming()
 					end
-				end	
+				end
 				addGMMessage(string.format("Fleet %i which includes %s has been ordered to roam",selected_fleet_index,selected_fleet_representative:getCallSign()))
-			end			
+			end
 			if existing_fleet_order == "Stand Ground" then
 				for _, fm in pairs(fleetList[selected_fleet_index]) do
 					if fm ~= nil and fm:isValid() then
 						fm:orderStandGround()
 					end
-				end	
-			end			
+				end
+			end
 			if existing_fleet_order == "Attack" then
 				local objectList = getGMSelection()
 				if #objectList ~= 1 then
@@ -2040,9 +2040,9 @@ function orderFleet()
 							fm:orderAttack(objectList[1])
 						end
 					end
-					addGMMessage(string.format("Fleet %i which includes %s has been ordered to attack",selected_fleet_index,selected_fleet_representative:getCallSign()))		
+					addGMMessage(string.format("Fleet %i which includes %s has been ordered to attack",selected_fleet_index,selected_fleet_representative:getCallSign()))
 				end
-			end			
+			end
 			if existing_fleet_order == "Defend" then
 				local objectList = getGMSelection()
 				if #objectList ~= 1 then
@@ -2056,7 +2056,7 @@ function orderFleet()
 					end
 					addGMMessage(string.format("Fleet %i which includes %s has been ordered to defend",selected_fleet_index,selected_fleet_representative:getCallSign()))
 				end
-			end			
+			end
 			if existing_fleet_order == "Fly To" then
 				local flyx = 0
 				local flyy = 0
@@ -2077,7 +2077,7 @@ function orderFleet()
 					end
 					addGMMessage(string.format("Fleet %i which includes %s has been ordered to fly towards %.1f, %.1f",selected_fleet_index,selected_fleet_representative:getCallSign(),flyx,flyy))
 				end
-			end			
+			end
 			if existing_fleet_order == "Fly Blindly To" then
 				local flyx = 0
 				local flyy = 0
@@ -2319,7 +2319,7 @@ function orderFleet()
 			end
 			addGMMessage(string.format("Fleet %s created with these ships:\n   %s\nDon't forget to add sandbox comms:\n   Select ship(s), Tweak Terrain > Sandbox Comms",string.char(friendly_defensive_fleet_val),ship_names))
 			friendly_defensive_fleet_val = friendly_defensive_fleet_val + 1
-			--no boundary check for more than 26 fleets		
+			--no boundary check for more than 26 fleets
 		else
 			addGMMessage("No Human Navy ships selected. No action taken")
 		end
@@ -2571,7 +2571,7 @@ end
 function dropJammer()
 	local object_list = getGMSelection()
 	if #object_list < 1 then
-		addGMMessage("Jammer drop failed - nothing selected for location determination") 
+		addGMMessage("Jammer drop failed - nothing selected for location determination")
 		return
 	end
 	local selected_matches_npc_ship = false
@@ -2857,7 +2857,7 @@ function tweakTerrain()
 						tempObject.comms_data = {
 							friendlyness = random(50,100),
 							weapons = 			{Homing = "neutral",		HVLI = "neutral", 		Mine = "neutral",		Nuke = "friend", 			EMP = "friend"},
-					        weapon_cost =		{Homing = math.random(2,5),	HVLI = math.random(1,4),Mine = math.random(3,8),Nuke = math.random(12,18),	EMP = math.random(12,18) },
+							weapon_cost =		{Homing = math.random(2,5),	HVLI = math.random(1,4),Mine = math.random(3,8),Nuke = math.random(12,18),	EMP = math.random(12,18) },
 							weapon_available = 	{Homing = random(1,10)<=9,	HVLI = random(1,10)<=8,	Mine = random(1,10)<=6,	Nuke = random(1,10)<=4,	EMP = random(1,10)<=5},
 							service_cost = 		{supplydrop = math.random(80,120), reinforcements = math.random(125,175)},
 							reputation_cost_multipliers = {friend = 1.0, neutral = 3.0},
@@ -3677,7 +3677,7 @@ function changeTerrain()
 		end
 	end
 end
--- Icarus area stations, asteroids, mines, etc. 
+-- Icarus area stations, asteroids, mines, etc.
 function icarusSector()
 	createIcarusColor()
 	local ret = {
@@ -3729,7 +3729,7 @@ function createIcarusColor()
 --		elseif i == 6 then
 --			dp6Zone = squareZone(icx+dpx,icy+dpy,"dp6")
 --			dp6Zone:setColor(0,128,0)
---		else		
+--		else
 			local dp = CpuShip():setTemplate("Defense platform"):setFaction("Human Navy"):setPosition(icx+dpx,icy+dpy):setScannedByFaction("Human Navy",true):setCallSign(string.format("DP%i",i)):setDescription(string.format("Icarus defense platform %i",i)):orderRoaming()
 			station_names[dp:getCallSign()] = {dp:getSectorName(), dp}
 			table.insert(icarusDefensePlatforms,dp)
@@ -3852,29 +3852,29 @@ function createIcarusStations()
 	--Aquarius F4m9 captured 11Jul2020
 	--local aquariusZone = squareZone(-4295, 14159, "Aquarius V F4.9")
 	--aquariusZone:setColor(51,153,255)
-    stationAquarius = SpaceStation():setTemplate("Small Station"):setFaction("Independent"):setCallSign("Aquarius V"):setPosition(-4295, 14159):setDescription("Mining"):setCommsScript(""):setCommsFunction(commsStation)
-    if random(1,100) <= 30 then nukeAvail = true else nukeAvail = false end
-    if random(1,100) <= 50 then mineAvail = true else mineAvail = false end
-    if random(1,100) <= 60 then homeAvail = true else homeAvail = false end
-    if random(1,100) <= 39 then tradeMedicine = true else tradeMedicine = false end
-    if random(1,100) <= 82 then tradeFood = true else tradeFood = false end
-    stationAquarius.comms_data = {
-    	friendlyness = 67,
-        weapons = 			{Homing = "neutral",		HVLI = "neutral", 		Mine = "friend",		Nuke = "friend", 			EMP = "friend"},
-        weapon_cost =		{Homing = 5,				HVLI = math.random(2,5),Mine = math.random(3,7),Nuke = math.random(12,18),	EMP = math.random(9,13) },
-        weapon_available = 	{Homing = homeAvail,		HVLI = true,		Mine = mineAvail,		Nuke = nukeAvail,			EMP = true},
-        service_cost = 		{supplydrop = math.random(80,120), reinforcements = math.random(123,175)},
-        hack_repair =			true,
-        scan_repair =			true,
-        sensor_boost = {value = 10000, cost = 10},
-        reputation_cost_multipliers = {friend = 1.0, neutral = 2.0},
-        max_weapon_refill_amount = {friend = 1.0, neutral = 0.5 },
-        goods = {	platinum = 	{quantity = math.random(4,8),	cost = math.random(50,80)},
-        			nickel =	{quantity = math.random(6,12),	cost = math.random(45,65)}	},
-        trade = {	food = tradeFood, medicine = tradeMedicine, luxury = false },
-        public_relations = true,
-        general_information = "Facilitate mining the nearby asteroids",
-    	history = "Station named after the platinum mine on ancient Earth on the African continent"
+	stationAquarius = SpaceStation():setTemplate("Small Station"):setFaction("Independent"):setCallSign("Aquarius V"):setPosition(-4295, 14159):setDescription("Mining"):setCommsScript(""):setCommsFunction(commsStation)
+	if random(1,100) <= 30 then nukeAvail = true else nukeAvail = false end
+	if random(1,100) <= 50 then mineAvail = true else mineAvail = false end
+	if random(1,100) <= 60 then homeAvail = true else homeAvail = false end
+	if random(1,100) <= 39 then tradeMedicine = true else tradeMedicine = false end
+	if random(1,100) <= 82 then tradeFood = true else tradeFood = false end
+	stationAquarius.comms_data = {
+		friendlyness = 67,
+		weapons = 			{Homing = "neutral",		HVLI = "neutral", 		Mine = "friend",		Nuke = "friend", 			EMP = "friend"},
+		weapon_cost =		{Homing = 5,				HVLI = math.random(2,5),Mine = math.random(3,7),Nuke = math.random(12,18),	EMP = math.random(9,13) },
+		weapon_available = 	{Homing = homeAvail,		HVLI = true,		Mine = mineAvail,		Nuke = nukeAvail,			EMP = true},
+		service_cost = 		{supplydrop = math.random(80,120), reinforcements = math.random(123,175)},
+		hack_repair =			true,
+		scan_repair =			true,
+		sensor_boost = {value = 10000, cost = 10},
+		reputation_cost_multipliers = {friend = 1.0, neutral = 2.0},
+		max_weapon_refill_amount = {friend = 1.0, neutral = 0.5 },
+		goods = {	platinum = 	{quantity = math.random(4,8),	cost = math.random(50,80)},
+					nickel =	{quantity = math.random(6,12),	cost = math.random(45,65)}	},
+		trade = {	food = tradeFood, medicine = tradeMedicine, luxury = false },
+		public_relations = true,
+		general_information = "Facilitate mining the nearby asteroids",
+		history = "Station named after the platinum mine on ancient Earth on the African continent"
 	}
 	if random(1,100) <= 72 then stationAquarius:setRestocksScanProbes(false) end
 	if random(1,100) <= 61 then stationAquarius:setRepairDocked(false) end
@@ -3884,33 +3884,33 @@ function createIcarusStations()
 	--Borlan
 	--local borlanZone = squareZone(68808, 39300, "Borlan 2 G8")
 	--borlanZone:setColor(51,153,255)
-    stationBorlan = SpaceStation():setTemplate("Medium Station"):setFaction("Independent"):setCallSign("Borlan 2"):setPosition(68808, 39300):setDescription("Mining and Supply"):setCommsScript(""):setCommsFunction(commsStation)
-    if random(1,100) <= 30 then nukeAvail = true else nukeAvail = false end
-    if random(1,100) <= 40 then empAvail = true else empAvail = false end
-    if random(1,100) <= 50 then mineAvail = true else mineAvail = false end
-    if random(1,100) <= 80 then hvliAvail = true else hvliAvail = false end
-    if random(1,100) <= 13 then tradeMedicine = true else tradeMedicine = false end
-    stationBorlan.comms_data = {
-    	friendlyness = 75,
-        weapons = 			{Homing = "neutral",HVLI = "neutral", 		Mine = "neutral",		Nuke = "friend", 			EMP = "friend"},
-        weapon_cost =		{Homing = 3, 		HVLI = math.random(1,2),Mine = math.random(2,5),Nuke = math.random(12,18),	EMP = math.random(9,21) },
-        weapon_available = 	{Homing = true,		HVLI = hvliAvail,		Mine = mineAvail,		Nuke = nukeAvail,			EMP = empAvail},
-        service_cost = 		{supplydrop = math.random(80,120), reinforcements = math.random(125,175)},
-        probe_launch_repair =	true,
-        hack_repair =			true,
-        scan_repair =			true,
-        combat_maneuver_repair=	true,
-        self_destruct_repair =	true,
-        sensor_boost = {value = 10000, cost = 5},
-        reputation_cost_multipliers = {friend = 1.0, neutral = 3.0},
-        max_weapon_refill_amount = {friend = 1.0, neutral = 1.0 },
-        goods = {	gold = 	{quantity = math.random(1,10),	cost = math.random(60,70)},	
-        			cobalt ={quantity = math.random(6,12),	cost = math.random(75,95)},
-        			luxury ={quantity = math.random(2,8),	cost = math.random(55,95)} },
-        trade = {	food = false, medicine = tradeMedicine, luxury = false },
-        public_relations = true,
-        general_information = "Mining and resupply, New and improved",
-    	history = "Station success based on location and ingenuity of original builder to provide supplies for all the miners wanting to strike it rich"
+	stationBorlan = SpaceStation():setTemplate("Medium Station"):setFaction("Independent"):setCallSign("Borlan 2"):setPosition(68808, 39300):setDescription("Mining and Supply"):setCommsScript(""):setCommsFunction(commsStation)
+	if random(1,100) <= 30 then nukeAvail = true else nukeAvail = false end
+	if random(1,100) <= 40 then empAvail = true else empAvail = false end
+	if random(1,100) <= 50 then mineAvail = true else mineAvail = false end
+	if random(1,100) <= 80 then hvliAvail = true else hvliAvail = false end
+	if random(1,100) <= 13 then tradeMedicine = true else tradeMedicine = false end
+	stationBorlan.comms_data = {
+		friendlyness = 75,
+		weapons = 			{Homing = "neutral",HVLI = "neutral", 		Mine = "neutral",		Nuke = "friend", 			EMP = "friend"},
+		weapon_cost =		{Homing = 3, 		HVLI = math.random(1,2),Mine = math.random(2,5),Nuke = math.random(12,18),	EMP = math.random(9,21) },
+		weapon_available = 	{Homing = true,		HVLI = hvliAvail,		Mine = mineAvail,		Nuke = nukeAvail,			EMP = empAvail},
+		service_cost = 		{supplydrop = math.random(80,120), reinforcements = math.random(125,175)},
+		probe_launch_repair =	true,
+		hack_repair =			true,
+		scan_repair =			true,
+		combat_maneuver_repair=	true,
+		self_destruct_repair =	true,
+		sensor_boost = {value = 10000, cost = 5},
+		reputation_cost_multipliers = {friend = 1.0, neutral = 3.0},
+		max_weapon_refill_amount = {friend = 1.0, neutral = 1.0 },
+		goods = {	gold = 	{quantity = math.random(1,10),	cost = math.random(60,70)},
+					cobalt ={quantity = math.random(6,12),	cost = math.random(75,95)},
+					luxury ={quantity = math.random(2,8),	cost = math.random(55,95)} },
+		trade = {	food = false, medicine = tradeMedicine, luxury = false },
+		public_relations = true,
+		general_information = "Mining and resupply, New and improved",
+		history = "Station success based on location and ingenuity of original builder to provide supplies for all the miners wanting to strike it rich"
 	}
 	if random(1,100) <= 42 then stationBorlan:setRestocksScanProbes(false) end
 	if random(1,100) <= 21 then stationBorlan:setRepairDocked(false) end
@@ -3920,60 +3920,60 @@ function createIcarusStations()
 	--Cindy's Folly
 	--local cindyZone = squareZone(81075, -1304, "Cindy's Folly 2 E9")
 	--cindyZone:setColor(51,153,255)
-    stationCindyFolly = SpaceStation():setTemplate("Small Station"):setFaction("Independent"):setCallSign("Cindy's Folly 2"):setPosition(81075, -1304):setDescription("Mining"):setCommsScript(""):setCommsFunction(commsStation)
-    if random(1,100) <= 37 then homeAvail = true else homeAvail = false end
-    if random(1,100) <= 44 then hvliAvail = true else hvliAvail = false end
-    if random(1,100) <= 23 then mineAvail = true else mineAvail = false end
-    if random(1,100) <= 13 then tradeLuxury = true else tradeLuxury = false end
-    if random(1,100) <= 27 then tradeMedicine = true else tradeMedicine = false end
-    stationCindyFolly.comms_data = {
-    	friendlyness = 64,
-        weapons = 			{Homing = "neutral",HVLI = "neutral", 		Mine = "neutral",		Nuke = "friend", 			EMP = "friend"},
-        weapon_cost =		{Homing = 3, 		HVLI = math.random(1,4),Mine = math.random(2,7),Nuke = 30,					EMP = 20 },
-        weapon_available = 	{Homing = homeAvail,HVLI = hvliAvail,		Mine = mineAvail,		Nuke = false,				EMP = false},
-        service_cost = 		{supplydrop = math.random(80,120), reinforcements = math.random(125,175)},
-        probe_launch_repair =	true,
-        scan_repair =			true,
-        reputation_cost_multipliers = {friend = 1.0, neutral = 2.0},
-        max_weapon_refill_amount = {friend = 1.0, neutral = 0.5 },
-        goods = {	dilithium = {quantity = math.random(4,8),	cost = math.random(50,80)},
-        			tritanium =	{quantity = math.random(6,12),	cost = math.random(45,65)},
-        			platinum =	{quantity = math.random(6,12),	cost = math.random(45,65)}	},
-        trade = {	food = false, medicine = tradeMedicine, luxury = tradeLuxury },
-        public_relations = true,
-        general_information = "Mine nearby asteroids",
-    	history = "A mining operation often on the brink of failure due to the loss of spacecraft in the nearby black holes"
+	stationCindyFolly = SpaceStation():setTemplate("Small Station"):setFaction("Independent"):setCallSign("Cindy's Folly 2"):setPosition(81075, -1304):setDescription("Mining"):setCommsScript(""):setCommsFunction(commsStation)
+	if random(1,100) <= 37 then homeAvail = true else homeAvail = false end
+	if random(1,100) <= 44 then hvliAvail = true else hvliAvail = false end
+	if random(1,100) <= 23 then mineAvail = true else mineAvail = false end
+	if random(1,100) <= 13 then tradeLuxury = true else tradeLuxury = false end
+	if random(1,100) <= 27 then tradeMedicine = true else tradeMedicine = false end
+	stationCindyFolly.comms_data = {
+		friendlyness = 64,
+		weapons = 			{Homing = "neutral",HVLI = "neutral", 		Mine = "neutral",		Nuke = "friend", 			EMP = "friend"},
+		weapon_cost =		{Homing = 3, 		HVLI = math.random(1,4),Mine = math.random(2,7),Nuke = 30,					EMP = 20 },
+		weapon_available = 	{Homing = homeAvail,HVLI = hvliAvail,		Mine = mineAvail,		Nuke = false,				EMP = false},
+		service_cost = 		{supplydrop = math.random(80,120), reinforcements = math.random(125,175)},
+		probe_launch_repair =	true,
+		scan_repair =			true,
+		reputation_cost_multipliers = {friend = 1.0, neutral = 2.0},
+		max_weapon_refill_amount = {friend = 1.0, neutral = 0.5 },
+		goods = {	dilithium = {quantity = math.random(4,8),	cost = math.random(50,80)},
+					tritanium =	{quantity = math.random(6,12),	cost = math.random(45,65)},
+					platinum =	{quantity = math.random(6,12),	cost = math.random(45,65)}	},
+		trade = {	food = false, medicine = tradeMedicine, luxury = tradeLuxury },
+		public_relations = true,
+		general_information = "Mine nearby asteroids",
+		history = "A mining operation often on the brink of failure due to the loss of spacecraft in the nearby black holes"
 	}
 	if random(1,100) <= 89 then stationCindyFolly:setRestocksScanProbes(false) end
 	if random(1,100) <= 72 then stationCindyFolly:setRepairDocked(false) end
 	if random(1,100) <= 13 then stationCindyFolly:setSharesEnergyWithDocked(false) end
 	station_names[stationCindyFolly:getCallSign()] = {stationCindyFolly:getSectorName(), stationCindyFolly}
 	table.insert(stations,stationCindyFolly)
-	--Elysium F4m2.5 
+	--Elysium F4m2.5
 	--local elysiumZone = squareZone(-7504, 1384, "Elysium 2 F4.3")
 	--elysiumZone:setColor(51,153,255)
-    stationElysium = SpaceStation():setTemplate("Small Station"):setFaction("Independent"):setCallSign("Elysium 2"):setPosition(-7504, 1384):setDescription("Commerce and luxury accomodations"):setCommsScript(""):setCommsFunction(commsStation)
-    if random(1,100) <= 30 then nukeAvail = true else nukeAvail = false end
-    if random(1,100) <= 40 then empAvail = true else empAvail = false end
-    if random(1,100) <= 50 then mineAvail = true else mineAvail = false end
-    if random(1,100) <= 13 then tradeLuxury = true else tradeLuxury = false end
-    stationElysium.comms_data = {
-    	friendlyness = 29,
-        weapons = 			{Homing = "neutral",		HVLI = "neutral", 		Mine = "neutral",		Nuke = "friend", 			EMP = "neutral"},
-        weapon_cost =		{Homing = math.random(3,7),	HVLI = math.random(2,5),Mine = math.random(3,7),Nuke = math.random(12,18),	EMP = math.random(9,13) },
-        weapon_available = 	{Homing = true,				HVLI = true,			Mine = mineAvail,		Nuke = nukeAvail,			EMP = empAvail},
-        service_cost = 		{supplydrop = math.random(80,120), reinforcements = math.random(123,175)},
-        hack_repair =			true,
-        scan_repair =			true,
-        combat_maneuver_repair=	true,
-        reputation_cost_multipliers = {friend = 1.0, neutral = 2.0},
-        max_weapon_refill_amount = {friend = 1.0, neutral = 0.5 },
-        goods = {	warp =		{quantity = math.random(2,4),	cost = math.random(80,120)},
-        			cobalt =	{quantity = math.random(2,4),	cost = math.random(30,70)},	},
-        trade = {	food = false, medicine = false, luxury = tradeLuxury },
-        public_relations = true,
-        general_information = "This is where all the wealthy species shop and stay when traveling",
-    	history = "Named after a fictional station from early 21st century literature as a reminder of what can happen if people don't pay attention to what goes on in all levels of the society in which they live"
+	stationElysium = SpaceStation():setTemplate("Small Station"):setFaction("Independent"):setCallSign("Elysium 2"):setPosition(-7504, 1384):setDescription("Commerce and luxury accomodations"):setCommsScript(""):setCommsFunction(commsStation)
+	if random(1,100) <= 30 then nukeAvail = true else nukeAvail = false end
+	if random(1,100) <= 40 then empAvail = true else empAvail = false end
+	if random(1,100) <= 50 then mineAvail = true else mineAvail = false end
+	if random(1,100) <= 13 then tradeLuxury = true else tradeLuxury = false end
+	stationElysium.comms_data = {
+		friendlyness = 29,
+		weapons = 			{Homing = "neutral",		HVLI = "neutral", 		Mine = "neutral",		Nuke = "friend", 			EMP = "neutral"},
+		weapon_cost =		{Homing = math.random(3,7),	HVLI = math.random(2,5),Mine = math.random(3,7),Nuke = math.random(12,18),	EMP = math.random(9,13) },
+		weapon_available = 	{Homing = true,				HVLI = true,			Mine = mineAvail,		Nuke = nukeAvail,			EMP = empAvail},
+		service_cost = 		{supplydrop = math.random(80,120), reinforcements = math.random(123,175)},
+		hack_repair =			true,
+		scan_repair =			true,
+		combat_maneuver_repair=	true,
+		reputation_cost_multipliers = {friend = 1.0, neutral = 2.0},
+		max_weapon_refill_amount = {friend = 1.0, neutral = 0.5 },
+		goods = {	warp =		{quantity = math.random(2,4),	cost = math.random(80,120)},
+					cobalt =	{quantity = math.random(2,4),	cost = math.random(30,70)},	},
+		trade = {	food = false, medicine = false, luxury = tradeLuxury },
+		public_relations = true,
+		general_information = "This is where all the wealthy species shop and stay when traveling",
+		history = "Named after a fictional station from early 21st century literature as a reminder of what can happen if people don't pay attention to what goes on in all levels of the society in which they live"
 	}
 	if random(1,100) <= 86 then stationElysium:setRestocksScanProbes(false) end
 	if random(1,100) <= 35 then stationElysium:setRepairDocked(false) end
@@ -3984,27 +3984,27 @@ function createIcarusStations()
 	--local finneganZone = squareZone(114460, 95868, "Finnegan 2 J10")
 	--finneganZone:setColor(51,153,255)
 	stationFinnegan = SpaceStation():setTemplate("Medium Station"):setFaction("Independent"):setCallSign("Finnegan 2"):setPosition(114460, 95868):setDescription("Trading, mining and manufacturing"):setCommsScript(""):setCommsFunction(commsStation)
-    if random(1,100) <= 30 then nukeAvail = true else nukeAvail = false end
-    if random(1,100) <= 40 then empAvail = true else empAvail = false end
-    if random(1,100) <= 80 then hvliAvail = true else hvliAvail = false end
-    if random(1,100) <= 63 then tradeMedicine = true else tradeMedicine = false end
-    stationFinnegan.comms_data = {
-    	friendlyness = 52,
-        weapons = 			{Homing = "neutral",		HVLI = "neutral", 		Mine = "neutral",		Nuke = "friend", 			EMP = "friend"},
-        weapon_cost =		{Homing = math.random(3,6),	HVLI = math.random(1,4),Mine = math.random(5,9),Nuke = math.random(12,18),	EMP = math.random(9,13) },
-        weapon_available = 	{Homing = true,				HVLI = hvliAvail,		Mine = true,			Nuke = nukeAvail,			EMP = empAvail},
-        service_cost = 		{supplydrop = math.random(80,120), reinforcements = math.random(123,175)},
-        hack_repair =			true,
-        scan_repair =			true,
-        sensor_boost = {value = 10000, cost = 10},
-        reputation_cost_multipliers = {friend = 1.0, neutral = 2.0},
-        max_weapon_refill_amount = {friend = 1.0, neutral = 0.5 },
-        goods = {	circuit = 	{quantity = math.random(4,8),	cost = math.random(40,80)},
-        			nickel =	{quantity = math.random(6,12),	cost = math.random(45,65)}	},
-        trade = {	food = true, medicine = tradeMedicine, luxury = false },
-        public_relations = true,
-        general_information = "We mine the asteroids and the nebula and use these to manufacture various specialized circuits",
-    	history = "The Finnegan family set up this station here to take advantage of the readily available resources"
+	if random(1,100) <= 30 then nukeAvail = true else nukeAvail = false end
+	if random(1,100) <= 40 then empAvail = true else empAvail = false end
+	if random(1,100) <= 80 then hvliAvail = true else hvliAvail = false end
+	if random(1,100) <= 63 then tradeMedicine = true else tradeMedicine = false end
+	stationFinnegan.comms_data = {
+		friendlyness = 52,
+		weapons = 			{Homing = "neutral",		HVLI = "neutral", 		Mine = "neutral",		Nuke = "friend", 			EMP = "friend"},
+		weapon_cost =		{Homing = math.random(3,6),	HVLI = math.random(1,4),Mine = math.random(5,9),Nuke = math.random(12,18),	EMP = math.random(9,13) },
+		weapon_available = 	{Homing = true,				HVLI = hvliAvail,		Mine = true,			Nuke = nukeAvail,			EMP = empAvail},
+		service_cost = 		{supplydrop = math.random(80,120), reinforcements = math.random(123,175)},
+		hack_repair =			true,
+		scan_repair =			true,
+		sensor_boost = {value = 10000, cost = 10},
+		reputation_cost_multipliers = {friend = 1.0, neutral = 2.0},
+		max_weapon_refill_amount = {friend = 1.0, neutral = 0.5 },
+		goods = {	circuit = 	{quantity = math.random(4,8),	cost = math.random(40,80)},
+					nickel =	{quantity = math.random(6,12),	cost = math.random(45,65)}	},
+		trade = {	food = true, medicine = tradeMedicine, luxury = false },
+		public_relations = true,
+		general_information = "We mine the asteroids and the nebula and use these to manufacture various specialized circuits",
+		history = "The Finnegan family set up this station here to take advantage of the readily available resources"
 	}
 	if random(1,100) <= 63 then stationFinnegan:setRestocksScanProbes(false) end
 	if random(1,100) <= 46 then stationFinnegan:setRepairDocked(false) end
@@ -4015,28 +4015,28 @@ function createIcarusStations()
 	--local gagarinZone = squareZone(-60000, 62193, "Gagarin I2")
 	--gagarinZone:setColor(0,128,0)
 	stationGagarin = SpaceStation():setTemplate("Small Station"):setFaction("Human Navy"):setCallSign("Gagarin"):setPosition(-60000, 62193):setDescription("Mining and exploring"):setCommsScript(""):setCommsFunction(commsStation)
-    if random(1,100) <= 30 then nukeAvail = true else nukeAvail = false end
-    if random(1,100) <= 40 then empAvail = true else empAvail = false end
-    if random(1,100) <= 50 then mineAvail = true else mineAvail = false end
-    if random(1,100) <= 60 then homeAvail = true else homeAvail = false end
-    if random(1,100) <= 80 then hvliAvail = true else hvliAvail = false end
-    if random(1,100) <= 23 then tradeMedicine = true else tradeMedicine = false end
-    stationGagarin.comms_data = {
-    	friendlyness = 82,
-        weapons = 			{Homing = "neutral",		HVLI = "neutral", 		Mine = "friend",		Nuke = "friend", 			EMP = "friend"},
-        weapon_cost =		{Homing = math.random(2,6),	HVLI = math.random(2,5),Mine = math.random(3,7),Nuke = math.random(12,18),	EMP = math.random(9,13) },
-        weapon_available = 	{Homing = true,				HVLI = hvliAvail,		Mine = mineAvail,		Nuke = nukeAvail,			EMP = true},
-        service_cost = 		{supplydrop = math.random(80,120), reinforcements = math.random(123,175)},
-        scan_repair =			true,
-        sensor_boost = {value = 10000, cost = 10},
-        reputation_cost_multipliers = {friend = 1.0, neutral = 2.0},
-        max_weapon_refill_amount = {friend = 1.0, neutral = 0.5 },
-        goods = {	platinum = 	{quantity = math.random(4,8),	cost = math.random(50,80)},
-        			nickel =	{quantity = math.random(6,12),	cost = math.random(45,65)}	},
-        trade = {	food = true, medicine = tradeMedicine, luxury = false },
-        public_relations = true,
-        general_information = "Facilitate mining the nearby asteroids",
-    	history = "Station named after the Cosmonaut from 20th century Earth"
+	if random(1,100) <= 30 then nukeAvail = true else nukeAvail = false end
+	if random(1,100) <= 40 then empAvail = true else empAvail = false end
+	if random(1,100) <= 50 then mineAvail = true else mineAvail = false end
+	if random(1,100) <= 60 then homeAvail = true else homeAvail = false end
+	if random(1,100) <= 80 then hvliAvail = true else hvliAvail = false end
+	if random(1,100) <= 23 then tradeMedicine = true else tradeMedicine = false end
+	stationGagarin.comms_data = {
+		friendlyness = 82,
+		weapons = 			{Homing = "neutral",		HVLI = "neutral", 		Mine = "friend",		Nuke = "friend", 			EMP = "friend"},
+		weapon_cost =		{Homing = math.random(2,6),	HVLI = math.random(2,5),Mine = math.random(3,7),Nuke = math.random(12,18),	EMP = math.random(9,13) },
+		weapon_available = 	{Homing = true,				HVLI = hvliAvail,		Mine = mineAvail,		Nuke = nukeAvail,			EMP = true},
+		service_cost = 		{supplydrop = math.random(80,120), reinforcements = math.random(123,175)},
+		scan_repair =			true,
+		sensor_boost = {value = 10000, cost = 10},
+		reputation_cost_multipliers = {friend = 1.0, neutral = 2.0},
+		max_weapon_refill_amount = {friend = 1.0, neutral = 0.5 },
+		goods = {	platinum = 	{quantity = math.random(4,8),	cost = math.random(50,80)},
+					nickel =	{quantity = math.random(6,12),	cost = math.random(45,65)}	},
+		trade = {	food = true, medicine = tradeMedicine, luxury = false },
+		public_relations = true,
+		general_information = "Facilitate mining the nearby asteroids",
+		history = "Station named after the Cosmonaut from 20th century Earth"
 	}
 	if random(1,100) <= 16 then stationGagarin:setRestocksScanProbes(false) end
 	if random(1,100) <= 25 then stationGagarin:setRepairDocked(false) end
@@ -4046,29 +4046,29 @@ function createIcarusStations()
 	--Macassa
 	--local macassaZone = squareZone(16335, -18034, "Macassa 7 E5")
 	--macassaZone:setColor(0,128,0)
-    stationMacassa = SpaceStation():setTemplate("Small Station"):setFaction("Human Navy"):setPosition(16335, -18034):setCallSign("Macassa 7"):setDescription("Mining"):setCommsScript(""):setCommsFunction(commsStation)
-    if random(1,100) <= 30 then nukeAvail = true else nukeAvail = false end
-    if random(1,100) <= 40 then empAvail = true else empAvail = false end
-    if random(1,100) <= 60 then homeAvail = true else homeAvail = false end
-    if random(1,100) <= 80 then hvliAvail = true else hvliAvail = false end
-    if random(1,100) <= 37 then tradeLuxury = true else tradeLuxury = false end
-    if random(1,100) <= 12 then tradeFood = true else tradeFood = false end
-    stationMacassa.comms_data = {
-    	friendlyness = 55,
-        weapons = 			{Homing = "neutral",		HVLI = "neutral", 		Mine = "friend",		Nuke = "friend", 			EMP = "friend"},
-        weapon_cost =		{Homing = math.random(2,5), HVLI = math.random(1,3),Mine = math.random(2,3),Nuke = math.random(13,18),	EMP = math.random(9,13) },
-        weapon_available = 	{Homing = homeAvail,		HVLI = hvliAvail,		Mine = true,			Nuke = nukeAvail,			EMP = empAvail},
-        service_cost = 		{supplydrop = math.random(95,120), reinforcements = math.random(145,175)},
-        scan_repair =			true,
-        sensor_boost = {value = 5000, cost = 5},
-        reputation_cost_multipliers = {friend = 1.0, neutral = 2.0},
-        max_weapon_refill_amount = {friend = 1.0, neutral = 0.5 },
-        goods = {	gold = 	{quantity = math.random(4,8),	cost = math.random(60,70)},
-        			dilithium = {quantity = math.random(2,11),	cost = math.random(55,85)}	},
-        trade = {	food = tradeFood, medicine = false, luxury = tradeLuxury },
-        public_relations = true,
-        general_information = "Station location facilitates mining the nearby asteroids. This is the 5th time the staion has been rebuilt: 5 iterations, 9 plans, 3 years hence the name Macassa 17",
-    	history = "The station was named in the hopes that the asteroids will be as productive as the Macassa mine was on Earth in the mid to late 1900s"
+	stationMacassa = SpaceStation():setTemplate("Small Station"):setFaction("Human Navy"):setPosition(16335, -18034):setCallSign("Macassa 7"):setDescription("Mining"):setCommsScript(""):setCommsFunction(commsStation)
+	if random(1,100) <= 30 then nukeAvail = true else nukeAvail = false end
+	if random(1,100) <= 40 then empAvail = true else empAvail = false end
+	if random(1,100) <= 60 then homeAvail = true else homeAvail = false end
+	if random(1,100) <= 80 then hvliAvail = true else hvliAvail = false end
+	if random(1,100) <= 37 then tradeLuxury = true else tradeLuxury = false end
+	if random(1,100) <= 12 then tradeFood = true else tradeFood = false end
+	stationMacassa.comms_data = {
+		friendlyness = 55,
+		weapons = 			{Homing = "neutral",		HVLI = "neutral", 		Mine = "friend",		Nuke = "friend", 			EMP = "friend"},
+		weapon_cost =		{Homing = math.random(2,5), HVLI = math.random(1,3),Mine = math.random(2,3),Nuke = math.random(13,18),	EMP = math.random(9,13) },
+		weapon_available = 	{Homing = homeAvail,		HVLI = hvliAvail,		Mine = true,			Nuke = nukeAvail,			EMP = empAvail},
+		service_cost = 		{supplydrop = math.random(95,120), reinforcements = math.random(145,175)},
+		scan_repair =			true,
+		sensor_boost = {value = 5000, cost = 5},
+		reputation_cost_multipliers = {friend = 1.0, neutral = 2.0},
+		max_weapon_refill_amount = {friend = 1.0, neutral = 0.5 },
+		goods = {	gold = 	{quantity = math.random(4,8),	cost = math.random(60,70)},
+					dilithium = {quantity = math.random(2,11),	cost = math.random(55,85)}	},
+		trade = {	food = tradeFood, medicine = false, luxury = tradeLuxury },
+		public_relations = true,
+		general_information = "Station location facilitates mining the nearby asteroids. This is the 5th time the staion has been rebuilt: 5 iterations, 9 plans, 3 years hence the name Macassa 17",
+		history = "The station was named in the hopes that the asteroids will be as productive as the Macassa mine was on Earth in the mid to late 1900s"
 	}
 	if random(1,100) <= 16 then stationMacassa:setRestocksScanProbes(false) end
 	if random(1,100) <= 12 then stationMacassa:setRepairDocked(false) end
@@ -4078,29 +4078,29 @@ function createIcarusStations()
 	--Maximilian
 	--local maximilianZone = squareZone(-16565, -16446, "Maximilian Mark 4 E4")
 	--maximilianZone:setColor(51,153,255)
-    stationMaximilian = SpaceStation():setTemplate("Small Station"):setFaction("Independent"):setCallSign("Maximilian Mark 4"):setPosition(-16565, -16446):setDescription("Black Hole Research"):setCommsScript(""):setCommsFunction(commsStation)
-    if random(1,100) <= 30 then nukeAvail = true else nukeAvail = false end
-    if random(1,100) <= 40 then empAvail = true else empAvail = false end
-    if random(1,100) <= 50 then mineAvail = true else mineAvail = false end
-    if random(1,100) <= 80 then hvliAvail = true else hvliAvail = false end
-    if random(1,100) <= 39 then tradeMedicine = true else tradeMedicine = false end
-    if random(1,100) <= 62 then tradeFood = true else tradeFood = false end
-    stationMaximilian.comms_data = {
-    	friendlyness = 43,
-        weapons = 			{Homing = "neutral",		HVLI = "neutral", 		Mine = "friend",		Nuke = "friend", 			EMP = "friend"},
-        weapon_cost =		{Homing = 2,				HVLI = math.random(2,3),Mine = math.random(2,3),Nuke = math.random(14,18),	EMP = math.random(9,13) },
-        weapon_available = 	{Homing = true,				HVLI = hvliAvail,		Mine = mineAvail,		Nuke = nukeAvail,			EMP = empAvail},
-        service_cost = 		{supplydrop = math.random(95,120), reinforcements = math.random(145,175)},
-        probe_launch_repair =	true,
-        scan_repair =			true,
-        sensor_boost = {value = 10000, cost = 10},
-        reputation_cost_multipliers = {friend = 1.0, neutral = 2.0},
-        max_weapon_refill_amount = {friend = 1.0, neutral = 0.5 },
-        goods = {	filament = 	{quantity = math.random(4,8),	cost = math.random(50,80)}	},
-        trade = {	food = tradeFood, medicine = tradeMedicine, luxury = true },
-        public_relations = true,
-        general_information = "Observe and measure black hole for scientific understanding purposes",
-    	history = "One of the researchers also develops software and watches ancient films. He was put in charge of naming the station so he named it after a mute evil robot depicted in an old movie about a black hole from the late 1970s"
+	stationMaximilian = SpaceStation():setTemplate("Small Station"):setFaction("Independent"):setCallSign("Maximilian Mark 4"):setPosition(-16565, -16446):setDescription("Black Hole Research"):setCommsScript(""):setCommsFunction(commsStation)
+	if random(1,100) <= 30 then nukeAvail = true else nukeAvail = false end
+	if random(1,100) <= 40 then empAvail = true else empAvail = false end
+	if random(1,100) <= 50 then mineAvail = true else mineAvail = false end
+	if random(1,100) <= 80 then hvliAvail = true else hvliAvail = false end
+	if random(1,100) <= 39 then tradeMedicine = true else tradeMedicine = false end
+	if random(1,100) <= 62 then tradeFood = true else tradeFood = false end
+	stationMaximilian.comms_data = {
+		friendlyness = 43,
+		weapons = 			{Homing = "neutral",		HVLI = "neutral", 		Mine = "friend",		Nuke = "friend", 			EMP = "friend"},
+		weapon_cost =		{Homing = 2,				HVLI = math.random(2,3),Mine = math.random(2,3),Nuke = math.random(14,18),	EMP = math.random(9,13) },
+		weapon_available = 	{Homing = true,				HVLI = hvliAvail,		Mine = mineAvail,		Nuke = nukeAvail,			EMP = empAvail},
+		service_cost = 		{supplydrop = math.random(95,120), reinforcements = math.random(145,175)},
+		probe_launch_repair =	true,
+		scan_repair =			true,
+		sensor_boost = {value = 10000, cost = 10},
+		reputation_cost_multipliers = {friend = 1.0, neutral = 2.0},
+		max_weapon_refill_amount = {friend = 1.0, neutral = 0.5 },
+		goods = {	filament = 	{quantity = math.random(4,8),	cost = math.random(50,80)}	},
+		trade = {	food = tradeFood, medicine = tradeMedicine, luxury = true },
+		public_relations = true,
+		general_information = "Observe and measure black hole for scientific understanding purposes",
+		history = "One of the researchers also develops software and watches ancient films. He was put in charge of naming the station so he named it after a mute evil robot depicted in an old movie about a black hole from the late 1970s"
 	}
 	if random(1,100) <= 81 then stationMaximilian:setRestocksScanProbes(false) end
 	if random(1,100) <= 68 then stationMaximilian:setRepairDocked(false) end
@@ -4110,29 +4110,29 @@ function createIcarusStations()
 	--Mermaid
 	--local mermaidZone = squareZone(28889, -4417, "Mermaid 4 E6")
 	--mermaidZone:setColor(51,153,255)
-    stationMermaid = SpaceStation():setTemplate("Small Station"):setFaction("Independent"):setPosition(28889, -4417):setCallSign("Mermaid 4"):setDescription("Tavern and hotel"):setCommsScript(""):setCommsFunction(commsStation)
-    if random(1,100) <= 30 then nukeAvail = true else nukeAvail = false end
-    if random(1,100) <= 40 then empAvail = true else empAvail = false end
-    if random(1,100) <= 50 then mineAvail = true else mineAvail = false end
-    if random(1,100) <= 60 then homeAvail = true else homeAvail = false end
-    if random(1,100) <= 80 then hvliAvail = true else hvliAvail = false end
-    if random(1,100) <= 17 then tradeLuxury = true else tradeLuxury = false end
-    stationMermaid.comms_data = {
-    	friendlyness = 75,
-        weapons = 			{Homing = "neutral",HVLI = "neutral", 		Mine = "friend",		Nuke = "friend", 			EMP = "friend"},
-        weapon_cost =		{Homing = 3, 		HVLI = math.random(1,2),Mine = math.random(2,5),Nuke = math.random(12,18),	EMP = 10 },
-        weapon_available = 	{Homing = homeAvail,HVLI = hvliAvail,		Mine = mineAvail,		Nuke = nukeAvail,			EMP = empAvail},
-        service_cost = 		{supplydrop = math.random(80,120), reinforcements = math.random(125,175)},
-        hack_repair =			true,
-        scan_repair =			true,
-        reputation_cost_multipliers = {friend = 1.0, neutral = 2.0},
-        max_weapon_refill_amount = {friend = 1.0, neutral = 0.5 },
-        goods = {	luxury = 	{quantity = math.random(5,10),	cost = math.random(60,70)},
-        			gold = 		{quantity = 5,					cost = math.random(75,90)}	},
-        trade = {	food = true, medicine = false, luxury = tradeLuxury },
-        public_relations = true,
-        general_information = "Rest stop, refueling and convenience shopping",
-    	history = "In the tradition of taverns at crossroads on olde Earth in Kingston where the Millstone river and the Assunpink trail crossed and The Sign of the Mermaid tavern was built in the 1600s, the builders of this station speculated that this would be a good spot for space travelers to stop\n\nFree drinks for the crew of the freighter Gamma Hydra"
+	stationMermaid = SpaceStation():setTemplate("Small Station"):setFaction("Independent"):setPosition(28889, -4417):setCallSign("Mermaid 4"):setDescription("Tavern and hotel"):setCommsScript(""):setCommsFunction(commsStation)
+	if random(1,100) <= 30 then nukeAvail = true else nukeAvail = false end
+	if random(1,100) <= 40 then empAvail = true else empAvail = false end
+	if random(1,100) <= 50 then mineAvail = true else mineAvail = false end
+	if random(1,100) <= 60 then homeAvail = true else homeAvail = false end
+	if random(1,100) <= 80 then hvliAvail = true else hvliAvail = false end
+	if random(1,100) <= 17 then tradeLuxury = true else tradeLuxury = false end
+	stationMermaid.comms_data = {
+		friendlyness = 75,
+		weapons = 			{Homing = "neutral",HVLI = "neutral", 		Mine = "friend",		Nuke = "friend", 			EMP = "friend"},
+		weapon_cost =		{Homing = 3, 		HVLI = math.random(1,2),Mine = math.random(2,5),Nuke = math.random(12,18),	EMP = 10 },
+		weapon_available = 	{Homing = homeAvail,HVLI = hvliAvail,		Mine = mineAvail,		Nuke = nukeAvail,			EMP = empAvail},
+		service_cost = 		{supplydrop = math.random(80,120), reinforcements = math.random(125,175)},
+		hack_repair =			true,
+		scan_repair =			true,
+		reputation_cost_multipliers = {friend = 1.0, neutral = 2.0},
+		max_weapon_refill_amount = {friend = 1.0, neutral = 0.5 },
+		goods = {	luxury = 	{quantity = math.random(5,10),	cost = math.random(60,70)},
+					gold = 		{quantity = 5,					cost = math.random(75,90)}	},
+		trade = {	food = true, medicine = false, luxury = tradeLuxury },
+		public_relations = true,
+		general_information = "Rest stop, refueling and convenience shopping",
+		history = "In the tradition of taverns at crossroads on olde Earth in Kingston where the Millstone river and the Assunpink trail crossed and The Sign of the Mermaid tavern was built in the 1600s, the builders of this station speculated that this would be a good spot for space travelers to stop\n\nFree drinks for the crew of the freighter Gamma Hydra"
 	}
 	if random(1,100) <= 36 then stationMermaid:setRestocksScanProbes(false) end
 	if random(1,100) <= 22 then stationMermaid:setRepairDocked(false) end
@@ -4143,29 +4143,29 @@ function createIcarusStations()
 	--local mosEspaZone = squareZone(113941, -85822, "Mos Espa A10")
 	--mosEspaZone:setColor(51,153,255)
 	stationMosEspa = SpaceStation():setTemplate("Small Station"):setFaction("Independent"):setPosition(113941, -85822):setCallSign("Mos Espa"):setDescription("Resupply and Entertainment"):setCommsScript(""):setCommsFunction(commsStation)
-    if random(1,100) <= 30 then nukeAvail = true else nukeAvail = false end
-    if random(1,100) <= 40 then empAvail = true else empAvail = false end
-    if random(1,100) <= 50 then mineAvail = true else mineAvail = false end
-    if random(1,100) <= 60 then homeAvail = true else homeAvail = false end
-    if random(1,100) <= 80 then hvliAvail = true else hvliAvail = false end
-    if random(1,100) <= 26 then tradeFood = true else tradeFood = false end
-    stationMosEspa.comms_data = {
-    	friendlyness = 93,
-        weapons = 			{Homing = "neutral",HVLI = "neutral", 		Mine = "neutral",		Nuke = "friend", 			EMP = "friend"},
-        weapon_cost =		{Homing = 3, 		HVLI = math.random(1,2),Mine = math.random(2,5),Nuke = math.random(12,18),	EMP = 10 },
-        weapon_available = 	{Homing = homeAvail,HVLI = hvliAvail,		Mine = mineAvail,		Nuke = nukeAvail,			EMP = empAvail},
-        service_cost = 		{supplydrop = math.random(80,120), reinforcements = math.random(125,175)},
-        probe_launch_repair =	true,
-        scan_repair =			true,
-        combat_maneuver_repair=	true,
-        reputation_cost_multipliers = {friend = 1.0, neutral = 2.0},
-        max_weapon_refill_amount = {friend = 1.0, neutral = 0.5 },
-        goods = {	impulse = 	{quantity = math.random(5,10),	cost = math.random(80,100)},
-        			lifter = 	{quantity = 5,					cost = math.random(75,90)}	},
-        trade = {	food = tradeFood, medicine = true, luxury = false },
-        public_relations = true,
-        general_information = "Relax, maybe observe a scheduled race",
-    	history = "You will never find a more wretched hive of scum and villainy... except in Mos Eisley space port. Mos Espa is a much better place"
+	if random(1,100) <= 30 then nukeAvail = true else nukeAvail = false end
+	if random(1,100) <= 40 then empAvail = true else empAvail = false end
+	if random(1,100) <= 50 then mineAvail = true else mineAvail = false end
+	if random(1,100) <= 60 then homeAvail = true else homeAvail = false end
+	if random(1,100) <= 80 then hvliAvail = true else hvliAvail = false end
+	if random(1,100) <= 26 then tradeFood = true else tradeFood = false end
+	stationMosEspa.comms_data = {
+		friendlyness = 93,
+		weapons = 			{Homing = "neutral",HVLI = "neutral", 		Mine = "neutral",		Nuke = "friend", 			EMP = "friend"},
+		weapon_cost =		{Homing = 3, 		HVLI = math.random(1,2),Mine = math.random(2,5),Nuke = math.random(12,18),	EMP = 10 },
+		weapon_available = 	{Homing = homeAvail,HVLI = hvliAvail,		Mine = mineAvail,		Nuke = nukeAvail,			EMP = empAvail},
+		service_cost = 		{supplydrop = math.random(80,120), reinforcements = math.random(125,175)},
+		probe_launch_repair =	true,
+		scan_repair =			true,
+		combat_maneuver_repair=	true,
+		reputation_cost_multipliers = {friend = 1.0, neutral = 2.0},
+		max_weapon_refill_amount = {friend = 1.0, neutral = 0.5 },
+		goods = {	impulse = 	{quantity = math.random(5,10),	cost = math.random(80,100)},
+					lifter = 	{quantity = 5,					cost = math.random(75,90)}	},
+		trade = {	food = tradeFood, medicine = true, luxury = false },
+		public_relations = true,
+		general_information = "Relax, maybe observe a scheduled race",
+		history = "You will never find a more wretched hive of scum and villainy... except in Mos Eisley space port. Mos Espa is a much better place"
 	}
 	if random(1,100) <= 28 then stationMosEspa:setRestocksScanProbes(false) end
 	if random(1,100) <= 15 then stationMosEspa:setRepairDocked(false) end
@@ -4175,27 +4175,27 @@ function createIcarusStations()
 	--Nerva E4m8
 	--local nervaZone = squareZone(-9203, -2077, "Nerva 3 E4")
 	--nervaZone:setColor(51,153,255)
-    stationNerva = SpaceStation():setTemplate("Small Station"):setFaction("Independent"):setCallSign("Nerva 3"):setPosition(-9203, -2077):setDescription("Observatory"):setCommsScript(""):setCommsFunction(commsStation)
-    if random(1,100) <= 30 then nukeAvail = true else nukeAvail = false end
-    if random(1,100) <= 40 then empAvail = true else empAvail = false end
-    if random(1,100) <= 50 then mineAvail = true else mineAvail = false end
-    if random(1,100) <= 60 then homeAvail = true else homeAvail = false end
-    if random(1,100) <= 80 then hvliAvail = true else hvliAvail = false end
-    if random(1,100) <= 17 then tradeLuxury = true else tradeLuxury = false end
-    if random(1,100) <= 69 then tradeMedicine = true else tradeMedicine = false end
-    stationNerva.comms_data = {
-    	friendlyness = 75,
-        weapons = 			{Homing = "neutral",HVLI = "neutral", 		Mine = "neutral",		Nuke = "friend", 			EMP = "friend"},
-        weapon_cost =		{Homing = 3, 		HVLI = math.random(1,2),Mine = math.random(2,5),Nuke = math.random(12,18),	EMP = 10 },
-        weapon_available = 	{Homing = homeAvail,HVLI = hvliAvail,		Mine = mineAvail,		Nuke = nukeAvail,			EMP = empAvail},
-        service_cost = 		{supplydrop = math.random(80,120), reinforcements = math.random(125,175)},
-        reputation_cost_multipliers = {friend = 1.0, neutral = 2.0},
-        max_weapon_refill_amount = {friend = 1.0, neutral = 0.5 },
-        goods = {	optic = 	{quantity = math.random(5,10),	cost = math.random(60,70)}	},
-        trade = {	food = false, medicine = tradeMedicine, luxury = tradeLuxury },
-        public_relations = true,
-        general_information = "Observatory of stellar phenomena and space ship traffic",
-    	history = "A combination of science and military staff share the various delicate instruments on this station. Originally designed to watch for incoming Kraylor and Exuari ships, other stations now share the early warning military purpose and these sensors double as research resources"
+	stationNerva = SpaceStation():setTemplate("Small Station"):setFaction("Independent"):setCallSign("Nerva 3"):setPosition(-9203, -2077):setDescription("Observatory"):setCommsScript(""):setCommsFunction(commsStation)
+	if random(1,100) <= 30 then nukeAvail = true else nukeAvail = false end
+	if random(1,100) <= 40 then empAvail = true else empAvail = false end
+	if random(1,100) <= 50 then mineAvail = true else mineAvail = false end
+	if random(1,100) <= 60 then homeAvail = true else homeAvail = false end
+	if random(1,100) <= 80 then hvliAvail = true else hvliAvail = false end
+	if random(1,100) <= 17 then tradeLuxury = true else tradeLuxury = false end
+	if random(1,100) <= 69 then tradeMedicine = true else tradeMedicine = false end
+	stationNerva.comms_data = {
+		friendlyness = 75,
+		weapons = 			{Homing = "neutral",HVLI = "neutral", 		Mine = "neutral",		Nuke = "friend", 			EMP = "friend"},
+		weapon_cost =		{Homing = 3, 		HVLI = math.random(1,2),Mine = math.random(2,5),Nuke = math.random(12,18),	EMP = 10 },
+		weapon_available = 	{Homing = homeAvail,HVLI = hvliAvail,		Mine = mineAvail,		Nuke = nukeAvail,			EMP = empAvail},
+		service_cost = 		{supplydrop = math.random(80,120), reinforcements = math.random(125,175)},
+		reputation_cost_multipliers = {friend = 1.0, neutral = 2.0},
+		max_weapon_refill_amount = {friend = 1.0, neutral = 0.5 },
+		goods = {	optic = 	{quantity = math.random(5,10),	cost = math.random(60,70)}	},
+		trade = {	food = false, medicine = tradeMedicine, luxury = tradeLuxury },
+		public_relations = true,
+		general_information = "Observatory of stellar phenomena and space ship traffic",
+		history = "A combination of science and military staff share the various delicate instruments on this station. Originally designed to watch for incoming Kraylor and Exuari ships, other stations now share the early warning military purpose and these sensors double as research resources"
 	}
 	if random(1,100) <= 13 then stationNerva:setRestocksScanProbes(false) end
 	if random(1,100) <= 42 then stationNerva:setRepairDocked(false) end
@@ -4205,28 +4205,28 @@ function createIcarusStations()
 	--Pistil
 	--local pistilZone = squareZone(24834, 20416, "Pistil 4 G6")
 	--pistilZone:setColor(0,128,0)
-    stationPistil = SpaceStation():setTemplate("Small Station"):setFaction("Human Navy"):setPosition(24834, 20416):setCallSign("Pistil 4"):setDescription("Fleur nebula research"):setCommsScript(""):setCommsFunction(commsStation)
-    if random(1,100) <= 30 then nukeAvail = true else nukeAvail = false end
-    if random(1,100) <= 40 then empAvail = true else empAvail = false end
-    if random(1,100) <= 60 then homeAvail = true else homeAvail = false end
-    if random(1,100) <= 37 then tradeLuxury = true else tradeLuxury = false end
-    stationPistil.comms_data = {
-    	friendlyness = 55,
-        weapons = 			{Homing = "neutral",		HVLI = "neutral", 		Mine = "friend",		Nuke = "friend", 			EMP = "friend"},
-        weapon_cost =		{Homing = math.random(2,5), HVLI = math.random(1,3),Mine = math.random(2,3),Nuke = math.random(14,18),	EMP = math.random(9,13) },
-        weapon_available = 	{Homing = homeAvail,		HVLI = true,			Mine = true,			Nuke = nukeAvail,			EMP = empAvail},
-        service_cost = 		{supplydrop = math.random(95,120), reinforcements = math.random(145,175)},
-        probe_launch_repair =	true,
-        scan_repair =			true,
-        reputation_cost_multipliers = {friend = 1.0, neutral = 2.0},
-        max_weapon_refill_amount = {friend = 1.0, neutral = 0.5 },
-        goods = {	sensor = 	{quantity = math.random(4,8),	cost = math.random(60,70)}	},
-        trade = {	food = false, medicine = true, luxury = tradeLuxury },
-        buy =	{	robotic = math.random(40,200),
-        			dilithium = math.random(40,200)	},
-        public_relations = true,
-        general_information = "Studying, observing, measuring the Fleur nebula",
-    	history = "The station naming continued in the vein of the nebula which we study. Station personnel have started paying closer attention to readings indicating enemy vessels in the area after some stray Exuari got past the defensive patrols and destroyed the station."
+	stationPistil = SpaceStation():setTemplate("Small Station"):setFaction("Human Navy"):setPosition(24834, 20416):setCallSign("Pistil 4"):setDescription("Fleur nebula research"):setCommsScript(""):setCommsFunction(commsStation)
+	if random(1,100) <= 30 then nukeAvail = true else nukeAvail = false end
+	if random(1,100) <= 40 then empAvail = true else empAvail = false end
+	if random(1,100) <= 60 then homeAvail = true else homeAvail = false end
+	if random(1,100) <= 37 then tradeLuxury = true else tradeLuxury = false end
+	stationPistil.comms_data = {
+		friendlyness = 55,
+		weapons = 			{Homing = "neutral",		HVLI = "neutral", 		Mine = "friend",		Nuke = "friend", 			EMP = "friend"},
+		weapon_cost =		{Homing = math.random(2,5), HVLI = math.random(1,3),Mine = math.random(2,3),Nuke = math.random(14,18),	EMP = math.random(9,13) },
+		weapon_available = 	{Homing = homeAvail,		HVLI = true,			Mine = true,			Nuke = nukeAvail,			EMP = empAvail},
+		service_cost = 		{supplydrop = math.random(95,120), reinforcements = math.random(145,175)},
+		probe_launch_repair =	true,
+		scan_repair =			true,
+		reputation_cost_multipliers = {friend = 1.0, neutral = 2.0},
+		max_weapon_refill_amount = {friend = 1.0, neutral = 0.5 },
+		goods = {	sensor = 	{quantity = math.random(4,8),	cost = math.random(60,70)}	},
+		trade = {	food = false, medicine = true, luxury = tradeLuxury },
+		buy =	{	robotic = math.random(40,200),
+					dilithium = math.random(40,200)	},
+		public_relations = true,
+		general_information = "Studying, observing, measuring the Fleur nebula",
+		history = "The station naming continued in the vein of the nebula which we study. Station personnel have started paying closer attention to readings indicating enemy vessels in the area after some stray Exuari got past the defensive patrols and destroyed the station."
 	}
 	if random(1,100) <= 4  then stationPistil:setRestocksScanProbes(false) end
 	if random(1,100) <= 11 then stationPistil:setRepairDocked(false) end
@@ -4236,24 +4236,24 @@ function createIcarusStations()
 	--Relay-13
 	--local relay13Zone = squareZone(77918, 23876, "Relay-13 D G8")
 	--relay13Zone:setColor(0,255,0)
-    stationRelay13 = SpaceStation():setTemplate("Small Station"):setFaction("Human Navy"):setCallSign("Relay-13 D"):setPosition(77918, 23876):setDescription("Communications Relay"):setCommsScript(""):setCommsFunction(commsStation)
-    if random(1,100) <= 69 then tradeMedicine = true else tradeMedicine = false end
-    stationRelay13.comms_data = {
-    	friendlyness = 75,
-        weapons = 			{Homing = "neutral",HVLI = "neutral", 		Mine = "neutral",		Nuke = "friend", 			EMP = "friend"},
-        weapon_cost =		{Homing = 3, 		HVLI = math.random(1,5),Mine = math.random(2,5),Nuke = math.random(12,18),	EMP = 10 },
-        weapon_available = 	{Homing = false,	HVLI = true,		Mine = false,			Nuke = false,				EMP = false},
-        service_cost = 		{supplydrop = math.random(80,120), reinforcements = math.random(125,175)},
-        probe_launch_repair =	true,
-        scan_repair =			true,
-        combat_maneuver_repair=	true,
-        sensor_boost = {value = 5000, cost = 5},
-        reputation_cost_multipliers = {friend = 1.0, neutral = 2.0},
-        max_weapon_refill_amount = {friend = 1.0, neutral = 0.5 },
-        goods = {	communication = {quantity = math.random(5,10),	cost = math.random(40,70)}	},
-        trade = {	food = false, medicine = tradeMedicine, luxury = false },
-        public_relations = true,
-        general_information = "Communication traffic relay and coordination"
+	stationRelay13 = SpaceStation():setTemplate("Small Station"):setFaction("Human Navy"):setCallSign("Relay-13 D"):setPosition(77918, 23876):setDescription("Communications Relay"):setCommsScript(""):setCommsFunction(commsStation)
+	if random(1,100) <= 69 then tradeMedicine = true else tradeMedicine = false end
+	stationRelay13.comms_data = {
+		friendlyness = 75,
+		weapons = 			{Homing = "neutral",HVLI = "neutral", 		Mine = "neutral",		Nuke = "friend", 			EMP = "friend"},
+		weapon_cost =		{Homing = 3, 		HVLI = math.random(1,5),Mine = math.random(2,5),Nuke = math.random(12,18),	EMP = 10 },
+		weapon_available = 	{Homing = false,	HVLI = true,		Mine = false,			Nuke = false,				EMP = false},
+		service_cost = 		{supplydrop = math.random(80,120), reinforcements = math.random(125,175)},
+		probe_launch_repair =	true,
+		scan_repair =			true,
+		combat_maneuver_repair=	true,
+		sensor_boost = {value = 5000, cost = 5},
+		reputation_cost_multipliers = {friend = 1.0, neutral = 2.0},
+		max_weapon_refill_amount = {friend = 1.0, neutral = 0.5 },
+		goods = {	communication = {quantity = math.random(5,10),	cost = math.random(40,70)}	},
+		trade = {	food = false, medicine = tradeMedicine, luxury = false },
+		public_relations = true,
+		general_information = "Communication traffic relay and coordination"
 	}
 	if random(1,100) <= 22 then stationRelay13:setRestocksScanProbes(false) end
 	if random(1,100) <= 11 then stationRelay13:setRepairDocked(false) end
@@ -4263,28 +4263,28 @@ function createIcarusStations()
 	--Slurry
 	--local slurryZone = squareZone(100342, 27871, "Slurry V G10")
 	--slurryZone:setColor(51,153,255)
-    stationSlurry = SpaceStation():setTemplate("Small Station"):setFaction("Independent"):setCallSign("Slurry V"):setPosition(100342, 27871):setDescription("Mining Research"):setCommsScript(""):setCommsFunction(commsStation)
-    if random(1,100) <= 30 then nukeAvail = true else nukeAvail = false end
-    if random(1,100) <= 40 then empAvail = true else empAvail = false end
-    if random(1,100) <= 50 then mineAvail = true else mineAvail = false end
-    if random(1,100) <= 60 then homeAvail = true else homeAvail = false end
-    if random(1,100) <= 80 then hvliAvail = true else hvliAvail = false end
-    if random(1,100) <= 17 then tradeLuxury = true else tradeLuxury = false end
-    if random(1,100) <= 57 then tradeMedicine = true else tradeMedicine = false end
-    stationSlurry.comms_data = {
-    	friendlyness = 75,
-        weapons = 			{Homing = "neutral",		HVLI = "neutral", 		Mine = "neutral",		Nuke = "friend", 			EMP = "friend"},
-        weapon_cost =		{Homing = math.random(1,5),	HVLI = math.random(1,2),Mine = math.random(2,5),Nuke = math.random(12,18),	EMP = math.random(11,17) },
-        weapon_available = 	{Homing = homeAvail,		HVLI = hvliAvail,		Mine = mineAvail,		Nuke = nukeAvail,			EMP = empAvail},
-        service_cost = 		{supplydrop = math.random(80,120), reinforcements = math.random(125,175)},
-        scan_repair =			true,
-        reputation_cost_multipliers = {friend = 1.0, neutral = 2.0},
-        max_weapon_refill_amount = {friend = 1.0, neutral = 0.5 },
-        goods = {	tractor = 	{quantity = math.random(5,10),	cost = math.random(60,70)}	},
-        trade = {	food = false, medicine = tradeMedicine, luxury = tradeLuxury },
-        public_relations = true,
-        general_information = "Mining and research of neaby stellar phenomena",
-    	history = "Joint effort between miners and scientists to establish station to research and to provide resources to support research"
+	stationSlurry = SpaceStation():setTemplate("Small Station"):setFaction("Independent"):setCallSign("Slurry V"):setPosition(100342, 27871):setDescription("Mining Research"):setCommsScript(""):setCommsFunction(commsStation)
+	if random(1,100) <= 30 then nukeAvail = true else nukeAvail = false end
+	if random(1,100) <= 40 then empAvail = true else empAvail = false end
+	if random(1,100) <= 50 then mineAvail = true else mineAvail = false end
+	if random(1,100) <= 60 then homeAvail = true else homeAvail = false end
+	if random(1,100) <= 80 then hvliAvail = true else hvliAvail = false end
+	if random(1,100) <= 17 then tradeLuxury = true else tradeLuxury = false end
+	if random(1,100) <= 57 then tradeMedicine = true else tradeMedicine = false end
+	stationSlurry.comms_data = {
+		friendlyness = 75,
+		weapons = 			{Homing = "neutral",		HVLI = "neutral", 		Mine = "neutral",		Nuke = "friend", 			EMP = "friend"},
+		weapon_cost =		{Homing = math.random(1,5),	HVLI = math.random(1,2),Mine = math.random(2,5),Nuke = math.random(12,18),	EMP = math.random(11,17) },
+		weapon_available = 	{Homing = homeAvail,		HVLI = hvliAvail,		Mine = mineAvail,		Nuke = nukeAvail,			EMP = empAvail},
+		service_cost = 		{supplydrop = math.random(80,120), reinforcements = math.random(125,175)},
+		scan_repair =			true,
+		reputation_cost_multipliers = {friend = 1.0, neutral = 2.0},
+		max_weapon_refill_amount = {friend = 1.0, neutral = 0.5 },
+		goods = {	tractor = 	{quantity = math.random(5,10),	cost = math.random(60,70)}	},
+		trade = {	food = false, medicine = tradeMedicine, luxury = tradeLuxury },
+		public_relations = true,
+		general_information = "Mining and research of neaby stellar phenomena",
+		history = "Joint effort between miners and scientists to establish station to research and to provide resources to support research"
 	}
 	if random(1,100) <= 43 then stationSlurry:setRestocksScanProbes(false) end
 	if random(1,100) <= 34 then stationSlurry:setRepairDocked(false) end
@@ -4295,62 +4295,62 @@ function createIcarusStations()
 	--local sovinecZone = squareZone(134167, 104690, "Sovinec Two K11")
 	--sovinecZone:setColor(51,153,255)
 	stationSovinec = SpaceStation():setTemplate("Small Station"):setFaction("Independent"):setCallSign("Sovinec Two"):setPosition(134167, 104690):setDescription("Beam component research and manufacturing"):setCommsScript(""):setCommsFunction(commsStation)
-    if random(1,100) <= 30 then nukeAvail = true else nukeAvail = false end
-    if random(1,100) <= 60 then homeAvail = true else homeAvail = false end
-    if random(1,100) <= 50 then mineAvail = true else mineAvail = false end
-    if random(1,100) <= 40 then empAvail = true else empAvail = false end
-    if random(1,100) <= 37 then tradeMedicine = true else tradeMedicine = false end
-    if random(1,100) <= 37 then tradeLuxury = true else tradeLuxury = false end
-    stationSovinec.comms_data = {
-    	friendlyness = 62,
-        weapons = 			{Homing = "neutral",		HVLI = "neutral", 		Mine = "friend",		Nuke = "friend", 			EMP = "friend"},
-        weapon_cost =		{Homing = math.random(2,6),	HVLI = math.random(1,4),Mine = math.random(2,7),Nuke = math.random(12,18),	EMP = math.random(9,13) },
-        weapon_available = 	{Homing = homeAvail,		HVLI = true,			Mine = mineAvail,		Nuke = nukeAvail,			EMP = empAvail},
-        service_cost = 		{supplydrop = math.random(80,120), reinforcements = math.random(123,175)},
-        jump_overcharge =		true,
-        scan_repair =			true,
-        combat_maneuver_repair=	true,
-        self_destruct_repair =	true,
-        reputation_cost_multipliers = {friend = 1.0, neutral = 2.0},
-        max_weapon_refill_amount = {friend = 1.0, neutral = 0.5 },
-        goods = {	beam =	 	{quantity = math.random(4,8),	cost = math.random(40,80)},
-        			tritanium =	{quantity = math.random(6,12),	cost = math.random(45,65)}	},
-        trade = {	food = false, medicine = tradeMedicine, luxury = tradeLuxury },
-        public_relations = true,
-        general_information = "We manufacture beam components from the resources gathered from the nearby asteroids. We specialize in plasma based beam systems",
-    	history = "Our station recognizes Sovinec, an early computer simulation researcher in plasma based weaponry in the late 20th century on Earth"
+	if random(1,100) <= 30 then nukeAvail = true else nukeAvail = false end
+	if random(1,100) <= 60 then homeAvail = true else homeAvail = false end
+	if random(1,100) <= 50 then mineAvail = true else mineAvail = false end
+	if random(1,100) <= 40 then empAvail = true else empAvail = false end
+	if random(1,100) <= 37 then tradeMedicine = true else tradeMedicine = false end
+	if random(1,100) <= 37 then tradeLuxury = true else tradeLuxury = false end
+	stationSovinec.comms_data = {
+		friendlyness = 62,
+		weapons = 			{Homing = "neutral",		HVLI = "neutral", 		Mine = "friend",		Nuke = "friend", 			EMP = "friend"},
+		weapon_cost =		{Homing = math.random(2,6),	HVLI = math.random(1,4),Mine = math.random(2,7),Nuke = math.random(12,18),	EMP = math.random(9,13) },
+		weapon_available = 	{Homing = homeAvail,		HVLI = true,			Mine = mineAvail,		Nuke = nukeAvail,			EMP = empAvail},
+		service_cost = 		{supplydrop = math.random(80,120), reinforcements = math.random(123,175)},
+		jump_overcharge =		true,
+		scan_repair =			true,
+		combat_maneuver_repair=	true,
+		self_destruct_repair =	true,
+		reputation_cost_multipliers = {friend = 1.0, neutral = 2.0},
+		max_weapon_refill_amount = {friend = 1.0, neutral = 0.5 },
+		goods = {	beam =	 	{quantity = math.random(4,8),	cost = math.random(40,80)},
+					tritanium =	{quantity = math.random(6,12),	cost = math.random(45,65)}	},
+		trade = {	food = false, medicine = tradeMedicine, luxury = tradeLuxury },
+		public_relations = true,
+		general_information = "We manufacture beam components from the resources gathered from the nearby asteroids. We specialize in plasma based beam systems",
+		history = "Our station recognizes Sovinec, an early computer simulation researcher in plasma based weaponry in the late 20th century on Earth"
 	}
 	if random(1,100) <= 63 then stationSovinec:setRestocksScanProbes(false) end
 	if random(1,100) <= 34 then stationSovinec:setRepairDocked(false) end
 	if random(1,100) <= 11 then stationSovinec:setSharesEnergyWithDocked(false) end
 	station_names[stationSovinec:getCallSign()] = {stationSovinec:getSectorName(), stationSovinec}
-	table.insert(stations,stationSovinec)	
+	table.insert(stations,stationSovinec)
 	--Speculator
 	--local speculatorZone = squareZone(55000,108000, "Speculator K7")
 	--speculatorZone:setColor(51,153,255)
-    stationSpeculator = SpaceStation():setTemplate("Small Station"):setFaction("Human Navy"):setCallSign("Speculator"):setPosition(55000,108000):setDescription("Mining and mobile nebula research"):setCommsScript(""):setCommsFunction(commsStation)
-    if random(1,100) <= 30 then nukeAvail = true else nukeAvail = false end
-    if random(1,100) <= 40 then empAvail = true else empAvail = false end
-    if random(1,100) <= 50 then mineAvail = true else mineAvail = false end
-    if random(1,100) <= 13 then tradeMedicine = true else tradeMedicine = false end
-    stationSpeculator.comms_data = {
-    	friendlyness = 82,
-        weapons = 			{Homing = "neutral",HVLI = "neutral", 		Mine = "neutral",		Nuke = "friend", 			EMP = "friend"},
-        weapon_cost =		{Homing = 2, 		HVLI = math.random(1,4),Mine = math.random(2,7),Nuke = math.random(10,18),	EMP = math.random(7,15) },
-        weapon_available = 	{Homing = true,		HVLI = true,			Mine = mineAvail,		Nuke = nukeAvail,			EMP = empAvail},
-        service_cost = 		{supplydrop = math.random(80,120), reinforcements = math.random(125,175)},
-        hack_repair =			true,
-        scan_repair =			true,
-        sensor_boost = {value = 10000, cost = 20},
-        reputation_cost_multipliers = {friend = 1.0, neutral = 3.0},
-        max_weapon_refill_amount = {friend = 1.0, neutral = 1.0 },
-        goods = {	nickel = 	{quantity = math.random(1,10),	cost = math.random(60,70)},	
-        			dilithium =	{quantity = math.random(6,12),	cost = math.random(75,95)},
-        			tritanium =	{quantity = math.random(2,8),	cost = math.random(45,85)} },
-        trade = {	food = false, medicine = tradeMedicine, luxury = true },
-        public_relations = true,
-        general_information = "Mining operations are the primary purpose, but there are scientists here conducting research on the mobile nebula in the area",
-    	history = "A consorium of mining interests and scientists banded together to create this station. It was considered a risk for both groups, but they undertook it anyway."
+	stationSpeculator = SpaceStation():setTemplate("Small Station"):setFaction("Human Navy"):setCallSign("Speculator"):setPosition(55000,108000):setDescription("Mining and mobile nebula research"):setCommsScript(""):setCommsFunction(commsStation)
+	if random(1,100) <= 30 then nukeAvail = true else nukeAvail = false end
+	if random(1,100) <= 40 then empAvail = true else empAvail = false end
+	if random(1,100) <= 50 then mineAvail = true else mineAvail = false end
+	if random(1,100) <= 13 then tradeMedicine = true else tradeMedicine = false end
+	stationSpeculator.comms_data = {
+		friendlyness = 82,
+		weapons = 			{Homing = "neutral",HVLI = "neutral", 		Mine = "neutral",		Nuke = "friend", 			EMP = "friend"},
+		weapon_cost =		{Homing = 2, 		HVLI = math.random(1,4),Mine = math.random(2,7),Nuke = math.random(10,18),	EMP = math.random(7,15) },
+		weapon_available = 	{Homing = true,		HVLI = true,			Mine = mineAvail,		Nuke = nukeAvail,			EMP = empAvail},
+		service_cost = 		{supplydrop = math.random(80,120), reinforcements = math.random(125,175)},
+		hack_repair =			true,
+		scan_repair =			true,
+		sensor_boost = {value = 10000, cost = 20},
+		reputation_cost_multipliers = {friend = 1.0, neutral = 3.0},
+		max_weapon_refill_amount = {friend = 1.0, neutral = 1.0 },
+		goods = {	nickel = 	{quantity = math.random(1,10),	cost = math.random(60,70)},
+					dilithium =	{quantity = math.random(6,12),	cost = math.random(75,95)},
+					tritanium =	{quantity = math.random(2,8),	cost = math.random(45,85)} },
+		trade = {	food = false, medicine = tradeMedicine, luxury = true },
+		public_relations = true,
+		general_information = "Mining operations are the primary purpose, but there are scientists here conducting research on the mobile nebula in the area",
+		history = "A consorium of mining interests and scientists banded together to create this station. It was considered a risk for both groups, but they undertook it anyway."
 	}
 	if random(1,100) <= 13 then stationSpeculator:setRestocksScanProbes(false) end
 	if random(1,100) <= 24 then stationSpeculator:setRepairDocked(false) end
@@ -4360,28 +4360,28 @@ function createIcarusStations()
 	--Stromboli
 	--local stromboliZone = squareZone(109555, 12685, "Stromboli 3 F10")
 	--stromboliZone:setColor(51,153,255)
-    stationStromboli = SpaceStation():setTemplate("Small Station"):setFaction("Independent"):setCallSign("Stromboli 3"):setPosition(109555, 12685):setDescription("Vacation getaway for Stromboli family"):setCommsScript(""):setCommsFunction(commsStation)
-    if random(1,100) <= 30 then nukeAvail = true else nukeAvail = false end
-    if random(1,100) <= 40 then empAvail = true else empAvail = false end
-    if random(1,100) <= 50 then mineAvail = true else mineAvail = false end
-    if random(1,100) <= 60 then homeAvail = true else homeAvail = false end
-    if random(1,100) <= 80 then hvliAvail = true else hvliAvail = false end
-    if random(1,100) <= 23 then tradeMedicine = true else tradeMedicine = false end
-    stationStromboli.comms_data = {
-    	friendlyness = 35,
-        weapons = 			{Homing = "neutral",HVLI = "neutral", 		Mine = "neutral",		Nuke = "friend", 			EMP = "friend"},
-        weapon_cost =		{Homing = 3, 		HVLI = math.random(1,2),Mine = math.random(2,5),Nuke = math.random(12,18),	EMP = 10 },
-        weapon_available = 	{Homing = homeAvail,HVLI = hvliAvail,		Mine = mineAvail,		Nuke = nukeAvail,			EMP = empAvail},
-        service_cost = 		{supplydrop = math.random(80,120), reinforcements = math.random(125,175)},
-        hack_repair =			true,
-        sensor_boost = {value = 5000, cost = 5},
-        reputation_cost_multipliers = {friend = 2.0, neutral = 4.0},
-        max_weapon_refill_amount = {friend = 1.0, neutral = 0.5 },
-        goods = {	luxury = 	{quantity = math.random(5,10),	cost = math.random(60,70)}	},
-        trade = {	food = false, medicine = tradeMedicine, luxury = false },
-        public_relations = true,
-        general_information = "A remote station location for the Stromboli family and gusts to get away from the pressures of modern life",
-    	history = "The Stromboli family picked this station up cheap from the Human Navy when this sector was practically empty. Now it serves as a nice place for the family to escape to when they are stressed out"
+	stationStromboli = SpaceStation():setTemplate("Small Station"):setFaction("Independent"):setCallSign("Stromboli 3"):setPosition(109555, 12685):setDescription("Vacation getaway for Stromboli family"):setCommsScript(""):setCommsFunction(commsStation)
+	if random(1,100) <= 30 then nukeAvail = true else nukeAvail = false end
+	if random(1,100) <= 40 then empAvail = true else empAvail = false end
+	if random(1,100) <= 50 then mineAvail = true else mineAvail = false end
+	if random(1,100) <= 60 then homeAvail = true else homeAvail = false end
+	if random(1,100) <= 80 then hvliAvail = true else hvliAvail = false end
+	if random(1,100) <= 23 then tradeMedicine = true else tradeMedicine = false end
+	stationStromboli.comms_data = {
+		friendlyness = 35,
+		weapons = 			{Homing = "neutral",HVLI = "neutral", 		Mine = "neutral",		Nuke = "friend", 			EMP = "friend"},
+		weapon_cost =		{Homing = 3, 		HVLI = math.random(1,2),Mine = math.random(2,5),Nuke = math.random(12,18),	EMP = 10 },
+		weapon_available = 	{Homing = homeAvail,HVLI = hvliAvail,		Mine = mineAvail,		Nuke = nukeAvail,			EMP = empAvail},
+		service_cost = 		{supplydrop = math.random(80,120), reinforcements = math.random(125,175)},
+		hack_repair =			true,
+		sensor_boost = {value = 5000, cost = 5},
+		reputation_cost_multipliers = {friend = 2.0, neutral = 4.0},
+		max_weapon_refill_amount = {friend = 1.0, neutral = 0.5 },
+		goods = {	luxury = 	{quantity = math.random(5,10),	cost = math.random(60,70)}	},
+		trade = {	food = false, medicine = tradeMedicine, luxury = false },
+		public_relations = true,
+		general_information = "A remote station location for the Stromboli family and gusts to get away from the pressures of modern life",
+		history = "The Stromboli family picked this station up cheap from the Human Navy when this sector was practically empty. Now it serves as a nice place for the family to escape to when they are stressed out"
 	}
 	if random(1,100) <= 53 then stationStromboli:setRestocksScanProbes(false) end
 	if random(1,100) <= 17 then stationStromboli:setRepairDocked(false) end
@@ -4391,31 +4391,31 @@ function createIcarusStations()
 	--Transylvania
 	--local transylvaniaZone = squareZone(-95000, 111000, "Transylvania K0")
 	--transylvaniaZone:setColor(51,153,255)
-    stationTransylvania = SpaceStation():setTemplate("Medium Station"):setFaction("Independent"):setCallSign("Transylvania"):setPosition(-95000, 111000):setDescription("Abandoned science station turned haven"):setCommsScript(""):setCommsFunction(commsStation)
-    if random(1,100) <= 30 then nukeAvail = true else nukeAvail = false end
-    if random(1,100) <= 40 then empAvail = true else empAvail = false end
-    if random(1,100) <= 50 then mineAvail = true else mineAvail = false end
-    if random(1,100) <= 60 then homeAvail = true else homeAvail = false end
-    if random(1,100) <= 80 then hvliAvail = true else hvliAvail = false end
-    if random(1,100) <= 23 then tradeFood = true else tradeFood = false end
-    stationTransylvania.comms_data = {
-    	friendlyness = 35,
-        weapons = 			{Homing = "neutral",HVLI = "neutral", 		Mine = "neutral",		Nuke = "friend", 			EMP = "friend"},
-        weapon_cost =		{Homing = 3, 		HVLI = math.random(1,2),Mine = math.random(2,5),Nuke = math.random(12,18),	EMP = 10 },
-        weapon_available = 	{Homing = homeAvail,HVLI = hvliAvail,		Mine = mineAvail,		Nuke = nukeAvail,			EMP = empAvail},
-        service_cost = 		{supplydrop = math.random(80,120), reinforcements = math.random(125,175)},
-        hack_repair =			true,
-        probe_launch_repair =	true,
-        scan_repair =			true,
-        sensor_boost = {value = 5000, cost = 5},
-        reputation_cost_multipliers = {friend = 2.0, neutral = 4.0},
-        max_weapon_refill_amount = {friend = 1.0, neutral = 0.5 },
-        goods = {	luxury = 	{quantity = math.random(5,10),	cost = math.random(60,70)},
-        			medicine =	{quantity = math.random(5,10),	cost = math.random(5,10)}	},
-        trade = {	food = tradeFood, medicine = false, luxury = false },
-        public_relations = true,
-        general_information = "Transylvania is a refuge from those who would prejudge our cultural practices",
-    	history = "Originally a science station, now it caters to a group of persecuted beings whose cultural practices offend a number of other species"
+	stationTransylvania = SpaceStation():setTemplate("Medium Station"):setFaction("Independent"):setCallSign("Transylvania"):setPosition(-95000, 111000):setDescription("Abandoned science station turned haven"):setCommsScript(""):setCommsFunction(commsStation)
+	if random(1,100) <= 30 then nukeAvail = true else nukeAvail = false end
+	if random(1,100) <= 40 then empAvail = true else empAvail = false end
+	if random(1,100) <= 50 then mineAvail = true else mineAvail = false end
+	if random(1,100) <= 60 then homeAvail = true else homeAvail = false end
+	if random(1,100) <= 80 then hvliAvail = true else hvliAvail = false end
+	if random(1,100) <= 23 then tradeFood = true else tradeFood = false end
+	stationTransylvania.comms_data = {
+		friendlyness = 35,
+		weapons = 			{Homing = "neutral",HVLI = "neutral", 		Mine = "neutral",		Nuke = "friend", 			EMP = "friend"},
+		weapon_cost =		{Homing = 3, 		HVLI = math.random(1,2),Mine = math.random(2,5),Nuke = math.random(12,18),	EMP = 10 },
+		weapon_available = 	{Homing = homeAvail,HVLI = hvliAvail,		Mine = mineAvail,		Nuke = nukeAvail,			EMP = empAvail},
+		service_cost = 		{supplydrop = math.random(80,120), reinforcements = math.random(125,175)},
+		hack_repair =			true,
+		probe_launch_repair =	true,
+		scan_repair =			true,
+		sensor_boost = {value = 5000, cost = 5},
+		reputation_cost_multipliers = {friend = 2.0, neutral = 4.0},
+		max_weapon_refill_amount = {friend = 1.0, neutral = 0.5 },
+		goods = {	luxury = 	{quantity = math.random(5,10),	cost = math.random(60,70)},
+					medicine =	{quantity = math.random(5,10),	cost = math.random(5,10)}	},
+		trade = {	food = tradeFood, medicine = false, luxury = false },
+		public_relations = true,
+		general_information = "Transylvania is a refuge from those who would prejudge our cultural practices",
+		history = "Originally a science station, now it caters to a group of persecuted beings whose cultural practices offend a number of other species"
 	}
 	--local leechAZone = squareZone(-93000,109000, "Leech A K0")
 	--leechAZone:setColor(51,153,255)
@@ -4442,29 +4442,29 @@ function createIcarusStations()
 	if random(1,100) <= 21 then stationTransylvania:setSharesEnergyWithDocked(false) end
 	station_names[stationTransylvania:getCallSign()] = {stationTransylvania:getSectorName(), stationTransylvania}
 	table.insert(stations,stationTransylvania)
-	--Wookie F4m5 
+	--Wookie F4m5
 	--local wookieZone = squareZone(-11280, 7425, "Kin-Wookie F4")	-- -oka means 4
 	--wookieZone:setColor(51,153,255)
-    stationWookie = SpaceStation():setTemplate("Small Station"):setFaction("Independent"):setCallSign("Kin Wookie"):setPosition(-11280, 7425):setDescription("Esoteric Xenolinguistic Research"):setCommsScript(""):setCommsFunction(commsStation)
-    if random(1,100) <= 30 then nukeAvail = true else nukeAvail = false end
-    if random(1,100) <= 50 then mineAvail = true else mineAvail = false end
-    if random(1,100) <= 60 then homeAvail = true else homeAvail = false end
-    if random(1,100) <= 80 then hvliAvail = true else hvliAvail = false end
-    if random(1,100) <= 39 then tradeMedicine = true else tradeMedicine = false end
-    stationWookie.comms_data = {
-    	friendlyness = 76,
-        weapons = 			{Homing = "neutral",		HVLI = "neutral", 		Mine = "neutral",		Nuke = "friend", 			EMP = "friend"},
-        weapon_cost =		{Homing = math.random(3,7),	HVLI = math.random(2,5),Mine = math.random(3,7),Nuke = math.random(12,18),	EMP = math.random(9,13) },
-        weapon_available = 	{Homing = true,				HVLI = hvliAvail,		Mine = mineAvail,		Nuke = nukeAvail,			EMP = true},
-        service_cost = 		{supplydrop = math.random(80,120), reinforcements = math.random(123,175)},
-        scan_repair =			true,
-        reputation_cost_multipliers = {friend = 1.0, neutral = 2.0},
-        max_weapon_refill_amount = {friend = 1.0, neutral = 0.5 },
-        goods = {	software = 	{quantity = math.random(4,8),	cost = math.random(80,90)}	},
-        trade = {	food = false, medicine = tradeMedicine, luxury = false },
-        public_relations = true,
-        general_information = "Researchers here study the Wookie language as well as several other languages of intelligent species. -Oka is a Wookie language suffix meaning 4",
-    	history = "The first language studied when the station was founded was Wookie. Wookie language and culture is still a major focus of study"
+	stationWookie = SpaceStation():setTemplate("Small Station"):setFaction("Independent"):setCallSign("Kin Wookie"):setPosition(-11280, 7425):setDescription("Esoteric Xenolinguistic Research"):setCommsScript(""):setCommsFunction(commsStation)
+	if random(1,100) <= 30 then nukeAvail = true else nukeAvail = false end
+	if random(1,100) <= 50 then mineAvail = true else mineAvail = false end
+	if random(1,100) <= 60 then homeAvail = true else homeAvail = false end
+	if random(1,100) <= 80 then hvliAvail = true else hvliAvail = false end
+	if random(1,100) <= 39 then tradeMedicine = true else tradeMedicine = false end
+	stationWookie.comms_data = {
+		friendlyness = 76,
+		weapons = 			{Homing = "neutral",		HVLI = "neutral", 		Mine = "neutral",		Nuke = "friend", 			EMP = "friend"},
+		weapon_cost =		{Homing = math.random(3,7),	HVLI = math.random(2,5),Mine = math.random(3,7),Nuke = math.random(12,18),	EMP = math.random(9,13) },
+		weapon_available = 	{Homing = true,				HVLI = hvliAvail,		Mine = mineAvail,		Nuke = nukeAvail,			EMP = true},
+		service_cost = 		{supplydrop = math.random(80,120), reinforcements = math.random(123,175)},
+		scan_repair =			true,
+		reputation_cost_multipliers = {friend = 1.0, neutral = 2.0},
+		max_weapon_refill_amount = {friend = 1.0, neutral = 0.5 },
+		goods = {	software = 	{quantity = math.random(4,8),	cost = math.random(80,90)}	},
+		trade = {	food = false, medicine = tradeMedicine, luxury = false },
+		public_relations = true,
+		general_information = "Researchers here study the Wookie language as well as several other languages of intelligent species. -Oka is a Wookie language suffix meaning 4",
+		history = "The first language studied when the station was founded was Wookie. Wookie language and culture is still a major focus of study"
 	}
 	if random(1,100) <= 83 then stationWookie:setRestocksScanProbes(false) end
 	if random(1,100) <= 47 then stationWookie:setRepairDocked(false) end
@@ -4478,7 +4478,7 @@ function createIcarusArtifacts()
 	local artifact_details = {
 	--						Scan Parameters				Descriptions
 	--		  x,		 y, complex, depth,	     model,				unscanned,	scanned
-		{-47187,	112576,		  1,	 1,	"ammo_box",	"unusual mechanism",	"photonic radiation barrier"}	
+		{-47187,	112576,		  1,	 1,	"ammo_box",	"unusual mechanism",	"photonic radiation barrier"}
 	}
 	for i=1,#artifact_details do
 		local static_artifact = Artifact():setPosition(artifact_details[i][1],artifact_details[i][2]):setScanningParameters(artifact_details[i][3],artifact_details[i][4]):setModel(artifact_details[i][5]):setDescriptions(artifact_details[i][6],artifact_details[i][7])
@@ -4510,422 +4510,422 @@ function createAquariusAsteroids()
 		{-7064, 10509, 25},
 		{-5428, 12711, 18},
 		{1494, 16424, 43},
-		{1809, 13403, 98} 
+		{1809, 13403, 98}
 	}
-    for i=1,#asteroidCoordinates do
-    	local staticAsteroid = Asteroid():setPosition(asteroidCoordinates[i][1],asteroidCoordinates[i][2]):setSize(asteroidCoordinates[i][3])
-    	table.insert(asteroidList,staticAsteroid)
-    end
-    return asteroidList
+	for i=1,#asteroidCoordinates do
+		local staticAsteroid = Asteroid():setPosition(asteroidCoordinates[i][1],asteroidCoordinates[i][2]):setSize(asteroidCoordinates[i][3])
+		table.insert(asteroidList,staticAsteroid)
+	end
+	return asteroidList
 end
 function createMacassaAsteroids()
 	local asteroidList = {}
 	local asteroidCoordinates = {
-    {15070, -15621, 120},
-    {14714, -16096, 87},
-    {13923, -16175, 165},
-    {14239, -18864, 109},
-    {14833, -16610, 78},
-    {16612, -18745, 12},
-    {17245, -18508, 14},
-    {17878, -17717, 44},
-    {16850, -17361, 54},
-    {9296,  -20011, 187},
-    {11194, -19932, 177},
-    {10997, -24005, 56},
-    {13330, -23135, 77},
-    {13448, -21870, 154},
-    {8268,  -22819, 210},
-    {10838, -22107, 165},
-    {12302, -21118, 254},
-    {13844, -17322, 143},
-    {12381, -16926, 286},
-    {14319, -15384, 23},
-    {12658, -15582, 97},
-    {14714, -20762, 144},
-    {13607, -20248, 244},
-    {12737, -19536, 344},
-    {11432, -18310, 187},
-    {12934, -18231, 266},
-    {17087, -19615, 43},
-    {15703, -19892, 32},
-    {16019, -20723, 15},
-    {14912, -19101, 33},
-    {15505, -17954, 78},
-    {15900, -16926, 88},
-    {15980, -16373, 117},
-    {16652, -16254, 376},
-    {19776, -16214, 243},
-    {19578, -17045, 333},
-    {18629, -16728, 129},
-    {17370, -16617, 32},
-    {6844,  -19813, 44},
-    {8070,  -17757, 23},
-    {11590, -16214, 70},
-    {16177, -14237, 188},
-    {18352, -13406, 255},
-    {10759, -17045, 123},
-    {9494,  -17875, 438},
-    {18036, -16056, 181},
-    {17296, -15873, 65},
-    {18985, -9293, 134},
-    {19737, -10440, 223},
-    {18273, -12418, 267},
-    {18511, -11825, 312},
-    {26737, -9768, 289},
-    {27172, -10875, 165},
-    {25076, -10084, 32},
-    {25194, -8463, 43},
-    {25392, -11825, 132},
-    {25827, -13644, 412},
-    {23968, -12892, 357},
-    {24482, -14514, 120},
-    {21991, -11666, 178},
-    {23454, -14791, 31},
-    {22544, -13486, 87},
-    {23731, -10757, 98},
-    {22979, -12022, 213},
-    {19222, -12497, 27},
-    {19776, -13367, 89},
-    {20092, -15621, 278},
-    {19737, -14276, 178},
-    {23019, -8740, 112},
-    {22070, -8898, 159},
-    {20528, -8858, 329},
-    {20923, -10164, 398},
-    {21872, -10638, 12},
-    {20607, -11825, 17},
-    {21081, -13130, 24},
-    {22149, -15265, 42},
-    {21239, -14514, 32},
-    {20923, -15582, 78},
-    {17364, -14000, 31},
-    {17799, -14632, 42},
-    {17957, -15107, 67},
-    {17047, -15265, 43},
-    {18787, -15582, 158},
-    {19104, -15107, 228},
-    {17601, -12932, 143},
-    {18867, -13802, 210},
-    {17364, -15067, 132},
-    {16929, -14791, 166},
-    {16494, -14870, 187},
-    {16254, -15724, 188},
-    {15821, -15067, 32},
-    {15584, -15948, 332}	}
-    for i=1,#asteroidCoordinates do
-    	local staticAsteroid = Asteroid():setPosition(asteroidCoordinates[i][1],asteroidCoordinates[i][2]):setSize(asteroidCoordinates[i][3])
-    	table.insert(asteroidList,staticAsteroid)
-    end
-    return asteroidList
+	{15070, -15621, 120},
+	{14714, -16096, 87},
+	{13923, -16175, 165},
+	{14239, -18864, 109},
+	{14833, -16610, 78},
+	{16612, -18745, 12},
+	{17245, -18508, 14},
+	{17878, -17717, 44},
+	{16850, -17361, 54},
+	{9296,  -20011, 187},
+	{11194, -19932, 177},
+	{10997, -24005, 56},
+	{13330, -23135, 77},
+	{13448, -21870, 154},
+	{8268,  -22819, 210},
+	{10838, -22107, 165},
+	{12302, -21118, 254},
+	{13844, -17322, 143},
+	{12381, -16926, 286},
+	{14319, -15384, 23},
+	{12658, -15582, 97},
+	{14714, -20762, 144},
+	{13607, -20248, 244},
+	{12737, -19536, 344},
+	{11432, -18310, 187},
+	{12934, -18231, 266},
+	{17087, -19615, 43},
+	{15703, -19892, 32},
+	{16019, -20723, 15},
+	{14912, -19101, 33},
+	{15505, -17954, 78},
+	{15900, -16926, 88},
+	{15980, -16373, 117},
+	{16652, -16254, 376},
+	{19776, -16214, 243},
+	{19578, -17045, 333},
+	{18629, -16728, 129},
+	{17370, -16617, 32},
+	{6844,  -19813, 44},
+	{8070,  -17757, 23},
+	{11590, -16214, 70},
+	{16177, -14237, 188},
+	{18352, -13406, 255},
+	{10759, -17045, 123},
+	{9494,  -17875, 438},
+	{18036, -16056, 181},
+	{17296, -15873, 65},
+	{18985, -9293, 134},
+	{19737, -10440, 223},
+	{18273, -12418, 267},
+	{18511, -11825, 312},
+	{26737, -9768, 289},
+	{27172, -10875, 165},
+	{25076, -10084, 32},
+	{25194, -8463, 43},
+	{25392, -11825, 132},
+	{25827, -13644, 412},
+	{23968, -12892, 357},
+	{24482, -14514, 120},
+	{21991, -11666, 178},
+	{23454, -14791, 31},
+	{22544, -13486, 87},
+	{23731, -10757, 98},
+	{22979, -12022, 213},
+	{19222, -12497, 27},
+	{19776, -13367, 89},
+	{20092, -15621, 278},
+	{19737, -14276, 178},
+	{23019, -8740, 112},
+	{22070, -8898, 159},
+	{20528, -8858, 329},
+	{20923, -10164, 398},
+	{21872, -10638, 12},
+	{20607, -11825, 17},
+	{21081, -13130, 24},
+	{22149, -15265, 42},
+	{21239, -14514, 32},
+	{20923, -15582, 78},
+	{17364, -14000, 31},
+	{17799, -14632, 42},
+	{17957, -15107, 67},
+	{17047, -15265, 43},
+	{18787, -15582, 158},
+	{19104, -15107, 228},
+	{17601, -12932, 143},
+	{18867, -13802, 210},
+	{17364, -15067, 132},
+	{16929, -14791, 166},
+	{16494, -14870, 187},
+	{16254, -15724, 188},
+	{15821, -15067, 32},
+	{15584, -15948, 332}	}
+	for i=1,#asteroidCoordinates do
+		local staticAsteroid = Asteroid():setPosition(asteroidCoordinates[i][1],asteroidCoordinates[i][2]):setSize(asteroidCoordinates[i][3])
+		table.insert(asteroidList,staticAsteroid)
+	end
+	return asteroidList
 end
 function createCindyFollyAsteroids()
 	local asteroidList = {}
 	local asteroidCoordinates = {
-    {81362, 1207, 120},
-    {83658, 2211, 32},
-    {83801, 1351, 254},
-    {81003, -3528, 160},
-    {79497, -4604, 12},
-    {82725, -586, 44},
-    {81434, -371, 87},
-    {82438, 1566, 378},
-    {83012, 705, 221},
-    {79999, -3026, 109},
-    {78349, -3815, 387},
-    {82008, -1806, 32},
-    {80501, -2021, 21},
-    {78851, -2380, 38},
-    {77416, -3241, 23} }
-    for i=1,#asteroidCoordinates do
-    	local staticAsteroid = Asteroid():setPosition(asteroidCoordinates[i][1],asteroidCoordinates[i][2]):setSize(asteroidCoordinates[i][3])
-    	table.insert(asteroidList,staticAsteroid)
-    end
-    return asteroidList
+	{81362, 1207, 120},
+	{83658, 2211, 32},
+	{83801, 1351, 254},
+	{81003, -3528, 160},
+	{79497, -4604, 12},
+	{82725, -586, 44},
+	{81434, -371, 87},
+	{82438, 1566, 378},
+	{83012, 705, 221},
+	{79999, -3026, 109},
+	{78349, -3815, 387},
+	{82008, -1806, 32},
+	{80501, -2021, 21},
+	{78851, -2380, 38},
+	{77416, -3241, 23} }
+	for i=1,#asteroidCoordinates do
+		local staticAsteroid = Asteroid():setPosition(asteroidCoordinates[i][1],asteroidCoordinates[i][2]):setSize(asteroidCoordinates[i][3])
+		table.insert(asteroidList,staticAsteroid)
+	end
+	return asteroidList
 end
 function createH0toK2asteroids()
 	local asteroidList = {}
 	local asteroidCoordinates = {
-    {-55790, 57467, 120},
-    {-55506, 51890, 220},
-    {-58720, 50095, 160},
-    {-57585, 53875, 110},
-    {-45676, 57183, 180},
-    {-49362, 52363, 20},
-    {-51064, 45747, 40},
-    {-53994, 41871, 270},
-    {-57869, 44896, 190},
-    {-52481, 49149, 140},
-    {-55979, 47164, 180},
-    {-47188, 49433, 260},
-    {-44447, 53214, 60},
-    {-51820, 58129, 335},
-    {-53805, 58696, 25},
-    {-53805, 56238, 165},
-    {-48984, 56805, 185},
-    {-50024, 59546, 195},
-    {-48890, 61815, 115},
-    {-51253, 60870, 45},
-    {-41423, 61909, 55},
-    {-42557, 64461, 95},
-    {-42084, 69093, 15},
-    {-42273, 58412, 245},
-    {-53143, 54253, 355},
-    {-55033, 54631, 155},
-    {-51158, 55766, 165},
-    {-57207, 55388, 45},
-    {-47566, 59924, 75},
-    {-45582, 61626, 25},
-    {-47945, 64461, 35},
-    {-45676, 66824, 85},
-    {-48039, 67297, 145},
-    {-50024, 65690, 175},
-    {-59665, 57372, 225},
-    {-61366, 57467, 325},
-    {-52670, 63422, 425},
-    {-51253, 63989, 225},
-    {-61461, 40359, 175},
-    {-65241, 41777, 165},
-    {-62028, 44802, 145},
-    {-66943, 45936, 15},
-    {-73559, 41871, 45},
-    {-69778, 43006, 25},
-    {-69022, 40832, 45},
-    {-64674, 49244, 35},
-    {-62028, 48866, 175},
-    {-65336, 51890, 175},
-    {-63067, 52363, 185},
-    {-61555, 58507, 185},
-    {-55317, 59641, 220},
-    {-53332, 60302, 230},
-    {-52387, 65690, 270},
-    {-57680, 58696, 260},
-    {-59570, 54159, 270},
-    {-60893, 52646, 210},
-    {-61461, 55766, 200},
-    {-61933, 53592, 250},
-    {-62973, 54442, 263},
-    {-58814, 56522, 323},
-    {-62595, 57278, 123},
-    {-71763, 68904, 283},
-    {-71952, 65595, 293},
-    {-69211, 65690, 133},
-    {-67510, 67202, 183},
-    {-69022, 67675, 263},
-    {-67037, 64745, 233},
-    {-65147, 65595, 153},
-    {-64107, 63233, 23},
-    {-62784, 63327, 53},
-    {-69022, 58223, 63},
-    {-68644, 60491, 323},
-    {-69211, 63233, 83},
-    {-66470, 62665, 23},
-    {-61461, 64272, 43},
-    {-63162, 60491, 93},
-    {-60515, 58790, 223},
-    {-71385, 62382, 363},
-    {-71574, 59452, 43},
-    {-73559, 53970, 83},
-    {-72519, 56616, 173},
-    {-66565, 55766, 153},
-    {-70251, 56144, 133},
-    {-68549, 55577, 193},
-    {-66659, 57750, 283},
-    {-67132, 60208, 313},
-    {-65052, 54631, 383},
-    {-63635, 57089, 123},
-    {-63635, 58601, 143},
-    {-65336, 62193, 173},
-    {-64013, 61909, 73},
-    {-64863, 57940, 43},
-    {-64580, 56427, 23},
-    {-65052, 60681, 53},
-    {-78285, 50284, 283},
-    {-75166, 46881, 13},
-    {-72141, 47070, 13},
-    {-70818, 50473, 12},
-    {-74126, 50662, 23},
-    {-68171, 50756, 20},
-    {-69589, 53592, 50},
-    {-67793, 53119, 320},
-    {-53489, 115865, 158},
-    {-49845, 116259, 248},
-    {-47089, 112517, 258},
-    {-53390, 111927, 228},
-    {-51322, 108087, 248},
-    {-58116, 110745, 158},
-    {-56246, 106610, 58},
-    {-62252, 104148, 318},
-    {-49268, 78922, 167},
-    {-47283, 83365, 137},
-    {-46716, 79584, 127},
-    {-46054, 75992, 197},
-    {-40572, 73535, 67},
-    {-44353, 73913, 47},
-    {-48959, 88099, 16},
-    {-50929, 91939, 137},
-    {-53616, 86200, 267},
-    {-48565, 99225, 237},
-    {-53685, 102474, 32},
-    {-52012, 97945, 212},
-    {-46892, 94991, 112},
-    {-53981, 93711, 12},
-    {-53616, 80813, 312},
-    {-51158, 81853, 262},
-    {-43347, 101588, 137},
-    {-44725, 108284, 37},
-    {-47975, 104837, 237},
-    {-57526, 97354, 146},
-    {-60282, 93317, 46},
-    {-57132, 89280, 246},
-    {-58720, 85539, 136},
-    {-58436, 81380, 166},
-    {-56168, 81474, 186},
-    {-61562, 99324, 126},
-    {-66486, 98142, 136},
-    {-69341, 92530, 46},
-    {-64910, 93022, 56},
-    {-64221, 88788, 16},
-    {-66943, 85255, 146},
-    {-69144, 87311, 166},
-    {-62406, 85633, 148},
-    {-63824, 81191, 14},
-    {-61933, 81947, 166},
-    {-68833, 76087, 186},
-    {-69873, 82798, 196},
-    {-66470, 79017, 246},
-    {-66659, 81285, 346},
-    {-73476, 88493, 246},
-    {-72141, 84310, 216},
-    {-76962, 81380, 336},
-    {-74882, 78828, 106},
-    {-70818, 78733, 116},
-    {-46054, 71645, 246},
-    {-48795, 73819, 216},
-    {-48134, 76087, 326},
-    {-51253, 75236, 446},
-    {-59192, 70510, 346},
-    {-58058, 72117, 446},
-    {-54466, 70794, 136},
-    {-51158, 72779, 46},
-    {-61272, 71739, 16},
-    {-60421, 72873, 14},
-    {-56073, 72401, 46},
-    {-55884, 69660, 446},
-    {-49268, 68904, 46},
-    {-49079, 70699, 66},
-    {-52387, 69849, 86},
-    {-59381, 65974, 36},
-    {-58909, 64745, 56},
-    {-60515, 65028, 136},
-    {-60232, 64461, 176},
-    {-60421, 63138, 196},
-    {-51347, 68336, 246},
-    {-54183, 67580, 346},
-    {-55979, 68053, 46},
-    {-58909, 68147, 146},
-    {-54844, 65312, 246},
-    {-55884, 66257, 246},
-    {-56924, 67108, 156},
-    {-58247, 66730, 166},
-    {-53805, 73913, 176},
-    {-57113, 74197, 186},
-    {-59192, 74669, 196},
-    {-55884, 78355, 246},
-    {-60893, 76181, 246},
-    {-60515, 79017, 226},
-    {-58342, 77505, 216},
-    {-52954, 77316, 266},
-    {-55600, 76276, 266},
-    {-63351, 78450, 646},
-    {-66281, 77032, 246},
-    {-64107, 75331, 16},
-    {-65903, 73819, 46},
-    {-64863, 72023, 66},
-    {-62500, 73440, 46},
-    {-58720, 62193, 76},
-    {-58625, 63705, 26},
-    {-61177, 60113, 26},
-    {-61272, 63422, 46},
-    {-61366, 62382, 76},
-    {-61839, 60870, 246},
-    {-62500, 64745, 246},
-    {-62500, 62193, 346},
-    {-54088, 62854, 446},
-    {-53899, 64272, 446},
-    {-82633, 53781, 16},
-    {-84334, 58507, 14},
-    {-80364, 56711, 46},
-    {-85090, 69282, 146},
-    {-85657, 65028, 146},
-    {-81404, 59830, 146},
-    {-81593, 65974, 346},
-    {-77623, 53970, 246},
-    {-76300, 58318, 176},
-    {-74221, 59168, 276},
-    {-78663, 65028, 376},
-    {-75260, 65406, 76},
-    {-76772, 61720, 76},
-    {-73937, 62382, 76},
-    {-79041, 68336, 17},
-    {-75638, 68053, 17},
-    {-74504, 70605, 17},
-    {-80837, 76654, 276},
-    {-81687, 71550, 276},
-    {-77907, 70983, 376},
-    {-71574, 73062, 376},
-    {-76867, 74858, 176},
-    {-73559, 74669, 176},
-    {-68266, 74291, 33},
-    {-69117, 71550, 133},
-    {-67037, 70510, 153},
-    {-65619, 67864, 163},
-    {-64107, 69093, 233},
-    {-62595, 70416, 333},
-    {-57869, 69376, 233},
-    {-61177, 69093, 433},
-    {-63540, 65595, 153},
-    {-60704, 66352, 163},
-    {-56168, 60964, 173},
-    {-57963, 60870, 13},
-    {-59287, 60208, 13},
-    {-60137, 61248, 33},
-    {-62689, 67958, 33},
-    {-61083, 67864, 153},
-    {-61839, 66446, 183},
-    {-59948, 67013, 113},
-    {-57585, 65406, 123},
-    {-56640, 64556, 183},
-    {-55695, 63422, 233},
-    {-55695, 61909, 433},
-    {-57207, 62854, 33}
-    }
-    for i=1,#asteroidCoordinates do
-    	local staticAsteroid = Asteroid():setPosition(asteroidCoordinates[i][1],asteroidCoordinates[i][2]):setSize(asteroidCoordinates[i][3])
-    	table.insert(asteroidList,staticAsteroid)
-    end
-    return asteroidList
+	{-55790, 57467, 120},
+	{-55506, 51890, 220},
+	{-58720, 50095, 160},
+	{-57585, 53875, 110},
+	{-45676, 57183, 180},
+	{-49362, 52363, 20},
+	{-51064, 45747, 40},
+	{-53994, 41871, 270},
+	{-57869, 44896, 190},
+	{-52481, 49149, 140},
+	{-55979, 47164, 180},
+	{-47188, 49433, 260},
+	{-44447, 53214, 60},
+	{-51820, 58129, 335},
+	{-53805, 58696, 25},
+	{-53805, 56238, 165},
+	{-48984, 56805, 185},
+	{-50024, 59546, 195},
+	{-48890, 61815, 115},
+	{-51253, 60870, 45},
+	{-41423, 61909, 55},
+	{-42557, 64461, 95},
+	{-42084, 69093, 15},
+	{-42273, 58412, 245},
+	{-53143, 54253, 355},
+	{-55033, 54631, 155},
+	{-51158, 55766, 165},
+	{-57207, 55388, 45},
+	{-47566, 59924, 75},
+	{-45582, 61626, 25},
+	{-47945, 64461, 35},
+	{-45676, 66824, 85},
+	{-48039, 67297, 145},
+	{-50024, 65690, 175},
+	{-59665, 57372, 225},
+	{-61366, 57467, 325},
+	{-52670, 63422, 425},
+	{-51253, 63989, 225},
+	{-61461, 40359, 175},
+	{-65241, 41777, 165},
+	{-62028, 44802, 145},
+	{-66943, 45936, 15},
+	{-73559, 41871, 45},
+	{-69778, 43006, 25},
+	{-69022, 40832, 45},
+	{-64674, 49244, 35},
+	{-62028, 48866, 175},
+	{-65336, 51890, 175},
+	{-63067, 52363, 185},
+	{-61555, 58507, 185},
+	{-55317, 59641, 220},
+	{-53332, 60302, 230},
+	{-52387, 65690, 270},
+	{-57680, 58696, 260},
+	{-59570, 54159, 270},
+	{-60893, 52646, 210},
+	{-61461, 55766, 200},
+	{-61933, 53592, 250},
+	{-62973, 54442, 263},
+	{-58814, 56522, 323},
+	{-62595, 57278, 123},
+	{-71763, 68904, 283},
+	{-71952, 65595, 293},
+	{-69211, 65690, 133},
+	{-67510, 67202, 183},
+	{-69022, 67675, 263},
+	{-67037, 64745, 233},
+	{-65147, 65595, 153},
+	{-64107, 63233, 23},
+	{-62784, 63327, 53},
+	{-69022, 58223, 63},
+	{-68644, 60491, 323},
+	{-69211, 63233, 83},
+	{-66470, 62665, 23},
+	{-61461, 64272, 43},
+	{-63162, 60491, 93},
+	{-60515, 58790, 223},
+	{-71385, 62382, 363},
+	{-71574, 59452, 43},
+	{-73559, 53970, 83},
+	{-72519, 56616, 173},
+	{-66565, 55766, 153},
+	{-70251, 56144, 133},
+	{-68549, 55577, 193},
+	{-66659, 57750, 283},
+	{-67132, 60208, 313},
+	{-65052, 54631, 383},
+	{-63635, 57089, 123},
+	{-63635, 58601, 143},
+	{-65336, 62193, 173},
+	{-64013, 61909, 73},
+	{-64863, 57940, 43},
+	{-64580, 56427, 23},
+	{-65052, 60681, 53},
+	{-78285, 50284, 283},
+	{-75166, 46881, 13},
+	{-72141, 47070, 13},
+	{-70818, 50473, 12},
+	{-74126, 50662, 23},
+	{-68171, 50756, 20},
+	{-69589, 53592, 50},
+	{-67793, 53119, 320},
+	{-53489, 115865, 158},
+	{-49845, 116259, 248},
+	{-47089, 112517, 258},
+	{-53390, 111927, 228},
+	{-51322, 108087, 248},
+	{-58116, 110745, 158},
+	{-56246, 106610, 58},
+	{-62252, 104148, 318},
+	{-49268, 78922, 167},
+	{-47283, 83365, 137},
+	{-46716, 79584, 127},
+	{-46054, 75992, 197},
+	{-40572, 73535, 67},
+	{-44353, 73913, 47},
+	{-48959, 88099, 16},
+	{-50929, 91939, 137},
+	{-53616, 86200, 267},
+	{-48565, 99225, 237},
+	{-53685, 102474, 32},
+	{-52012, 97945, 212},
+	{-46892, 94991, 112},
+	{-53981, 93711, 12},
+	{-53616, 80813, 312},
+	{-51158, 81853, 262},
+	{-43347, 101588, 137},
+	{-44725, 108284, 37},
+	{-47975, 104837, 237},
+	{-57526, 97354, 146},
+	{-60282, 93317, 46},
+	{-57132, 89280, 246},
+	{-58720, 85539, 136},
+	{-58436, 81380, 166},
+	{-56168, 81474, 186},
+	{-61562, 99324, 126},
+	{-66486, 98142, 136},
+	{-69341, 92530, 46},
+	{-64910, 93022, 56},
+	{-64221, 88788, 16},
+	{-66943, 85255, 146},
+	{-69144, 87311, 166},
+	{-62406, 85633, 148},
+	{-63824, 81191, 14},
+	{-61933, 81947, 166},
+	{-68833, 76087, 186},
+	{-69873, 82798, 196},
+	{-66470, 79017, 246},
+	{-66659, 81285, 346},
+	{-73476, 88493, 246},
+	{-72141, 84310, 216},
+	{-76962, 81380, 336},
+	{-74882, 78828, 106},
+	{-70818, 78733, 116},
+	{-46054, 71645, 246},
+	{-48795, 73819, 216},
+	{-48134, 76087, 326},
+	{-51253, 75236, 446},
+	{-59192, 70510, 346},
+	{-58058, 72117, 446},
+	{-54466, 70794, 136},
+	{-51158, 72779, 46},
+	{-61272, 71739, 16},
+	{-60421, 72873, 14},
+	{-56073, 72401, 46},
+	{-55884, 69660, 446},
+	{-49268, 68904, 46},
+	{-49079, 70699, 66},
+	{-52387, 69849, 86},
+	{-59381, 65974, 36},
+	{-58909, 64745, 56},
+	{-60515, 65028, 136},
+	{-60232, 64461, 176},
+	{-60421, 63138, 196},
+	{-51347, 68336, 246},
+	{-54183, 67580, 346},
+	{-55979, 68053, 46},
+	{-58909, 68147, 146},
+	{-54844, 65312, 246},
+	{-55884, 66257, 246},
+	{-56924, 67108, 156},
+	{-58247, 66730, 166},
+	{-53805, 73913, 176},
+	{-57113, 74197, 186},
+	{-59192, 74669, 196},
+	{-55884, 78355, 246},
+	{-60893, 76181, 246},
+	{-60515, 79017, 226},
+	{-58342, 77505, 216},
+	{-52954, 77316, 266},
+	{-55600, 76276, 266},
+	{-63351, 78450, 646},
+	{-66281, 77032, 246},
+	{-64107, 75331, 16},
+	{-65903, 73819, 46},
+	{-64863, 72023, 66},
+	{-62500, 73440, 46},
+	{-58720, 62193, 76},
+	{-58625, 63705, 26},
+	{-61177, 60113, 26},
+	{-61272, 63422, 46},
+	{-61366, 62382, 76},
+	{-61839, 60870, 246},
+	{-62500, 64745, 246},
+	{-62500, 62193, 346},
+	{-54088, 62854, 446},
+	{-53899, 64272, 446},
+	{-82633, 53781, 16},
+	{-84334, 58507, 14},
+	{-80364, 56711, 46},
+	{-85090, 69282, 146},
+	{-85657, 65028, 146},
+	{-81404, 59830, 146},
+	{-81593, 65974, 346},
+	{-77623, 53970, 246},
+	{-76300, 58318, 176},
+	{-74221, 59168, 276},
+	{-78663, 65028, 376},
+	{-75260, 65406, 76},
+	{-76772, 61720, 76},
+	{-73937, 62382, 76},
+	{-79041, 68336, 17},
+	{-75638, 68053, 17},
+	{-74504, 70605, 17},
+	{-80837, 76654, 276},
+	{-81687, 71550, 276},
+	{-77907, 70983, 376},
+	{-71574, 73062, 376},
+	{-76867, 74858, 176},
+	{-73559, 74669, 176},
+	{-68266, 74291, 33},
+	{-69117, 71550, 133},
+	{-67037, 70510, 153},
+	{-65619, 67864, 163},
+	{-64107, 69093, 233},
+	{-62595, 70416, 333},
+	{-57869, 69376, 233},
+	{-61177, 69093, 433},
+	{-63540, 65595, 153},
+	{-60704, 66352, 163},
+	{-56168, 60964, 173},
+	{-57963, 60870, 13},
+	{-59287, 60208, 13},
+	{-60137, 61248, 33},
+	{-62689, 67958, 33},
+	{-61083, 67864, 153},
+	{-61839, 66446, 183},
+	{-59948, 67013, 113},
+	{-57585, 65406, 123},
+	{-56640, 64556, 183},
+	{-55695, 63422, 233},
+	{-55695, 61909, 433},
+	{-57207, 62854, 33}
+	}
+	for i=1,#asteroidCoordinates do
+		local staticAsteroid = Asteroid():setPosition(asteroidCoordinates[i][1],asteroidCoordinates[i][2]):setSize(asteroidCoordinates[i][3])
+		table.insert(asteroidList,staticAsteroid)
+	end
+	return asteroidList
 end
 function createH1toI2mines()
 	local mine_list = {}
 	local mine_coordinates = {
-    {-69684, 69565},
-    {-63162, 50378},
-    {-57396, 57089},
-    {-52859, 61720},
-    {-52765, 67486},
-    {-71385, 54253},
-    {-72992, 63894},
-    {-65808, 59263},
-    {-64296, 67202},
-    {-60736, 54671},
-    {-57869, 75898}
-    }
-    for i=1,#mine_coordinates do
-    	local static_mine = Mine():setPosition(mine_coordinates[i][1],mine_coordinates[i][2])
-    	table.insert(mine_list,static_mine)
-    end
-    return mine_list
+	{-69684, 69565},
+	{-63162, 50378},
+	{-57396, 57089},
+	{-52859, 61720},
+	{-52765, 67486},
+	{-71385, 54253},
+	{-72992, 63894},
+	{-65808, 59263},
+	{-64296, 67202},
+	{-60736, 54671},
+	{-57869, 75898}
+	}
+	for i=1,#mine_coordinates do
+		local static_mine = Mine():setPosition(mine_coordinates[i][1],mine_coordinates[i][2])
+		table.insert(mine_list,static_mine)
+	end
+	return mine_list
 end
 function createJ0toK0nebulae()
 	local nebula_list = {}
@@ -4935,32 +4935,32 @@ function createJ0toK0nebulae()
 		{-85717, 97192},
 		{-86999, 109498},
 		{-83409, 101294}
-    }
-    for i=1,#nebula_coordinates do
-    	local static_nebula = Nebula():setPosition(nebula_coordinates[i][1],nebula_coordinates[i][2])
-    	table.insert(nebula_list,static_nebula)
-    end
-    return nebula_list
+	}
+	for i=1,#nebula_coordinates do
+		local static_nebula = Nebula():setPosition(nebula_coordinates[i][1],nebula_coordinates[i][2])
+		table.insert(nebula_list,static_nebula)
+	end
+	return nebula_list
 end
 function createJ4toL8nebulae()
 	local nebula_list = {}
 	local nebula_coordinates = {
-    	{11830, 121981},
-    	{49516, 123627},
-    	{36680, 94663}
-    }
-    for i=1,#nebula_coordinates do
-    	local static_nebula = Nebula():setPosition(nebula_coordinates[i][1],nebula_coordinates[i][2])
-    	table.insert(nebula_list,static_nebula)
-    end
-    local neb_x = random(-5000,75000)
-    local neb_y = random(80000,140000)
-    icarus_mobile_nebula_1 = Nebula():setPosition(neb_x,neb_y)
-    icarus_mobile_nebula_1.angle = random(0,360)
-    icarus_mobile_nebula_1.increment = random(0,10)
+		{11830, 121981},
+		{49516, 123627},
+		{36680, 94663}
+	}
+	for i=1,#nebula_coordinates do
+		local static_nebula = Nebula():setPosition(nebula_coordinates[i][1],nebula_coordinates[i][2])
+		table.insert(nebula_list,static_nebula)
+	end
+	local neb_x = random(-5000,75000)
+	local neb_y = random(80000,140000)
+	icarus_mobile_nebula_1 = Nebula():setPosition(neb_x,neb_y)
+	icarus_mobile_nebula_1.angle = random(0,360)
+	icarus_mobile_nebula_1.increment = random(0,10)
 	plotMobile = movingObjects
 	table.insert(nebula_list,icarus_mobile_nebula_1)
-    return nebula_list
+	return nebula_list
 end
 function createJ4toL8asteroids()
 	local asteroidList = {}
@@ -5023,12 +5023,12 @@ function createJ4toL8asteroids()
 		{43360, 134877, 470},
 		{53662, 121267, 120}
 	}
-    for i=1,#asteroidCoordinates do
-    	local staticAsteroid = Asteroid():setPosition(asteroidCoordinates[i][1],asteroidCoordinates[i][2]):setSize(asteroidCoordinates[i][3])
-    	staticAsteroid.original_size = asteroidCoordinates[i][3]
-    	table.insert(asteroidList,staticAsteroid)
-    end
-    return asteroidList
+	for i=1,#asteroidCoordinates do
+		local staticAsteroid = Asteroid():setPosition(asteroidCoordinates[i][1],asteroidCoordinates[i][2]):setSize(asteroidCoordinates[i][3])
+		staticAsteroid.original_size = asteroidCoordinates[i][3]
+		table.insert(asteroidList,staticAsteroid)
+	end
+	return asteroidList
 end
 function createBorlanFeatures()
 	local asteroidList = {}
@@ -5115,14 +5115,14 @@ function createBorlanFeatures()
 		{73040, 36215, 320},
 		{71749, 35713, 120},
 		{71677, 34350, 470}
-    }
-    for i=1,#asteroidCoordinates do
-    	local staticAsteroid = Asteroid():setPosition(asteroidCoordinates[i][1],asteroidCoordinates[i][2])
-    	staticAsteroid:setSize(asteroidCoordinates[i][3])
-    	staticAsteroid.original_size = asteroidCoordinates[i][3]
-    	table.insert(asteroidList,staticAsteroid)
-    end
-    return asteroidList
+	}
+	for i=1,#asteroidCoordinates do
+		local staticAsteroid = Asteroid():setPosition(asteroidCoordinates[i][1],asteroidCoordinates[i][2])
+		staticAsteroid:setSize(asteroidCoordinates[i][3])
+		staticAsteroid.original_size = asteroidCoordinates[i][3]
+		table.insert(asteroidList,staticAsteroid)
+	end
+	return asteroidList
 end
 function createFinneganFeatures()
 	local feature_list = {}
@@ -5143,7 +5143,7 @@ function createFinneganFeatures()
 		{118785, 77127, 10},
 		{117178, 77694, 220},
 		{117934, 78639, 250},
-	
+
 		{133814, 79206, 620},
 		{133530, 77599, 20},
 		{132112, 80246, 120},
@@ -5160,7 +5160,7 @@ function createFinneganFeatures()
 		{140808, 85161, 190},
 		{140241, 84216, 220},
 		{139296, 81569, 20},
-	
+
 		{130694, 105009, 580},
 		{130316, 103403, 12},
 		{129088, 102363, 12},
@@ -5175,7 +5175,7 @@ function createFinneganFeatures()
 		{133246, 103403, 220},
 		{131545, 106144, 320},
 		{134475, 101796, 270},
-	
+
 		{109995, 96597, 120},
 		{107916, 92911, 220},
 		{108483, 92250, 320},
@@ -5192,28 +5192,28 @@ function createFinneganFeatures()
 		{106876, 89319, 70},
 		{102055, 90548, 65},
 		{102717, 88752, 120}
-    }
-    for i=1,#asteroidCoordinates do
-    	local staticAsteroid = Asteroid():setPosition(asteroidCoordinates[i][1],asteroidCoordinates[i][2]):setSize(asteroidCoordinates[i][3])
-    	staticAsteroid.original_size = asteroidCoordinates[i][3]
-    	table.insert(feature_list,staticAsteroid)
-    end
-    local neb = Nebula():setPosition(108483, 93100)
-    table.insert(feature_list,neb)
-    local strat_x = 138000
-    local strat_y = 138000
-    local planet_strat = Planet():setPosition(strat_x,strat_y):setPlanetRadius(750):setDistanceFromMovementPlane(-1500):setPlanetAtmosphereTexture("planets/star-1.png"):setPlanetAtmosphereColor(1.0,.9,.9):setCallSign("Stratbik")
-    table.insert(feature_list,planet_strat)
-    local primus_angle = random(0,360)
-    local primus_distance = 45000
-    local primus_x, primus_y = vectorFromAngle(primus_angle,primus_distance)
-    local planet_primus = Planet():setPosition(strat_x+primus_x,strat_y+primus_y):setPlanetRadius(1800):setDistanceFromMovementPlane(-600)
-    planet_primus:setPlanetSurfaceTexture("planets/planet-2.png"):setPlanetAtmosphereTexture("planets/atmosphere.png"):setPlanetAtmosphereColor(0.1,0.6,0.1)
-    planet_primus:setCallSign("Pillory"):setOrbit(planet_strat,2500)
-    table.insert(feature_list,planet_primus)
-    return feature_list
+	}
+	for i=1,#asteroidCoordinates do
+		local staticAsteroid = Asteroid():setPosition(asteroidCoordinates[i][1],asteroidCoordinates[i][2]):setSize(asteroidCoordinates[i][3])
+		staticAsteroid.original_size = asteroidCoordinates[i][3]
+		table.insert(feature_list,staticAsteroid)
+	end
+	local neb = Nebula():setPosition(108483, 93100)
+	table.insert(feature_list,neb)
+	local strat_x = 138000
+	local strat_y = 138000
+	local planet_strat = Planet():setPosition(strat_x,strat_y):setPlanetRadius(750):setDistanceFromMovementPlane(-1500):setPlanetAtmosphereTexture("planets/star-1.png"):setPlanetAtmosphereColor(1.0,.9,.9):setCallSign("Stratbik")
+	table.insert(feature_list,planet_strat)
+	local primus_angle = random(0,360)
+	local primus_distance = 45000
+	local primus_x, primus_y = vectorFromAngle(primus_angle,primus_distance)
+	local planet_primus = Planet():setPosition(strat_x+primus_x,strat_y+primus_y):setPlanetRadius(1800):setDistanceFromMovementPlane(-600)
+	planet_primus:setPlanetSurfaceTexture("planets/planet-2.png"):setPlanetAtmosphereTexture("planets/atmosphere.png"):setPlanetAtmosphereColor(0.1,0.6,0.1)
+	planet_primus:setCallSign("Pillory"):setOrbit(planet_strat,2500)
+	table.insert(feature_list,planet_primus)
+	return feature_list
 end
--- Kentar area stations, asteroids, mines, etc. 
+-- Kentar area stations, asteroids, mines, etc.
 function kentarSector()
 	createKentarColor()
 	return {
@@ -5259,31 +5259,31 @@ function createKentarStations()
 	--Gamma-3
 	--local gamma3Zone = squareZone(266825, 314128, "Gamma-3 U18")
 	--gamma3Zone:setColor(0,128,0)
-    stationGamma3 = SpaceStation():setTemplate("Small Station"):setFaction("Human Navy"):setCallSign("Gamma-3"):setPosition(266825, 314128):setDescription("Observation Post Gamma 3"):setCommsScript(""):setCommsFunction(commsStation)
-    if random(1,100) <= 30 then nukeAvail = true else nukeAvail = false end
-    if random(1,100) <= 40 then empAvail = true else empAvail = false end
-    if random(1,100) <= 50 then mineAvail = true else mineAvail = false end
-    if random(1,100) <= 60 then homeAvail = true else homeAvail = false end
-    if random(1,100) <= 80 then hvliAvail = true else hvliAvail = false end
-    if random(1,100) <= 42 then tradeLuxury = true else tradeLuxury = false end
-    if random(1,100) <= 42 then tradeMedicine = true else tradeMedicine = false end
-    stationGamma3.comms_data = {
-    	friendlyness = 68,
-        weapons = 			{Homing = "neutral",		HVLI = "neutral", 		Mine = "friend",		Nuke = "friend", 			EMP = "friend"},
-        weapon_cost =		{Homing = math.random(1,4), HVLI = math.random(2,4),Mine = math.random(2,5),Nuke = math.random(8,20),	EMP = math.random(12,15) },
-        weapon_available = 	{Homing = homeAvail,		HVLI = hvliAvail,		Mine = mineAvail,		Nuke = nukeAvail,			EMP = empAvail},
-        service_cost = 		{supplydrop = math.random(80,120), reinforcements = math.random(125,175)},
-        probe_launch_repair =	true,
-        scan_repair =			true,
-        sensor_boost = {value = 10000, cost = 10},
-        reputation_cost_multipliers = {friend = 1.0, neutral = 2.0},
-        max_weapon_refill_amount = {friend = 1.0, neutral = 0.5 },
-        goods = {	tractor = 	{quantity = math.random(2,5),	cost = math.random(40,70)},
-        			repulsor = 	{quantity = math.random(2,5),	cost = math.random(55,90)}	},
-        trade = {	food = true, medicine = tradeMedicine, luxury = tradeLuxury },
-        public_relations = true,
-        general_information = "We watch and report on enemy vessel movement. We also run a small tractor and repulsor component machine shop",
-    	history = "The Human Navy set this station up as a strategic observation post"
+	stationGamma3 = SpaceStation():setTemplate("Small Station"):setFaction("Human Navy"):setCallSign("Gamma-3"):setPosition(266825, 314128):setDescription("Observation Post Gamma 3"):setCommsScript(""):setCommsFunction(commsStation)
+	if random(1,100) <= 30 then nukeAvail = true else nukeAvail = false end
+	if random(1,100) <= 40 then empAvail = true else empAvail = false end
+	if random(1,100) <= 50 then mineAvail = true else mineAvail = false end
+	if random(1,100) <= 60 then homeAvail = true else homeAvail = false end
+	if random(1,100) <= 80 then hvliAvail = true else hvliAvail = false end
+	if random(1,100) <= 42 then tradeLuxury = true else tradeLuxury = false end
+	if random(1,100) <= 42 then tradeMedicine = true else tradeMedicine = false end
+	stationGamma3.comms_data = {
+		friendlyness = 68,
+		weapons = 			{Homing = "neutral",		HVLI = "neutral", 		Mine = "friend",		Nuke = "friend", 			EMP = "friend"},
+		weapon_cost =		{Homing = math.random(1,4), HVLI = math.random(2,4),Mine = math.random(2,5),Nuke = math.random(8,20),	EMP = math.random(12,15) },
+		weapon_available = 	{Homing = homeAvail,		HVLI = hvliAvail,		Mine = mineAvail,		Nuke = nukeAvail,			EMP = empAvail},
+		service_cost = 		{supplydrop = math.random(80,120), reinforcements = math.random(125,175)},
+		probe_launch_repair =	true,
+		scan_repair =			true,
+		sensor_boost = {value = 10000, cost = 10},
+		reputation_cost_multipliers = {friend = 1.0, neutral = 2.0},
+		max_weapon_refill_amount = {friend = 1.0, neutral = 0.5 },
+		goods = {	tractor = 	{quantity = math.random(2,5),	cost = math.random(40,70)},
+					repulsor = 	{quantity = math.random(2,5),	cost = math.random(55,90)}	},
+		trade = {	food = true, medicine = tradeMedicine, luxury = tradeLuxury },
+		public_relations = true,
+		general_information = "We watch and report on enemy vessel movement. We also run a small tractor and repulsor component machine shop",
+		history = "The Human Navy set this station up as a strategic observation post"
 	}
 	if random(1,100) <= 22 then stationGamma3:setRestocksScanProbes(false) end
 	if random(1,100) <= 31 then stationGamma3:setRepairDocked(false) end
@@ -5293,31 +5293,31 @@ function createKentarStations()
 	--Katanga
 	--local katangaZone = squareZone(229513, 224048, "Katanga 2 Q16")
 	--katangaZone:setColor(0,128,0)
-    stationKatanga = SpaceStation():setTemplate("Small Station"):setFaction("Human Navy"):setPosition(229513, 224048):setCallSign("Katanga 2"):setDescription("Mining station for cobalt, gold and other minerals"):setCommsScript(""):setCommsFunction(commsStation)
-    if random(1,100) <= 30 then nukeAvail = true else nukeAvail = false end
-    if random(1,100) <= 40 then empAvail = true else empAvail = false end
-    if random(1,100) <= 50 then mineAvail = true else mineAvail = false end
-    if random(1,100) <= 60 then homeAvail = true else homeAvail = false end
-    if random(1,100) <= 80 then hvliAvail = true else hvliAvail = false end
-    if random(1,100) <= 67 then tradeLuxury = true else tradeLuxury = false end
-    stationKatanga.comms_data = {
-    	friendlyness = 75,
-        weapons = 			{Homing = "neutral",HVLI = "neutral", 		Mine = "friend",		Nuke = "friend", 			EMP = "friend"},
-        weapon_cost =		{Homing = 3, 		HVLI = math.random(2,4),Mine = math.random(2,5),Nuke = math.random(12,18),	EMP = 10 },
-        weapon_available = 	{Homing = homeAvail,HVLI = hvliAvail,		Mine = mineAvail,		Nuke = nukeAvail,			EMP = empAvail},
-        service_cost = 		{supplydrop = math.random(80,120), reinforcements = math.random(125,175)},
-        probe_launch_repair =	true,
-        scan_repair =			true,
-        combat_maneuver_repair=	true,
-        sensor_boost = {value = 10000, cost = 5},
-        reputation_cost_multipliers = {friend = 1.0, neutral = 2.0},
-        max_weapon_refill_amount = {friend = 1.0, neutral = 0.5 },
-        goods = {	cobalt = 	{quantity = math.random(5,10),	cost = math.random(60,70)},
-        			gold = 		{quantity = math.random(5,10),	cost = math.random(55,90)}	},
-        trade = {	food = true, medicine = false, luxury = tradeLuxury },
-        public_relations = true,
-        general_information = "Extracting minerals from these asteroids is our job",
-    	history = "Based on the scans showing cobalt in many of these asteroids, we named this station after an ancient earth mining operation that was part of the Glencore Public Limited Comany"
+	stationKatanga = SpaceStation():setTemplate("Small Station"):setFaction("Human Navy"):setPosition(229513, 224048):setCallSign("Katanga 2"):setDescription("Mining station for cobalt, gold and other minerals"):setCommsScript(""):setCommsFunction(commsStation)
+	if random(1,100) <= 30 then nukeAvail = true else nukeAvail = false end
+	if random(1,100) <= 40 then empAvail = true else empAvail = false end
+	if random(1,100) <= 50 then mineAvail = true else mineAvail = false end
+	if random(1,100) <= 60 then homeAvail = true else homeAvail = false end
+	if random(1,100) <= 80 then hvliAvail = true else hvliAvail = false end
+	if random(1,100) <= 67 then tradeLuxury = true else tradeLuxury = false end
+	stationKatanga.comms_data = {
+		friendlyness = 75,
+		weapons = 			{Homing = "neutral",HVLI = "neutral", 		Mine = "friend",		Nuke = "friend", 			EMP = "friend"},
+		weapon_cost =		{Homing = 3, 		HVLI = math.random(2,4),Mine = math.random(2,5),Nuke = math.random(12,18),	EMP = 10 },
+		weapon_available = 	{Homing = homeAvail,HVLI = hvliAvail,		Mine = mineAvail,		Nuke = nukeAvail,			EMP = empAvail},
+		service_cost = 		{supplydrop = math.random(80,120), reinforcements = math.random(125,175)},
+		probe_launch_repair =	true,
+		scan_repair =			true,
+		combat_maneuver_repair=	true,
+		sensor_boost = {value = 10000, cost = 5},
+		reputation_cost_multipliers = {friend = 1.0, neutral = 2.0},
+		max_weapon_refill_amount = {friend = 1.0, neutral = 0.5 },
+		goods = {	cobalt = 	{quantity = math.random(5,10),	cost = math.random(60,70)},
+					gold = 		{quantity = math.random(5,10),	cost = math.random(55,90)}	},
+		trade = {	food = true, medicine = false, luxury = tradeLuxury },
+		public_relations = true,
+		general_information = "Extracting minerals from these asteroids is our job",
+		history = "Based on the scans showing cobalt in many of these asteroids, we named this station after an ancient earth mining operation that was part of the Glencore Public Limited Comany"
 	}
 	if random(1,100) <= 22 then stationKatanga:setRestocksScanProbes(false) end
 	if random(1,100) <= 38 then stationKatanga:setRepairDocked(false) end
@@ -5327,25 +5327,25 @@ function createKentarStations()
 	--Keyhole-23 T15
 	stationKeyhole23 = SpaceStation():setTemplate("Small Station"):setFaction("Human Navy"):setCallSign("Keyhole-23"):setPosition(213600,290000):setDescription("Gravitational lensing spy satellite"):setCommsScript(""):setCommsFunction(commsStation)
 	stationKeyhole23.total_time = 0
-    if random(1,100) <= 67 then tradeLuxury = true else tradeLuxury = false end
-    stationKeyhole23.comms_data = {
-    	friendlyness = 25,
-        weapons = 			{Homing = "neutral",HVLI = "neutral", 		Mine = "friend",		Nuke = "friend", 			EMP = "friend"},
-        weapon_cost =		{Homing = 3, 		HVLI = math.random(2,4),Mine = math.random(2,5),Nuke = math.random(32,58),	EMP = 20 },
-        weapon_available = 	{Homing = false,	HVLI = false,			Mine = false,			Nuke = true,				EMP = true},
-        service_cost = 		{supplydrop = math.random(180,320), reinforcements = math.random(225,375)},
-        probe_launch_repair =	true,
-        hack_repair =			true,
-        scan_repair =			true,
-        combat_maneuver_repair=	true,
-        reputation_cost_multipliers = {friend = 1.0, neutral = 2.0},
-        max_weapon_refill_amount = {friend = 1.0, neutral = 0.5 },
-        goods = {	dilithium = 	{quantity = math.random(5,10),	cost = math.random(20,30)},
-        			tritanium =		{quantity = math.random(5,10),	cost = math.random(25,40)}	},
-        trade = {	food = true, medicine = false, luxury = tradeLuxury },
-        public_relations = true,
-        general_information = "Work here is classified, however, it involves research on this black hole",
-    	history = "Reference classified archives at headquarters. Public access redacted"
+	if random(1,100) <= 67 then tradeLuxury = true else tradeLuxury = false end
+	stationKeyhole23.comms_data = {
+		friendlyness = 25,
+		weapons = 			{Homing = "neutral",HVLI = "neutral", 		Mine = "friend",		Nuke = "friend", 			EMP = "friend"},
+		weapon_cost =		{Homing = 3, 		HVLI = math.random(2,4),Mine = math.random(2,5),Nuke = math.random(32,58),	EMP = 20 },
+		weapon_available = 	{Homing = false,	HVLI = false,			Mine = false,			Nuke = true,				EMP = true},
+		service_cost = 		{supplydrop = math.random(180,320), reinforcements = math.random(225,375)},
+		probe_launch_repair =	true,
+		hack_repair =			true,
+		scan_repair =			true,
+		combat_maneuver_repair=	true,
+		reputation_cost_multipliers = {friend = 1.0, neutral = 2.0},
+		max_weapon_refill_amount = {friend = 1.0, neutral = 0.5 },
+		goods = {	dilithium = 	{quantity = math.random(5,10),	cost = math.random(20,30)},
+					tritanium =		{quantity = math.random(5,10),	cost = math.random(25,40)}	},
+		trade = {	food = true, medicine = false, luxury = tradeLuxury },
+		public_relations = true,
+		general_information = "Work here is classified, however, it involves research on this black hole",
+		history = "Reference classified archives at headquarters. Public access redacted"
 	}
 	if random(1,100) <= 42 then stationKeyhole23:setRestocksScanProbes(false) end
 	if random(1,100) <= 28 then stationKeyhole23:setRepairDocked(false) end
@@ -5356,34 +5356,34 @@ function createKentarStations()
 	--Kolar
 	--local kolarZone = squareZone(165481, 272311, "Kolar S13")
 	--kolarZone:setColor(51,153,255)
-    stationKolar = SpaceStation():setTemplate("Small Station"):setFaction("Independent"):setCallSign("Kolar"):setPosition(165481, 272311):setDescription("Mining"):setCommsScript(""):setCommsFunction(commsStation)
-    if random(1,100) <= 30 then nukeAvail = true else nukeAvail = false end
-    if random(1,100) <= 40 then empAvail = true else empAvail = false end
-    if random(1,100) <= 50 then mineAvail = true else mineAvail = false end
-    if random(1,100) <= 60 then homeAvail = true else homeAvail = false end
-    if random(1,100) <= 80 then hvliAvail = true else hvliAvail = false end
-    if random(1,100) <= 42 then tradeLuxury = true else tradeLuxury = false end
-    if random(1,100) <= 42 then tradeFood = true else tradeFood = false end
-    if random(1,100) <= 42 then tradeMedicine = true else tradeMedicine = false end
-    stationKolar.comms_data = {
-    	friendlyness = 85,
-        weapons = 			{Homing = "neutral",		HVLI = "neutral", 		Mine = "neutral",		Nuke = "friend", 			EMP = "neutral"},
-        weapon_cost =		{Homing = math.random(1,4), HVLI = math.random(1,4),Mine = math.random(1,4),Nuke = math.random(12,18),	EMP = math.random(13,17) },
-        weapon_available = 	{Homing = homeAvail,		HVLI = hvliAvail,		Mine = mineAvail,		Nuke = nukeAvail,			EMP = empAvail},
-        service_cost = 		{supplydrop = math.random(80,120), reinforcements = math.random(125,175)},
-        probe_launch_repair =	true,
-        hack_repair =			true,
-        scan_repair =			true,
-        sensor_boost = {value = 5000, cost = 10},
-        reputation_cost_multipliers = {friend = 1.0, neutral = 2.0},
-        max_weapon_refill_amount = {friend = 1.0, neutral = 0.5 },
-        goods = {	circuit = 	{quantity = math.random(5,9),	cost = math.random(50,80)},
-        			autodoc =	{quantity = math.random(5,9),	cost = math.random(63,70)},
-        			gold =		{quantity = math.random(5,9),	cost = math.random(33,50)}	},
-        trade = {	food = tradeFood, medicine = tradeMedicine, luxury = tradeLuxury },
-        public_relations = true,
-        general_information = "We mine gold, we make and sell autodoc and circuit",
-    	history = "We said, 'thar's gold in them there rocks' and we just had to get some"
+	stationKolar = SpaceStation():setTemplate("Small Station"):setFaction("Independent"):setCallSign("Kolar"):setPosition(165481, 272311):setDescription("Mining"):setCommsScript(""):setCommsFunction(commsStation)
+	if random(1,100) <= 30 then nukeAvail = true else nukeAvail = false end
+	if random(1,100) <= 40 then empAvail = true else empAvail = false end
+	if random(1,100) <= 50 then mineAvail = true else mineAvail = false end
+	if random(1,100) <= 60 then homeAvail = true else homeAvail = false end
+	if random(1,100) <= 80 then hvliAvail = true else hvliAvail = false end
+	if random(1,100) <= 42 then tradeLuxury = true else tradeLuxury = false end
+	if random(1,100) <= 42 then tradeFood = true else tradeFood = false end
+	if random(1,100) <= 42 then tradeMedicine = true else tradeMedicine = false end
+	stationKolar.comms_data = {
+		friendlyness = 85,
+		weapons = 			{Homing = "neutral",		HVLI = "neutral", 		Mine = "neutral",		Nuke = "friend", 			EMP = "neutral"},
+		weapon_cost =		{Homing = math.random(1,4), HVLI = math.random(1,4),Mine = math.random(1,4),Nuke = math.random(12,18),	EMP = math.random(13,17) },
+		weapon_available = 	{Homing = homeAvail,		HVLI = hvliAvail,		Mine = mineAvail,		Nuke = nukeAvail,			EMP = empAvail},
+		service_cost = 		{supplydrop = math.random(80,120), reinforcements = math.random(125,175)},
+		probe_launch_repair =	true,
+		hack_repair =			true,
+		scan_repair =			true,
+		sensor_boost = {value = 5000, cost = 10},
+		reputation_cost_multipliers = {friend = 1.0, neutral = 2.0},
+		max_weapon_refill_amount = {friend = 1.0, neutral = 0.5 },
+		goods = {	circuit = 	{quantity = math.random(5,9),	cost = math.random(50,80)},
+					autodoc =	{quantity = math.random(5,9),	cost = math.random(63,70)},
+					gold =		{quantity = math.random(5,9),	cost = math.random(33,50)}	},
+		trade = {	food = tradeFood, medicine = tradeMedicine, luxury = tradeLuxury },
+		public_relations = true,
+		general_information = "We mine gold, we make and sell autodoc and circuit",
+		history = "We said, 'thar's gold in them there rocks' and we just had to get some"
 	}
 	if random(1,100) <= 62 then stationKolar:setRestocksScanProbes(false) end
 	if random(1,100) <= 48 then stationKolar:setRepairDocked(false) end
@@ -5393,33 +5393,33 @@ function createKentarStations()
 	--Locarno
 	--local locarnoZone = squareZone(246819, 331779, "Locarno V17")
 	--locarnoZone:setColor(51,153,255)
-    stationLocarno = SpaceStation():setTemplate("Small Station"):setFaction("Independent"):setCallSign("Locarno"):setPosition(246819, 331779):setDescription("Mining and resupply"):setCommsScript(""):setCommsFunction(commsStation)
-    if random(1,100) <= 30 then nukeAvail = true else nukeAvail = false end
-    if random(1,100) <= 40 then empAvail = true else empAvail = false end
-    if random(1,100) <= 50 then mineAvail = true else mineAvail = false end
-    if random(1,100) <= 60 then homeAvail = true else homeAvail = false end
-    if random(1,100) <= 80 then hvliAvail = true else hvliAvail = false end
-    if random(1,100) <= 42 then tradeLuxury = true else tradeLuxury = false end
-    if random(1,100) <= 42 then tradeFood = true else tradeFood = false end
-    if random(1,100) <= 42 then tradeMedicine = true else tradeMedicine = false end
-    stationLocarno.comms_data = {
-    	friendlyness = 85,
-        weapons = 			{Homing = "neutral",		HVLI = "neutral", 		Mine = "neutral",		Nuke = "neutral", 			EMP = "neutral"},
-        weapon_cost =		{Homing = math.random(1,5), HVLI = math.random(2,4),Mine = math.random(2,4),Nuke = math.random(12,18),	EMP = math.random(9,15) },
-        weapon_available = 	{Homing = homeAvail,		HVLI = hvliAvail,		Mine = mineAvail,		Nuke = nukeAvail,			EMP = empAvail},
-        service_cost = 		{supplydrop = math.random(80,120), reinforcements = math.random(125,175)},
-        hack_repair =			true,
-        scan_repair =			true,
-        sensor_boost = {value = 5000, cost = 5},
-        reputation_cost_multipliers = {friend = 1.0, neutral = 2.0},
-        max_weapon_refill_amount = {friend = 1.0, neutral = 0.5 },
-        goods = {	nanites = 	{quantity = math.random(5,9),	cost = math.random(50,80)},
-        			android =	{quantity = math.random(5,9),	cost = math.random(63,70)},
-        			cobalt =	{quantity = math.random(5,9),	cost = math.random(33,50)}	},
-        trade = {	food = tradeFood, medicine = tradeMedicine, luxury = tradeLuxury },
-        public_relations = true,
-        general_information = "We mine, we trade, we sell nanites and android components",
-    	history = "It looked like a good location for resupply and mining and it's served us well"
+	stationLocarno = SpaceStation():setTemplate("Small Station"):setFaction("Independent"):setCallSign("Locarno"):setPosition(246819, 331779):setDescription("Mining and resupply"):setCommsScript(""):setCommsFunction(commsStation)
+	if random(1,100) <= 30 then nukeAvail = true else nukeAvail = false end
+	if random(1,100) <= 40 then empAvail = true else empAvail = false end
+	if random(1,100) <= 50 then mineAvail = true else mineAvail = false end
+	if random(1,100) <= 60 then homeAvail = true else homeAvail = false end
+	if random(1,100) <= 80 then hvliAvail = true else hvliAvail = false end
+	if random(1,100) <= 42 then tradeLuxury = true else tradeLuxury = false end
+	if random(1,100) <= 42 then tradeFood = true else tradeFood = false end
+	if random(1,100) <= 42 then tradeMedicine = true else tradeMedicine = false end
+	stationLocarno.comms_data = {
+		friendlyness = 85,
+		weapons = 			{Homing = "neutral",		HVLI = "neutral", 		Mine = "neutral",		Nuke = "neutral", 			EMP = "neutral"},
+		weapon_cost =		{Homing = math.random(1,5), HVLI = math.random(2,4),Mine = math.random(2,4),Nuke = math.random(12,18),	EMP = math.random(9,15) },
+		weapon_available = 	{Homing = homeAvail,		HVLI = hvliAvail,		Mine = mineAvail,		Nuke = nukeAvail,			EMP = empAvail},
+		service_cost = 		{supplydrop = math.random(80,120), reinforcements = math.random(125,175)},
+		hack_repair =			true,
+		scan_repair =			true,
+		sensor_boost = {value = 5000, cost = 5},
+		reputation_cost_multipliers = {friend = 1.0, neutral = 2.0},
+		max_weapon_refill_amount = {friend = 1.0, neutral = 0.5 },
+		goods = {	nanites = 	{quantity = math.random(5,9),	cost = math.random(50,80)},
+					android =	{quantity = math.random(5,9),	cost = math.random(63,70)},
+					cobalt =	{quantity = math.random(5,9),	cost = math.random(33,50)}	},
+		trade = {	food = tradeFood, medicine = tradeMedicine, luxury = tradeLuxury },
+		public_relations = true,
+		general_information = "We mine, we trade, we sell nanites and android components",
+		history = "It looked like a good location for resupply and mining and it's served us well"
 	}
 	if random(1,100) <= 32 then stationLocarno:setRestocksScanProbes(false) end
 	if random(1,100) <= 28 then stationLocarno:setRepairDocked(false) end
@@ -5429,30 +5429,30 @@ function createKentarStations()
 	--Nereus
 	--local NereusZone = squareZone(174288, 321668, "Nereus B V13")
 	--NereusZone:setColor(0,128,0)
-    stationNereus = SpaceStation():setTemplate("Small Station"):setFaction("Human Navy"):setCallSign("Nereus B"):setPosition(174288, 321668):setDescription("Mining, observation and lifter manufacturing"):setCommsScript(""):setCommsFunction(commsStation)
-    if random(1,100) <= 30 then nukeAvail = true else nukeAvail = false end
-    if random(1,100) <= 40 then empAvail = true else empAvail = false end
-    if random(1,100) <= 50 then mineAvail = true else mineAvail = false end
-    if random(1,100) <= 60 then homeAvail = true else homeAvail = false end
-    if random(1,100) <= 80 then hvliAvail = true else hvliAvail = false end
-    if random(1,100) <= 42 then tradeLuxury = true else tradeLuxury = false end
-    if random(1,100) <= 42 then tradeMedicine = true else tradeMedicine = false end
-    stationNereus.comms_data = {
-    	friendlyness = 58,
-        weapons = 			{Homing = "neutral",		HVLI = "neutral", 		Mine = "friend",		Nuke = "friend", 			EMP = "friend"},
-        weapon_cost =		{Homing = math.random(3,7), HVLI = math.random(1,3),Mine = math.random(1,6),Nuke = math.random(13,15),	EMP = math.random(12,15) },
-        weapon_available = 	{Homing = homeAvail,		HVLI = hvliAvail,		Mine = mineAvail,		Nuke = nukeAvail,			EMP = empAvail},
-        service_cost = 		{supplydrop = math.random(80,120), reinforcements = math.random(125,175)},
-        probe_launch_repair =	true,
-        scan_repair =			true,
-        reputation_cost_multipliers = {friend = 1.0, neutral = 2.0},
-        max_weapon_refill_amount = {friend = 1.0, neutral = 0.5 },
-        goods = {	nickel = 	{quantity = math.random(2,5),	cost = math.random(30,50)},
-        			lifter = 	{quantity = math.random(2,5),	cost = math.random(55,90)}	},
-        trade = {	food = true, medicine = tradeMedicine, luxury = tradeLuxury },
-        public_relations = true,
-        general_information = "We mine primarily for nickel, watch for enemy vessels and manufacture lifter components",
-    	history = "These asteroids provide a good nearby source for nickel, so a station was placed to facilitate mining. One of the original station members had lifter experience and over time built up a lifter manufacturing facility"
+	stationNereus = SpaceStation():setTemplate("Small Station"):setFaction("Human Navy"):setCallSign("Nereus B"):setPosition(174288, 321668):setDescription("Mining, observation and lifter manufacturing"):setCommsScript(""):setCommsFunction(commsStation)
+	if random(1,100) <= 30 then nukeAvail = true else nukeAvail = false end
+	if random(1,100) <= 40 then empAvail = true else empAvail = false end
+	if random(1,100) <= 50 then mineAvail = true else mineAvail = false end
+	if random(1,100) <= 60 then homeAvail = true else homeAvail = false end
+	if random(1,100) <= 80 then hvliAvail = true else hvliAvail = false end
+	if random(1,100) <= 42 then tradeLuxury = true else tradeLuxury = false end
+	if random(1,100) <= 42 then tradeMedicine = true else tradeMedicine = false end
+	stationNereus.comms_data = {
+		friendlyness = 58,
+		weapons = 			{Homing = "neutral",		HVLI = "neutral", 		Mine = "friend",		Nuke = "friend", 			EMP = "friend"},
+		weapon_cost =		{Homing = math.random(3,7), HVLI = math.random(1,3),Mine = math.random(1,6),Nuke = math.random(13,15),	EMP = math.random(12,15) },
+		weapon_available = 	{Homing = homeAvail,		HVLI = hvliAvail,		Mine = mineAvail,		Nuke = nukeAvail,			EMP = empAvail},
+		service_cost = 		{supplydrop = math.random(80,120), reinforcements = math.random(125,175)},
+		probe_launch_repair =	true,
+		scan_repair =			true,
+		reputation_cost_multipliers = {friend = 1.0, neutral = 2.0},
+		max_weapon_refill_amount = {friend = 1.0, neutral = 0.5 },
+		goods = {	nickel = 	{quantity = math.random(2,5),	cost = math.random(30,50)},
+					lifter = 	{quantity = math.random(2,5),	cost = math.random(55,90)}	},
+		trade = {	food = true, medicine = tradeMedicine, luxury = tradeLuxury },
+		public_relations = true,
+		general_information = "We mine primarily for nickel, watch for enemy vessels and manufacture lifter components",
+		history = "These asteroids provide a good nearby source for nickel, so a station was placed to facilitate mining. One of the original station members had lifter experience and over time built up a lifter manufacturing facility"
 	}
 	if random(1,100) <= 12 then stationNereus:setRestocksScanProbes(false) end
 	if random(1,100) <= 18 then stationNereus:setRepairDocked(false) end
@@ -5461,30 +5461,30 @@ function createKentarStations()
 	table.insert(stations,stationNereus)
 	--Pastern (Orbiting Ergot which orbits Rigil in N25. Look in the square bounded by Q22, K22, K28 and Q28)
 	local ergot_x, ergot_y = planet_primus:getPosition()
-    stationPastern = SpaceStation():setTemplate("Small Station"):setFaction("Independent"):setCallSign("Pastern"):setPosition(ergot_x+1500, ergot_y):setDescription("Research"):setCommsScript(""):setCommsFunction(commsStation)
-    if random(1,100) <= 30 then nukeAvail = true else nukeAvail = false end
-    if random(1,100) <= 40 then empAvail = true else empAvail = false end
-    if random(1,100) <= 50 then mineAvail = true else mineAvail = false end
-    if random(1,100) <= 60 then homeAvail = true else homeAvail = false end
-    if random(1,100) <= 80 then hvliAvail = true else hvliAvail = false end
-    if random(1,100) <= 42 then tradeLuxury = true else tradeLuxury = false end
-    if random(1,100) <= 42 then tradeMedicine = true else tradeMedicine = false end
-    stationPastern.comms_data = {
-    	friendlyness = 58,
-        weapons = 			{Homing = "neutral",		HVLI = "neutral", 		Mine = "friend",		Nuke = "friend", 			EMP = "friend"},
-        weapon_cost =		{Homing = math.random(3,7), HVLI = math.random(1,3),Mine = math.random(1,6),Nuke = math.random(13,15),	EMP = math.random(12,15) },
-        weapon_available = 	{Homing = homeAvail,		HVLI = hvliAvail,		Mine = mineAvail,		Nuke = nukeAvail,			EMP = empAvail},
-        service_cost = 		{supplydrop = math.random(80,120), reinforcements = math.random(125,175)},
-        probe_launch_repair =	true,
-        scan_repair =			true,
-        reputation_cost_multipliers = {friend = 1.0, neutral = 3.0},
-        max_weapon_refill_amount = {friend = 1.0, neutral = 0.5 },
-        goods = {	circuit = 	{quantity = math.random(2,5),	cost = math.random(30,50)},
-        			battery = 	{quantity = math.random(2,5),	cost = math.random(55,90)}	},
-        trade = {	food = true, medicine = tradeMedicine, luxury = tradeLuxury },
-        public_relations = true,
-        general_information = "We research the relationship between Rigil, Ergot and the cosmos",
-    	history = "Continuing the equine anatomy nomenclature, the station builders named this station Pastern due to its proximity to Ergot"
+	stationPastern = SpaceStation():setTemplate("Small Station"):setFaction("Independent"):setCallSign("Pastern"):setPosition(ergot_x+1500, ergot_y):setDescription("Research"):setCommsScript(""):setCommsFunction(commsStation)
+	if random(1,100) <= 30 then nukeAvail = true else nukeAvail = false end
+	if random(1,100) <= 40 then empAvail = true else empAvail = false end
+	if random(1,100) <= 50 then mineAvail = true else mineAvail = false end
+	if random(1,100) <= 60 then homeAvail = true else homeAvail = false end
+	if random(1,100) <= 80 then hvliAvail = true else hvliAvail = false end
+	if random(1,100) <= 42 then tradeLuxury = true else tradeLuxury = false end
+	if random(1,100) <= 42 then tradeMedicine = true else tradeMedicine = false end
+	stationPastern.comms_data = {
+		friendlyness = 58,
+		weapons = 			{Homing = "neutral",		HVLI = "neutral", 		Mine = "friend",		Nuke = "friend", 			EMP = "friend"},
+		weapon_cost =		{Homing = math.random(3,7), HVLI = math.random(1,3),Mine = math.random(1,6),Nuke = math.random(13,15),	EMP = math.random(12,15) },
+		weapon_available = 	{Homing = homeAvail,		HVLI = hvliAvail,		Mine = mineAvail,		Nuke = nukeAvail,			EMP = empAvail},
+		service_cost = 		{supplydrop = math.random(80,120), reinforcements = math.random(125,175)},
+		probe_launch_repair =	true,
+		scan_repair =			true,
+		reputation_cost_multipliers = {friend = 1.0, neutral = 3.0},
+		max_weapon_refill_amount = {friend = 1.0, neutral = 0.5 },
+		goods = {	circuit = 	{quantity = math.random(2,5),	cost = math.random(30,50)},
+					battery = 	{quantity = math.random(2,5),	cost = math.random(55,90)}	},
+		trade = {	food = true, medicine = tradeMedicine, luxury = tradeLuxury },
+		public_relations = true,
+		general_information = "We research the relationship between Rigil, Ergot and the cosmos",
+		history = "Continuing the equine anatomy nomenclature, the station builders named this station Pastern due to its proximity to Ergot"
 	}
 	update_system:addOrbitTargetUpdate(stationPastern,planet_primus,1500,23*2*math.pi,0)
 	if random(1,100) <= 23 then stationPastern:setRestocksScanProbes(false) end
@@ -5496,30 +5496,30 @@ function createKentarStations()
 	--local talosZone = squareZone(124505, 317170, "Talos 2 U11")
 	--talosZone:setColor(0,128,0)
 	stationTalos = SpaceStation():setTemplate("Small Station"):setFaction("Human Navy"):setCallSign("Talos 2"):setPosition(124505, 317170):setDescription("Mining and observation"):setCommsScript(""):setCommsFunction(commsStation)
-    if random(1,100) <= 30 then nukeAvail = true else nukeAvail = false end
-    if random(1,100) <= 40 then empAvail = true else empAvail = false end
-    if random(1,100) <= 50 then mineAvail = true else mineAvail = false end
-    if random(1,100) <= 60 then homeAvail = true else homeAvail = false end
-    if random(1,100) <= 80 then hvliAvail = true else hvliAvail = false end
-    if random(1,100) <= 42 then tradeLuxury = true else tradeLuxury = false end
-    if random(1,100) <= 42 then tradeFood = true else tradeFood = false end
-    if random(1,100) <= 42 then tradeMedicine = true else tradeMedicine = false end
-    stationTalos.comms_data = {
-    	friendlyness = 35,
-        weapons = 			{Homing = "neutral",		HVLI = "neutral", 		Mine = "friend",		Nuke = "friend", 			EMP = "friend"},
-        weapon_cost =		{Homing = math.random(2,7), HVLI = math.random(2,4),Mine = math.random(2,4),Nuke = math.random(14,18),	EMP = math.random(8,12) },
-        weapon_available = 	{Homing = homeAvail,		HVLI = hvliAvail,		Mine = mineAvail,		Nuke = nukeAvail,			EMP = empAvail},
-        service_cost = 		{supplydrop = math.random(80,120), reinforcements = math.random(125,175)},
-        probe_launch_repair =	true,
-        combat_maneuver_repair=	true,
-        reputation_cost_multipliers = {friend = 1.0, neutral = 2.0},
-        max_weapon_refill_amount = {friend = 1.0, neutral = 0.5 },
-        goods = {	platinum = 	{quantity = math.random(2,5),	cost = math.random(50,80)},
-        			gold =	 	{quantity = math.random(2,5),	cost = math.random(43,70)}	},
-        trade = {	food = tradeFood, medicine = tradeMedicine, luxury = tradeLuxury },
-        public_relations = true,
-        general_information = "We mine primarily for platinum and gold and watch for enemy vessels",
-    	history = "These asteroids provide a good nearby source for gold and platinum, so a station was placed to facilitate mining. It also serves as a good early warning post for enemy vessels"
+	if random(1,100) <= 30 then nukeAvail = true else nukeAvail = false end
+	if random(1,100) <= 40 then empAvail = true else empAvail = false end
+	if random(1,100) <= 50 then mineAvail = true else mineAvail = false end
+	if random(1,100) <= 60 then homeAvail = true else homeAvail = false end
+	if random(1,100) <= 80 then hvliAvail = true else hvliAvail = false end
+	if random(1,100) <= 42 then tradeLuxury = true else tradeLuxury = false end
+	if random(1,100) <= 42 then tradeFood = true else tradeFood = false end
+	if random(1,100) <= 42 then tradeMedicine = true else tradeMedicine = false end
+	stationTalos.comms_data = {
+		friendlyness = 35,
+		weapons = 			{Homing = "neutral",		HVLI = "neutral", 		Mine = "friend",		Nuke = "friend", 			EMP = "friend"},
+		weapon_cost =		{Homing = math.random(2,7), HVLI = math.random(2,4),Mine = math.random(2,4),Nuke = math.random(14,18),	EMP = math.random(8,12) },
+		weapon_available = 	{Homing = homeAvail,		HVLI = hvliAvail,		Mine = mineAvail,		Nuke = nukeAvail,			EMP = empAvail},
+		service_cost = 		{supplydrop = math.random(80,120), reinforcements = math.random(125,175)},
+		probe_launch_repair =	true,
+		combat_maneuver_repair=	true,
+		reputation_cost_multipliers = {friend = 1.0, neutral = 2.0},
+		max_weapon_refill_amount = {friend = 1.0, neutral = 0.5 },
+		goods = {	platinum = 	{quantity = math.random(2,5),	cost = math.random(50,80)},
+					gold =	 	{quantity = math.random(2,5),	cost = math.random(43,70)}	},
+		trade = {	food = tradeFood, medicine = tradeMedicine, luxury = tradeLuxury },
+		public_relations = true,
+		general_information = "We mine primarily for platinum and gold and watch for enemy vessels",
+		history = "These asteroids provide a good nearby source for gold and platinum, so a station was placed to facilitate mining. It also serves as a good early warning post for enemy vessels"
 	}
 	if random(1,100) <= 14 then stationTalos:setRestocksScanProbes(false) end
 	if random(1,100) <= 11 then stationTalos:setRepairDocked(false) end
@@ -5527,33 +5527,33 @@ function createKentarStations()
 	station_names[stationTalos:getCallSign()] = {stationTalos:getSectorName(), stationTalos}
 	table.insert(stations,stationTalos)
 	--Sutter (T9)
-    stationSutter = SpaceStation():setTemplate("Small Station"):setFaction("Human Navy"):setCallSign("Sutter"):setPosition(84609, 293172):setDescription("Mining and research"):setCommsScript(""):setCommsFunction(commsStation)
-    if random(1,100) <= 30 then nukeAvail = true else nukeAvail = false end
-    if random(1,100) <= 40 then empAvail = true else empAvail = false end
-    if random(1,100) <= 50 then mineAvail = true else mineAvail = false end
-    if random(1,100) <= 60 then homeAvail = true else homeAvail = false end
-    if random(1,100) <= 80 then hvliAvail = true else hvliAvail = false end
-    if random(1,100) <= 42 then tradeLuxury = true else tradeLuxury = false end
-    if random(1,100) <= 42 then tradeFood = true else tradeFood = false end
-    if random(1,100) <= 42 then tradeMedicine = true else tradeMedicine = false end
-    stationSutter.comms_data = {
-    	friendlyness = 45,
-        weapons = 			{Homing = "neutral",		HVLI = "neutral", 		Mine = "friend",		Nuke = "friend", 			EMP = "friend"},
-        weapon_cost =		{Homing = math.random(1,5), HVLI = math.random(2,4),Mine = math.random(2,4),Nuke = math.random(12,18),	EMP = math.random(9,15) },
-        weapon_available = 	{Homing = homeAvail,		HVLI = hvliAvail,		Mine = mineAvail,		Nuke = nukeAvail,			EMP = empAvail},
-        service_cost = 		{supplydrop = math.random(80,120), reinforcements = math.random(125,175)},
-        probe_launch_repair =	true,
-        hack_repair =			true,
-        scan_repair =			true,
-        reputation_cost_multipliers = {friend = 1.0, neutral = 2.0},
-        max_weapon_refill_amount = {friend = 1.0, neutral = 0.5 },
-        goods = {	nickel = 	{quantity = math.random(5,9),	cost = math.random(50,80)},
-        			dilithium =	{quantity = math.random(5,9),	cost = math.random(43,70)},
-        			cobalt =	{quantity = math.random(5,9),	cost = math.random(63,70)}	},
-        trade = {	food = tradeFood, medicine = tradeMedicine, luxury = tradeLuxury },
-        public_relations = true,
-        general_information = "We mine for nickel, dilithium and cobalt. A science team researches some extraordinarily rare minerals found here",
-    	history = "These asteroids provide a good nearby source for nickel, dilithium and cobalt, so a station was placed to facilitate mining. A scientific research team is also based herer to investigate unusual readings on some of the asteroids"
+	stationSutter = SpaceStation():setTemplate("Small Station"):setFaction("Human Navy"):setCallSign("Sutter"):setPosition(84609, 293172):setDescription("Mining and research"):setCommsScript(""):setCommsFunction(commsStation)
+	if random(1,100) <= 30 then nukeAvail = true else nukeAvail = false end
+	if random(1,100) <= 40 then empAvail = true else empAvail = false end
+	if random(1,100) <= 50 then mineAvail = true else mineAvail = false end
+	if random(1,100) <= 60 then homeAvail = true else homeAvail = false end
+	if random(1,100) <= 80 then hvliAvail = true else hvliAvail = false end
+	if random(1,100) <= 42 then tradeLuxury = true else tradeLuxury = false end
+	if random(1,100) <= 42 then tradeFood = true else tradeFood = false end
+	if random(1,100) <= 42 then tradeMedicine = true else tradeMedicine = false end
+	stationSutter.comms_data = {
+		friendlyness = 45,
+		weapons = 			{Homing = "neutral",		HVLI = "neutral", 		Mine = "friend",		Nuke = "friend", 			EMP = "friend"},
+		weapon_cost =		{Homing = math.random(1,5), HVLI = math.random(2,4),Mine = math.random(2,4),Nuke = math.random(12,18),	EMP = math.random(9,15) },
+		weapon_available = 	{Homing = homeAvail,		HVLI = hvliAvail,		Mine = mineAvail,		Nuke = nukeAvail,			EMP = empAvail},
+		service_cost = 		{supplydrop = math.random(80,120), reinforcements = math.random(125,175)},
+		probe_launch_repair =	true,
+		hack_repair =			true,
+		scan_repair =			true,
+		reputation_cost_multipliers = {friend = 1.0, neutral = 2.0},
+		max_weapon_refill_amount = {friend = 1.0, neutral = 0.5 },
+		goods = {	nickel = 	{quantity = math.random(5,9),	cost = math.random(50,80)},
+					dilithium =	{quantity = math.random(5,9),	cost = math.random(43,70)},
+					cobalt =	{quantity = math.random(5,9),	cost = math.random(63,70)}	},
+		trade = {	food = tradeFood, medicine = tradeMedicine, luxury = tradeLuxury },
+		public_relations = true,
+		general_information = "We mine for nickel, dilithium and cobalt. A science team researches some extraordinarily rare minerals found here",
+		history = "These asteroids provide a good nearby source for nickel, dilithium and cobalt, so a station was placed to facilitate mining. A scientific research team is also based herer to investigate unusual readings on some of the asteroids"
 	}
 	if random(1,100) <= 14 then stationSutter:setRestocksScanProbes(false) end
 	if random(1,100) <= 11 then stationSutter:setRepairDocked(false) end
@@ -5597,8 +5597,8 @@ function createKentarMines()
 		{82666, 292940}
 	}
 	for i=1,#mine_coordinates do
-    	local static_mine = Mine():setPosition(mine_coordinates[i][1],mine_coordinates[i][2])
-    	table.insert(mine_list,static_mine)
+		local static_mine = Mine():setPosition(mine_coordinates[i][1],mine_coordinates[i][2])
+		table.insert(mine_list,static_mine)
 	end
 	return mine_list
 end
@@ -5798,13 +5798,13 @@ function createKentarAsteroids()
 		{238826, 231470, 175},
 		{239366, 228312, 195},
 		{240752, 228389, 325},
-		{241907, 228235, 425} 
+		{241907, 228235, 425}
 	}
-    for i=1,#asteroid_coordinates do
-    	local static_asteroid = Asteroid():setPosition(asteroid_coordinates[i][1],asteroid_coordinates[i][2]):setSize(asteroid_coordinates[i][3])
-    	table.insert(asteroid_list,static_asteroid)
-    end
-    return asteroid_list
+	for i=1,#asteroid_coordinates do
+		local static_asteroid = Asteroid():setPosition(asteroid_coordinates[i][1],asteroid_coordinates[i][2]):setSize(asteroid_coordinates[i][3])
+		table.insert(asteroid_list,static_asteroid)
+	end
+	return asteroid_list
 end
 function createKentarNebula()
 	local nebula_list = {}
@@ -5857,8 +5857,8 @@ function createKentarNebula()
 		{235680, 188091}
 	}
 	for i=1,#nebula_coordinates do
-    	local static_nebula = Nebula():setPosition(nebula_coordinates[i][1],nebula_coordinates[i][2])
-    	table.insert(nebula_list,static_nebula)
+		local static_nebula = Nebula():setPosition(nebula_coordinates[i][1],nebula_coordinates[i][2])
+		table.insert(nebula_list,static_nebula)
 	end
 	local mobile_neb_dist = 56568.542495
 	local nebula_start_angle = random(0,360)
@@ -5877,7 +5877,7 @@ function createKentarNebula()
 	kentar_mobile_nebula_1.increment = .05
 	plotMobile = movingObjects
 	table.insert(nebula_list,kentar_mobile_nebula_1)
-    return nebula_list
+	return nebula_list
 end
 function removeKentarColor()
 	kentar_color = false
@@ -5887,35 +5887,35 @@ function removeKentarColor()
 		end
 	end
 	kentar_planets = nil
-	
+
 	if kentar_asteroids ~= nil then
 		for _,ka in pairs(kentar_asteroids) do
 			ka:destroy()
 		end
 	end
 	kentar_asteroids = nil
-	
+
 	if kentar_nebula ~= nil then
 		for _,kn in pairs(kentar_nebula) do
 			kn:destroy()
 		end
 	end
 	kentar_nebula = nil
-	
+
 	if kentar_stations ~= nil then
 		for _,ks in pairs(kentar_stations) do
 			ks:destroy()
 		end
 	end
 	kentar_stations = nil
-	
+
 	if kentar_mines ~= nil then
 		for _,km in pairs(kentar_mines) do
 			km:destroy()
 		end
 	end
 	kentar_mines = nil
-	
+
 	if kentar_defense_platforms ~= nil then
 		for _,kdp in pairs(kentar_defense_platforms) do
 			kdp:destroy()
@@ -8224,31 +8224,31 @@ function ghostNebulaSector()
 	local tradeMedicine = true
 	local tradeLuxury = true
 	--Brillo
-    stationBrillo = SpaceStation():setTemplate("Small Station"):setFaction("Independent"):setCallSign("Brillo"):setPosition(466525, 301218):setDescription("Mining"):setCommsScript(""):setCommsFunction(commsStation)
-    if random(1,100) <= 30 then nukeAvail = true else nukeAvail = false end
-    if random(1,100) <= 40 then empAvail = true else empAvail = false end
-    if random(1,100) <= 50 then mineAvail = true else mineAvail = false end
-    if random(1,100) <= 60 then homeAvail = true else homeAvail = false end
-    if random(1,100) <= 80 then hvliAvail = true else hvliAvail = false end
-    if random(1,100) <= 42 then tradeLuxury = true else tradeLuxury = false end
-    if random(1,100) <= 42 then tradeMedicine = true else tradeMedicine = false end
-    stationBrillo.comms_data = {
-    	friendlyness = 68,
-        weapons = 			{Homing = "neutral",		HVLI = "neutral", 		Mine = "friend",		Nuke = "friend", 			EMP = "friend"},
-        weapon_cost =		{Homing = math.random(1,4), HVLI = math.random(2,4),Mine = math.random(2,5),Nuke = math.random(8,20),	EMP = math.random(12,15) },
-        weapon_available = 	{Homing = homeAvail,		HVLI = hvliAvail,		Mine = mineAvail,		Nuke = nukeAvail,			EMP = empAvail},
-        service_cost = 		{supplydrop = math.random(80,120), reinforcements = math.random(125,175)},
-        probe_launch_repair =	true,
-        scan_repair =			true,
-        sensor_boost = {value = 10000, cost = 10},
-        reputation_cost_multipliers = {friend = 1.0, neutral = 2.0},
-        max_weapon_refill_amount = {friend = 1.0, neutral = 0.5 },
-        goods = {	sensor = 	{quantity = math.random(2,5),	cost = math.random(40,70)},
-        			nickel = 	{quantity = math.random(2,5),	cost = math.random(55,90)}	},
-        trade = {	food = true, medicine = tradeMedicine, luxury = tradeLuxury },
-        public_relations = true,
-        general_information = "We coordinate mining nearby asteroids",
-    	history = "Shortly after Astron was established, a group of entrepreneurs wanted to take advantage of the proximity of mineral laden asteroids. Astron agreed under the stipulation that mining activity be kept hidden from the Ghosts in the area"
+	stationBrillo = SpaceStation():setTemplate("Small Station"):setFaction("Independent"):setCallSign("Brillo"):setPosition(466525, 301218):setDescription("Mining"):setCommsScript(""):setCommsFunction(commsStation)
+	if random(1,100) <= 30 then nukeAvail = true else nukeAvail = false end
+	if random(1,100) <= 40 then empAvail = true else empAvail = false end
+	if random(1,100) <= 50 then mineAvail = true else mineAvail = false end
+	if random(1,100) <= 60 then homeAvail = true else homeAvail = false end
+	if random(1,100) <= 80 then hvliAvail = true else hvliAvail = false end
+	if random(1,100) <= 42 then tradeLuxury = true else tradeLuxury = false end
+	if random(1,100) <= 42 then tradeMedicine = true else tradeMedicine = false end
+	stationBrillo.comms_data = {
+		friendlyness = 68,
+		weapons = 			{Homing = "neutral",		HVLI = "neutral", 		Mine = "friend",		Nuke = "friend", 			EMP = "friend"},
+		weapon_cost =		{Homing = math.random(1,4), HVLI = math.random(2,4),Mine = math.random(2,5),Nuke = math.random(8,20),	EMP = math.random(12,15) },
+		weapon_available = 	{Homing = homeAvail,		HVLI = hvliAvail,		Mine = mineAvail,		Nuke = nukeAvail,			EMP = empAvail},
+		service_cost = 		{supplydrop = math.random(80,120), reinforcements = math.random(125,175)},
+		probe_launch_repair =	true,
+		scan_repair =			true,
+		sensor_boost = {value = 10000, cost = 10},
+		reputation_cost_multipliers = {friend = 1.0, neutral = 2.0},
+		max_weapon_refill_amount = {friend = 1.0, neutral = 0.5 },
+		goods = {	sensor = 	{quantity = math.random(2,5),	cost = math.random(40,70)},
+					nickel = 	{quantity = math.random(2,5),	cost = math.random(55,90)}	},
+		trade = {	food = true, medicine = tradeMedicine, luxury = tradeLuxury },
+		public_relations = true,
+		general_information = "We coordinate mining nearby asteroids",
+		history = "Shortly after Astron was established, a group of entrepreneurs wanted to take advantage of the proximity of mineral laden asteroids. Astron agreed under the stipulation that mining activity be kept hidden from the Ghosts in the area"
 	}
 	if random(1,100) <= 22 then stationBrillo:setRestocksScanProbes(false) end
 	if random(1,100) <= 31 then stationBrillo:setRepairDocked(false) end
@@ -8855,7 +8855,7 @@ function addMineralCargo()
 					changePlayerCargo()
 					return
 				end
-				addMineralCargo()			
+				addMineralCargo()
 			end)
 		end
 	else
@@ -8889,7 +8889,7 @@ function addComponentCargo()
 				else
 					addGMMessage("Insufficient cargo space")
 				end
-				addComponentCargo()			
+				addComponentCargo()
 			end)
 		end
 	else
@@ -9009,7 +9009,7 @@ function changeMessageObject()
 		end
 	else
 		addGMMessage("Select an object to use to pass messages via its description field. No action taken")
-	end 
+	end
 end
 -----------------------------------------------------------------------
 --	Initial Set Up > Player Ships > Tweak Player > Ship Log Message  --
@@ -9332,7 +9332,7 @@ function changeMessageSourceObject()
 		end
 	else
 		addGMMessage("Select an object to use to identify message source via its description field. No action taken")
-	end 
+	end
 end
 -------------------------------------------------------------------------------
 --	Initial Set Up > Player Ships > Tweak Player > Ship Log Message > Color  --
@@ -9853,7 +9853,7 @@ function describeStockPlayerShips()
 	end)
 	addGMFunction("Piranha",function()
 		addGMMessage("Piranha: Frigate, Cruiser: Light Artillery   Hull:120   Shield:70,70   Size:200   Repair Crew:2   Cargo:8   R.Strength:16\nDefault advanced engine:None   Speeds: Impulse:60   Spin:10   Accelerate:8   C.Maneuver: Boost:200 Strafe:150\nTubes:8   Load Speed:8   Side:6   Back:2\n   Direction:-90   Type:HVLI and Homing Only\n   Direction:-90   Type:Any\n   Direction:-90   Type:HVLI and Homing Only\n   Direction: 90   Type:HVLI and Homing Only\n   Direction: 90   Type:Any\n   Direction: 90   Type:HVLI and Homing Only\n   Direction:170   Type:Mine Only\n   Direction:190   Type:Mine Only\n   Ordnance stock and type:\n      12 Homing\n      06 Nuke\n      08 Mine\n      20 HVLI\nThis combat-specialized Piranha F12 adds mine-laying tubes, combat maneuvering systems, and a jump drive.")
-	end)	
+	end)
 	addGMFunction("Player Cruiser",function()
 		addGMMessage("Player Cruiser:   Hull:200   Shield:80,80   Size:400   Repair Crew:3   Cargo:6   R.Strength:40\nDefault advanced engine:Jump   Speeds: Impulse:90   Spin:10   Accelerate:20   C.Maneuver: Boost:400 Strafe:250\nBeams:2\n   Arc:90   Direction:-15   Range:1   Cycle:6   Damage:10\n   Arc:90   Direction: 15   Range:1   Cycle:6   Damage:10\nTubes:3   Load Speed:8   Front:2   Back:1\n   Direction: -5   Type:Exclude Mine\n   Direction:  5   Type:Exclude Mine\n   Direction:180   Type:Mine Only\n   Ordnance stock and type:\n      12 Homing\n      04 Nuke\n      08 Mine\n      06 EMP")
 	end)
@@ -9862,7 +9862,7 @@ function describeStockPlayerShips()
 	end)
 	addGMFunction("Player Missile Cr.",function()
 		addGMMessage("Player Missile Cr.:   Hull:200   Shield:110,70   Size:200   Repair Crew:3   Cargo:8   R.Strength:45\nDefault advanced engine:Warp (800)   Speeds: Impulse:60   Spin:8   Accelerate:15   C.Maneuver: Boost:450 Strafe:150\nTubes:7   Load Speed:8   Front:2   Side:4   Back:1\n   Direction:  0   Type:Exclude Mine\n   Direction:  0   Type:Exclude Mine\n   Direction: 90   Type:Homing Only\n   Direction: 90   Type:Homing Only\n   Direction:-90   Type:Homing Only\n   Direction:-90   Type:Homing Only\n   Direction:180   Type:Mine Only\n   Ordnance stock and type:\n      30 Homing\n      08 Nuke\n      12 Mine\n      10 EMP")
-	end)	
+	end)
 	addGMFunction("Repulse",function()
 		addGMMessage("Repulse: Frigate, Armored Transport   Hull:120   Shield:80,80   Size:200   Repair Crew:8   Cargo:12   R.Strength:14\nDefault advanced engine:Jump   Speeds: Impulse:55   Spin:9   Accelerate:10   C.Maneuver: Boost:250 Strafe:150\nBeams:2 Turreted Speed:5\n   Arc:200   Direction: 90   Range:1.2   Cycle:6   Damage:5\n   Arc:200   Direction:-90   Range:1.2   Cycle:6   Damage:5\nTubes:2   Load Speed:20   Front:1   Back:1\n   Direction:  0   Type:Any\n   Direction:180   Type:Any\n   Ordnance stock and type:\n      4 Homing\n      6 HVLI\nJump/Turret version of Flavia Falcon")
 	end)
@@ -9919,9 +9919,9 @@ function createPlayerShipArgonaut()
 	playerArgonaut:setWeaponTubeExclusiveFor(0,"Homing")	--Homing only (vs Mine)
 	playerArgonaut:setWeaponTubeExclusiveFor(1,"Homing")	--Homing only (vs Mine)
 	playerArgonaut:setWeaponStorageMax("Homing",8)			--more homing (vs 0)
-	playerArgonaut:setWeaponStorage("Homing", 8)				
+	playerArgonaut:setWeaponStorage("Homing", 8)
 	playerArgonaut:setWeaponStorageMax("Mine",8)			--fewer mines (vs 12)
-	playerArgonaut:setWeaponStorage("Mine", 8)				
+	playerArgonaut:setWeaponStorage("Mine", 8)
 	playerArgonaut:addReputationPoints(50)
 	playerShipSpawned("Argonaut")
 end
@@ -9957,11 +9957,11 @@ function createPlayerShipArwine()
 	playerArwine:weaponTubeAllowMissle(4,"EMP")
 	playerArwine:weaponTubeAllowMissle(4,"Nuke")
 	playerArwine:setWeaponStorageMax("Mine",4)				--fewer mines (vs 8)
-	playerArwine:setWeaponStorage("Mine", 4)				
+	playerArwine:setWeaponStorage("Mine", 4)
 	playerArwine:setWeaponStorageMax("EMP",4)				--more EMPs (vs 0)
-	playerArwine:setWeaponStorage("EMP", 4)					
+	playerArwine:setWeaponStorage("EMP", 4)
 	playerArwine:setWeaponStorageMax("Nuke",4)				--fewer Nukes (vs 6)
-	playerArwine:setWeaponStorage("Nuke", 4)				
+	playerArwine:setWeaponStorage("Nuke", 4)
 	playerArwine:addReputationPoints(50)
 	playerShipSpawned("Arwine")
 end
@@ -9980,7 +9980,7 @@ function createPlayerShipBarracuda()
 	playerBarracuda:setShieldsMax(100, 100)						--stronger shields (vs 70, 70)
 	playerBarracuda:setShields(100, 100)
 	playerBarracuda:setBeamWeapon(0, 10, 0, 1000.0, 4.0, 4)		--one beam (vs 0)
-	playerBarracuda:setBeamWeaponTurret(0, 80, 0, .5)			--slow turret 
+	playerBarracuda:setBeamWeaponTurret(0, 80, 0, .5)			--slow turret
 	playerBarracuda:setWeaponTubeCount(7)						--one fewer mine tube, but EMPs added
 	playerBarracuda:setWeaponTubeDirection(6, 180)				--mine tube points straight back
 	playerBarracuda:setWeaponTubeExclusiveFor(0,"HVLI")
@@ -9997,11 +9997,11 @@ function createPlayerShipBarracuda()
 	playerBarracuda:weaponTubeAllowMissle(4,"EMP")
 	playerBarracuda:weaponTubeAllowMissle(4,"Nuke")
 	playerBarracuda:setWeaponStorageMax("Mine",4)				--fewer mines (vs 8)
-	playerBarracuda:setWeaponStorage("Mine", 4)				
+	playerBarracuda:setWeaponStorage("Mine", 4)
 	playerBarracuda:setWeaponStorageMax("EMP",4)				--more EMPs (vs 0)
-	playerBarracuda:setWeaponStorage("EMP", 4)					
+	playerBarracuda:setWeaponStorage("EMP", 4)
 	playerBarracuda:setWeaponStorageMax("Nuke",4)				--fewer Nukes (vs 6)
-	playerBarracuda:setWeaponStorage("Nuke", 4)				
+	playerBarracuda:setWeaponStorage("Nuke", 4)
 	playerBarracuda:addReputationPoints(50)
 	playerShipSpawned("Barracuda")
 end
@@ -10009,7 +10009,7 @@ function createPlayerShipBlaire()
 	playerBlaire = PlayerSpaceship():setTemplate("Maverick"):setFaction("Human Navy"):setCallSign("Blaire")
 	playerBlaire:setTypeName("Kludge")
 	playerBlaire:setMaxEnergy(1130)						--more maximum energy (vs 1000)
-	playerBlaire:setEnergy(1130)							
+	playerBlaire:setEnergy(1130)
 	playerBlaire:setShieldsMax(160, 80)					--weaker shields (vs 160, 160)
 	playerBlaire:setShields(100, 100)
 	playerBlaire:setWarpSpeed(250)						--slower (vs 800)
@@ -10023,20 +10023,20 @@ function createPlayerShipBlaire()
 	playerBlaire:setBeamWeapon(0, 10,   25, 1000.0,       6.0, 6)	--shorter (vs 2000), turreted, angled (vs 0)
 	playerBlaire:setBeamWeapon(1, 34,   55,  500.0,       4.0, 8)	--shorter (vs 1500), angled (vs -20), faster (vs 6)
 	playerBlaire:setBeamWeapon(2, 70, -120,  800.0,       6.0, 6)	--shorter (vs 1500), angled (vs 20), weaker (vs 8)
-	playerBlaire:setBeamWeapon(3, 0, 0, 0, 0, 0)					--remove beams			
-	playerBlaire:setBeamWeapon(4, 0, 0, 0, 0, 0)	
-	playerBlaire:setBeamWeapon(5, 0, 0, 0, 0, 0)	
+	playerBlaire:setBeamWeapon(3, 0, 0, 0, 0, 0)					--remove beams
+	playerBlaire:setBeamWeapon(4, 0, 0, 0, 0, 0)
+	playerBlaire:setBeamWeapon(5, 0, 0, 0, 0, 0)
 --									   Arc, Dir, Rotate speed
 	playerBlaire:setBeamWeaponTurret(0, 50,  20, .2)
 	playerBlaire:setWeaponTubeDirection(0, -11)			--angled (vs-90)
 	playerBlaire:setWeaponTubeDirection(1,-23)			--angled (vs 90)
 	playerBlaire:setWeaponTubeDirection(2,174)			--angled (vs 180)
 	playerBlaire:setWeaponStorageMax("Homing", 1)		--less (vs 6)
-	playerBlaire:setWeaponStorage("Homing", 1)				
+	playerBlaire:setWeaponStorage("Homing", 1)
 	playerBlaire:setWeaponStorageMax("Nuke", 0)			--less (vs 2)
-	playerBlaire:setWeaponStorage("Nuke", 0)				
+	playerBlaire:setWeaponStorage("Nuke", 0)
 	playerBlaire:setWeaponStorageMax("HVLI", 17)		--more (vs 10)
-	playerBlaire:setWeaponStorage("HVLI", 17)				
+	playerBlaire:setWeaponStorage("HVLI", 17)
 	playerBlaire:addReputationPoints(50)
 	playerShipSpawned("Blaire")
 end
@@ -10049,7 +10049,7 @@ function createPlayerShipBlazon()
 	playerBlazon:setRotationMaxSpeed(35)					-- up from default of 15
 	playerBlazon:setShieldsMax(80,50)						-- up from 50, 30
 	playerBlazon:setShields(80,50)							-- up from 50, 30
-	playerBlazon:setBeamWeaponTurret(0,60,-15,2)			-- 60: narrower than default 100, 
+	playerBlazon:setBeamWeaponTurret(0,60,-15,2)			-- 60: narrower than default 100,
 	playerBlazon:setBeamWeaponTurret(1,60, 15,2)			-- 2: slower than default 6
 	playerBlazon:setBeamWeapon(2,20,0,1200,6,5)				-- add forward facing beam
 	playerBlazon:setWeaponTubeCount(3)						-- add tubes
@@ -10093,18 +10093,18 @@ function createPlayerShipCobra()
 	playerCobra:setBeamWeaponTurret(0, 100, -15, .2)		--slower turret speed (vs 6)
 	playerCobra:setBeamWeaponTurret(1, 100,  15, .2)
 	playerCobra:setWeaponTubeCount(2)						--more tubes (vs 0)
-	playerCobra:setWeaponTubeDirection(0,180)				
+	playerCobra:setWeaponTubeDirection(0,180)
 	playerCobra:setWeaponTubeDirection(1,180)
 	playerCobra:setWeaponStorageMax("Homing",4)
-	playerCobra:setWeaponStorage("Homing", 4)	
-	playerCobra:setWeaponStorageMax("Nuke",2)	
-	playerCobra:setWeaponStorage("Nuke", 2)	
-	playerCobra:setWeaponStorageMax("EMP",3)	
-	playerCobra:setWeaponStorage("EMP", 3)		
-	playerCobra:setWeaponStorageMax("Mine",3)	
-	playerCobra:setWeaponStorage("Mine", 3)	
-	playerCobra:setWeaponStorageMax("HVLI",6)	
-	playerCobra:setWeaponStorage("HVLI", 6)	
+	playerCobra:setWeaponStorage("Homing", 4)
+	playerCobra:setWeaponStorageMax("Nuke",2)
+	playerCobra:setWeaponStorage("Nuke", 2)
+	playerCobra:setWeaponStorageMax("EMP",3)
+	playerCobra:setWeaponStorage("EMP", 3)
+	playerCobra:setWeaponStorageMax("Mine",3)
+	playerCobra:setWeaponStorage("Mine", 3)
+	playerCobra:setWeaponStorageMax("HVLI",6)
+	playerCobra:setWeaponStorage("HVLI", 6)
 	playerCobra:setLongRangeRadarRange(20000)				--shorter longer range sensors (vs 30000)
 	playerCobra.normal_long_range_radar = 20000
 	playerCobra:setShortRangeRadarRange(4000)				--shorter short range sensors (vs 5000)
@@ -10124,15 +10124,15 @@ function createPlayerShipDarkstar()
 	playerDarkstar:setWeaponTubeDirection(0,-60)			--left -60 (vs -5)
 	playerDarkstar:setWeaponTubeDirection(1, 60)			--right 60 (vs 5)
 	playerDarkstar:setWeaponStorageMax("Homing",6)			--less (vs 12)
-	playerDarkstar:setWeaponStorage("Homing", 6)				
+	playerDarkstar:setWeaponStorage("Homing", 6)
 	playerDarkstar:setWeaponStorageMax("Nuke",2)			--fewer (vs 4)
-	playerDarkstar:setWeaponStorage("Nuke", 2)				
+	playerDarkstar:setWeaponStorage("Nuke", 2)
 	playerDarkstar:setWeaponStorageMax("EMP",3)				--fewer (vs 6)
-	playerDarkstar:setWeaponStorage("EMP", 3)				
+	playerDarkstar:setWeaponStorage("EMP", 3)
 	playerDarkstar:setWeaponStorageMax("Mine",4)			--fewer (vs 8)
-	playerDarkstar:setWeaponStorage("Mine", 4)				
+	playerDarkstar:setWeaponStorage("Mine", 4)
 	playerDarkstar:setWeaponStorageMax("HVLI",6)			--more (vs 0)
-	playerDarkstar:setWeaponStorage("HVLI", 6)				
+	playerDarkstar:setWeaponStorage("HVLI", 6)
 	playerDarkstar:addReputationPoints(50)
 	playerShipSpawned("Darkstar")
 end
@@ -10161,7 +10161,7 @@ function createPlayerShipEndeavor()
 	playerEndeavor:setMaxEnergy(800)						--less maximum energy (vs 1000)
 	playerEndeavor:setEnergy(800)
 	playerEndeavor:setHullMax(150)							--weaker hull (vs 250)
-	playerEndeavor:setHull(150)							
+	playerEndeavor:setHull(150)
 	playerEndeavor:setShieldsMax(150,150)					--weaker shields (vs 200)
 	playerEndeavor:setShields(150,150)
 	playerEndeavor.max_jump_range = 35000					--shorter than typical (vs 50)
@@ -10195,27 +10195,27 @@ function createPlayerShipEnola()
 	playerEnola:setBeamWeapon(2, 10,  90, 900.0, 	   6.0,   4)	--wider overall coverage, split overlap
 --										Arc,  Dir, Rotate speed
 	playerEnola:setBeamWeaponTurret(0,	110,    0,			 .3)	--slow turret
-	playerEnola:setBeamWeaponTurret(1,	 90,  -90,			 .3)		
-	playerEnola:setBeamWeaponTurret(2,	 90,   90,			 .3)		
+	playerEnola:setBeamWeaponTurret(1,	 90,  -90,			 .3)
+	playerEnola:setBeamWeaponTurret(2,	 90,   90,			 .3)
 	playerEnola:setWeaponTubeCount(4)					--fewer (vs 6)
 	playerEnola:setWeaponTubeDirection(0, 180)			--all tubes face back (vs 3 front, 2 sides and 1 back)
 	playerEnola:setWeaponTubeDirection(1, 180)
 	playerEnola:setWeaponTubeDirection(2, 180)
 	playerEnola:setWeaponTubeDirection(3, 180)
-	playerEnola:setWeaponTubeExclusiveFor(1,"Homing")	
+	playerEnola:setWeaponTubeExclusiveFor(1,"Homing")
 	playerEnola:weaponTubeAllowMissle(1,"EMP")			--Medium tube only for Homing or EMP (vs HVLI)
 	playerEnola:setWeaponTubeExclusiveFor(2,"Nuke")		--Large tube only for nuke (vs HVLI)
 	playerEnola:setWeaponTubeExclusiveFor(3,"Mine")
 	playerEnola:setWeaponStorageMax("HVLI", 12)			--fewer (vs 24)
-	playerEnola:setWeaponStorage("HVLI", 12)				
+	playerEnola:setWeaponStorage("HVLI", 12)
 	playerEnola:setWeaponStorageMax("Homing",5)			--fewer (vs 8)
-	playerEnola:setWeaponStorage("Homing", 5)				
+	playerEnola:setWeaponStorage("Homing", 5)
 	playerEnola:setWeaponStorageMax("EMP", 4)			--fewer (vs 6)
-	playerEnola:setWeaponStorage("EMP", 4)				
+	playerEnola:setWeaponStorage("EMP", 4)
 	playerEnola:setWeaponStorageMax("Nuke", 2)			--fewer (vs 4)
-	playerEnola:setWeaponStorage("Nuke", 2)				
+	playerEnola:setWeaponStorage("Nuke", 2)
 	playerEnola:setWeaponStorageMax("Mine", 3)			--fewer (vs 6)
-	playerEnola:setWeaponStorage("Mine", 3)				
+	playerEnola:setWeaponStorage("Mine", 3)
 	playerEnola:addReputationPoints(50)
 	playerShipSpawned("Enola")
 end
@@ -10226,18 +10226,18 @@ function createPlayerShipFalcon()
 	playerFalcon:setShields(100, 100)
 	playerFalcon:setJumpDrive(false)					--no jump drive
 	playerFalcon:setWarpDrive(true)						--warp drive (vs jump)
-	playerFalcon:setWarpSpeed(400)						
+	playerFalcon:setWarpSpeed(400)
 	playerFalcon:setWeaponTubeDirection(0,0)			--front facing (vs back)
 	playerFalcon:setWeaponTubeDirection(1,0)			--front facing (vs back)
 	playerFalcon:setWeaponTubeExclusiveFor(0,"Homing")	--Homing only (vs Mine)
 	playerFalcon:setWeaponTubeExclusiveFor(1,"Homing")	--Homing only (vs Mine)
 	playerFalcon:setWeaponTubeExclusiveFor(2,"Mine")	--Mine only (vs any)
 	playerFalcon:setWeaponStorageMax("Homing",8)		--more homing (vs 0)
-	playerFalcon:setWeaponStorage("Homing", 8)				
+	playerFalcon:setWeaponStorage("Homing", 8)
 	playerFalcon:setWeaponStorageMax("Mine",8)			--fewer mines (vs 12)
-	playerFalcon:setWeaponStorage("Mine", 8)				
+	playerFalcon:setWeaponStorage("Mine", 8)
 --                 				 Arc, Dir, Range, CycleTime, Damage
-	playerFalcon:setBeamWeapon(0,  10, -90,	1200, 		6.0, 	6.0)	--broadside beams (vs forward, overlapping)	
+	playerFalcon:setBeamWeapon(0,  10, -90,	1200, 		6.0, 	6.0)	--broadside beams (vs forward, overlapping)
 	playerFalcon:setBeamWeapon(1,  10,  90,	1200, 		6.0,	6.0)
 --										Arc,  Dir, Rotate speed
 	playerFalcon:setBeamWeaponTurret(0,	 90,  -90,			 .3)		--slow turret
@@ -10254,7 +10254,7 @@ function createPlayerShipGabble()
 	playerGabble:setJumpDriveRange(playerGabble.min_jump_range,playerGabble.max_jump_range)
 	playerGabble:setJumpDriveCharge(playerGabble.max_jump_range)
 	playerGabble:setBeamWeapon(0, 10, 0, 1000.0, 4.0, 4)		--one beam (vs 0)
-	playerGabble:setBeamWeaponTurret(0, 80, 0, 1)				--slow turret 
+	playerGabble:setBeamWeaponTurret(0, 80, 0, 1)				--slow turret
 	playerGabble:setWeaponTubeDirection(0,0)					--forward facing (vs left)
 	playerGabble:setWeaponTubeDirection(3,0)					--forward facing (vs right)
 	playerGabble:setWeaponTubeExclusiveFor(2,"Homing")			--homing only (vs HVLI)
@@ -10264,15 +10264,15 @@ function createPlayerShipGabble()
 	playerGabble:weaponTubeDisallowMissle(1,"Mine")				--no sideways mines
 	playerGabble:weaponTubeDisallowMissle(4,"Mine")				--no sideways mines
 	playerGabble:setWeaponStorageMax("HVLI",8)					--fewer HVLI (vs 20)
-	playerGabble:setWeaponStorage("HVLI", 8)				
+	playerGabble:setWeaponStorage("HVLI", 8)
 	playerGabble:setWeaponStorageMax("Homing",8)				--fewer Homing (vs 12)
-	playerGabble:setWeaponStorage("Homing", 8)				
+	playerGabble:setWeaponStorage("Homing", 8)
 	playerGabble:setWeaponStorageMax("Mine",4)					--fewer mines (vs 8)
-	playerGabble:setWeaponStorage("Mine", 4)				
+	playerGabble:setWeaponStorage("Mine", 4)
 	playerGabble:setWeaponStorageMax("EMP",4)					--more EMPs (vs 0)
-	playerGabble:setWeaponStorage("EMP", 4)					
+	playerGabble:setWeaponStorage("EMP", 4)
 	playerGabble:setWeaponStorageMax("Nuke",4)					--fewer Nukes (vs 6)
-	playerGabble:setWeaponStorage("Nuke", 4)				
+	playerGabble:setWeaponStorage("Nuke", 4)
 	playerGabble:setLongRangeRadarRange(25000)					--shorter long range sensors (vs 30000)
 	playerGabble.normal_long_range_radar = 25000
 	playerGabble:addReputationPoints(50)
@@ -10305,13 +10305,13 @@ function createPlayerShipGadfly()
 	playerGadfly:setTubeLoadTime(2,15)
 	playerGadfly:setWeaponTubeExclusiveFor(2,"Homing")
 	playerGadfly:setWeaponStorageMax("Homing", 4)		--more (vs 0)
-	playerGadfly:setWeaponStorage("Homing", 4)				
+	playerGadfly:setWeaponStorage("Homing", 4)
 	playerGadfly:setWeaponStorageMax("Nuke", 1)			--more (vs 0)
-	playerGadfly:setWeaponStorage("Nuke", 1)				
+	playerGadfly:setWeaponStorage("Nuke", 1)
 	playerGadfly:setWeaponStorageMax("EMP", 1)			--more (vs 0)
-	playerGadfly:setWeaponStorage("EMP", 1)				
+	playerGadfly:setWeaponStorage("EMP", 1)
 	playerGadfly:setWeaponStorageMax("HVLI", 8)			--more (vs 0)
-	playerGadfly:setWeaponStorage("HVLI", 8)				
+	playerGadfly:setWeaponStorage("HVLI", 8)
 	playerGadfly:addReputationPoints(50)
 	playerShipSpawned("Gadfly")
 end
@@ -10332,9 +10332,9 @@ function createPlayerShipGorn()
 	playerGorn:setWeaponTubeExclusiveFor(2,"HVLI")		--HVLI only (vs all but Mine)
 	playerGorn:setWeaponTubeExclusiveFor(3,"Homing")	--Homing only (vs all but Mine)
 	playerGorn:setWeaponStorageMax("EMP",0)				--fewer (vs 6)
-	playerGorn:setWeaponStorage("EMP", 0)				
+	playerGorn:setWeaponStorage("EMP", 0)
 	playerGorn:setWeaponStorageMax("Nuke",0)			--fewer (vs 4)
-	playerGorn:setWeaponStorage("Nuke", 0)	
+	playerGorn:setWeaponStorage("Nuke", 0)
 	playerGorn:setLongRangeRadarRange(28000)			--shorter longer range sensors (vs 30000)
 	playerGorn.normal_long_range_radar = 28000
 	playerGorn:addReputationPoints(50)
@@ -10352,7 +10352,7 @@ function createPlayerShipGuinevere()
 	playerGuinevere:setShieldsMax(100, 100)					--weaker shields (vs 160, 160)
 --                  			 Arc, Dir, Range, CycleTime, Dmg
 	playerGuinevere:setBeamWeapon(0, 80, -90, 900.0, 		5.0,   6)	--side beams (vs forward), faster (vs 6)
-	playerGuinevere:setBeamWeapon(1, 80,  90, 900.0, 		5.0,   6)	
+	playerGuinevere:setBeamWeapon(1, 80,  90, 900.0, 		5.0,   6)
 	playerGuinevere:setWeaponTubeCount(4)					--fewer (vs 6)
 	playerGuinevere:setWeaponTubeExclusiveFor(1,"EMP")		--normal sized tube allow EMPs and Nukes (vs HVLI)
 	playerGuinevere:weaponTubeAllowMissle(1,"Nuke")
@@ -10360,13 +10360,13 @@ function createPlayerShipGuinevere()
 	playerGuinevere:setWeaponTubeExclusiveFor(3,"Mine")
 	playerGuinevere:setWeaponTubeDirection(3, 180)
 	playerGuinevere:setWeaponStorageMax("Homing",6)			--fewer (vs 8)
-	playerGuinevere:setWeaponStorage("Homing", 6)				
+	playerGuinevere:setWeaponStorage("Homing", 6)
 	playerGuinevere:setWeaponStorageMax("EMP",3)			--fewer (vs 6)
-	playerGuinevere:setWeaponStorage("EMP", 3)				
+	playerGuinevere:setWeaponStorage("EMP", 3)
 	playerGuinevere:setWeaponStorageMax("Nuke",2)			--fewer (vs 4)
-	playerGuinevere:setWeaponStorage("Nuke", 2)				
+	playerGuinevere:setWeaponStorage("Nuke", 2)
 	playerGuinevere:setWeaponStorageMax("Mine",3)			--fewer (vs 6)
-	playerGuinevere:setWeaponStorage("Mine", 3)				
+	playerGuinevere:setWeaponStorage("Mine", 3)
 	playerGuinevere:addReputationPoints(50)
 	playerShipSpawned("Guinevere")
 end
@@ -10382,10 +10382,10 @@ function createPlayerShipHalberd()
 	playerHalberd:setJumpDriveRange(playerHalberd.min_jump_range,playerHalberd.max_jump_range)
 	playerHalberd:setJumpDriveCharge(playerHalberd.max_jump_range)
 	playerHalberd:setHullMax(200)						--weaker hull (vs 250)
-	playerHalberd:setHull(200)							
+	playerHalberd:setHull(200)
 	playerHalberd:setShieldsMax(150,150)				--weaker shields (vs 200)
 	playerHalberd:setShields(150,150)
-	
+
 --                 				 Arc, Dir, Range, CycleTime, Dmg
 	playerHalberd:setBeamWeapon(0, 5, -10,  1500,       6.0, 8)		--narrower turreted beams
 	playerHalberd:setBeamWeapon(1, 5,  10,  1500,       6.0, 8)		--vs arc:100, dir:-20
@@ -10417,7 +10417,7 @@ function createPlayerShipHeadhunter()
 	playerHeadhunter:setShieldsMax(100, 100)					--stronger shields (vs 70, 70)
 	playerHeadhunter:setShields(100, 100)
 	playerHeadhunter:setBeamWeapon(0, 10, 0, 1200.0, 4.0, 4)	--one beam (vs 0)
-	playerHeadhunter:setBeamWeaponTurret(0, 80, 0, 1)			--slow turret 
+	playerHeadhunter:setBeamWeaponTurret(0, 80, 0, 1)			--slow turret
 	playerHeadhunter:setWeaponTubeCount(7)						--one fewer mine tube, but EMPs added
 	playerHeadhunter:setWeaponTubeDirection(6, 180)				--mine tube points straight back
 	playerHeadhunter:setWeaponTubeExclusiveFor(0,"HVLI")
@@ -10434,11 +10434,11 @@ function createPlayerShipHeadhunter()
 	playerHeadhunter:weaponTubeAllowMissle(4,"EMP")
 	playerHeadhunter:weaponTubeAllowMissle(4,"Nuke")
 	playerHeadhunter:setWeaponStorageMax("Mine",4)				--fewer mines (vs 8)
-	playerHeadhunter:setWeaponStorage("Mine", 4)				
+	playerHeadhunter:setWeaponStorage("Mine", 4)
 	playerHeadhunter:setWeaponStorageMax("EMP",4)				--more EMPs (vs 0)
-	playerHeadhunter:setWeaponStorage("EMP", 4)					
+	playerHeadhunter:setWeaponStorage("EMP", 4)
 	playerHeadhunter:setWeaponStorageMax("Nuke",4)				--fewer Nukes (vs 6)
-	playerHeadhunter:setWeaponStorage("Nuke", 4)				
+	playerHeadhunter:setWeaponStorage("Nuke", 4)
 	playerHeadhunter:addReputationPoints(50)
 	playerShipSpawned("Headhunter")
 end
@@ -10451,7 +10451,7 @@ function createPlayerShipHearken()
 	playerHearken:setJumpDriveRange(playerHearken.min_jump_range,playerHearken.max_jump_range)
 	playerHearken:setJumpDriveCharge(playerHearken.max_jump_range)
 	playerHearken:setBeamWeapon(0, 10, 0, 1000.0, 4.0, 4)	--one beam (vs 0)
-	playerHearken:setBeamWeaponTurret(0, 80, 0, .5)			--slow turret 
+	playerHearken:setBeamWeaponTurret(0, 80, 0, .5)			--slow turret
 	playerHearken:setWeaponTubeCount(7)						--one fewer mine tube, but EMPs added
 	playerHearken:setWeaponTubeDirection(6, 180)			--mine tube points straight back
 	playerHearken:setWeaponTubeExclusiveFor(0,"HVLI")
@@ -10466,11 +10466,11 @@ function createPlayerShipHearken()
 	playerHearken:weaponTubeAllowMissle(1,"EMP")
 	playerHearken:weaponTubeAllowMissle(4,"EMP")
 	playerHearken:setWeaponStorageMax("Mine",4)				--fewer mines (vs 8)
-	playerHearken:setWeaponStorage("Mine", 4)				
+	playerHearken:setWeaponStorage("Mine", 4)
 	playerHearken:setWeaponStorageMax("EMP",4)				--more EMPs (vs 0)
-	playerHearken:setWeaponStorage("EMP", 4)					
+	playerHearken:setWeaponStorage("EMP", 4)
 	playerHearken:setWeaponStorageMax("Nuke",0)				--fewer Nukes (vs 6)
-	playerHearken:setWeaponStorage("Nuke", 0)				
+	playerHearken:setWeaponStorage("Nuke", 0)
 	playerHearken:addReputationPoints(50)
 	playerShipSpawned("Hearken")
 end
@@ -10480,9 +10480,9 @@ function createPlayerShipHolmes()
 	playerHolmes:setImpulseMaxSpeed(70)						--slower (vs 80)
 --                  			 Arc, Dir, Range, CycleTime, Dmg
 	playerHolmes:setBeamWeapon(0, 50, -85, 900.0, 		6.0, 5)	--broadside beams, narrower (vs 70)
-	playerHolmes:setBeamWeapon(1, 50, -95, 900.0, 		6.0, 5)	
-	playerHolmes:setBeamWeapon(2, 50,  85, 900.0, 		6.0, 5)	
-	playerHolmes:setBeamWeapon(3, 50,  95, 900.0, 		6.0, 5)	
+	playerHolmes:setBeamWeapon(1, 50, -95, 900.0, 		6.0, 5)
+	playerHolmes:setBeamWeapon(2, 50,  85, 900.0, 		6.0, 5)
+	playerHolmes:setBeamWeapon(3, 50,  95, 900.0, 		6.0, 5)
 	playerHolmes:setWeaponTubeCount(4)						--fewer (vs 6)
 	playerHolmes:setWeaponTubeExclusiveFor(0,"Homing")		--tubes only shoot homing missiles (vs more options)
 	playerHolmes:setWeaponTubeExclusiveFor(1,"Homing")
@@ -10490,13 +10490,13 @@ function createPlayerShipHolmes()
 	playerHolmes:setWeaponTubeExclusiveFor(3,"Mine")
 	playerHolmes:setWeaponTubeDirection(3, 180)
 	playerHolmes:setWeaponStorageMax("Homing",10)			--more (vs 8)
-	playerHolmes:setWeaponStorage("Homing", 10)				
+	playerHolmes:setWeaponStorage("Homing", 10)
 	playerHolmes:setWeaponStorageMax("HVLI",0)				--fewer
-	playerHolmes:setWeaponStorage("HVLI", 0)				
+	playerHolmes:setWeaponStorage("HVLI", 0)
 	playerHolmes:setWeaponStorageMax("EMP",0)				--fewer
-	playerHolmes:setWeaponStorage("EMP", 0)				
+	playerHolmes:setWeaponStorage("EMP", 0)
 	playerHolmes:setWeaponStorageMax("Nuke",0)				--fewer
-	playerHolmes:setWeaponStorage("Nuke", 0)	
+	playerHolmes:setWeaponStorage("Nuke", 0)
 	playerHolmes:setLongRangeRadarRange(35000)				--longer longer range sensors (vs 30000)
 	playerHolmes.normal_long_range_radar = 35000
 	playerHolmes:setShortRangeRadarRange(4000)				--shorter short range sensors (vs 5000)
@@ -10523,18 +10523,18 @@ function createPlayerShipInterlock()
 	playerInterlock:setBeamWeapon(5,  60,  20,	 600, 			6,	8)	--additional strong, medium, front
 --											Arc,  Dir, Rotate speed
 	playerInterlock:setBeamWeaponTurret(0,	100,    0,			1)		--slower turrets (vs 5)
-	playerInterlock:setBeamWeaponTurret(1,	180,  180,			1)		
+	playerInterlock:setBeamWeaponTurret(1,	180,  180,			1)
 	playerInterlock:setWeaponTubeCount(3)					--more (vs 2)
 	playerInterlock:setWeaponTubeDirection(0, -90)
 	playerInterlock:setTubeSize(0,"large")
-	playerInterlock:weaponTubeDisallowMissle(0,"Mine")	
+	playerInterlock:weaponTubeDisallowMissle(0,"Mine")
 	playerInterlock:setWeaponTubeDirection(1,  90)
 	playerInterlock:setTubeSize(1,"large")
-	playerInterlock:weaponTubeDisallowMissle(1,"Mine")	
+	playerInterlock:weaponTubeDisallowMissle(1,"Mine")
 	playerInterlock:setWeaponTubeDirection(2, 180)
 	playerInterlock:setWeaponTubeExclusiveFor(2,"Mine")		--mine only
 	playerInterlock:setWeaponStorageMax("Mine", 4)			--more mines (vs 0)
-	playerInterlock:setWeaponStorage("Mine", 4)				
+	playerInterlock:setWeaponStorage("Mine", 4)
 	playerInterlock:addReputationPoints(50)
 	playerShipSpawned("Interlock")
 end
@@ -10548,7 +10548,7 @@ function createPlayerShipJarvis()
 	playerJarvis:setShieldsMax(100, 100)					--weaker shields (vs 160, 160)
 --                  			 Arc, Dir, Range, CycleTime, Dmg
 	playerJarvis:setBeamWeapon(0, 10, -60, 900.0, 		6.0,   6)	--left, right, overlap beams (vs forward)
-	playerJarvis:setBeamWeapon(1, 10,  60, 900.0, 		6.0,   6)	
+	playerJarvis:setBeamWeapon(1, 10,  60, 900.0, 		6.0,   6)
 --										Arc, Dir, Rotate speed
 	playerJarvis:setBeamWeaponTurret(0, 140, -60, .6)		--slow turret beams
 	playerJarvis:setBeamWeaponTurret(1, 140,  60, .6)
@@ -10558,13 +10558,13 @@ function createPlayerShipJarvis()
 	playerJarvis:setWeaponTubeExclusiveFor(3,"Homing")		--homing only
 	playerJarvis:setWeaponTubeDirection(3, 180)				--on rear tube
 	playerJarvis:setWeaponStorageMax("Homing",4)			--fewer (vs 8)
-	playerJarvis:setWeaponStorage("Homing", 4)				
+	playerJarvis:setWeaponStorage("Homing", 4)
 	playerJarvis:setWeaponStorageMax("EMP",4)				--fewer (vs 6)
-	playerJarvis:setWeaponStorage("EMP", 4)				
+	playerJarvis:setWeaponStorage("EMP", 4)
 	playerJarvis:setWeaponStorageMax("Nuke",3)				--fewer (vs 4)
-	playerJarvis:setWeaponStorage("Nuke", 3)				
+	playerJarvis:setWeaponStorage("Nuke", 3)
 	playerJarvis:setWeaponStorageMax("Mine",0)				--fewer (vs 6)
-	playerJarvis:setWeaponStorage("Mine", 0)				
+	playerJarvis:setWeaponStorage("Mine", 0)
 	playerJarvis:addReputationPoints(50)
 	playerShipSpawned("Jarvis")
 end
@@ -10577,7 +10577,7 @@ function createPlayerShipJeeves()
 	playerJeeves:setShieldsMax(100, 100)					--weaker shields (vs 160, 160)
 --                  			 Arc, Dir, Range, CycleTime, Dmg
 	playerJeeves:setBeamWeapon(0, 80, -90, 900.0, 		6.0,   6)	--side beams (vs forward)
-	playerJeeves:setBeamWeapon(1, 80,  90, 900.0, 		6.0,   6)	
+	playerJeeves:setBeamWeapon(1, 80,  90, 900.0, 		6.0,   6)
 	playerJeeves:setWeaponTubeCount(4)								--fewer (vs 6)
 	playerJeeves:setWeaponTubeExclusiveFor(1,"EMP")					--normal sized tube allow EMPs and Nukes (vs HVLI)
 	playerJeeves:weaponTubeAllowMissle(1,"Nuke")
@@ -10585,13 +10585,13 @@ function createPlayerShipJeeves()
 	playerJeeves:setWeaponTubeExclusiveFor(3,"Mine")
 	playerJeeves:setWeaponTubeDirection(3, 180)
 	playerJeeves:setWeaponStorageMax("Homing",6)			--fewer (vs 8)
-	playerJeeves:setWeaponStorage("Homing", 6)				
+	playerJeeves:setWeaponStorage("Homing", 6)
 	playerJeeves:setWeaponStorageMax("EMP",3)				--fewer (vs 6)
-	playerJeeves:setWeaponStorage("EMP", 3)				
+	playerJeeves:setWeaponStorage("EMP", 3)
 	playerJeeves:setWeaponStorageMax("Nuke",2)				--fewer (vs 4)
-	playerJeeves:setWeaponStorage("Nuke", 2)				
+	playerJeeves:setWeaponStorage("Nuke", 2)
 	playerJeeves:setWeaponStorageMax("Mine",3)				--fewer (vs 6)
-	playerJeeves:setWeaponStorage("Mine", 3)				
+	playerJeeves:setWeaponStorage("Mine", 3)
 	playerJeeves:addReputationPoints(50)
 	playerShipSpawned("Jeeves")
 end
@@ -10609,15 +10609,15 @@ function createPlayerShipKindling()
 	playerKindling:setWeaponTubeDirection(0,-90)			--left -60 (vs -5)
 	playerKindling:setWeaponTubeDirection(1, 90)			--right 60 (vs 5)
 	playerKindling:setWeaponStorageMax("Homing",6)			--less (vs 12)
-	playerKindling:setWeaponStorage("Homing", 6)				
+	playerKindling:setWeaponStorage("Homing", 6)
 	playerKindling:setWeaponStorageMax("Nuke",1)			--fewer (vs 4)
-	playerKindling:setWeaponStorage("Nuke", 1)				
+	playerKindling:setWeaponStorage("Nuke", 1)
 	playerKindling:setWeaponStorageMax("EMP",1)				--fewer (vs 6)
-	playerKindling:setWeaponStorage("EMP", 1)				
+	playerKindling:setWeaponStorage("EMP", 1)
 	playerKindling:setWeaponStorageMax("Mine",2)			--fewer (vs 8)
-	playerKindling:setWeaponStorage("Mine", 2)				
+	playerKindling:setWeaponStorage("Mine", 2)
 	playerKindling:setWeaponStorageMax("HVLI",10)			--more (vs 0)
-	playerKindling:setWeaponStorage("HVLI", 10)				
+	playerKindling:setWeaponStorage("HVLI", 10)
 	playerKindling:setLongRangeRadarRange(25000)
 	playerKindling.normal_long_range_radar = 25000
 	playerKindling:addReputationPoints(50)
@@ -10650,7 +10650,7 @@ function createPlayerShipLancelot()
 	playerLancelot:setTypeName("Noble")
 	playerLancelot:setRepairCrewCount(5)							--more repair crew (vs 3)
 	playerLancelot:setMaxEnergy(850)								--less maximum energy (vs 1000)
-	playerLancelot:setEnergy(850)							
+	playerLancelot:setEnergy(850)
 	playerLancelot.max_jump_range = 30000					--shorter than typical (vs 50)
 	playerLancelot.min_jump_range = 3000						--shorter than typical (vs 5)
 	playerLancelot:setJumpDriveRange(playerLancelot.min_jump_range,playerLancelot.max_jump_range)
@@ -10680,11 +10680,11 @@ function createPlayerShipLancelot()
 	playerLancelot:setWeaponTubeExclusiveFor(2,"HVLI")				--only HVLI (vs all but mine)
 	playerLancelot:setWeaponTubeExclusiveFor(3,"Mine")				--only mine
 	playerLancelot:setWeaponStorageMax("Homing", 8)					--less (vs 12)
-	playerLancelot:setWeaponStorage("Homing", 8)				
+	playerLancelot:setWeaponStorage("Homing", 8)
 	playerLancelot:setWeaponStorageMax("Mine", 6)					--less (vs 8)
-	playerLancelot:setWeaponStorage("Mine", 6)				
+	playerLancelot:setWeaponStorage("Mine", 6)
 	playerLancelot:setWeaponStorageMax("HVLI", 8)					--more (vs 0)
-	playerLancelot:setWeaponStorage("HVLI", 8)				
+	playerLancelot:setWeaponStorage("HVLI", 8)
 	playerLancelot:setCombatManeuver(200,200)						--less (vs 400,250)
 	playerLancelot:addReputationPoints(50)
 	playerShipSpawned("Lancelot")
@@ -10705,7 +10705,7 @@ function createPlayerShipMagnum()
 	playerMagnum:setShieldsMax(100, 100)					--weaker shields (vs 160, 160)
 	playerMagnum:setShields(100, 100)
 	playerMagnum:setBeamWeapon(0, 60, -20, 1000.0, 6.0, 5)	--narrower (vs 70)
-	playerMagnum:setBeamWeapon(1, 60,  20, 1000.0, 6.0, 5)	
+	playerMagnum:setBeamWeapon(1, 60,  20, 1000.0, 6.0, 5)
 	playerMagnum:setWeaponTubeCount(4)						--fewer (vs 6)
 	playerMagnum:weaponTubeAllowMissle(2,"Homing")
 	playerMagnum:weaponTubeAllowMissle(2,"EMP")
@@ -10713,9 +10713,9 @@ function createPlayerShipMagnum()
 	playerMagnum:setWeaponTubeExclusiveFor(3,"Mine")
 	playerMagnum:setWeaponTubeDirection(3, 180)
 	playerMagnum:setWeaponStorageMax("EMP",2)				--fewer (vs 6)
-	playerMagnum:setWeaponStorage("EMP", 2)				
+	playerMagnum:setWeaponStorage("EMP", 2)
 	playerMagnum:setWeaponStorageMax("Nuke",1)				--fewer (vs 4)
-	playerMagnum:setWeaponStorage("Nuke", 1)	
+	playerMagnum:setWeaponStorage("Nuke", 1)
 	playerMagnum:addReputationPoints(50)
 	playerShipSpawned("Magnum")
 end
@@ -10731,9 +10731,9 @@ function createPlayerShipManxman()
 	playerManxman:setWeaponTubeExclusiveFor(0,"Homing")	--Homing only (vs Mine)
 	playerManxman:setWeaponTubeExclusiveFor(1,"Homing")	--Homing only (vs Mine)
 	playerManxman:setWeaponStorageMax("Homing",8)		--more homing (vs 0)
-	playerManxman:setWeaponStorage("Homing", 8)				
+	playerManxman:setWeaponStorage("Homing", 8)
 	playerManxman:setWeaponStorageMax("Mine",8)			--fewer mines (vs 12)
-	playerManxman:setWeaponStorage("Mine", 8)				
+	playerManxman:setWeaponStorage("Mine", 8)
 	playerManxman:addReputationPoints(50)
 	playerShipSpawned("Manxman")
 end
@@ -10747,7 +10747,7 @@ function createPlayerShipNarsil()
 	playerNarsil:setJumpDrive(false)					--no Jump
 	playerNarsil:setWarpDrive(true)						--add warp
 	playerNarsil:setHullMax(200)						--weaker hull (vs 250)
-	playerNarsil:setHull(200)							
+	playerNarsil:setHull(200)
 	playerNarsil:setShieldsMax(150,150)					--weaker shields (vs 200)
 	playerNarsil:setShields(150,150)
 	playerNarsil:setWeaponTubeCount(6)					--one more forward tube, less flexible ordnance
@@ -10806,8 +10806,8 @@ function createPlayerShipNusret()
 	playerNusret:setJumpDriveRange(playerNusret.min_jump_range,playerNusret.max_jump_range)
 	playerNusret:setJumpDriveCharge(playerNusret.max_jump_range)
 --                 			      Arc, Dir, Range, CycleTime, Damage
-	playerNusret:setBeamWeapon(0,  10, -35,	1000, 		6.0, 	6.0)	
-	playerNusret:setBeamWeapon(1,  10,  35,	1000, 		6.0,    6.0)	
+	playerNusret:setBeamWeapon(0,  10, -35,	1000, 		6.0, 	6.0)
+	playerNusret:setBeamWeapon(1,  10,  35,	1000, 		6.0,    6.0)
 	playerNusret:setBeamWeapon(2,  40,	 0,	 500,		8.0,	9.0)	--additional short, slow, stronger beam
 --										Arc,  Dir, Rotate speed
 	playerNusret:setBeamWeaponTurret(0,	 90,  -35,			 .4)		--slow turret
@@ -10818,9 +10818,9 @@ function createPlayerShipNusret()
 	playerNusret:setWeaponTubeExclusiveFor(0,"Homing")	--Homing only (vs Mine)
 	playerNusret:setWeaponTubeExclusiveFor(1,"Homing")	--Homing only (vs Mine)
 	playerNusret:setWeaponStorageMax("Homing",8)		--more homing (vs 0)
-	playerNusret:setWeaponStorage("Homing", 8)				
+	playerNusret:setWeaponStorage("Homing", 8)
 	playerNusret:setWeaponStorageMax("Mine",8)			--fewer mines (vs 12)
-	playerNusret:setWeaponStorage("Mine", 8)				
+	playerNusret:setWeaponStorage("Mine", 8)
 	playerNusret:addReputationPoints(50)
 	playerShipSpawned("Nusret")
 end
@@ -10838,16 +10838,16 @@ function createPlayerShipOsprey()
 	playerOsprey:setWeaponTubeDirection(0,-90)				--left facing (vs none)
 	playerOsprey:setWeaponTubeDirection(1, 90)				--right facing (vs none)
 	playerOsprey:setWeaponTubeDirection(2, 180)				--rear facing
-	playerOsprey:setWeaponTubeExclusiveFor(0,"Homing")		
+	playerOsprey:setWeaponTubeExclusiveFor(0,"Homing")
 	playerOsprey:setWeaponTubeExclusiveFor(1,"Homing")
 	playerOsprey:setWeaponStorageMax("EMP",2)				--more (vs 0)
-	playerOsprey:setWeaponStorage("EMP", 2)				
+	playerOsprey:setWeaponStorage("EMP", 2)
 	playerOsprey:setWeaponStorageMax("Nuke",2)				--more (vs 1)
-	playerOsprey:setWeaponStorage("Nuke", 2)				
+	playerOsprey:setWeaponStorage("Nuke", 2)
 	playerOsprey:setWeaponStorageMax("Mine",2)				--more (vs 1)
-	playerOsprey:setWeaponStorage("Mine", 2)				
+	playerOsprey:setWeaponStorage("Mine", 2)
 	playerOsprey:setWeaponStorageMax("Homing",4)			--more (vs 3)
-	playerOsprey:setWeaponStorage("Homing", 4)				
+	playerOsprey:setWeaponStorage("Homing", 4)
 	playerOsprey:addReputationPoints(50)
 	playerShipSpawned("Osprey")
 end
@@ -10912,9 +10912,9 @@ function createPlayerShipQuick()
 	playerQuick:setShieldsMax(90,30)			--stronger front, weaker rear (vs 40)
 	playerQuick:setShields(90,30)
 	playerQuick:setWeaponStorageMax("Nuke",2)	--more Nukes (vs 0)
-	playerQuick:setWeaponStorage("Nuke", 2)				
+	playerQuick:setWeaponStorage("Nuke", 2)
 	playerQuick:setWeaponStorageMax("EMP",3)	--more EMPs (vs 0)
-	playerQuick:setWeaponStorage("EMP", 3)				
+	playerQuick:setWeaponStorage("EMP", 3)
 	playerQuick:addReputationPoints(50)
 	playerShipSpawned("Quicksilver")
 end
@@ -10990,15 +10990,15 @@ function createPlayerShipRaptor()
 	playerRaptor:setWeaponTubeDirection(0,-60)				--left -60 (vs -5)
 	playerRaptor:setWeaponTubeDirection(1, 60)				--right 60 (vs 5)
 	playerRaptor:setWeaponStorageMax("Homing",6)			--less (vs 12)
-	playerRaptor:setWeaponStorage("Homing", 6)				
+	playerRaptor:setWeaponStorage("Homing", 6)
 	playerRaptor:setWeaponStorageMax("Nuke",2)				--fewer (vs 4)
-	playerRaptor:setWeaponStorage("Nuke", 2)				
+	playerRaptor:setWeaponStorage("Nuke", 2)
 	playerRaptor:setWeaponStorageMax("EMP",3)				--fewer (vs 6)
-	playerRaptor:setWeaponStorage("EMP", 3)				
+	playerRaptor:setWeaponStorage("EMP", 3)
 	playerRaptor:setWeaponStorageMax("Mine",4)				--fewer (vs 8)
-	playerRaptor:setWeaponStorage("Mine", 4)				
+	playerRaptor:setWeaponStorage("Mine", 4)
 	playerRaptor:setWeaponStorageMax("HVLI",6)				--more (vs 0)
-	playerRaptor:setWeaponStorage("HVLI", 6)				
+	playerRaptor:setWeaponStorage("HVLI", 6)
 	playerRaptor:addReputationPoints(50)
 	playerShipSpawned("Raptor")
 end
@@ -11034,10 +11034,10 @@ function createPlayerShipRogue()
 	playerRogue:setBeamWeaponEnergyPerFire(0,playerRogue:getBeamWeaponEnergyPerFire(0)*6)
 	playerRogue:setBeamWeaponHeatPerFire(0,playerRogue:getBeamWeaponHeatPerFire(0)*5)
 	playerRogue:setBeamWeapon(1, 0, 0, 0, 0, 0)				--eliminate 5 beams
-	playerRogue:setBeamWeapon(2, 0, 0, 0, 0, 0)				
-	playerRogue:setBeamWeapon(3, 0, 0, 0, 0, 0)				
-	playerRogue:setBeamWeapon(4, 0, 0, 0, 0, 0)	
-	playerRogue:setBeamWeapon(5, 0, 0, 0, 0, 0)	
+	playerRogue:setBeamWeapon(2, 0, 0, 0, 0, 0)
+	playerRogue:setBeamWeapon(3, 0, 0, 0, 0, 0)
+	playerRogue:setBeamWeapon(4, 0, 0, 0, 0, 0)
+	playerRogue:setBeamWeapon(5, 0, 0, 0, 0, 0)
 	playerRogue:setLongRangeRadarRange(25000)				--shorter longer range sensors (vs 30000)
 	playerRogue.normal_long_range_radar = 25000
 	playerRogue:setShortRangeRadarRange(6000)				--longer short range sensors (vs 5000)
@@ -11120,15 +11120,15 @@ function createPlayerShipSimian()
 	playerSimian:setWeaponTubeDirection(4, 180)						--rear (vs left)
 	playerSimian:setWeaponTubeExclusiveFor(4,"Mine")
 	playerSimian:setWeaponStorageMax("Homing",10)					--less (vs 30)
-	playerSimian:setWeaponStorage("Homing", 10)				
+	playerSimian:setWeaponStorage("Homing", 10)
 	playerSimian:setWeaponStorageMax("Nuke",4)						--less (vs 8)
-	playerSimian:setWeaponStorage("Nuke", 4)				
+	playerSimian:setWeaponStorage("Nuke", 4)
 	playerSimian:setWeaponStorageMax("EMP",5)						--less (vs 10)
-	playerSimian:setWeaponStorage("EMP", 5)				
+	playerSimian:setWeaponStorage("EMP", 5)
 	playerSimian:setWeaponStorageMax("Mine",6)						--less (vs 12)
-	playerSimian:setWeaponStorage("Mine", 6)				
+	playerSimian:setWeaponStorage("Mine", 6)
 	playerSimian:setWeaponStorageMax("HVLI",10)						--more (vs 0)
-	playerSimian:setWeaponStorage("HVLI", 10)				
+	playerSimian:setWeaponStorage("HVLI", 10)
 	playerSimian:setLongRangeRadarRange(20000)				--shorter longer range sensors (vs 30000)
 	playerSimian:addReputationPoints(50)
 	playerShipSpawned("Simian")
@@ -11154,14 +11154,14 @@ function createPlayerShipSparrow()
 	playerSparrow:setTypeName("Vermin")
 	playerSparrow:setRepairCrewCount(4)						--more repair crew (vs 3)
 	playerSparrow:setMaxEnergy(500)							--more maximum energy (vs 400)
-	playerSparrow:setEnergy(500)							
+	playerSparrow:setEnergy(500)
 	playerSparrow:setWarpDrive(true)						--warp drive (vs none)
 	playerSparrow:setWarpSpeed(400)
 	playerSparrow:setShieldsMax(100,60)						--stronger shields (vs 40)
 	playerSparrow:setShields(100,60)
 	playerSparrow:setBeamWeapon(0, 12,   0, 1000, 6, 4)		--3 beams (vs 2)
-	playerSparrow:setBeamWeapon(1, 40, -10,  800, 6, 6)	
-	playerSparrow:setBeamWeapon(2, 40,  10,  800, 6, 6)	
+	playerSparrow:setBeamWeapon(1, 40, -10,  800, 6, 6)
+	playerSparrow:setBeamWeapon(2, 40,  10,  800, 6, 6)
 	playerSparrow:setWeaponTubeDirection(0,180)				--tube points backwards (vs forward)
 	playerSparrow:setWeaponTubeExclusiveFor(0,"Mine")		--and only lays mines (vs HVLI)
 	playerSparrow:setWeaponStorageMax("HVLI",0)				--fewer HVLIs (vs 4)
@@ -11268,15 +11268,15 @@ function createPlayerShipThelonius()
 	playerThelonius:setWeaponTubeDirection(2, 20)			--angled (vs zero degrees)
 	playerThelonius:setWeaponTubeExclusiveFor(2,"Homing")	--homing only (vs HVLI)
 	playerThelonius:setWeaponStorageMax("Homing",16)		--more (vs 8)
-	playerThelonius:setWeaponStorage("Homing", 16)				
+	playerThelonius:setWeaponStorage("Homing", 16)
 	playerThelonius:setWeaponStorageMax("EMP",3)			--fewer (vs 6)
-	playerThelonius:setWeaponStorage("EMP", 3)				
+	playerThelonius:setWeaponStorage("EMP", 3)
 	playerThelonius:setWeaponStorageMax("Nuke",2)			--fewer (vs 4)
-	playerThelonius:setWeaponStorage("Nuke", 2)				
+	playerThelonius:setWeaponStorage("Nuke", 2)
 	playerThelonius:setWeaponStorageMax("Mine",0)			--fewer (vs 6)
-	playerThelonius:setWeaponStorage("Mine", 0)				
+	playerThelonius:setWeaponStorage("Mine", 0)
 	playerThelonius:setWeaponStorageMax("HVLI",10)			--fewer (vs 24)
-	playerThelonius:setWeaponStorage("HVLI", 10)				
+	playerThelonius:setWeaponStorage("HVLI", 10)
 	playerThelonius:addReputationPoints(50)
 	playerShipSpawned("Thelonius")
 end
@@ -11297,15 +11297,15 @@ function createPlayerShipThunderbird()
 	playerThunderbird:setWeaponTubeDirection(0,-60)				--left -60 (vs -5)
 	playerThunderbird:setWeaponTubeDirection(1, 60)				--right 60 (vs 5)
 	playerThunderbird:setWeaponStorageMax("Homing",6)			--less (vs 12)
-	playerThunderbird:setWeaponStorage("Homing", 6)				
+	playerThunderbird:setWeaponStorage("Homing", 6)
 	playerThunderbird:setWeaponStorageMax("Nuke",2)				--fewer (vs 4)
-	playerThunderbird:setWeaponStorage("Nuke", 2)				
+	playerThunderbird:setWeaponStorage("Nuke", 2)
 	playerThunderbird:setWeaponStorageMax("EMP",3)				--fewer (vs 6)
-	playerThunderbird:setWeaponStorage("EMP", 3)				
+	playerThunderbird:setWeaponStorage("EMP", 3)
 	playerThunderbird:setWeaponStorageMax("Mine",4)				--fewer (vs 8)
-	playerThunderbird:setWeaponStorage("Mine", 4)				
+	playerThunderbird:setWeaponStorage("Mine", 4)
 	playerThunderbird:setWeaponStorageMax("HVLI",6)				--more (vs 0)
-	playerThunderbird:setWeaponStorage("HVLI", 6)				
+	playerThunderbird:setWeaponStorage("HVLI", 6)
 	playerThunderbird:addReputationPoints(50)
 	playerShipSpawned("Thunderbird")
 end
@@ -11376,7 +11376,7 @@ function createPlayerShipWindmill()
 	playerWindmill:setTubeLoadTime(2,10)
 	playerWindmill:setWeaponTubeDirection(2,90)				--right facing
 	playerWindmill:weaponTubeDisallowMissle(2,"Mine")		--all but mine
-	playerWindmill:setTubeSize(3,"large")					
+	playerWindmill:setTubeSize(3,"large")
 	playerWindmill:setTubeLoadTime(3,15)
 	playerWindmill:setWeaponTubeDirection(3,180)			--rear facing
 	playerWindmill:weaponTubeDisallowMissle(3,"Mine")		--all but mine
@@ -11405,13 +11405,13 @@ function createPlayerShipWombat()
 	playerWombat:setWarpDrive(true)							--add warp (vs none)
 	playerWombat:setWarpSpeed(400)
 	playerWombat:setBeamWeapon(0, 10, 0, 900.0, 4.0, 3)		--extra beam (vs 1@ 700 6.0, 2)
-	playerWombat:setBeamWeapon(1, 10, 0, 900.0, 4.0, 3)	
+	playerWombat:setBeamWeapon(1, 10, 0, 900.0, 4.0, 3)
 	playerWombat:setBeamWeaponTurret( 0, 80, -20, .3)
 	playerWombat:setBeamWeaponTurret( 1, 80,  20, .3)
 	playerWombat:setWeaponTubeCount(5)						--more (vs 3)
-	playerWombat:setWeaponTubeDirection(0, 180)				
-	playerWombat:setWeaponTubeDirection(1, 180)				
-	playerWombat:setWeaponTubeDirection(2, 180)				
+	playerWombat:setWeaponTubeDirection(0, 180)
+	playerWombat:setWeaponTubeDirection(1, 180)
+	playerWombat:setWeaponTubeDirection(2, 180)
 	playerWombat:setWeaponTubeDirection(3, 180)
 	playerWombat:setWeaponTubeDirection(4, 180)
 	playerWombat:setWeaponTubeExclusiveFor(0,"HVLI")
@@ -11425,13 +11425,13 @@ function createPlayerShipWombat()
 	playerWombat:weaponTubeAllowMissle(3,"Nuke")
 	playerWombat:setWeaponTubeExclusiveFor(4,"Mine")
 	playerWombat:setWeaponStorageMax("Mine",2)				--more (vs 0)
-	playerWombat:setWeaponStorage("Mine",   2)				
+	playerWombat:setWeaponStorage("Mine",   2)
 	playerWombat:setWeaponStorageMax("EMP",2)				--more (vs 0)
-	playerWombat:setWeaponStorage("EMP",   2)				
+	playerWombat:setWeaponStorage("EMP",   2)
 	playerWombat:setWeaponStorageMax("Nuke",1)				--more (vs 0)
-	playerWombat:setWeaponStorage("Nuke",   1)				
+	playerWombat:setWeaponStorage("Nuke",   1)
 	playerWombat:setWeaponStorageMax("Homing",8)			--more (vs 3)
-	playerWombat:setWeaponStorage("Homing",   8)				
+	playerWombat:setWeaponStorage("Homing",   8)
 	playerShipSpawned("Wombat")
 end
 function createPlayerShipYorik()
@@ -11461,13 +11461,13 @@ function createPlayerShipYorik()
 	playerYorik:weaponTubeDisallowMissle(1,"Mine")		--no Mine (vs any)
 	playerYorik:setWeaponTubeExclusiveFor(2,"Mine")		--only mine
 	playerYorik:setWeaponStorageMax("Homing", 8)		--more (vs 4)
-	playerYorik:setWeaponStorage("Homing", 8)				
+	playerYorik:setWeaponStorage("Homing", 8)
 	playerYorik:setWeaponStorageMax("EMP", 6)			--more (vs 0)
-	playerYorik:setWeaponStorage("EMP", 6)				
+	playerYorik:setWeaponStorage("EMP", 6)
 	playerYorik:setWeaponStorageMax("Nuke", 3)			--more (vs 0)
-	playerYorik:setWeaponStorage("Nuke", 3)				
+	playerYorik:setWeaponStorage("Nuke", 3)
 	playerYorik:setWeaponStorageMax("Mine", 5)			--more (vs 0)
-	playerYorik:setWeaponStorage("Mine", 5)				
+	playerYorik:setWeaponStorage("Mine", 5)
 end
 function playerShipSpawned(shipName)
 	for shipNum = 1, #playerShipInfo do
@@ -11664,7 +11664,7 @@ function putPolygonZone()
 	if gm_click_mode == "zone polygon" then
 		gm_click_mode = nil
 		onGMClick(nil)
-		zone_point_count = 0	
+		zone_point_count = 0
 	else
 		local prev_mode = gm_click_mode
 		gm_click_mode = "zone polygon"
@@ -11887,7 +11887,7 @@ end
 --	Initial Set Up > Automated Station Warning > Set Warning Proximity Distance  --
 -----------------------------------------------------------------------------------
 -- Button Text FD*	Related Function(s)
--- DEFAULT 30U	D	inline	
+-- DEFAULT 30U	D	inline
 -- ZERO			F	inline
 -- 5U			F	inline
 -- 10U			F	inline
@@ -12207,7 +12207,7 @@ end
 -------------------------------------------------------------
 -- Button Text		   FD*	Related Function(s)
 -- -MAIN FROM REL STR	F	initialGMFunctions
--- -FLEET SPAWN			F	spawnGMFleet		
+-- -FLEET SPAWN			F	spawnGMFleet
 -- .5					*	inline
 -- 1*					*	inline		asterisk = current selection
 -- 2					*	inline
@@ -12301,7 +12301,7 @@ function fixFleetStrength(caller)
 			fleetStrengthFixedValue = fleetStrengthFixedValue + 50
 			caller()
 		end)
-	end	
+	end
 	fleetStrengthFixed = true
 end
 --------------------------------------------
@@ -12470,7 +12470,7 @@ function setFleetGroupComposition(caller)
 	addGMFunction(GMSetFleetCompositionAdders,function()
 		fleetComposition = "Adders"
 		caller()
-	end)		
+	end)
 	local GMSetFleetCompositionNonDB = "Non-DB"
 	if fleetComposition == "Non-DB" then
 		GMSetFleetCompositionNonDB = "Non-DB*"
@@ -12478,7 +12478,7 @@ function setFleetGroupComposition(caller)
 	addGMFunction(GMSetFleetCompositionNonDB,function()
 		fleetComposition = "Non-DB"
 		caller()
-	end)		
+	end)
 	local GMSetFleetCompositionDrone = "Drones"
 	if fleetComposition == "Drones" then
 		GMSetFleetCompositionDrone = "Drones*"
@@ -12659,7 +12659,7 @@ end
 -- -MAIN FROM FLT LOCTN		F	initialGMFunctions
 -- -FLEET SPAWN				F	spawnGMFleet
 -- AT SELECTION				*	inline
--- SENSOR EDGE				*	inline 
+-- SENSOR EDGE				*	inline
 -- BEYOND SENSORS			*	inline
 -- +RANDOM DIRECTION		D	setFleetSpawnRelativeDirection (button only appears for SENSOR EDGE and BEYOND SENSORS selections)
 -- +AT CLICK*				D*	setSpawnLocationAway
@@ -13096,7 +13096,7 @@ function parmSpawnShip()
 		if #object_list < 1 then
 			addGMMessage("Fleet spawn failed: nothing selected for spawn location determination")
 			return
-		end 
+		end
 		if fleetSpawnLocation == "At Selection" then
 			fsx, fsy = centerOfSelected(object_list)
 		elseif fleetSpawnLocation == "Sensor Edge" or fleetSpawnLocation == "Beyond Sensors" or fleetSpawnLocation == "Ambush" then
@@ -13125,7 +13125,7 @@ function parmSpawnShip()
 					spawnAngle = random(0,360)
 				else
 					spawnAngle = spawnAngle + 270
-					if spawnAngle > 360 then 
+					if spawnAngle > 360 then
 						spawnAngle = spawnAngle - 360
 					end
 				end
@@ -13153,7 +13153,7 @@ function parmSpawnShip()
 				spawnAngle = random(0,360)
 			else
 				spawnAngle = spawnAngle + 270
-				if spawnAngle > 360 then 
+				if spawnAngle > 360 then
 					spawnAngle = spawnAngle - 360
 				end
 			end
@@ -13235,7 +13235,7 @@ function parmSpawnFleet()
 					spawnAngle = random(0,360)
 				else
 					spawnAngle = spawnAngle + 270
-					if spawnAngle > 360 then 
+					if spawnAngle > 360 then
 						spawnAngle = spawnAngle - 360
 					end
 				end
@@ -13263,7 +13263,7 @@ function parmSpawnFleet()
 				spawnAngle = random(0,360)
 			else
 				spawnAngle = spawnAngle + 270
-				if spawnAngle > 360 then 
+				if spawnAngle > 360 then
 					spawnAngle = spawnAngle - 360
 				end
 			end
@@ -13292,7 +13292,7 @@ function parmSpawnFleet()
 	end
 end
 function excludeShip(current_ship_template)
-	assert(type(current_ship_template)=="string") -- the template name we are spawning from ship_template	
+	assert(type(current_ship_template)=="string") -- the template name we are spawning from ship_template
 	local ship = nil
 	ship = ship_template[current_ship_template].create("Independent",current_ship_template)
 	ship:orderIdle()
@@ -13351,7 +13351,7 @@ function getTemplatePool(max_strength)
 						table.insert(template_pool,current_ship_template)
 					else
 						if ship_template[current_ship_template].fleet_group[fleetComposition] then
-							table.insert(template_pool,current_ship_template)							
+							table.insert(template_pool,current_ship_template)
 						end
 					end
 				end
@@ -13373,7 +13373,7 @@ function getTemplatePool(max_strength)
 						table.insert(template_pool,current_ship_template)
 					else
 						if ship_template[current_ship_template].fleet_group[fleetComposition] then
-							table.insert(template_pool,current_ship_template)							
+							table.insert(template_pool,current_ship_template)
 						end
 					end
 				end
@@ -13394,7 +13394,7 @@ function getTemplatePool(max_strength)
 						table.insert(template_pool,current_ship_template)
 					else
 						if ship_template[current_ship_template][fleet_group[fleetComposition]] then
-							table.insert(template_pool,current_ship_template)							
+							table.insert(template_pool,current_ship_template)
 						end
 					end
 				end
@@ -13605,7 +13605,7 @@ function spawnRandomArmed(x, y, fleetIndex, shape, spawn_distance, spawn_angle, 
 		for index, ship in ipairs(enemyList) do
 			if index <= max_pyramid_tier then
 				local pyramid_angle = spawn_angle + formation_delta.pyramid[pyramid_tier][index].angle
-				if pyramid_angle < 0 then 
+				if pyramid_angle < 0 then
 					pyramid_angle = pyramid_angle + 360
 				end
 				pyramid_angle = pyramid_angle % 360
@@ -13877,7 +13877,7 @@ function phobosR2(enemyFaction)
 	end)
 	ship:setTypeName("Phobos R2")
 	ship:setWeaponTubeCount(1)			--one tube (vs 2)
-	ship:setWeaponTubeDirection(0,0)	
+	ship:setWeaponTubeDirection(0,0)
 	ship:setImpulseMaxSpeed(55)			--slower impulse (vs 60)
 	ship:setRotationMaxSpeed(15)		--faster maneuver (vs 10)
 	local phobos_r2_db = queryScienceDatabase("Ships","Frigate","Phobos R2")
@@ -14203,7 +14203,7 @@ function k2fighter(enemyFaction)
 		--]]
 	end
 	return ship
-end	
+end
 function k3fighter(enemyFaction)
 	local ship = CpuShip():setFaction(enemyFaction):setTemplate("Ktlitan Fighter"):orderRoaming()
 	ship:setTypeName("K3 Fighter")
@@ -14236,7 +14236,7 @@ function k3fighter(enemyFaction)
 		--]]
 	end
 	return ship
-end	
+end
 function stalkerQ5(enemyFaction)
 	local ship = CpuShip():setFaction(enemyFaction):setTemplate("Stalker Q7"):orderRoaming()
 	ship:onTakingDamage(function(self,instigator)
@@ -14633,16 +14633,16 @@ function tempest(enemyFaction)
 	ship:setWeaponTubeDirection(1, -89)				--slight angle spread
 	ship:setWeaponTubeDirection(3,  88)				--3 for HVLI each side
 	ship:setWeaponTubeDirection(4,  89)				--2 for homing and nuke each side
-	ship:setWeaponTubeDirection(6, -91)				
-	ship:setWeaponTubeDirection(7, -92)				
-	ship:setWeaponTubeDirection(8,  91)				
-	ship:setWeaponTubeDirection(9,  92)				
+	ship:setWeaponTubeDirection(6, -91)
+	ship:setWeaponTubeDirection(7, -92)
+	ship:setWeaponTubeDirection(8,  91)
+	ship:setWeaponTubeDirection(9,  92)
 	ship:setWeaponTubeExclusiveFor(7,"HVLI")
 	ship:setWeaponTubeExclusiveFor(9,"HVLI")
 	ship:setWeaponStorageMax("Homing",16)			--more (vs 6)
-	ship:setWeaponStorage("Homing", 16)				
+	ship:setWeaponStorage("Homing", 16)
 	ship:setWeaponStorageMax("Nuke",8)				--more (vs 0)
-	ship:setWeaponStorage("Nuke", 8)				
+	ship:setWeaponStorage("Nuke", 8)
 	ship:setWeaponStorageMax("HVLI",34)				--more (vs 20)
 	ship:setWeaponStorage("HVLI", 34)
 	local tempest_db = queryScienceDatabase("Ships","Frigate","Tempest")
@@ -14711,7 +14711,7 @@ function enforcer(enemyFaction)
 	ship:setImpulseMaxSpeed(100)								--faster impulse (vs 60)
 	ship:setRotationMaxSpeed(20)								--faster maneuver (vs 15)
 	ship:setShieldsMax(200,100,100)								--stronger shields (vs 100,150)
-	ship:setShields(200,100,100)					
+	ship:setShields(200,100,100)
 	ship:setHullMax(100)										--stronger hull (vs 70)
 	ship:setHull(100)
 --				   Index,  Arc,	  Dir, Range,	Cycle,	Damage
@@ -14721,8 +14721,8 @@ function enforcer(enemyFaction)
 	ship:setBeamWeapon(3,	 0,	    0,	   0,		0,		 0)
 	ship:setWeaponTubeCount(3)									--more (vs 0)
 	ship:setTubeSize(0,"large")									--large (vs normal)
-	ship:setWeaponTubeDirection(1,-30)				
-	ship:setWeaponTubeDirection(2, 30)				
+	ship:setWeaponTubeDirection(1,-30)
+	ship:setWeaponTubeDirection(2, 30)
 	ship:setWeaponStorageMax("Homing",18)						--more (vs 0)
 	ship:setWeaponStorage("Homing", 18)
 	local enforcer_db = queryScienceDatabase("Ships","Frigate","Enforcer")
@@ -14761,7 +14761,7 @@ function enforcer(enemyFaction)
 		--]]
 		enforcer_db:setImage("radar_ktlitan_destroyer.png")		--override default radar image
 	end
-	return ship		
+	return ship
 end
 function predator(enemyFaction)
 	local ship = CpuShip():setFaction(enemyFaction):setTemplate("Piranha F8"):orderRoaming()
@@ -14773,25 +14773,25 @@ function predator(enemyFaction)
 	end)
 	ship:setTypeName("Predator")
 	ship:setShieldsMax(100,100)									--stronger shields (vs 30,30)
-	ship:setShields(100,100)					
+	ship:setShields(100,100)
 	ship:setHullMax(80)											--stronger hull (vs 70)
 	ship:setHull(80)
 	ship:setImpulseMaxSpeed(65)									--faster impulse (vs 40)
 	ship:setRotationMaxSpeed(15)								--faster maneuver (vs 6)
 	ship:setJumpDrive(true)
-	ship:setJumpDriveRange(5000,35000)			
+	ship:setJumpDriveRange(5000,35000)
 --				   Index,  Arc,	  Dir, Range,	Cycle,	Damage
 	ship:setBeamWeapon(0,	90,	    0,	1000,		6,		 4)	--more (vs 0)
-	ship:setBeamWeapon(1,	90,	  180,	1000,		6,		 4)	
+	ship:setBeamWeapon(1,	90,	  180,	1000,		6,		 4)
 	ship:setWeaponTubeCount(8)									--more (vs 3)
-	ship:setWeaponTubeDirection(0,-60)				
-	ship:setWeaponTubeDirection(1,-90)				
-	ship:setWeaponTubeDirection(2,-90)				
-	ship:setWeaponTubeDirection(3, 60)				
-	ship:setWeaponTubeDirection(4, 90)				
-	ship:setWeaponTubeDirection(5, 90)				
-	ship:setWeaponTubeDirection(6,-120)				
-	ship:setWeaponTubeDirection(7, 120)				
+	ship:setWeaponTubeDirection(0,-60)
+	ship:setWeaponTubeDirection(1,-90)
+	ship:setWeaponTubeDirection(2,-90)
+	ship:setWeaponTubeDirection(3, 60)
+	ship:setWeaponTubeDirection(4, 90)
+	ship:setWeaponTubeDirection(5, 90)
+	ship:setWeaponTubeDirection(6,-120)
+	ship:setWeaponTubeDirection(7, 120)
 	ship:setWeaponTubeExclusiveFor(0,"Homing")
 	ship:setWeaponTubeExclusiveFor(1,"Homing")
 	ship:setWeaponTubeExclusiveFor(2,"Homing")
@@ -14801,7 +14801,7 @@ function predator(enemyFaction)
 	ship:setWeaponTubeExclusiveFor(6,"Homing")
 	ship:setWeaponTubeExclusiveFor(7,"Homing")
 	ship:setWeaponStorageMax("Homing",32)						--more (vs 5)
-	ship:setWeaponStorage("Homing", 32)		
+	ship:setWeaponStorage("Homing", 32)
 	ship:setWeaponStorageMax("HVLI",0)							--less (vs 10)
 	ship:setWeaponStorage("HVLI", 0)
 	ship:setRadarTrace("radar_missile_cruiser.png")				--different radar trace
@@ -14851,7 +14851,7 @@ function predator(enemyFaction)
 		--]]
 		predator_db:setImage("radar_missile_cruiser.png")		--override default radar image
 	end
-	return ship		
+	return ship
 end
 function atlantisY42(enemyFaction)
 	local ship = CpuShip():setFaction(enemyFaction):setTemplate("Atlantis X23"):orderRoaming()
@@ -14863,7 +14863,7 @@ function atlantisY42(enemyFaction)
 	end)
 	ship:setTypeName("Atlantis Y42")
 	ship:setShieldsMax(300,200,300,200)							--stronger shields (vs 200,200,200,200)
-	ship:setShields(300,200,300,200)					
+	ship:setShields(300,200,300,200)
 	ship:setImpulseMaxSpeed(65)									--faster impulse (vs 30)
 	ship:setRotationMaxSpeed(15)								--faster maneuver (vs 3.5)
 --				   Index,  Arc,	  Dir, Range,	Cycle,	Damage
@@ -14912,7 +14912,7 @@ function atlantisY42(enemyFaction)
 		atlantis_y42_db:setImage("radar_dread.png")
 		--]]
 	end
-	return ship		
+	return ship
 end
 function starhammerV(enemyFaction)
 	local ship = CpuShip():setFaction(enemyFaction):setTemplate("Starhammer II"):orderRoaming()
@@ -14926,11 +14926,11 @@ function starhammerV(enemyFaction)
 	ship:setImpulseMaxSpeed(65)									--faster impulse (vs 35)
 	ship:setRotationMaxSpeed(15)								--faster maneuver (vs 6)
 	ship:setShieldsMax(450, 350, 250, 250, 350)					--stronger shields (vs 450, 350, 150, 150, 350)
-	ship:setShields(450, 350, 250, 250, 350)					
+	ship:setShields(450, 350, 250, 250, 350)
 --				   Index,  Arc,	  Dir, Range,	Cycle,	Damage
 	ship:setBeamWeapon(4,	60,	  180,	1500,		8,		11)	--extra rear facing beam
 	ship:setWeaponStorageMax("Homing",16)						--more (vs 4)
-	ship:setWeaponStorage("Homing", 16)		
+	ship:setWeaponStorage("Homing", 16)
 	ship:setWeaponStorageMax("HVLI",36)							--more (vs 20)
 	ship:setWeaponStorage("HVLI", 36)
 	local starhammer_v_db = queryScienceDatabase("Ships","Corvette","Starhammer V")
@@ -14972,7 +14972,7 @@ function starhammerV(enemyFaction)
 		starhammer_v_db:setImage("radar_dread.png")
 		--]]
 	end
-	return ship		
+	return ship
 end
 function tyr(enemyFaction)
 	local ship = CpuShip():setFaction(enemyFaction):setTemplate("Battlestation"):orderRoaming()
@@ -14986,7 +14986,7 @@ function tyr(enemyFaction)
 	ship:setImpulseMaxSpeed(50)									--faster impulse (vs 30)
 	ship:setRotationMaxSpeed(10)								--faster maneuver (vs 1.5)
 	ship:setShieldsMax(400, 300, 300, 400, 300, 300)			--stronger shields (vs 300, 300, 300, 300, 300)
-	ship:setShields(400, 300, 300, 400, 300, 300)					
+	ship:setShields(400, 300, 300, 400, 300, 300)
 	ship:setHullMax(100)										--stronger hull (vs 70)
 	ship:setHull(100)
 --				   Index,  Arc,	  Dir, Range,	Cycle,	Damage
@@ -15077,7 +15077,7 @@ function cucaracha(enemyFaction)
 	end)
 	ship:setTypeName("Cucaracha")
 	ship:setShieldsMax(200, 50, 50, 50, 50, 50)		--stronger shields (vs 20)
-	ship:setShields(200, 50, 50, 50, 50, 50)					
+	ship:setShields(200, 50, 50, 50, 50, 50)
 	ship:setHullMax(100)							--stronger hull (vs 50)
 	ship:setHull(100)
 	ship:setRotationMaxSpeed(20)					--faster maneuver (vs 10)
@@ -15113,7 +15113,7 @@ function starhammerIII(enemyFaction)
 	ship:setBeamWeapon(4,	60,	  180,	1500,		8,		11)	--extra rear facing beam
 	ship:setTubeSize(0,"large")
 	ship:setWeaponStorageMax("Homing",16)						--more (vs 4)
-	ship:setWeaponStorage("Homing", 16)		
+	ship:setWeaponStorage("Homing", 16)
 	ship:setWeaponStorageMax("HVLI",36)							--more (vs 20)
 	ship:setWeaponStorage("HVLI", 36)
 	local starhammer_iii_db = queryScienceDatabase("Ships","Corvette","Starhammer III")
@@ -15148,7 +15148,7 @@ function k2breaker(enemyFaction)
 	ship:setHull(200)
 	ship:setWeaponTubeCount(3)						--more (vs 1)
 	ship:setTubeSize(0,"large")						--large (vs normal)
-	ship:setWeaponTubeDirection(1,-30)				
+	ship:setWeaponTubeDirection(1,-30)
 	ship:setWeaponTubeDirection(2, 30)
 	ship:setWeaponTubeExclusiveFor(0,"HVLI")		--only HVLI (vs any)
 	ship:setWeaponStorageMax("Homing",16)			--more (vs 0)
@@ -15185,11 +15185,11 @@ function hurricane(enemyFaction)
 	end)
 	ship:setTypeName("Hurricane")
 	ship:setJumpDrive(true)
-	ship:setJumpDriveRange(5000,40000)			
+	ship:setJumpDriveRange(5000,40000)
 	ship:setWeaponTubeCount(8)						--more (vs 3)
 	ship:setWeaponTubeExclusiveFor(1,"HVLI")		--only HVLI (vs any)
 	ship:setWeaponTubeDirection(1,  0)				--forward (vs -90)
-	ship:setTubeSize(3,"large")						
+	ship:setTubeSize(3,"large")
 	ship:setWeaponTubeDirection(3,-90)
 	ship:setTubeSize(4,"small")
 	ship:setWeaponTubeExclusiveFor(4,"Homing")
@@ -15428,7 +15428,7 @@ end
 ------------------------------------------------------------
 -- Button Text	   FD*	Related Function(s)
 -- ROAMING*			*	inline, orderFleet		asterisk = current selection
--- IDLE 			*	inline, orderFleet		
+-- IDLE 			*	inline, orderFleet
 -- STAND GROUND		*	inline, orderFleet
 -- ATTACK			*	inline, orderFleet
 -- DEFEND			*	inline, orderFleet
@@ -15617,7 +15617,7 @@ end
 ------------------------------------------------------------------------------------------------------
 --	Order Fleet > Reorganize Fleet (Take Elements From Existing Fleets and Combine Into New Fleet)  --
 ------------------------------------------------------------------------------------------------------
--- Incomplete 
+-- Incomplete
 function orderFleetChange()
 	clearGMFunctions()
 	addGMFunction("-Main",initialGMFunctions)
@@ -15664,7 +15664,7 @@ function averageImpulse()
 	addGMFunction("Selected ships",function()
 		local object_list = getGMSelection()
 		if #object_list < 1 then
-			addGMMessage("Average impulse failed - nothing selected. No action taken") 
+			addGMMessage("Average impulse failed - nothing selected. No action taken")
 			return
 		end
 		local selected_matches_npc_ship = true
@@ -15750,7 +15750,7 @@ function orderFleetIdleGivenFleet(fto)
 		if fm ~= nil and fm:isValid() then
 			fm:orderIdle()
 		end
-	end	
+	end
 end
 --Order fleet to roam, attack any and all enemies
 function orderFleetRoaming()
@@ -15810,7 +15810,7 @@ function orderFleetStandGroundGivenFleet(fto)
 		if fm ~= nil and fm:isValid() then
 			fm:orderStandGround()
 		end
-	end	
+	end
 end
 --Order fleet to attack GM selected object
 function orderFleetAttack()
@@ -16684,7 +16684,7 @@ function podNearTo()
 	if #objectList > 1 then
 		nearx, neary = centerOfSelected(objectList)
 	else
-		nearx, neary = objectList[1]:getPosition()	
+		nearx, neary = objectList[1]:getPosition()
 	end
 	--print(string.format("nearx: %.1f, neary: %.1f",nearx,neary))
 	local nearbyObjects = getObjectsInRadius(nearx, neary, 20000)
@@ -16744,7 +16744,7 @@ end
 -- 5U					*	inline
 -- 10U					*	inline
 -- 20U					*	inline
--- 30U*					*	inline	asterisk = current selection		
+-- 30U*					*	inline	asterisk = current selection
 function setCreateDistance()
 	clearGMFunctions()
 	addGMFunction("-From Create Dist",callingNearTo)
@@ -16905,7 +16905,7 @@ end
 --Pod creation after distance and direction parameters set
 function createPodAway()
 	local angle = createDirection + 270
-	if angle > 360 then 
+	if angle > 360 then
 		angle = angle - 360
 	end
 	local sox, soy = vectorFromAngle(angle,createDistance*1000)
@@ -17020,7 +17020,7 @@ function setMarinePoint()
 		addGMFunction(">Set Marine Point<",placeMarinePoint)
 	else
 		addGMFunction("Set Marine Point",placeMarinePoint)
-	end	
+	end
 end
 function placeMarinePoint()
 	if drop_point_location == "At Click" then
@@ -17270,7 +17270,7 @@ function marineNearTo()
 	if #objectList > 1 then
 		nearx, neary = centerOfSelected(objectList)
 	else
-		nearx, neary = objectList[1]:getPosition()	
+		nearx, neary = objectList[1]:getPosition()
 	end
 	print(string.format("nearx: %.1f, neary: %.1f",nearx,neary))
 	local nearbyObjects = getObjectsInRadius(nearx, neary, 20000)
@@ -17321,7 +17321,7 @@ end
 --Marine point creation after distance and direction parameters set
 function createMarineAway()
 	local angle = createDirection + 270
-	if angle > 360 then 
+	if angle > 360 then
 		angle = angle - 360
 	end
 	local sox, soy = vectorFromAngle(angle,createDistance*1000)
@@ -17360,7 +17360,7 @@ function setEngineerPoint()
 		addGMFunction(">Set Engineer Point<",placeEngineerPoint)
 	else
 		addGMFunction("Set Engineer Point",placeEngineerPoint)
-	end	
+	end
 end
 function placeEngineerPoint()
 	if drop_point_location == "At Click" then
@@ -17601,7 +17601,7 @@ function engineerNearTo()
 	if #objectList > 1 then
 		nearx, neary = centerOfSelected(objectList)
 	else
-		nearx, neary = objectList[1]:getPosition()	
+		nearx, neary = objectList[1]:getPosition()
 	end
 	print(string.format("nearx: %.1f, neary: %.1f",nearx,neary))
 	local nearbyObjects = getObjectsInRadius(nearx, neary, 20000)
@@ -17652,7 +17652,7 @@ end
 --Engineer point creation after distance and direction parameters set
 function createEngineerAway()
 	local angle = createDirection + 270
-	if angle > 360 then 
+	if angle > 360 then
 		angle = angle - 360
 	end
 	local sox, soy = vectorFromAngle(angle,createDistance*1000)
@@ -17691,7 +17691,7 @@ function setMedicPoint()
 		addGMFunction(">Set Medic Point<",placeMedicPoint)
 	else
 		addGMFunction("Set Medic Point",placeMedicPoint)
-	end	
+	end
 end
 function placeMedicPoint()
 	if drop_point_location == "At Click" then
@@ -17935,7 +17935,7 @@ function medicNearTo()
 	if #objectList > 1 then
 		nearx, neary = centerOfSelected(objectList)
 	else
-		nearx, neary = objectList[1]:getPosition()	
+		nearx, neary = objectList[1]:getPosition()
 	end
 	--print(string.format("nearx: %.1f, neary: %.1f",nearx,neary))
 	local nearbyObjects = getObjectsInRadius(nearx, neary, 20000)
@@ -17986,7 +17986,7 @@ end
 --Medical team point creation after distance and direction parameters set
 function createMedicAway()
 	local angle = createDirection + 270
-	if angle > 360 then 
+	if angle > 360 then
 		angle = angle - 360
 	end
 	local sox, soy = vectorFromAngle(angle,createDistance*1000)
@@ -18041,8 +18041,8 @@ function setCustomSupply()
 		addGMFunction(">Set Supply Drop<",placeSupplyDrop)
 	else
 		addGMFunction("Set Supply Drop",placeSupplyDrop)
-	end	
---	addGMFunction("+Near to",supplyNearTo)	
+	end
+--	addGMFunction("+Near to",supplyNearTo)
 end
 function placeSupplyDrop()
 	if drop_point_location == "At Click" then
@@ -18399,7 +18399,7 @@ function supplyNearTo()
 	if #objectList > 1 then
 		nearx, neary = centerOfSelected(objectList)
 	else
-		nearx, neary = objectList[1]:getPosition()	
+		nearx, neary = objectList[1]:getPosition()
 	end
 	local nearbyObjects = getObjectsInRadius(nearx, neary, 20000)
 	callingNearTo = supplyNearTo
@@ -18412,7 +18412,7 @@ function supplyNearTo()
 end
 function createSupplyAway()
 	local angle = createDirection + 270
-	if angle > 360 then 
+	if angle > 360 then
 		angle = angle - 360
 	end
 	local sox, soy = vectorFromAngle(angle,createDistance*1000)
@@ -18856,7 +18856,7 @@ function scanClueNearTo()
 	if #objectList > 1 then
 		nearx, neary = centerOfSelected(objectList)
 	else
-		nearx, neary = objectList[1]:getPosition()	
+		nearx, neary = objectList[1]:getPosition()
 	end
 	--print(string.format("nearx: %.1f, neary: %.1f",nearx,neary))
 	callingNearTo = scanClueNearTo
@@ -18869,7 +18869,7 @@ function scanClueNearTo()
 end
 function createScanClueAway()
 	local angle = createDirection + 270
-	if angle > 360 then 
+	if angle > 360 then
 		angle = angle - 360
 	end
 	local sox, soy = vectorFromAngle(angle,createDistance*1000)
@@ -18941,7 +18941,7 @@ function normalArtifactModels()
 		"artifact5",
 		"artifact6",
 		"artifact7",
-		"artifact8",		
+		"artifact8",
 	}
 	for _, model_name in ipairs(normal_models) do
 		addGMFunction(model_name,function()
@@ -20082,7 +20082,7 @@ function spawnDefensiveFleet()
 	local temp_type = station.typeName
 	if temp_type ~= "SpaceStation" then
 		addGMMessage("You need to select a station. No action taken")
-		return		
+		return
 	end
 	local fsx, fsy = station:getPosition()
 	local fleet = nil
@@ -20145,7 +20145,7 @@ function stationDefensiveInnerRing()
 		local temp_type = station.typeName
 		if temp_type ~= "SpaceStation" then
 			addGMMessage("You need to select a station. No action taken")
-			return		
+			return
 		end
 		local fsx, fsy = station:getPosition()
 		local faction = station:getFaction()
@@ -20206,7 +20206,7 @@ function stationDefensiveOuterRing()
 			local temp_type = station.typeName
 			if temp_type ~= "SpaceStation" then
 				addGMMessage("You need to select a station. No action taken")
-				return		
+				return
 			end
 			local fsx, fsy = station:getPosition()
 			local faction = station:getFaction()
@@ -20307,7 +20307,7 @@ end
 -- -STATION DEFENSE			F	stationDefense
 -- -INNER RING				F	stationDefensiveInnerRing
 -- V FROM 3 TO 2			D	inline
--- ^ FROM 3 TO 4			D	inline 
+-- ^ FROM 3 TO 4			D	inline
 function setInnerPlatformCount()
 	clearGMFunctions()
 	addGMFunction("-Main Frm DP No.",initialGMFunctions)
@@ -20408,7 +20408,7 @@ end
 -- -STATION DEFENSE			F	stationDefense
 -- -OUTER RING				F	stationDefensiveOuterRing
 -- V FROM 3 TO 2			D	inline
--- A FROM 3 TO 4			D	inline 
+-- A FROM 3 TO 4			D	inline
 function setOuterPlatformCount()
 	clearGMFunctions()
 	addGMFunction("-Main Frm Out Ring",initialGMFunctions)
@@ -20962,7 +20962,7 @@ end
 function mineLineStartPoint()
 	if gm_click_mode == "mine line start" then
 		gm_click_mode = nil
-		onGMClick(nil)	
+		onGMClick(nil)
 	else
 		local prev_mode = gm_click_mode
 		gm_click_mode = "mine line start"
@@ -21411,7 +21411,7 @@ function GMTimerPurpose()
 			"Departure"			,
 			"Destruction"		,
 			"Discovery"			,
-			"Decompression"		
+			"Decompression"
 		}
 	end
 	local button_label = nil
@@ -21615,19 +21615,19 @@ function endMission()
 	addGMFunction("Kraylor Victory",function()
 		victory("Kraylor")
 	end)
-	addGMFunction("Exuari Victory",function() 
+	addGMFunction("Exuari Victory",function()
 		victory("Exuari")
 	end)
-	addGMFunction("Ghost Victory",function() 
+	addGMFunction("Ghost Victory",function()
 		victory("Ghosts")
 	end)
-	addGMFunction("Arlenian Victory",function() 
-		victory("Arlenians")	
+	addGMFunction("Arlenian Victory",function()
+		victory("Arlenians")
 	end)
-	addGMFunction("Independent Victory",function() 
+	addGMFunction("Independent Victory",function()
 		victory("Independent")
 	end)
-	addGMFunction("Ktlitan Victory",function() 
+	addGMFunction("Ktlitan Victory",function()
 		victory("Ktlitans")
 	end)
 	addGMFunction("TSN Victory",function()
@@ -21870,8 +21870,8 @@ function scienceDatabase()
 		local function printDb(entry, indent)
 			indent = indent or 0
 			local pad = ""
-			for _=1,indent do 
-				pad = pad .. " " 
+			for _=1,indent do
+				pad = pad .. " "
 			end
 			print(pad .. "* " .. entry:getName())
 			if (entry:hasEntries()) then
@@ -22806,7 +22806,7 @@ function getEnemyHealth(enemy)
 	end
 	if change_enemy_order_diagnostic then print(string.format("   faction:         %s",faction)) end
 	if faction == "Kraylor" then
-		enemy_health = 
+		enemy_health =
 			enemy_shield 	* .3	+
 			enemy_hull		* .4	+
 			enemy_reactor	* .1 	+
@@ -22817,7 +22817,7 @@ function getEnemyHealth(enemy)
 			enemy_warp		* .03	+
 			enemy_jump		* .03
 	elseif faction == "Arlenians" then
-		enemy_health = 
+		enemy_health =
 			enemy_shield 	* .35	+
 			enemy_hull		* .45	+
 			enemy_reactor	* .05 	+
@@ -22826,9 +22826,9 @@ function getEnemyHealth(enemy)
 			enemy_beam		* .02	+
 			enemy_missile	* .02	+
 			enemy_warp		* .02	+
-			enemy_jump		* .02	
+			enemy_jump		* .02
 	elseif faction == "Exuari" then
-		enemy_health = 
+		enemy_health =
 			enemy_shield 	* .2	+
 			enemy_hull		* .3	+
 			enemy_reactor	* .2 	+
@@ -22837,9 +22837,9 @@ function getEnemyHealth(enemy)
 			enemy_beam		* .05	+
 			enemy_missile	* .05	+
 			enemy_warp		* .05	+
-			enemy_jump		* .05	
+			enemy_jump		* .05
 	elseif faction == "Ghosts" then
-		enemy_health = 
+		enemy_health =
 			enemy_shield 	* .25	+
 			enemy_hull		* .25	+
 			enemy_reactor	* .25 	+
@@ -22848,9 +22848,9 @@ function getEnemyHealth(enemy)
 			enemy_beam		* .04	+
 			enemy_missile	* .04	+
 			enemy_warp		* .04	+
-			enemy_jump		* .04	
+			enemy_jump		* .04
 	elseif faction == "Ktlitans" then
-		enemy_health = 
+		enemy_health =
 			enemy_shield 	* .2	+
 			enemy_hull		* .3	+
 			enemy_reactor	* .1 	+
@@ -22859,9 +22859,9 @@ function getEnemyHealth(enemy)
 			enemy_beam		* .05	+
 			enemy_missile	* .05	+
 			enemy_warp		* .1	+
-			enemy_jump		* .1	
+			enemy_jump		* .1
 	elseif faction == "TSN" then
-		enemy_health = 
+		enemy_health =
 			enemy_shield 	* .35	+
 			enemy_hull		* .35	+
 			enemy_reactor	* .08 	+
@@ -22870,9 +22870,9 @@ function getEnemyHealth(enemy)
 			enemy_beam		* .02	+
 			enemy_missile	* .01	+
 			enemy_warp		* .08	+
-			enemy_jump		* .08	
+			enemy_jump		* .08
 	elseif faction == "USN" then
-		enemy_health = 
+		enemy_health =
 			enemy_shield 	* .38	+
 			enemy_hull		* .38	+
 			enemy_reactor	* .05 	+
@@ -22881,9 +22881,9 @@ function getEnemyHealth(enemy)
 			enemy_beam		* .02	+
 			enemy_missile	* .02	+
 			enemy_warp		* .05	+
-			enemy_jump		* .05	
+			enemy_jump		* .05
 	elseif faction == "CUF" then
-		enemy_health = 
+		enemy_health =
 			enemy_shield 	* .35	+
 			enemy_hull		* .38	+
 			enemy_reactor	* .05 	+
@@ -22892,9 +22892,9 @@ function getEnemyHealth(enemy)
 			enemy_beam		* .03	+
 			enemy_missile	* .03	+
 			enemy_warp		* .06	+
-			enemy_jump		* .04	
+			enemy_jump		* .04
 	else
-		enemy_health = 
+		enemy_health =
 			enemy_shield 	* .3	+
 			enemy_hull		* .4	+
 			enemy_reactor	* .06 	+
@@ -22903,7 +22903,7 @@ function getEnemyHealth(enemy)
 			enemy_beam		* .03	+
 			enemy_missile	* .03	+
 			enemy_warp		* .05	+
-			enemy_jump		* .05	
+			enemy_jump		* .05
 	end
 	return enemy_health
 end
@@ -23027,67 +23027,67 @@ end
 --	Station communication  --
 -----------------------------
 function commsStation()
-    if comms_target.comms_data == nil then
-        comms_target.comms_data = {}
-    end
-    mergeTables(comms_target.comms_data, {
-        friendlyness = random(0.0, 100.0),
-        weapons = {
-            Homing = "neutral",
-            HVLI = "neutral",
-            Mine = "neutral",
-            Nuke = "friend",
-            EMP = "friend"
-        },
-        weapon_cost = {
-            Homing = math.random(1,4),
-            HVLI = math.random(1,3),
-            Mine = math.random(2,5),
-            Nuke = math.random(12,18),
-            EMP = math.random(7,13)
-        },
-        services = {
-            supplydrop = "friend",
-            reinforcements = "friend",
-            sensor_boost = "neutral",
+	if comms_target.comms_data == nil then
+		comms_target.comms_data = {}
+	end
+	mergeTables(comms_target.comms_data, {
+		friendlyness = random(0.0, 100.0),
+		weapons = {
+			Homing = "neutral",
+			HVLI = "neutral",
+			Mine = "neutral",
+			Nuke = "friend",
+			EMP = "friend"
+		},
+		weapon_cost = {
+			Homing = math.random(1,4),
+			HVLI = math.random(1,3),
+			Mine = math.random(2,5),
+			Nuke = math.random(12,18),
+			EMP = math.random(7,13)
+		},
+		services = {
+			supplydrop = "friend",
+			reinforcements = "friend",
+			sensor_boost = "neutral",
 			preorder = "friend"
-        },
-        service_cost = {
-            supplydrop = math.random(80,120),
-            reinforcements = math.random(125,175)
-        },
-        reputation_cost_multipliers = {
-            friend = 1.0,
-            neutral = 3.0
-        },
-        max_weapon_refill_amount = {
-            friend = 1.0,
-            neutral = 0.5
-        }
-    })
-    comms_data = comms_target.comms_data
-    if comms_source:isEnemy(comms_target) then
-        return false
-    end
-    if comms_target:areEnemiesInRange(5000) then
-        setCommsMessage("We are under attack! No time for chatting!");
-        return true
-    end
-    if not comms_source:isDocked(comms_target) then
-        handleUndockedState()
-    else
-        handleDockedState()
-    end
-    return true
+		},
+		service_cost = {
+			supplydrop = math.random(80,120),
+			reinforcements = math.random(125,175)
+		},
+		reputation_cost_multipliers = {
+			friend = 1.0,
+			neutral = 3.0
+		},
+		max_weapon_refill_amount = {
+			friend = 1.0,
+			neutral = 0.5
+		}
+	})
+	comms_data = comms_target.comms_data
+	if comms_source:isEnemy(comms_target) then
+		return false
+	end
+	if comms_target:areEnemiesInRange(5000) then
+		setCommsMessage("We are under attack! No time for chatting!");
+		return true
+	end
+	if not comms_source:isDocked(comms_target) then
+		handleUndockedState()
+	else
+		handleDockedState()
+	end
+	return true
 end
 function handleDockedState()
 	local ctd = comms_target.comms_data
-    if comms_source:isFriendly(comms_target) then
+	if comms_source:isFriendly(comms_target) then
 		oMsg = "Good day, officer!\nWhat can we do for you today?\n"
-    else
+	else
 		oMsg = "Welcome to our lovely station.\n"
-    end
-    if comms_target:areEnemiesInRange(20000) then
+	end
+	if comms_target:areEnemiesInRange(20000) then
 		oMsg = oMsg .. "Forgive us if we seem a little distracted. We are carefully monitoring the enemies nearby."
 	end
 	setCommsMessage(oMsg)
@@ -23103,10 +23103,10 @@ function handleDockedState()
 		missilePresence = missilePresence + comms_source:getWeaponStorageMax(missile_type)
 	end
 	if missilePresence > 0 then
-		if 	(ctd.weapon_available.Nuke   and comms_source:getWeaponStorageMax("Nuke") > 0)   or 
-			(ctd.weapon_available.EMP    and comms_source:getWeaponStorageMax("EMP") > 0)    or 
-			(ctd.weapon_available.Homing and comms_source:getWeaponStorageMax("Homing") > 0) or 
-			(ctd.weapon_available.Mine   and comms_source:getWeaponStorageMax("Mine") > 0)   or 
+		if 	(ctd.weapon_available.Nuke   and comms_source:getWeaponStorageMax("Nuke") > 0)   or
+			(ctd.weapon_available.EMP    and comms_source:getWeaponStorageMax("EMP") > 0)    or
+			(ctd.weapon_available.Homing and comms_source:getWeaponStorageMax("Homing") > 0) or
+			(ctd.weapon_available.Mine   and comms_source:getWeaponStorageMax("Mine") > 0)   or
 			(ctd.weapon_available.HVLI   and comms_source:getWeaponStorageMax("HVLI") > 0)   then
 			addCommsReply("I need ordnance restocked", function()
 				setCommsMessage("What type of ordnance?")
@@ -23760,35 +23760,35 @@ function handleDockedState()
 	end
 end	--end of handleDockedState function
 function isAllowedTo(state)
-    if state == "friend" and comms_source:isFriendly(comms_target) then
-        return true
-    end
-    if state == "neutral" and not comms_source:isEnemy(comms_target) then
-        return true
-    end
-    return false
+	if state == "friend" and comms_source:isFriendly(comms_target) then
+		return true
+	end
+	if state == "neutral" and not comms_source:isEnemy(comms_target) then
+		return true
+	end
+	return false
 end
 function handleWeaponRestock(weapon)
-    if not comms_source:isDocked(comms_target) then 
+	if not comms_source:isDocked(comms_target) then
 		setCommsMessage("You need to stay docked for that action.")
 		return
 	end
-    if not isAllowedTo(comms_data.weapons[weapon]) then
-        if weapon == "Nuke" then setCommsMessage("We do not deal in weapons of mass destruction.")
-        elseif weapon == "EMP" then setCommsMessage("We do not deal in weapons of mass disruption.")
-        else setCommsMessage("We do not deal in those weapons.") end
-        return
-    end
-    local points_per_item = getWeaponCost(weapon)
-    local item_amount = math.floor(comms_source:getWeaponStorageMax(weapon) * comms_data.max_weapon_refill_amount[getFriendStatus()]) - comms_source:getWeaponStorage(weapon)
-    if item_amount <= 0 then
-        if weapon == "Nuke" then
-            setCommsMessage("All nukes are charged and primed for destruction.");
-        else
-            setCommsMessage("Sorry, sir, but you are as fully stocked as I can allow.");
-        end
-        addCommsReply("Back", commsStation)
-    else
+	if not isAllowedTo(comms_data.weapons[weapon]) then
+		if weapon == "Nuke" then setCommsMessage("We do not deal in weapons of mass destruction.")
+		elseif weapon == "EMP" then setCommsMessage("We do not deal in weapons of mass disruption.")
+		else setCommsMessage("We do not deal in those weapons.") end
+		return
+	end
+	local points_per_item = getWeaponCost(weapon)
+	local item_amount = math.floor(comms_source:getWeaponStorageMax(weapon) * comms_data.max_weapon_refill_amount[getFriendStatus()]) - comms_source:getWeaponStorage(weapon)
+	if item_amount <= 0 then
+		if weapon == "Nuke" then
+			setCommsMessage("All nukes are charged and primed for destruction.");
+		else
+			setCommsMessage("Sorry, sir, but you are as fully stocked as I can allow.");
+		end
+		addCommsReply("Back", commsStation)
+	else
 		if comms_source:getReputationPoints() > points_per_item * item_amount then
 			if comms_source:takeReputationPoints(points_per_item * item_amount) then
 				comms_source:setWeaponStorage(weapon, comms_source:getWeaponStorage(weapon) + item_amount)
@@ -23819,14 +23819,14 @@ function handleWeaponRestock(weapon)
 				end)
 			else
 				setCommsMessage("Not enough reputation.")
-				return				
+				return
 			end
 		end
-        addCommsReply("Back", commsStation)
-    end
+		addCommsReply("Back", commsStation)
+	end
 end
 function getWeaponCost(weapon)
-    return math.ceil(comms_data.weapon_cost[weapon] * comms_data.reputation_cost_multipliers[getFriendStatus()])
+	return math.ceil(comms_data.weapon_cost[weapon] * comms_data.reputation_cost_multipliers[getFriendStatus()])
 end
 function preOrderOrdnance()
 	setCommsMessage(preorder_message)
@@ -23965,7 +23965,7 @@ function preOrderOrdnance()
 					else
 						comms_source.preorder_repair_crew = 1
 						setCommsMessage("Repair crew hired on your behalf. They will board when you dock")
-					end				
+					end
 					preorder_message = "Docking crew is standing by. Would you like to pre-order anything?"
 					addCommsReply("Back",preOrderOrdnance)
 				end)
@@ -23996,14 +23996,14 @@ function preOrderOrdnance()
 	end
 end
 function handleUndockedState()
-    --Handle communications when we are not docked with the station.
-    local ctd = comms_target.comms_data
-    if comms_source:isFriendly(comms_target) then
-        oMsg = "Good day, officer.\nIf you need supplies, please dock with us first."
-    else
-        oMsg = "Greetings.\nIf you want to do business, please dock with us first."
-    end
-    if comms_target:areEnemiesInRange(20000) then
+	--Handle communications when we are not docked with the station.
+	local ctd = comms_target.comms_data
+	if comms_source:isFriendly(comms_target) then
+		oMsg = "Good day, officer.\nIf you need supplies, please dock with us first."
+	else
+		oMsg = "Greetings.\nIf you want to do business, please dock with us first."
+	end
+	if comms_target:areEnemiesInRange(20000) then
 		oMsg = oMsg .. "\nBe aware that if enemies in the area get much closer, we will be too busy to conduct business with you."
 	end
 	setCommsMessage(oMsg)
@@ -24030,32 +24030,32 @@ function handleUndockedState()
 					end
 					if comms_source.preorder_homing ~= nil then
 						preorders_identified = true
-						existing_expedite = existing_expedite .. string.format("\n   Homings: %i",comms_source.preorder_homing)						
+						existing_expedite = existing_expedite .. string.format("\n   Homings: %i",comms_source.preorder_homing)
 					end
 					if comms_source.preorder_mine ~= nil then
 						preorders_identified = true
-						existing_expedite = existing_expedite .. string.format("\n   Mines: %i",comms_source.preorder_mine)						
+						existing_expedite = existing_expedite .. string.format("\n   Mines: %i",comms_source.preorder_mine)
 					end
 					if comms_source.preorder_emp ~= nil then
 						preorders_identified = true
-						existing_expedite = existing_expedite .. string.format("\n   EMPs: %i",comms_source.preorder_emp)						
+						existing_expedite = existing_expedite .. string.format("\n   EMPs: %i",comms_source.preorder_emp)
 					end
 					if comms_source.preorder_nuke ~= nil then
 						preorders_identified = true
-						existing_expedite = existing_expedite .. string.format("\n   Nukes: %i",comms_source.preorder_nuke)						
+						existing_expedite = existing_expedite .. string.format("\n   Nukes: %i",comms_source.preorder_nuke)
 					end
 					if comms_source.preorder_repair_crew ~= nil then
 						preorders_identified = true
-						existing_expedite = existing_expedite .. "\n   One repair crew"						
+						existing_expedite = existing_expedite .. "\n   One repair crew"
 					end
 					if comms_source.preorder_coolant ~= nil then
 						preorders_identified = true
-						existing_expedite = existing_expedite .. "\n   Coolant"						
+						existing_expedite = existing_expedite .. "\n   Coolant"
 					end
 					if preorders_identified then
 						existing_expedite = existing_expedite .. "\nWould you like to preorder anything else?"
 					else
-						existing_expedite = existing_expedite .. " none.\nWould you like to preorder anything?"						
+						existing_expedite = existing_expedite .. " none.\nWould you like to preorder anything?"
 					end
 					preorder_message = existing_expedite
 					preOrderOrdnance()
@@ -24315,19 +24315,19 @@ function handleUndockedState()
 				for n=0,shields-1 do
 					msg = msg .. "Shield " .. n .. ": " .. math.floor(comms_target:getShieldLevel(n) / comms_target:getShieldMax(n) * 100) .. "%\n"
 				end
-			end			
+			end
 			setCommsMessage(msg);
 			addCommsReply("Back", commsStation)
 		end)
 	end)
 	if isAllowedTo(ctd.services.supplydrop) then
-        addCommsReply("Can you send a supply drop? ("..getServiceCost("supplydrop").."rep)", function()
-            if comms_source:getWaypointCount() < 1 then
-                setCommsMessage("You need to set a waypoint before you can request backup.");
-            else
-                setCommsMessage("To which waypoint should we deliver your supplies?");
-                for n=1,comms_source:getWaypointCount() do
-                    addCommsReply("WP" .. n, function()
+		addCommsReply("Can you send a supply drop? ("..getServiceCost("supplydrop").."rep)", function()
+			if comms_source:getWaypointCount() < 1 then
+				setCommsMessage("You need to set a waypoint before you can request backup.");
+			else
+				setCommsMessage("To which waypoint should we deliver your supplies?");
+				for n=1,comms_source:getWaypointCount() do
+					addCommsReply("WP" .. n, function()
 						if comms_source:takeReputationPoints(getServiceCost("supplydrop")) then
 							local position_x, position_y = comms_target:getPosition()
 							local target_x, target_y = comms_source:getWaypoint(n)
@@ -24339,21 +24339,21 @@ function handleUndockedState()
 						else
 							setCommsMessage("Not enough reputation!");
 						end
-                        addCommsReply("Back", commsStation)
-                    end)
-                end
-            end
-            addCommsReply("Back", commsStation)
-        end)
-    end
-    if isAllowedTo(ctd.services.reinforcements) then
-        addCommsReply("Please send reinforcements! ("..getServiceCost("reinforcements").."rep)", function()
-            if comms_source:getWaypointCount() < 1 then
-                setCommsMessage("You need to set a waypoint before you can request reinforcements.");
-            else
-                setCommsMessage("To which waypoint should we dispatch the reinforcements?");
-                for n=1,comms_source:getWaypointCount() do
-                    addCommsReply("WP" .. n, function()
+						addCommsReply("Back", commsStation)
+					end)
+				end
+			end
+			addCommsReply("Back", commsStation)
+		end)
+	end
+	if isAllowedTo(ctd.services.reinforcements) then
+		addCommsReply("Please send reinforcements! ("..getServiceCost("reinforcements").."rep)", function()
+			if comms_source:getWaypointCount() < 1 then
+				setCommsMessage("You need to set a waypoint before you can request reinforcements.");
+			else
+				setCommsMessage("To which waypoint should we dispatch the reinforcements?");
+				for n=1,comms_source:getWaypointCount() do
+					addCommsReply("WP" .. n, function()
 						if comms_source:takeReputationPoints(getServiceCost("reinforcements")) then
 							ship = CpuShip():setFactionId(comms_target:getFactionId()):setPosition(comms_target:getPosition()):setTemplate("Adder MK5"):setScanned(true):orderDefendLocation(comms_source:getWaypoint(n))
 							ship:setCommsScript(""):setCommsFunction(commsShip)
@@ -24361,23 +24361,23 @@ function handleUndockedState()
 						else
 							setCommsMessage("Not enough reputation!");
 						end
-                        addCommsReply("Back", commsStation)
-                    end)
-                end
-            end
-            addCommsReply("Back", commsStation)
-        end)
-    end
+						addCommsReply("Back", commsStation)
+					end)
+				end
+			end
+			addCommsReply("Back", commsStation)
+		end)
+	end
 end
 function getServiceCost(service)
-    return math.ceil(comms_data.service_cost[service])
+	return math.ceil(comms_data.service_cost[service])
 end
 function getFriendStatus()
-    if comms_source:isFriendly(comms_target) then
-        return "friend"
-    else
-        return "neutral"
-    end
+	if comms_source:isFriendly(comms_target) then
+		return "friend"
+	else
+		return "neutral"
+	end
 end
 function playerShipCargoInventory(p)
 	p:addToShipLog(string.format("%s Current cargo:",p:getCallSign()),"Yellow")
@@ -24759,7 +24759,7 @@ function movingObjects(delta)
 		local neb_x, neb_y = icarus_mobile_nebula_1:getPosition()
 		if neb_x < -10000 then
 			neb_x = -10000
-		    icarus_mobile_nebula_1.increment = random(0,10)
+			icarus_mobile_nebula_1.increment = random(0,10)
 			if neb_y > 110000 then
 				--icarus_mobile_nebula_1.angle = random(1,89)
 				icarus_mobile_nebula_1.angle = random(271,359)
@@ -24770,7 +24770,7 @@ function movingObjects(delta)
 		end
 		if neb_x > 80000 then
 			neb_x = 80000
-		    icarus_mobile_nebula_1.increment = random(0,10)
+			icarus_mobile_nebula_1.increment = random(0,10)
 			if neb_y > 110000 then
 				--icarus_mobile_nebula_1.angle = random(271,359)
 				icarus_mobile_nebula_1.angle = random(181,269)
@@ -24781,7 +24781,7 @@ function movingObjects(delta)
 		end
 		if neb_y < 80000 then
 			neb_y = 80000
-		    icarus_mobile_nebula_1.increment = random(0,10)
+			icarus_mobile_nebula_1.increment = random(0,10)
 			if neb_x > 45000 then
 				--icarus_mobile_nebula_1.angle = random(181,269)
 				icarus_mobile_nebula_1.angle = random(91,179)
@@ -24792,7 +24792,7 @@ function movingObjects(delta)
 		end
 		if neb_y > 140000 then
 			neb_y = 140000
-		    icarus_mobile_nebula_1.increment = random(0,10)
+			icarus_mobile_nebula_1.increment = random(0,10)
 			if neb_x > 45000 then
 				--icarus_mobile_nebula_1.angle = random(271,359)
 				icarus_mobile_nebula_1.angle = random(181,269)
@@ -24805,7 +24805,7 @@ function movingObjects(delta)
 		icarus_mobile_nebula_1:setPosition(neb_x+dx,neb_y+dy)
 		local nr = icarus_mobile_nebula_1:getRotation()
 		nr = nr + .01
-		if nr > 360 then 
+		if nr > 360 then
 			nr = nr - 360
 		end
 		icarus_mobile_nebula_1:setRotation(nr)
@@ -25099,7 +25099,7 @@ function updateInner(delta)
 							p.inventoryButton = true
 						end
 					end
-					
+
 				end
 			end
 			if updateDiagnostic then print("update: valid player: rendezvous point message") end
@@ -25389,11 +25389,11 @@ function updateInner(delta)
 					else
 						if p:hasPlayerAtPosition("Relay") then
 							p.expedite_dock_timer_info = "expedite_dock_timer_info"
-							p:addCustomInfo("Relay",p.expedite_dock_timer_info,"Fast Dock Expired")						
+							p:addCustomInfo("Relay",p.expedite_dock_timer_info,"Fast Dock Expired")
 						end
 						if p:hasPlayerAtPosition("Operations") then
 							p.expedite_dock_timer_info_ops = "expedite_dock_timer_info_ops"
-							p:addCustomInfo("Relay",p.expedite_dock_timer_info_ops,"Fast Dock Expired")						
+							p:addCustomInfo("Relay",p.expedite_dock_timer_info_ops,"Fast Dock Expired")
 						end
 					end
 				else	--timer not expired
@@ -25412,7 +25412,7 @@ function updateInner(delta)
 					if p:hasPlayerAtPosition("Operations") then
 						p.expedite_dock_timer_info_ops = "expedite_dock_timer_info_ops"
 						p:addCustomInfo("Operations",p.expedite_dock_timer_info_ops,expedite_dock_timer_status)
-					end					
+					end
 				end
 				if p.expedite_dock_station ~= nil and p.expedite_dock_station:isValid() then
 					if p:isDocked(p.expedite_dock_station) then
@@ -25813,7 +25813,7 @@ function updateInner(delta)
 								p:removeCustom(p.disengage_tractor_button)
 								p.disengage_tractor_button = nil
 							end
-						end		--end of tractor lock processing				
+						end		--end of tractor lock processing
 					end		--end of player moving slow enough to tractor branch
 				end		--end of speed checks for tractoring
 			end		--end of tractor checks
@@ -25849,7 +25849,7 @@ function updateInner(delta)
 										if p:hasPlayerAtPosition("Science") then
 											local mined_mineral_message = "mined_mineral_message"
 											p:addCustomMessage("Science",mined_mineral_message,"mining failed to extract any minerals")
-										end										
+										end
 									end
 								else	--still mining, update timer display, energy and heat
 									p:setEnergy(p:getEnergy() - p:getMaxEnergy()*mining_drain)
