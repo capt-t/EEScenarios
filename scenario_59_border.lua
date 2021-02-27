@@ -7532,7 +7532,7 @@ function handleDockedState()
 				else
 					setCommsMessage("Insufficient reputation")
 				end
-				addCommsReply("Back", mainMenu)
+				addCommsReply("Back", commsStation)
 			end)
 		end
 	end
@@ -8901,7 +8901,7 @@ function handleUndockedState()
 				else
 					setCommsMessage("Insufficient reputation")
 				end
-				addCommsReply("Back", mainMenu)
+				addCommsReply("Back", commsStation)
 			end)
 		end
 	end
