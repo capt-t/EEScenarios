@@ -2593,64 +2593,64 @@ function populateStationPool()
 	station_pool = {
 		["Science"] = {
 			["Asimov"] = {
-		        weapon_available = 	{
-		        	Homing =			true,
-		        	HVLI =				random(1,13)<=(9-difficulty),
-		        	Mine =				true,
-		        	Nuke =				random(1,13)<=(5-difficulty),
-		        	EMP =				random(1,13)<=(6-difficulty),
-		        },
+				weapon_available = 	{
+					Homing =			true,
+					HVLI =				random(1,13)<=(9-difficulty),
+					Mine =				true,
+					Nuke =				random(1,13)<=(5-difficulty),
+					EMP =				random(1,13)<=(6-difficulty),
+				},
 				services = {
 					supplydrop = "friend",
 					reinforcements = "friend",
 					jumpsupplydrop = "friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
-		        reputation_cost_multipliers = {
-		        	friend = 			1.0,
-		        	neutral = 			3.0,
-		        },
-        		goods = {
-        			tractor = {
-        				quantity =	5,
-        				cost =		48,
-        			},
-        			repulsor = {
-        				quantity =	5,
-        				cost =		48,
-        			},
-        		},
-		        trade = {
-		        	food =			false,
-		        	medicine =		false,
-		        	luxury =		false,
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
+				reputation_cost_multipliers = {
+					friend = 			1.0,
+					neutral = 			3.0,
+				},
+				goods = {
+					tractor = {
+						quantity =	5,
+						cost =		48,
+					},
+					repulsor = {
+						quantity =	5,
+						cost =		48,
+					},
+				},
+				trade = {
+					food =			false,
+					medicine =		false,
+					luxury =		false,
+				},
 				description = "Training and Coordination",
 				general = "We train naval cadets in routine and specialized functions aboard space vessels and coordinate naval activity throughout the sector",
 				history = "The original station builders were fans of the late 20th century scientist and author Isaac Asimov. The station was initially named Foundation, but was later changed simply to Asimov. It started off as a stellar observatory, then became a supply stop and as it has grown has become an educational and coordination hub for the region",
 			},
 			["Armstrong"] =	{
-		        weapon_available = {
-		        	Homing = 			random(1,13)<=(8-difficulty),
-		        	HVLI = 				true,
-		        	Mine = 				random(1,13)<=(7-difficulty),
-		        	Nuke = 				random(1,13)<=(5-difficulty),
-		        	EMP = 				true
-		        },
+				weapon_available = {
+					Homing = 			random(1,13)<=(8-difficulty),
+					HVLI = 				true,
+					Mine = 				random(1,13)<=(7-difficulty),
+					Nuke = 				random(1,13)<=(5-difficulty),
+					EMP = 				true
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
 				goods = {
 					warp = {
 						quantity =	5,
@@ -2674,23 +2674,23 @@ function populateStationPool()
 				history = "The station is named after the late 19th century astronaut as well as the fictionlized stations that followed. The station initially constructed entire space worthy vessels. In time, it transitioned into specializeing in propulsion systems.",
 			},
 			["Broeck"] = {
-		        weapon_available = {
-		        	Homing =			random(1,13)<=(8-difficulty),
-		        	HVLI =				random(1,13)<=(9-difficulty),
-		        	Mine =				random(1,13)<=(7-difficulty),
-		        	Nuke =				random(1,13)<=(5-difficulty),
-		        	EMP =				random(1,13)<=(6-difficulty),
-		        },
+				weapon_available = {
+					Homing =			random(1,13)<=(8-difficulty),
+					HVLI =				random(1,13)<=(9-difficulty),
+					Mine =				random(1,13)<=(7-difficulty),
+					Nuke =				random(1,13)<=(5-difficulty),
+					EMP =				random(1,13)<=(6-difficulty),
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
 				goods = {
 					warp = {
 						quantity =	5,
@@ -2710,38 +2710,38 @@ function populateStationPool()
 				history = "This station is named after Chris Van Den Broeck who did some initial research into the possibility of warp drive in the late 20th century on Earth",
 			},
 			["Coulomb"] = {
-		        weapon_available = 	{
-		        	Homing = random(1,13)<=(8-difficulty),
-		        	HVLI = random(1,13)<=(9-difficulty),
-		        	Mine = random(1,13)<=(7-difficulty),
-		        	Nuke = random(1,13)<=(5-difficulty),
-		        	EMP = random(1,13)<=(6-difficulty),
-		        },
+				weapon_available = 	{
+					Homing = random(1,13)<=(8-difficulty),
+					HVLI = random(1,13)<=(9-difficulty),
+					Mine = random(1,13)<=(7-difficulty),
+					Nuke = random(1,13)<=(5-difficulty),
+					EMP = random(1,13)<=(6-difficulty),
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
-		        reputation_cost_multipliers = {
-		        	friend = 1.0,
-		        	neutral = 3.0,
-		        },
-        		goods = {
-        			circuit =	{
-        				quantity =	5,
-        				cost =		50,
-        			},
-        		},
-        		trade = {
-        			food = random(1,100) <= 35,
-        			medicine = false,
-        			luxury = random(1,100) < 82,
-        		},
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
+				reputation_cost_multipliers = {
+					friend = 1.0,
+					neutral = 3.0,
+				},
+				goods = {
+					circuit =	{
+						quantity =	5,
+						cost =		50,
+					},
+				},
+				trade = {
+					food = random(1,100) <= 35,
+					medicine = false,
+					luxury = random(1,100) < 82,
+				},
 				buy =	{
 					[randomMineral()] = math.random(40,200),
 				},
@@ -2750,27 +2750,27 @@ function populateStationPool()
 				history = "Our station is named after the law which quantifies the amount of force with which stationary electrically charged particals repel or attact each other - a fundamental principle in the design of our circuits",
 			},
 			["Heyes"] = {
-		        weapon_available = {
-		        	Homing =			random(1,13)<=(8-difficulty),
-		        	HVLI =				true,
-		        	Mine =				random(1,13)<=(7-difficulty),
-		        	Nuke =				random(1,13)<=(5-difficulty),
-		        	EMP =				random(1,13)<=(6-difficulty),
-		        },
+				weapon_available = {
+					Homing =			random(1,13)<=(8-difficulty),
+					HVLI =				true,
+					Mine =				random(1,13)<=(7-difficulty),
+					Nuke =				random(1,13)<=(5-difficulty),
+					EMP =				random(1,13)<=(6-difficulty),
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
-		        reputation_cost_multipliers = {
-		        	friend = 1.0,
-		        	neutral = 3.0,
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
+				reputation_cost_multipliers = {
+					friend = 1.0,
+					neutral = 3.0,
+				},
 				goods = {
 					sensor = {
 						quantity =	5,
@@ -2790,27 +2790,27 @@ function populateStationPool()
 				history = "The station is named after Tony Heyes the inventor of some of the earliest electromagnetic sensors in the mid 20th century on Earth in the United Kingdom to assist blind human mobility",
 			},
 			["Hossam"] = {
-		        weapon_available = {
-		        	Homing =			random(1,13)<=(8-difficulty),
-		        	HVLI =				random(1,13)<=(9-difficulty),
-		        	Mine =				random(1,13)<=(7-difficulty),
-		        	Nuke =				random(1,13)<=(5-difficulty),
-		        	EMP =				random(1,13)<=(6-difficulty),
-		        },
+				weapon_available = {
+					Homing =			random(1,13)<=(8-difficulty),
+					HVLI =				random(1,13)<=(9-difficulty),
+					Mine =				random(1,13)<=(7-difficulty),
+					Nuke =				random(1,13)<=(5-difficulty),
+					EMP =				random(1,13)<=(6-difficulty),
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
-		        reputation_cost_multipliers = {
-		        	friend = 1.0,
-		        	neutral = 3.0,
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
+				reputation_cost_multipliers = {
+					friend = 1.0,
+					neutral = 3.0,
+				},
 				goods = {
 					nanites = {
 						quantity =	5,
@@ -2827,27 +2827,27 @@ function populateStationPool()
 				history = "This station is named after the nanotechnologist Hossam Haick from the early 21st century on Earth in Israel",
 			},
 			["Maiman"] = {
-		        weapon_available = {
-		        	Homing =			random(1,13)<=(8-difficulty),
-		        	HVLI =				false,
-		        	Mine =				random(1,13)<=(7-difficulty),
-		        	Nuke =				random(1,13)<=(5-difficulty),
-		        	EMP =				random(1,13)<=(6-difficulty),
-		        },
+				weapon_available = {
+					Homing =			random(1,13)<=(8-difficulty),
+					HVLI =				false,
+					Mine =				random(1,13)<=(7-difficulty),
+					Nuke =				random(1,13)<=(5-difficulty),
+					EMP =				random(1,13)<=(6-difficulty),
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
-		        reputation_cost_multipliers = {
-		        	friend = 1.0,
-		        	neutral = 3.0,
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
+				reputation_cost_multipliers = {
+					friend = 1.0,
+					neutral = 3.0,
+				},
 				goods = {
 					beam = {
 						quantity =	5,
@@ -2867,59 +2867,59 @@ function populateStationPool()
 				history = "The station is named after Theodore Maiman who researched and built the first laser in the mid 20th century on Earth",
 			},
 			["Malthus"] = {
-		        weapon_available = {
-		        	Homing =			random(1,13)<=(8-difficulty),
-		        	HVLI =				random(1,13)<=(9-difficulty),
-		        	Mine =				random(1,13)<=(7-difficulty),
-		        	Nuke =				random(1,13)<=(5-difficulty),
-		        	EMP =				random(1,13)<=(6-difficulty),
-		        },
+				weapon_available = {
+					Homing =			random(1,13)<=(8-difficulty),
+					HVLI =				random(1,13)<=(9-difficulty),
+					Mine =				random(1,13)<=(7-difficulty),
+					Nuke =				random(1,13)<=(5-difficulty),
+					EMP =				random(1,13)<=(6-difficulty),
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
-		        reputation_cost_multipliers = {
-		        	friend = 1.0,
-		        	neutral = 3.0,
-		        },
-		        goods = {},
-    			trade = {
-    				food = random(1,100) <= 65,
-    				medicine = false,
-    				luxury = false,
-    			},
-    			description = "Gambling and resupply",
-		        general = "The oldest station in the quadrant",
-		        history = "",
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
+				reputation_cost_multipliers = {
+					friend = 1.0,
+					neutral = 3.0,
+				},
+				goods = {},
+				trade = {
+					food = random(1,100) <= 65,
+					medicine = false,
+					luxury = false,
+				},
+				description = "Gambling and resupply",
+				general = "The oldest station in the quadrant",
+				history = "",
 			},
 			["Marconi"] = {
-		        weapon_available = {
-		        	Homing =			random(1,13)<=(8-difficulty),
-		        	HVLI =				random(1,13)<=(9-difficulty),
-		        	Mine =				random(1,13)<=(7-difficulty),
-		        	Nuke =				random(1,13)<=(5-difficulty),
-		        	EMP =				random(1,13)<=(6-difficulty),
-		        },
+				weapon_available = {
+					Homing =			random(1,13)<=(8-difficulty),
+					HVLI =				random(1,13)<=(9-difficulty),
+					Mine =				random(1,13)<=(7-difficulty),
+					Nuke =				random(1,13)<=(5-difficulty),
+					EMP =				random(1,13)<=(6-difficulty),
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
-		        reputation_cost_multipliers = {
-		        	friend = 1.0,
-		        	neutral = 3.0,
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
+				reputation_cost_multipliers = {
+					friend = 1.0,
+					neutral = 3.0,
+				},
 				goods = {
 					beam = {
 						quantity =	5,
@@ -2936,27 +2936,27 @@ function populateStationPool()
 				history = "Station named after Guglielmo Marconi an Italian inventor from early 20th century Earth who, along with Nicolo Tesla, claimed to have invented a death ray or particle beam weapon",
 			},
 			["Miller"] = {
-		        weapon_available = {
-		        	Homing =			random(1,13)<=(8-difficulty),
-		        	HVLI =				random(1,13)<=(9-difficulty),
-		        	Mine =				random(1,13)<=(7-difficulty),
-		        	Nuke =				random(1,13)<=(5-difficulty),
-		        	EMP =				random(1,13)<=(6-difficulty),
-		        },
+				weapon_available = {
+					Homing =			random(1,13)<=(8-difficulty),
+					HVLI =				random(1,13)<=(9-difficulty),
+					Mine =				random(1,13)<=(7-difficulty),
+					Nuke =				random(1,13)<=(5-difficulty),
+					EMP =				random(1,13)<=(6-difficulty),
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
-		        reputation_cost_multipliers = {
-		        	friend = 1.0,
-		        	neutral = 3.0,
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
+				reputation_cost_multipliers = {
+					friend = 1.0,
+					neutral = 3.0,
+				},
 				goods = {
 					optic =	{
 						quantity =	5,
@@ -2973,27 +2973,27 @@ function populateStationPool()
 				history = "This station was named after one of the early exobiologists from mid 20th century Earth, Dr. Stanley Miller",
 			},
 			["Shawyer"] = {
-		        weapon_available = {
-		        	Homing =			random(1,13)<=(8-difficulty),
-		        	HVLI =				random(1,13)<=(9-difficulty),
-		        	Mine =				random(1,13)<=(7-difficulty),
-		        	Nuke =				random(1,13)<=(5-difficulty),
-		        	EMP =				random(1,13)<=(6-difficulty),
-		        },
+				weapon_available = {
+					Homing =			random(1,13)<=(8-difficulty),
+					HVLI =				random(1,13)<=(9-difficulty),
+					Mine =				random(1,13)<=(7-difficulty),
+					Nuke =				random(1,13)<=(5-difficulty),
+					EMP =				random(1,13)<=(6-difficulty),
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
-		        reputation_cost_multipliers = {
-		        	friend = 1.0,
-		        	neutral = 2.0,
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
+				reputation_cost_multipliers = {
+					friend = 1.0,
+					neutral = 2.0,
+				},
 				goods = {
 					impulse = {
 						quantity =	5,
@@ -3012,27 +3012,27 @@ function populateStationPool()
 		},
 		["History"] = {
 			["Archimedes"] = {
-		        weapon_available = {
-		        	Homing =			random(1,13)<=(8-difficulty),
-		        	HVLI =				random(1,13)<=(9-difficulty),
-		        	Mine =				random(1,13)<=(7-difficulty),
-		        	Nuke =				random(1,13)<=(5-difficulty),
-		        	EMP =				random(1,13)<=(6-difficulty),
-		        },
+				weapon_available = {
+					Homing =			random(1,13)<=(8-difficulty),
+					HVLI =				random(1,13)<=(9-difficulty),
+					Mine =				random(1,13)<=(7-difficulty),
+					Nuke =				random(1,13)<=(5-difficulty),
+					EMP =				random(1,13)<=(6-difficulty),
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
-		        reputation_cost_multipliers = {
-		        	friend = 1.0,
-		        	neutral = 3.0,
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
+				reputation_cost_multipliers = {
+					friend = 1.0,
+					neutral = 3.0,
+				},
 				goods = {
 					beam = {
 						quantity =	5,
@@ -3049,27 +3049,27 @@ function populateStationPool()
 				history = "This station was named after Archimedes who, according to legend, used a series of adjustable focal length mirrors to focus sunlight on a Roman naval fleet invading Syracuse, setting fire to it",
 			},
 			["Chatuchak"] =	{
-		        weapon_available = {
-		        	Homing =				random(1,10)<=(8-difficulty),
-		        	HVLI =				random(1,10)<=(9-difficulty),
-		        	Mine =				false,
-		        	Nuke =				random(1,10)<=(5-difficulty),
-		        	EMP =				random(1,10)<=(6-difficulty),
-		        },
+				weapon_available = {
+					Homing =				random(1,10)<=(8-difficulty),
+					HVLI =				random(1,10)<=(9-difficulty),
+					Mine =				false,
+					Nuke =				random(1,10)<=(5-difficulty),
+					EMP =				random(1,10)<=(6-difficulty),
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
-		        reputation_cost_multipliers = {
-		        	friend = 1.0,
-		        	neutral = 2.0,
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
+				reputation_cost_multipliers = {
+					friend = 1.0,
+					neutral = 2.0,
+				},
 				goods = {
 					luxury = {
 						quantity =	5,
@@ -3086,27 +3086,27 @@ function populateStationPool()
 				history = "Modeled after the early 21st century bazaar on Earth in Bangkok, Thailand. Designed and built with trade and commerce in mind",
 			},
 			["Grasberg"] = {
-		        weapon_available = {
-		        	Homing =			random(1,13)<=(8-difficulty),
-		        	HVLI =				random(1,13)<=(9-difficulty),
-		        	Mine =				random(1,13)<=(7-difficulty),
-		        	Nuke =				random(1,13)<=(5-difficulty),
-		        	EMP =				random(1,13)<=(6-difficulty),
-		        },
+				weapon_available = {
+					Homing =			random(1,13)<=(8-difficulty),
+					HVLI =				random(1,13)<=(9-difficulty),
+					Mine =				random(1,13)<=(7-difficulty),
+					Nuke =				random(1,13)<=(5-difficulty),
+					EMP =				random(1,13)<=(6-difficulty),
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
-		        reputation_cost_multipliers = {
-		        	friend = 1.0,
-		        	neutral = 2.0,
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
+				reputation_cost_multipliers = {
+					friend = 1.0,
+					neutral = 2.0,
+				},
 				goods = {
 					luxury = {
 						quantity =	5,
@@ -3126,27 +3126,27 @@ function populateStationPool()
 				history = "This station's name is inspired by a large gold mine on Earth in Indonesia. The station builders hoped to have a similar amount of minerals found amongst these asteroids",
 			},
 			["Hayden"] = {
-		        weapon_available = {
-		        	Homing = random(1,13)<=(8-difficulty),
-		        	HVLI = random(1,13)<=(9-difficulty),
-		        	Mine = random(1,13)<=(7-difficulty),
-		        	Nuke = random(1,13)<=(5-difficulty),
-		        	EMP = random(1,13)<=(6-difficulty),
-		        },
+				weapon_available = {
+					Homing = random(1,13)<=(8-difficulty),
+					HVLI = random(1,13)<=(9-difficulty),
+					Mine = random(1,13)<=(7-difficulty),
+					Nuke = random(1,13)<=(5-difficulty),
+					EMP = random(1,13)<=(6-difficulty),
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
-		        reputation_cost_multipliers = {
-		        	friend = 1.0,
-		        	neutral = 2.0,
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
+				reputation_cost_multipliers = {
+					friend = 1.0,
+					neutral = 2.0,
+				},
 				goods = {
 					nanites = {
 						quantity =	5,
@@ -3163,27 +3163,27 @@ function populateStationPool()
 				history = "Station named in honor of Charles Hayden whose philanthropy continued astrophysical research and education on Earth in the early 20th century",
 			},
 			["Lipkin"] = {
-		        weapon_available = {
-		        	Homing =				random(1,13)<=(8-difficulty),
-		        	HVLI =				random(1,13)<=(9-difficulty),
-		        	Mine =				false,
-		        	Nuke =				random(1,13)<=(5-difficulty),
-		        	EMP =				random(1,13)<=(6-difficulty),
-		        },
+				weapon_available = {
+					Homing =				random(1,13)<=(8-difficulty),
+					HVLI =				random(1,13)<=(9-difficulty),
+					Mine =				false,
+					Nuke =				random(1,13)<=(5-difficulty),
+					EMP =				random(1,13)<=(6-difficulty),
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
-		        reputation_cost_multipliers = {
-		        	friend = 1.0,
-		        	neutral = 2.0,
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
+				reputation_cost_multipliers = {
+					friend = 1.0,
+					neutral = 2.0,
+				},
 				goods = {
 					autodoc = {
 						quantity =	5,
@@ -3200,27 +3200,27 @@ function populateStationPool()
 				history = "The station is named after Dr. Lipkin who pioneered some of the research and application around robot assisted surgery in the area of partial nephrectomy for renal tumors in the early 21st century on Earth",
 			},
 			["Madison"] = {
-		        weapon_available = {
-		        	Homing =			false,
-		        	HVLI =				random(1,13)<=(9-difficulty),
-		        	Mine =				random(1,13)<=(7-difficulty),
-		        	Nuke =				random(1,13)<=(5-difficulty),
-		        	EMP =				random(1,13)<=(6-difficulty),
-		        },
+				weapon_available = {
+					Homing =			false,
+					HVLI =				random(1,13)<=(9-difficulty),
+					Mine =				random(1,13)<=(7-difficulty),
+					Nuke =				random(1,13)<=(5-difficulty),
+					EMP =				random(1,13)<=(6-difficulty),
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
-		        reputation_cost_multipliers = {
-		        	friend = 1.0,
-		        	neutral = 2.0,
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
+				reputation_cost_multipliers = {
+					friend = 1.0,
+					neutral = 2.0,
+				},
 				goods = {
 					luxury = {
 						quantity =	5,
@@ -3237,27 +3237,27 @@ function populateStationPool()
 				history = "Named after Madison Square Gardens from 21st century Earth, this station was designed to serve similar purposes in space - a venue for sports and entertainment",
 			},
 			["Rutherford"] = {
-		        weapon_available = {
-		        	Homing = random(1,13)<=(8-difficulty),
-		        	HVLI = random(1,13)<=(9-difficulty),
-		        	Mine = random(1,13)<=(7-difficulty),
-		        	Nuke = random(1,13)<=(5-difficulty),
-		        	EMP = random(1,13)<=(6-difficulty),
-		        },
+				weapon_available = {
+					Homing = random(1,13)<=(8-difficulty),
+					HVLI = random(1,13)<=(9-difficulty),
+					Mine = random(1,13)<=(7-difficulty),
+					Nuke = random(1,13)<=(5-difficulty),
+					EMP = random(1,13)<=(6-difficulty),
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
-		        reputation_cost_multipliers = {
-		        	friend = 1.0,
-		        	neutral = 2.0,
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
+				reputation_cost_multipliers = {
+					friend = 1.0,
+					neutral = 2.0,
+				},
 				goods = {
 					shield = {
 						quantity =	5,
@@ -3274,27 +3274,27 @@ function populateStationPool()
 				history = "This station was named after the national research institution Rutherford Appleton Laboratory in the United Kingdom which conducted some preliminary research into the feasability of generating an energy shield in the late 20th century",
 			},
 			["Toohie"] = {
-		        weapon_available = {
-		        	Homing =			random(1,13)<=(8-difficulty),
-		        	HVLI =				random(1,13)<=(9-difficulty),
-		        	Mine =				random(1,13)<=(7-difficulty),
-		        	Nuke =				random(1,13)<=(5-difficulty),
-		        	EMP =				random(1,13)<=(6-difficulty),
-		        },
+				weapon_available = {
+					Homing =			random(1,13)<=(8-difficulty),
+					HVLI =				random(1,13)<=(9-difficulty),
+					Mine =				random(1,13)<=(7-difficulty),
+					Nuke =				random(1,13)<=(5-difficulty),
+					EMP =				random(1,13)<=(6-difficulty),
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
-		        reputation_cost_multipliers = {
-		        	friend = 1.0,
-		        	neutral = 3.0,
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
+				reputation_cost_multipliers = {
+					friend = 1.0,
+					neutral = 3.0,
+				},
 				goods = {
 					shield = {
 						quantity =	5,
@@ -3312,37 +3312,37 @@ function populateStationPool()
 		},
 		["Pop Sci Fi"] = {
 			["Anderson"] = {
-		        weapon_available = {
-		        	Homing = false,
-		        	HVLI = random(1,13)<=(9-difficulty),
-		        	Mine = random(1,13)<=(7-difficulty),
-		        	Nuke = random(1,13)<=(5-difficulty),
-		        	EMP = random(1,13)<=(6-difficulty),
-		        },
+				weapon_available = {
+					Homing = false,
+					HVLI = random(1,13)<=(9-difficulty),
+					Mine = random(1,13)<=(7-difficulty),
+					Nuke = random(1,13)<=(5-difficulty),
+					EMP = random(1,13)<=(6-difficulty),
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
-		        reputation_cost_multipliers = {
-		        	friend = 1.0,
-		        	neutral = 2.0,
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
+				reputation_cost_multipliers = {
+					friend = 1.0,
+					neutral = 2.0,
+				},
 				goods = {
 					battery = {
 						quantity =	5,
 						cost =		66,
 					},
-        			software = {
-        				quantity =	5,
-        				cost =		115,
-        			},
-        		},
+					software = {
+						quantity =	5,
+						cost =		115,
+					},
+				},
 				trade = {
 					food = false,
 					medicine = false,
@@ -3353,23 +3353,23 @@ function populateStationPool()
 				history = "The station is named after a fictional software engineer in a late 20th century movie depicting humanity unknowingly conquered by aliens and kept docile by software generated illusion",
 			},
 			["Archer"] = {
-		        weapon_available = {
-		        	Homing = 			random(1,13)<=(8-difficulty),
-		        	HVLI = 				true,
-		        	Mine = 				random(1,13)<=(7-difficulty),
-		        	Nuke = 				random(1,13)<=(5-difficulty),
-		        	EMP = 				true
-		        },
+				weapon_available = {
+					Homing = 			random(1,13)<=(8-difficulty),
+					HVLI = 				true,
+					Mine = 				random(1,13)<=(7-difficulty),
+					Nuke = 				random(1,13)<=(5-difficulty),
+					EMP = 				true
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
 				goods = {
 					shield = {
 						quantity =	5,
@@ -3389,23 +3389,23 @@ function populateStationPool()
 				history = "We named this station for the pioneering spirit of the 22nd century Starfleet explorer, Captain Jonathan Archer",
 			},
 			["Barclay"] = {
-		        weapon_available = {
-		        	Homing =			random(1,13)<=(8-difficulty),
-		        	HVLI =				random(1,13)<=(9-difficulty),
-		        	Mine =				false,
-		        	Nuke =				random(1,13)<=(5-difficulty),
-		        	EMP =				random(1,13)<=(6-difficulty),
-		        },
+				weapon_available = {
+					Homing =			random(1,13)<=(8-difficulty),
+					HVLI =				random(1,13)<=(9-difficulty),
+					Mine =				false,
+					Nuke =				random(1,13)<=(5-difficulty),
+					EMP =				random(1,13)<=(6-difficulty),
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
 				goods = {
 					communication =	{
 						quantity =	5,
@@ -3425,23 +3425,23 @@ function populateStationPool()
 				history = "The station is named after Reginald Barclay who established the first transgalactic com link through the creative application of a quantum singularity. Station personnel often refer to the station as the Broccoli station",
 			},
 			["Calvin"] = {
-		        weapon_available = {
-		        	Homing =			false,
-		        	HVLI =				random(1,13)<=(9-difficulty),
-		        	Mine =				random(1,13)<=(7-difficulty),
-		        	Nuke =				random(1,13)<=(5-difficulty),
-		        	EMP =				random(1,13)<=(6-difficulty),
-		        },
+				weapon_available = {
+					Homing =			false,
+					HVLI =				random(1,13)<=(9-difficulty),
+					Mine =				random(1,13)<=(7-difficulty),
+					Nuke =				random(1,13)<=(5-difficulty),
+					EMP =				random(1,13)<=(6-difficulty),
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
 				goods = {
 					robotic = {
 						quantity =	5,
@@ -3461,27 +3461,27 @@ function populateStationPool()
 				history = "This station is named after Dr. Susan Calvin who pioneered robotic behavioral research and programming",
 			},
 			["Cavor"] = {
-		        weapon_available = {
-		        	Homing =			random(1,13)<=(8-difficulty),
-		        	HVLI =				random(1,13)<=(9-difficulty),
-		        	Mine =				random(1,13)<=(7-difficulty),
-		        	Nuke =				random(1,13)<=(5-difficulty),
-		        	EMP =				random(1,13)<=(6-difficulty),
-		        },
+				weapon_available = {
+					Homing =			random(1,13)<=(8-difficulty),
+					HVLI =				random(1,13)<=(9-difficulty),
+					Mine =				random(1,13)<=(7-difficulty),
+					Nuke =				random(1,13)<=(5-difficulty),
+					EMP =				random(1,13)<=(6-difficulty),
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
-		        reputation_cost_multipliers = {
-		        	friend = 1.0,
-		        	neutral = 2.0,
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
+				reputation_cost_multipliers = {
+					friend = 1.0,
+					neutral = 2.0,
+				},
 				goods = {
 					filament = {
 						quantity =	5,
@@ -3498,27 +3498,27 @@ function populateStationPool()
 				history = "We named our station after Dr. Cavor, the physicist that invented a barrier material for gravity waves - Cavorite",
 			},
 			["Cyrus"] = {
-		        weapon_available = {
-		        	Homing =			random(1,13)<=(8-difficulty),
-		        	HVLI =				random(1,13)<=(9-difficulty),
-		        	Mine =				random(1,13)<=(7-difficulty),
-		        	Nuke =				random(1,13)<=(5-difficulty),
-		        	EMP =				random(1,13)<=(6-difficulty),
-		        },
+				weapon_available = {
+					Homing =			random(1,13)<=(8-difficulty),
+					HVLI =				random(1,13)<=(9-difficulty),
+					Mine =				random(1,13)<=(7-difficulty),
+					Nuke =				random(1,13)<=(5-difficulty),
+					EMP =				random(1,13)<=(6-difficulty),
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
-		        reputation_cost_multipliers = {
-		        	friend = 1.0,
-		        	neutral = 3.0,
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
+				reputation_cost_multipliers = {
+					friend = 1.0,
+					neutral = 3.0,
+				},
 				goods = {
 					impulse = {
 						quantity =	5,
@@ -3535,27 +3535,27 @@ function populateStationPool()
 				history = "This station was named after the fictional engineer, Cyrus Smith created by 19th century author Jules Verne",
 			},
 			["Deckard"] = {
-		        weapon_available = {
-		        	Homing =			random(1,13)<=(8-difficulty),
-		        	HVLI =				random(1,13)<=(9-difficulty),
-		        	Mine =				random(1,13)<=(7-difficulty),
-		        	Nuke =				random(1,13)<=(5-difficulty),
-		        	EMP =				random(1,13)<=(6-difficulty),
-		        },
+				weapon_available = {
+					Homing =			random(1,13)<=(8-difficulty),
+					HVLI =				random(1,13)<=(9-difficulty),
+					Mine =				random(1,13)<=(7-difficulty),
+					Nuke =				random(1,13)<=(5-difficulty),
+					EMP =				random(1,13)<=(6-difficulty),
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
-		        reputation_cost_multipliers = {
-		        	friend = 1.0,
-		        	neutral = 2.0,
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
+				reputation_cost_multipliers = {
+					friend = 1.0,
+					neutral = 2.0,
+				},
 				goods = {
 					android = {
 						quantity =	5,
@@ -3572,23 +3572,23 @@ function populateStationPool()
 				history = "Named for Richard Deckard who inspired many of the sophisticated safety security algorithms now required for all androids",
 			},
 			["Erickson"] = {
-		        weapon_available = {
-		        	Homing =			random(1,13)<=(8-difficulty),
-		        	HVLI =				random(1,13)<=(9-difficulty),
-		        	Mine =				random(1,13)<=(7-difficulty),
-		        	Nuke =				random(1,13)<=(5-difficulty),
-		        	EMP =				random(1,13)<=(6-difficulty),
-		        },
+				weapon_available = {
+					Homing =			random(1,13)<=(8-difficulty),
+					HVLI =				random(1,13)<=(9-difficulty),
+					Mine =				random(1,13)<=(7-difficulty),
+					Nuke =				random(1,13)<=(5-difficulty),
+					EMP =				random(1,13)<=(6-difficulty),
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
 				goods = {
 					transporter = {
 						quantity =	5,
@@ -3605,27 +3605,27 @@ function populateStationPool()
 				history = "The station is named after the early 22nd century inventor of the transporter, Dr. Emory Erickson. This station is proud to have received the endorsement of Admiral Leonard McCoy",
 			},
 			["Jabba"] = {
-		        weapon_available = {
-		        	Homing =			random(1,13)<=(8-difficulty),
-		        	HVLI =				random(1,13)<=(9-difficulty),
-		        	Mine =				random(1,13)<=(7-difficulty),
-		        	Nuke =				random(1,13)<=(5-difficulty),
-		        	EMP =				random(1,13)<=(6-difficulty),
-		        },
+				weapon_available = {
+					Homing =			random(1,13)<=(8-difficulty),
+					HVLI =				random(1,13)<=(9-difficulty),
+					Mine =				random(1,13)<=(7-difficulty),
+					Nuke =				random(1,13)<=(5-difficulty),
+					EMP =				random(1,13)<=(6-difficulty),
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
-		        reputation_cost_multipliers = {
-		        	friend = 1.0,
-		        	neutral = 2.0,
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
+				reputation_cost_multipliers = {
+					friend = 1.0,
+					neutral = 2.0,
+				},
 				goods = {
 					luxury = {
 						quantity =	5,
@@ -3642,50 +3642,50 @@ function populateStationPool()
 				history = "",
 			},
 			["Komov"] = {
-		        weapon_available = {
-		        	Homing =			random(1,13)<=(8-difficulty),
-		        	HVLI =				random(1,13)<=(9-difficulty),
-		        	Mine =				true,
-		        	Nuke =				false,
-		        	EMP =				random(1,13)<=(6-difficulty),
-		        },
+				weapon_available = {
+					Homing =			random(1,13)<=(8-difficulty),
+					HVLI =				random(1,13)<=(9-difficulty),
+					Mine =				true,
+					Nuke =				false,
+					EMP =				random(1,13)<=(6-difficulty),
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
-		        reputation_cost_multipliers = {
-		        	friend = 1.0,
-		        	neutral = 2.0,
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
+				reputation_cost_multipliers = {
+					friend = 1.0,
+					neutral = 2.0,
+				},
 				goods = {
 					filament = {
 						quantity =	5,
 						cost =		46,
 					},
 				},
- 				trade = {
- 					food = false,
- 					medicine = false,
- 					luxury = false,
- 				},
+				trade = {
+					food = false,
+					medicine = false,
+					luxury = false,
+				},
 				description = "Xenopsychology training",
 				general = "We provide classes and simulation to help train diverse species in how to relate to each other",
 				history = "A continuation of the research initially conducted by Dr. Gennady Komov in the early 22nd century on Venus, supported by the application of these principles",
 			},
 			["Lando"] = {
-		        weapon_available = {
-		        	Homing =			true,
-		        	HVLI =				true,
-		        	Mine =				true,
-		        	Nuke =				false,
-		        	EMP =				false,
-		        },
+				weapon_available = {
+					Homing =			true,
+					HVLI =				true,
+					Mine =				true,
+					Nuke =				false,
+					EMP =				false,
+				},
 				weapon_cost = {
 					Homing = math.random(2,5),
 					HVLI = 2,
@@ -3696,11 +3696,11 @@ function populateStationPool()
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
 				goods = {
 					shield = {
 						quantity =	5,
@@ -3717,23 +3717,23 @@ function populateStationPool()
 				history = "",
 			},
 			["Muddville"] = {
-		        weapon_available = {
-		        	Homing =			random(1,13)<=(8-difficulty),
-		        	HVLI =				random(1,13)<=(9-difficulty),
-		        	Mine =				random(1,13)<=(7-difficulty),
-		        	Nuke =				random(1,13)<=(5-difficulty),
-		        	EMP =				random(1,13)<=(6-difficulty),
-		        },
+				weapon_available = {
+					Homing =			random(1,13)<=(8-difficulty),
+					HVLI =				random(1,13)<=(9-difficulty),
+					Mine =				random(1,13)<=(7-difficulty),
+					Nuke =				random(1,13)<=(5-difficulty),
+					EMP =				random(1,13)<=(6-difficulty),
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
 				goods = {
 					luxury = {
 						quantity =	5,
@@ -3750,27 +3750,27 @@ function populateStationPool()
 				history = "Upon retirement, Harry Mudd started this commercial venture using his leftover inventory and extensive connections obtained while he traveled the stars as a salesman",
 			},
 			["Nexus-6"] = {
-		        weapon_available = {
-		        	Homing =			random(1,13)<=(8-difficulty),
-		        	HVLI =				false,
-		        	Mine =				random(1,13)<=(7-difficulty),
-		        	Nuke =				random(1,13)<=(5-difficulty),
-		        	EMP =				random(1,13)<=(6-difficulty),
-		        },
+				weapon_available = {
+					Homing =			random(1,13)<=(8-difficulty),
+					HVLI =				false,
+					Mine =				random(1,13)<=(7-difficulty),
+					Nuke =				random(1,13)<=(5-difficulty),
+					EMP =				random(1,13)<=(6-difficulty),
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
-		        reputation_cost_multipliers = {
-		        	friend = 1.0,
-		        	neutral = 3.0,
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
+				reputation_cost_multipliers = {
+					friend = 1.0,
+					neutral = 3.0,
+				},
 				goods = {
 					android = {
 						quantity =	5,
@@ -3791,27 +3791,27 @@ function populateStationPool()
 				history = "We named the station after the ground breaking android model produced by the Tyrell corporation",
 			},
 			["O'Brien"] = {
-		        weapon_available = {
-		        	Homing = random(1,13)<=(8-difficulty),
-		        	HVLI = random(1,13)<=(9-difficulty),
-		        	Mine = random(1,13)<=(7-difficulty),
-		        	Nuke = random(1,13)<=(5-difficulty),
-		        	EMP = random(1,13)<=(6-difficulty),
-		        },
+				weapon_available = {
+					Homing = random(1,13)<=(8-difficulty),
+					HVLI = random(1,13)<=(9-difficulty),
+					Mine = random(1,13)<=(7-difficulty),
+					Nuke = random(1,13)<=(5-difficulty),
+					EMP = random(1,13)<=(6-difficulty),
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
-		        reputation_cost_multipliers = {
-		        	friend = 1.0,
-		        	neutral = 3.0,
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
+				reputation_cost_multipliers = {
+					friend = 1.0,
+					neutral = 3.0,
+				},
 				goods = {
 					transporter = {
 						quantity =	5,
@@ -3828,27 +3828,27 @@ function populateStationPool()
 				history = "Miles O'Brien started this business after his experience as a transporter chief",
 			},
 			["Organa"] = {
-		        weapon_available = {
-		        	Homing =			random(1,13)<=(8-difficulty),
-		        	HVLI =				random(1,13)<=(9-difficulty),
-		        	Mine =				random(1,13)<=(7-difficulty),
-		        	Nuke =				random(1,13)<=(5-difficulty),
-		        	EMP =				random(1,13)<=(6-difficulty),
-		        },
+				weapon_available = {
+					Homing =			random(1,13)<=(8-difficulty),
+					HVLI =				random(1,13)<=(9-difficulty),
+					Mine =				random(1,13)<=(7-difficulty),
+					Nuke =				random(1,13)<=(5-difficulty),
+					EMP =				random(1,13)<=(6-difficulty),
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
-		        reputation_cost_multipliers = {
-		        	friend = 1.0,
-		        	neutral = 2.0,
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
+				reputation_cost_multipliers = {
+					friend = 1.0,
+					neutral = 2.0,
+				},
 				goods = {
 					luxury = {
 						quantity =	5,
@@ -3865,27 +3865,27 @@ function populateStationPool()
 				history = "Established by the royal family so critical during the political upheaval era",
 			},
 			["Owen"] = {
-		        weapon_available = {
-		        	Homing =			true,
-		        	HVLI =				false,
-		        	Mine =				random(1,13)<=(7-difficulty),
-		        	Nuke =				random(1,13)<=(5-difficulty),
-		        	EMP =				random(1,13)<=(6-difficulty),
-		        },
+				weapon_available = {
+					Homing =			true,
+					HVLI =				false,
+					Mine =				random(1,13)<=(7-difficulty),
+					Nuke =				random(1,13)<=(5-difficulty),
+					EMP =				random(1,13)<=(6-difficulty),
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
-		        reputation_cost_multipliers = {
-		        	friend = 1.0,
-		        	neutral = 3.0,
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
+				reputation_cost_multipliers = {
+					friend = 1.0,
+					neutral = 3.0,
+				},
 				goods = {
 					lifter = {
 						quantity =	5,
@@ -3902,27 +3902,27 @@ function populateStationPool()
 				history = "Owens started off in the moisture vaporator business on Tattooine then branched out into load lifters based on acquisition of proprietary software and protocols. The station name recognizes the tragic loss of our founder to Imperial violence",
 			},
 			["Ripley"] = {
-		        weapon_available = {
-		        	Homing =			false,
-		        	HVLI =				true,
-		        	Mine =				random(1,13)<=(7-difficulty),
-		        	Nuke =				random(1,13)<=(5-difficulty),
-		        	EMP =				random(1,13)<=(6-difficulty),
-		        },
+				weapon_available = {
+					Homing =			false,
+					HVLI =				true,
+					Mine =				random(1,13)<=(7-difficulty),
+					Nuke =				random(1,13)<=(5-difficulty),
+					EMP =				random(1,13)<=(6-difficulty),
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
-		        reputation_cost_multipliers = {
-		        	friend = 1.0,
-		        	neutral = 3.0,
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
+				reputation_cost_multipliers = {
+					friend = 1.0,
+					neutral = 3.0,
+				},
 				goods = {
 					lifter = {
 						quantity =	5,
@@ -3939,27 +3939,27 @@ function populateStationPool()
 				history = "The station is named after Ellen Ripley who made creative and effective use of one of our load lifters when defending her ship",
 			},
 			["Skandar"] = {
-		        weapon_available = {
-		        	Homing =			random(1,13)<=(8-difficulty),
-		        	HVLI =				random(1,13)<=(9-difficulty),
-		        	Mine =				random(1,13)<=(7-difficulty),
-		        	Nuke =				random(1,13)<=(5-difficulty),
-		        	EMP =				random(1,13)<=(6-difficulty),
-		        },
+				weapon_available = {
+					Homing =			random(1,13)<=(8-difficulty),
+					HVLI =				random(1,13)<=(9-difficulty),
+					Mine =				random(1,13)<=(7-difficulty),
+					Nuke =				random(1,13)<=(5-difficulty),
+					EMP =				random(1,13)<=(6-difficulty),
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
-		        reputation_cost_multipliers = {
-		        	friend = 1.0,
-		        	neutral = 2.0,
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
+				reputation_cost_multipliers = {
+					friend = 1.0,
+					neutral = 2.0,
+				},
 				goods = {
 					luxury = {
 						quantity =	5,
@@ -3976,27 +3976,27 @@ function populateStationPool()
 				history = "The nomadic Skandars have set up at this station to practice their entertainment and maintenance skills as well as build a community where Skandars can relax",
 			},
 			["Soong"] = {
-		        weapon_available = {
-		        	Homing = random(1,13)<=(8-difficulty),
-		        	HVLI = random(1,13)<=(9-difficulty),
-		        	Mine = random(1,13)<=(7-difficulty),
-		        	Nuke = random(1,13)<=(5-difficulty),
-		        	EMP = random(1,13)<=(6-difficulty),
-		        },
+				weapon_available = {
+					Homing = random(1,13)<=(8-difficulty),
+					HVLI = random(1,13)<=(9-difficulty),
+					Mine = random(1,13)<=(7-difficulty),
+					Nuke = random(1,13)<=(5-difficulty),
+					EMP = random(1,13)<=(6-difficulty),
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
-		        reputation_cost_multipliers = {
-		        	friend = 1.0,
-		        	neutral = 3.0,
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
+				reputation_cost_multipliers = {
+					friend = 1.0,
+					neutral = 3.0,
+				},
 				goods = {
 					android = {
 						quantity =	5,
@@ -4013,33 +4013,33 @@ function populateStationPool()
 				history = "The station is named after Dr. Noonian Soong, the famous android researcher and builder",
 			},
 			["Starnet"] = {
-		        weapon_available = {
-		        	Homing =			random(1,13)<=(8-difficulty),
-		        	HVLI =				random(1,13)<=(9-difficulty),
-		        	Mine =				random(1,13)<=(7-difficulty),
-		        	Nuke =				random(1,13)<=(5-difficulty),
-		        	EMP =				random(1,13)<=(6-difficulty),
-		        },
+				weapon_available = {
+					Homing =			random(1,13)<=(8-difficulty),
+					HVLI =				random(1,13)<=(9-difficulty),
+					Mine =				random(1,13)<=(7-difficulty),
+					Nuke =				random(1,13)<=(5-difficulty),
+					EMP =				random(1,13)<=(6-difficulty),
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
-		        reputation_cost_multipliers = {
-		        	friend = 1.0,
-		        	neutral = 3.0,
-		        },
-		        goods = {
-		        	software =	{
-		        		quantity =	5,
-		        		cost =		140,
-		        	},
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
+				reputation_cost_multipliers = {
+					friend = 1.0,
+					neutral = 3.0,
+				},
+				goods = {
+					software =	{
+						quantity =	5,
+						cost =		140,
+					},
+				},
 				trade = {
 					food = false,
 					medicine = false,
@@ -4050,23 +4050,23 @@ function populateStationPool()
 				history = "Lost the history memory bank. Recovery efforts only brought back the phrase, 'I'll be back'",
 			},
 			["Tiberius"] = {
-		        weapon_available = {
-		        	Homing =			random(1,13)<=(8-difficulty),
-		        	HVLI =				random(1,13)<=(9-difficulty),
-		        	Mine =				random(1,13)<=(7-difficulty),
-		        	Nuke =				random(1,13)<=(5-difficulty),
-		        	EMP =				random(1,13)<=(6-difficulty),
-		        },
+				weapon_available = {
+					Homing =			random(1,13)<=(8-difficulty),
+					HVLI =				random(1,13)<=(9-difficulty),
+					Mine =				random(1,13)<=(7-difficulty),
+					Nuke =				random(1,13)<=(5-difficulty),
+					EMP =				random(1,13)<=(6-difficulty),
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
 				goods = {
 					food = {
 						quantity =	5,
@@ -4083,27 +4083,27 @@ function populateStationPool()
 				history = "We recognize the influence of Starfleet Captain James Tiberius Kirk in the 23rd century in our station name",
 			},
 			["Tokra"] = {
-		        weapon_available = {
-		        	Homing =			random(1,13)<=(8-difficulty),
-		        	HVLI =				random(1,13)<=(9-difficulty),
-		        	Mine =				random(1,13)<=(7-difficulty),
-		        	Nuke =				random(1,13)<=(5-difficulty),
-		        	EMP =				random(1,13)<=(6-difficulty),
-		        },
+				weapon_available = {
+					Homing =			random(1,13)<=(8-difficulty),
+					HVLI =				random(1,13)<=(9-difficulty),
+					Mine =				random(1,13)<=(7-difficulty),
+					Nuke =				random(1,13)<=(5-difficulty),
+					EMP =				random(1,13)<=(6-difficulty),
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
-		        reputation_cost_multipliers = {
-		        	friend = 1.0,
-		        	neutral = 3.0,
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
+				reputation_cost_multipliers = {
+					friend = 1.0,
+					neutral = 3.0,
+				},
 				goods = {
 					filament = {
 						quantity =	5,
@@ -4120,70 +4120,70 @@ function populateStationPool()
 				history = "We learned several of our critical industrial processes from the Tokra race, so we honor our fortune by naming the station after them",
 			},
 			["Utopia Planitia"] = {
-		        weapon_available = 	{
-		        	Homing = 			random(1,13)<=(8-difficulty),
-		        	HVLI =				random(1,13)<=(9-difficulty),
-		        	Mine =				random(1,13)<=(7-difficulty),
-		        	Nuke =				true,
-		        	EMP =				random(1,13)<=(6-difficulty),
-		        },
+				weapon_available = 	{
+					Homing = 			random(1,13)<=(8-difficulty),
+					HVLI =				random(1,13)<=(9-difficulty),
+					Mine =				random(1,13)<=(7-difficulty),
+					Nuke =				true,
+					EMP =				random(1,13)<=(6-difficulty),
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
-		        goods = {
-		        	warp =	{
-		        		quantity =	5,
-		        		cost =		167,
-		        	},
-		        },
-		        trade = {
-		        	food = false,
-		        	medicine = false,
-		        	luxury = false
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
+				goods = {
+					warp =	{
+						quantity =	5,
+						cost =		167,
+					},
+				},
+				trade = {
+					food = false,
+					medicine = false,
+					luxury = false
+				},
 				description = "Ship building and maintenance facility",
 				general = "We work on all aspects of naval ship building and maintenance. Many of the naval models are researched, designed and built right here on this station. Our design goals seek to make the space faring experience as simple as possible given the tremendous capabilities of the modern naval vessel",
 				history = ""
 			},
 			["Vaiken"] = {
-		        weapon_available = {
-		        	Homing =			random(1,13)<=(8-difficulty),
-		        	HVLI =				random(1,13)<=(9-difficulty),
-		        	Mine =				random(1,13)<=(7-difficulty),
-		        	Nuke =				random(1,13)<=(5-difficulty),
-		        	EMP =				random(1,13)<=(6-difficulty),
-		        },
+				weapon_available = {
+					Homing =			random(1,13)<=(8-difficulty),
+					HVLI =				random(1,13)<=(9-difficulty),
+					Mine =				random(1,13)<=(7-difficulty),
+					Nuke =				random(1,13)<=(5-difficulty),
+					EMP =				random(1,13)<=(6-difficulty),
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
 				goods = {
 					food = {
 						quantity =	10,
 						cost = 		1,
 					},
-        			medicine = {
-        				quantity =	5,
-        				cost = 		5,
-        			},
-        			impulse = {
-        				quantity =	5,
-        				cost = 		math.random(65,97),
-        			},
-        		},
+					medicine = {
+						quantity =	5,
+						cost = 		5,
+					},
+					impulse = {
+						quantity =	5,
+						cost = 		math.random(65,97),
+					},
+				},
 				trade = {
 					food = false,
 					medicine = false,
@@ -4194,38 +4194,38 @@ function populateStationPool()
 				history = "",
 			},
 			["Zefram"] = {
-		        weapon_available = {
-		        	Homing =			random(1,13)<=(8-difficulty),
-		        	HVLI =				random(1,13)<=(9-difficulty),
-		        	Mine =				random(1,13)<=(7-difficulty),
-		        	Nuke =				random(1,13)<=(5-difficulty),
-		        	EMP =				random(1,13)<=(6-difficulty),
-		        },
+				weapon_available = {
+					Homing =			random(1,13)<=(8-difficulty),
+					HVLI =				random(1,13)<=(9-difficulty),
+					Mine =				random(1,13)<=(7-difficulty),
+					Nuke =				random(1,13)<=(5-difficulty),
+					EMP =				random(1,13)<=(6-difficulty),
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
-		        reputation_cost_multipliers = {
-		        	friend = 1.0,
-		        	neutral = 3.0,
-		        },
-		        goods = {
-		        	warp =	{
-		        		quantity =	5,
-		        		cost =		140,
-		        	},
-		        },
-		        trade = {
-		        	food = false,
-		        	medicine = false,
-		        	luxury = true,
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
+				reputation_cost_multipliers = {
+					friend = 1.0,
+					neutral = 3.0,
+				},
+				goods = {
+					warp =	{
+						quantity =	5,
+						cost =		140,
+					},
+				},
+				trade = {
+					food = false,
+					medicine = false,
+					luxury = true,
+				},
 				description = "Warp engine components",
 				general = "We specialize in the esoteric components necessary to make warp drives function properly",
 				history = "Zefram Cochrane constructed the first warp drive in human history. We named our station after him because of the specialized warp systems work we do",
@@ -4233,23 +4233,23 @@ function populateStationPool()
 		},
 		["Spec Sci Fi"] = {
 			["Alcaleica"] =	{
-		        weapon_available = {
-		        	Homing =			random(1,13)<=(8-difficulty),
-		        	HVLI =				random(1,13)<=(9-difficulty),
-		        	Mine =				random(1,13)<=(7-difficulty),
-		        	Nuke =				random(1,13)<=(5-difficulty),
-		        	EMP =				random(1,13)<=(6-difficulty),
-		        },
+				weapon_available = {
+					Homing =			random(1,13)<=(8-difficulty),
+					HVLI =				random(1,13)<=(9-difficulty),
+					Mine =				random(1,13)<=(7-difficulty),
+					Nuke =				random(1,13)<=(5-difficulty),
+					EMP =				random(1,13)<=(6-difficulty),
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
 				goods = {
 					optic = {
 						quantity =	5,
@@ -4269,23 +4269,23 @@ function populateStationPool()
 				history = "This station continues the businesses from Earth based on the merging of several companies including Leica from Switzerland, the lens manufacturer and the Japanese advanced low carbon (ALCA) electronic and optic research and development company",
 			},
 			["Bethesda"] = {
-		        weapon_available = {
-		        	Homing =			random(1,13)<=(8-difficulty),
-		        	HVLI =				random(1,13)<=(9-difficulty),
-		        	Mine =				random(1,13)<=(7-difficulty),
-		        	Nuke =				random(1,13)<=(5-difficulty),
-		        	EMP =				random(1,13)<=(6-difficulty),
-		        },
+				weapon_available = {
+					Homing =			random(1,13)<=(8-difficulty),
+					HVLI =				random(1,13)<=(9-difficulty),
+					Mine =				random(1,13)<=(7-difficulty),
+					Nuke =				random(1,13)<=(5-difficulty),
+					EMP =				random(1,13)<=(6-difficulty),
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
 				reputation_cost_multipliers = {
 					friend = 1.0,
 					neutral = 3.0,
@@ -4314,33 +4314,33 @@ function populateStationPool()
 				history = "The station is named after the United States national medical research center based in Bethesda, Maryland on earth which was established in the mid 20th century",
 			},
 			["Deer"] = {
-		        weapon_available = {
-		        	Homing =			random(1,13)<=(8-difficulty),
-		        	HVLI =				random(1,13)<=(9-difficulty),
-		        	Mine =				random(1,13)<=(7-difficulty),
-		        	Nuke =				random(1,13)<=(5-difficulty),
-		        	EMP =				random(1,13)<=(6-difficulty),
-		        },
+				weapon_available = {
+					Homing =			random(1,13)<=(8-difficulty),
+					HVLI =				random(1,13)<=(9-difficulty),
+					Mine =				random(1,13)<=(7-difficulty),
+					Nuke =				random(1,13)<=(5-difficulty),
+					EMP =				random(1,13)<=(6-difficulty),
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
 				goods = {
 					tractor = {
 						quantity =	5,
 						cost =		90,
 					},
-        			repulsor = {
-        				quantity =	5,
-        				cost =		math.random(85,95),
-        			},
-        		},
+					repulsor = {
+						quantity =	5,
+						cost =		math.random(85,95),
+					},
+				},
 				trade = {
 					food = false,
 					medicine = false,
@@ -4351,23 +4351,23 @@ function populateStationPool()
 				history = "The station name comes from a short story by the 20th century author Clifford D. Simak as well as from the 19th century developer John Deere who inspired a company that makes the Earth bound equivalents of our products",
 			},
 			["Evondos"] = {
-		        weapon_available = {
-		        	Homing =			random(1,13)<=(8-difficulty),
-		        	HVLI =				true,
-		        	Mine =				random(1,13)<=(7-difficulty),
-		        	Nuke =				random(1,13)<=(5-difficulty),
-		        	EMP =				random(1,13)<=(6-difficulty),
-		        },
+				weapon_available = {
+					Homing =			random(1,13)<=(8-difficulty),
+					HVLI =				true,
+					Mine =				random(1,13)<=(7-difficulty),
+					Nuke =				random(1,13)<=(5-difficulty),
+					EMP =				random(1,13)<=(6-difficulty),
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
 				reputation_cost_multipliers = {
 					friend = 1.0,
 					neutral = 3.0,
@@ -4388,78 +4388,78 @@ function populateStationPool()
 				history = "The station is the evolution of the company that started automated pharmaceutical dispensing in the early 21st century on Earth in Finland",
 			},
 			["Feynman"] = {
-		        weapon_available = 	{
-		        	Homing =			random(1,13)<=(8-difficulty),
-		        	HVLI =				random(1,13)<=(9-difficulty),
-		        	Mine =				true,
-		        	Nuke =				random(1,13)<=(5-difficulty),
-		        	EMP =				random(1,13)<=(6-difficulty),
-		        },
+				weapon_available = 	{
+					Homing =			random(1,13)<=(8-difficulty),
+					HVLI =				random(1,13)<=(9-difficulty),
+					Mine =				true,
+					Nuke =				random(1,13)<=(5-difficulty),
+					EMP =				random(1,13)<=(6-difficulty),
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
-		        reputation_cost_multipliers = {
-		        	friend = 1.0,
-		        	neutral = 3.0,
-		        },
-        		goods = {
-        			software = {
-        				quantity = 	5,
-        				cost =		115,
-        			},
-        			nanites = {
-        				quantity =	5,
-        				cost =		79,
-        			},
-        		},
-		        trade = {
-		        	food = false,
-		        	medicine = false,
-		        	luxury = true,
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
+				reputation_cost_multipliers = {
+					friend = 1.0,
+					neutral = 3.0,
+				},
+				goods = {
+					software = {
+						quantity = 	5,
+						cost =		115,
+					},
+					nanites = {
+						quantity =	5,
+						cost =		79,
+					},
+				},
+				trade = {
+					food = false,
+					medicine = false,
+					luxury = true,
+				},
 				description = "Nanotechnology research",
 				general = "We provide nanites and software for a variety of ship-board systems",
 				history = "This station's name recognizes one of the first scientific researchers into nanotechnology, physicist Richard Feynman",
 			},
 			["Mayo"] = {
-		        weapon_available = {
-		        	Homing =			random(1,13)<=(8-difficulty),
-		        	HVLI =				random(1,13)<=(9-difficulty),
-		        	Mine =				random(1,13)<=(7-difficulty),
-		        	Nuke =				random(1,13)<=(5-difficulty),
-		        	EMP =				random(1,13)<=(6-difficulty),
-		        },
+				weapon_available = {
+					Homing =			random(1,13)<=(8-difficulty),
+					HVLI =				random(1,13)<=(9-difficulty),
+					Mine =				random(1,13)<=(7-difficulty),
+					Nuke =				random(1,13)<=(5-difficulty),
+					EMP =				random(1,13)<=(6-difficulty),
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
 				goods = {
 					autodoc = {
 						quantity =	5,
 						cost =		128,
 					},
-        			food = {
-        				quantity =	5,
-        				cost =		1,
-        			},
-        			medicine = {
-        				quantity =	5,
-        				cost =		5,
-        			},
-        		},
+					food = {
+						quantity =	5,
+						cost =		1,
+					},
+					medicine = {
+						quantity =	5,
+						cost =		5,
+					},
+				},
 				trade = {
 					food = false,
 					medicine = false,
@@ -4470,27 +4470,27 @@ function populateStationPool()
 				history = "We continue the medical work started by William Worrall Mayo in the late 19th century on Earth",
 			},
 			["Olympus"] = {
-		        weapon_available = {
-		        	Homing =			random(1,13)<=(8-difficulty),
-		        	HVLI =				random(1,13)<=(9-difficulty),
-		        	Mine =				random(1,13)<=(7-difficulty),
-		        	Nuke =				random(1,13)<=(5-difficulty),
-		        	EMP =				random(1,13)<=(6-difficulty),
-		        },
+				weapon_available = {
+					Homing =			random(1,13)<=(8-difficulty),
+					HVLI =				random(1,13)<=(9-difficulty),
+					Mine =				random(1,13)<=(7-difficulty),
+					Nuke =				random(1,13)<=(5-difficulty),
+					EMP =				random(1,13)<=(6-difficulty),
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
-		        reputation_cost_multipliers = {
-		        	friend = 1.0,
-		        	neutral = 3.0,
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
+				reputation_cost_multipliers = {
+					friend = 1.0,
+					neutral = 3.0,
+				},
 				goods = {
 					optic =	{
 						quantity =	5,
@@ -4507,27 +4507,27 @@ function populateStationPool()
 				history = "This station grew out of the Olympus company based on earth in the early 21st century. It merged with Infinera, then bought several software comapnies before branching out into space based industry",
 			},
 			["Panduit"] = {
-		        weapon_available = {
-		        	Homing =			random(1,13)<=(8-difficulty),
-		        	HVLI =				random(1,13)<=(9-difficulty),
-		        	Mine =				random(1,13)<=(7-difficulty),
-		        	Nuke =				random(1,13)<=(5-difficulty),
-		        	EMP =				random(1,13)<=(6-difficulty),
-		        },
+				weapon_available = {
+					Homing =			random(1,13)<=(8-difficulty),
+					HVLI =				random(1,13)<=(9-difficulty),
+					Mine =				random(1,13)<=(7-difficulty),
+					Nuke =				random(1,13)<=(5-difficulty),
+					EMP =				random(1,13)<=(6-difficulty),
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
-		        reputation_cost_multipliers = {
-		        	friend = 1.0,
-		        	neutral = 3.0,
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
+				reputation_cost_multipliers = {
+					friend = 1.0,
+					neutral = 3.0,
+				},
 				goods = {
 					optic =	{
 						quantity =	5,
@@ -4544,37 +4544,37 @@ function populateStationPool()
 				history = "This station is an outgrowth of the Panduit corporation started in the mid 20th century on Earth in the United States",
 			},
 			["Shree"] = {
-		        weapon_available = {
-		        	Homing =			random(1,13)<=(8-difficulty),
-		        	HVLI =				random(1,13)<=(9-difficulty),
-		        	Mine =				random(1,13)<=(7-difficulty),
-		        	Nuke =				random(1,13)<=(5-difficulty),
-		        	EMP =				random(1,13)<=(6-difficulty),
-		        },
+				weapon_available = {
+					Homing =			random(1,13)<=(8-difficulty),
+					HVLI =				random(1,13)<=(9-difficulty),
+					Mine =				random(1,13)<=(7-difficulty),
+					Nuke =				random(1,13)<=(5-difficulty),
+					EMP =				random(1,13)<=(6-difficulty),
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
-		        reputation_cost_multipliers = {
-		        	friend = 1.0,
-		        	neutral = 3.0,
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
+				reputation_cost_multipliers = {
+					friend = 1.0,
+					neutral = 3.0,
+				},
 				goods = {
 					tractor = {
 						quantity =	5,
 						cost =		90,
 					},
-        			repulsor = {
-        				quantity =	5,
-        				cost =		math.random(85,95),
-        			},
-        		},
+					repulsor = {
+						quantity =	5,
+						cost =		math.random(85,95),
+					},
+				},
 				trade = {
 					food = false,
 					medicine = false,
@@ -4585,23 +4585,23 @@ function populateStationPool()
 				history = "Our station is named Shree after one of many tugboat manufacturers in the early 21st century on Earth in India. Tugboats serve a similar purpose for ocean-going vessels on earth as tractor and repulsor beams serve for space-going vessels today",
 			},
 			["Vactel"] = {
-		        weapon_available = {
-		        	Homing =			random(1,13)<=(8-difficulty),
-		        	HVLI =				random(1,13)<=(9-difficulty),
-		        	Mine =				random(1,13)<=(7-difficulty),
-		        	Nuke =				random(1,13)<=(5-difficulty),
-		        	EMP =				random(1,13)<=(6-difficulty),
-		        },
+				weapon_available = {
+					Homing =			random(1,13)<=(8-difficulty),
+					HVLI =				random(1,13)<=(9-difficulty),
+					Mine =				random(1,13)<=(7-difficulty),
+					Nuke =				random(1,13)<=(5-difficulty),
+					EMP =				random(1,13)<=(6-difficulty),
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
 				goods = {
 					circuit = {
 						quantity =	5,
@@ -4618,27 +4618,27 @@ function populateStationPool()
 				history = "We started as an expansion from the lunar based chip manufacturer of Earth legacy Intel electronic chips",
 			},
 			["Veloquan"] = {
-		        weapon_available = {
-		        	Homing = random(1,13)<=(8-difficulty),
-		        	HVLI = random(1,13)<=(9-difficulty),
-		        	Mine = random(1,13)<=(7-difficulty),
-		        	Nuke = random(1,13)<=(5-difficulty),
-		        	EMP = random(1,13)<=(6-difficulty),
-		        },
+				weapon_available = {
+					Homing = random(1,13)<=(8-difficulty),
+					HVLI = random(1,13)<=(9-difficulty),
+					Mine = random(1,13)<=(7-difficulty),
+					Nuke = random(1,13)<=(5-difficulty),
+					EMP = random(1,13)<=(6-difficulty),
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
-		        reputation_cost_multipliers = {
-		        	friend = 1.0,
-		        	neutral = 3.0,
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
+				reputation_cost_multipliers = {
+					friend = 1.0,
+					neutral = 3.0,
+				},
 				goods = {
 					sensor = {
 						quantity =	5,
@@ -4655,27 +4655,27 @@ function populateStationPool()
 				history = "The Veloquan company has its roots in the manufacturing of LIDAR sensors in the early 21st century on Earth in the United States for autonomous ground-based vehicles. They expanded research and manufacturing operations to include various sensors for space vehicles. Veloquan was the result of numerous mergers and acquisitions of several companies including Velodyne and Quanergy",
 			},
 			["Tandon"] = {
-		        weapon_available = {
-		        	Homing =			random(1,13)<=(8-difficulty),
-		        	HVLI =				random(1,13)<=(9-difficulty),
-		        	Mine =				random(1,13)<=(7-difficulty),
-		        	Nuke =				random(1,13)<=(5-difficulty),
-		        	EMP =				random(1,13)<=(6-difficulty),
-		        },
+				weapon_available = {
+					Homing =			random(1,13)<=(8-difficulty),
+					HVLI =				random(1,13)<=(9-difficulty),
+					Mine =				random(1,13)<=(7-difficulty),
+					Nuke =				random(1,13)<=(5-difficulty),
+					EMP =				random(1,13)<=(6-difficulty),
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
-		        reputation_cost_multipliers = {
-		        	friend = 1.0,
-		        	neutral = 3.0,
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
+				reputation_cost_multipliers = {
+					friend = 1.0,
+					neutral = 3.0,
+				},
 				goods = {},
 				trade = {
 					food = false,
@@ -4689,23 +4689,23 @@ function populateStationPool()
 		},
 		["Generic"] = {
 			["California"] = {
-		        weapon_available = {
-		        	Homing =			random(1,13)<=(8-difficulty),
-		        	HVLI =				random(1,13)<=(9-difficulty),
-		        	Mine =				random(1,13)<=(7-difficulty),
-		        	Nuke =				random(1,13)<=(5-difficulty),
-		        	EMP =				random(1,13)<=(6-difficulty),
-		        },
+				weapon_available = {
+					Homing =			random(1,13)<=(8-difficulty),
+					HVLI =				random(1,13)<=(9-difficulty),
+					Mine =				random(1,13)<=(7-difficulty),
+					Nuke =				random(1,13)<=(5-difficulty),
+					EMP =				random(1,13)<=(6-difficulty),
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
 				goods = {
 					gold = {
 						quantity =	5,
@@ -4726,27 +4726,27 @@ function populateStationPool()
 				history = "",
 			},
 			["Impala"] = {
-		        weapon_available = {
-		        	Homing =			random(1,13)<=(8-difficulty),
-		        	HVLI =				random(1,13)<=(9-difficulty),
-		        	Mine =				random(1,13)<=(7-difficulty),
-		        	Nuke =				random(1,13)<=(5-difficulty),
-		        	EMP =				random(1,13)<=(6-difficulty),
-		        },
+				weapon_available = {
+					Homing =			random(1,13)<=(8-difficulty),
+					HVLI =				random(1,13)<=(9-difficulty),
+					Mine =				random(1,13)<=(7-difficulty),
+					Nuke =				random(1,13)<=(5-difficulty),
+					EMP =				random(1,13)<=(6-difficulty),
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
-		        reputation_cost_multipliers = {
-		        	friend = 1.0,
-		        	neutral = 3.0,
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
+				reputation_cost_multipliers = {
+					friend = 1.0,
+					neutral = 3.0,
+				},
 				goods = {
 					luxury = {
 						quantity =	5,
@@ -4766,27 +4766,27 @@ function populateStationPool()
 				history = "",
 			},
 			["Krak"] = {
-		        weapon_available = {
-		        	Homing =			random(1,13)<=(8-difficulty),
-		        	HVLI =				true,
-		        	Mine =				random(1,13)<=(7-difficulty),
-		        	Nuke =				random(1,13)<=(5-difficulty),
-		        	EMP =				random(1,13)<=(6-difficulty),
-		        },
+				weapon_available = {
+					Homing =			random(1,13)<=(8-difficulty),
+					HVLI =				true,
+					Mine =				random(1,13)<=(7-difficulty),
+					Nuke =				random(1,13)<=(5-difficulty),
+					EMP =				random(1,13)<=(6-difficulty),
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
-		        reputation_cost_multipliers = {
-		        	friend = 1.0,
-		        	neutral = 3.0,
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
+				reputation_cost_multipliers = {
+					friend = 1.0,
+					neutral = 3.0,
+				},
 				goods = {
 					nickel = {
 						quantity =	5,
@@ -4806,27 +4806,27 @@ function populateStationPool()
 				history = "",
 			},
 			["Krik"] = {
-		        weapon_available = {
-		        	Homing =			random(1,13)<=(8-difficulty),
-		        	HVLI =				random(1,13)<=(9-difficulty),
-		        	Mine =				random(1,13)<=(7-difficulty),
-		        	Nuke =				random(1,13)<=(5-difficulty),
-		        	EMP =				random(1,13)<=(6-difficulty),
-		        },
+				weapon_available = {
+					Homing =			random(1,13)<=(8-difficulty),
+					HVLI =				random(1,13)<=(9-difficulty),
+					Mine =				random(1,13)<=(7-difficulty),
+					Nuke =				random(1,13)<=(5-difficulty),
+					EMP =				random(1,13)<=(6-difficulty),
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
-		        reputation_cost_multipliers = {
-		        	friend = 1.0,
-		        	neutral = 3.0,
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
+				reputation_cost_multipliers = {
+					friend = 1.0,
+					neutral = 3.0,
+				},
 				goods = {
 					nickel = {
 						quantity =	5,
@@ -4843,27 +4843,27 @@ function populateStationPool()
 				history = "",
 			},
 			["Kruk"] = {
-		        weapon_available = {
-		        	Homing =			random(1,13)<=(8-difficulty),
-		        	HVLI =				random(1,13)<=(9-difficulty),
-		        	Mine =				random(1,13)<=(7-difficulty),
-		        	Nuke =				random(1,13)<=(5-difficulty),
-		        	EMP =				random(1,13)<=(6-difficulty),
-		        },
+				weapon_available = {
+					Homing =			random(1,13)<=(8-difficulty),
+					HVLI =				random(1,13)<=(9-difficulty),
+					Mine =				random(1,13)<=(7-difficulty),
+					Nuke =				random(1,13)<=(5-difficulty),
+					EMP =				random(1,13)<=(6-difficulty),
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
-		        reputation_cost_multipliers = {
-		        	friend = 1.0,
-		        	neutral = 3.0,
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
+				reputation_cost_multipliers = {
+					friend = 1.0,
+					neutral = 3.0,
+				},
 				goods = {
 					nickel = {
 						quantity =	5,
@@ -4882,23 +4882,23 @@ function populateStationPool()
 				history = "",
 			},
 			["Maverick"] = {
-		        weapon_available = {
-		        	Homing =			random(1,13)<=(8-difficulty),
-		        	HVLI =				random(1,13)<=(9-difficulty),
-		        	Mine =				random(1,13)<=(7-difficulty),
-		        	Nuke =				random(1,13)<=(5-difficulty),
-		        	EMP =				random(1,13)<=(6-difficulty),
-		        },
+				weapon_available = {
+					Homing =			random(1,13)<=(8-difficulty),
+					HVLI =				random(1,13)<=(9-difficulty),
+					Mine =				random(1,13)<=(7-difficulty),
+					Nuke =				random(1,13)<=(5-difficulty),
+					EMP =				random(1,13)<=(6-difficulty),
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
 				goods = {
 					luxury = {
 						quantity =	5,
@@ -4915,27 +4915,27 @@ function populateStationPool()
 				history = "",
 			},
 			["Nefatha"] = {
-		        weapon_available = {
-		        	Homing =			random(1,13)<=(8-difficulty),
-		        	HVLI =				random(1,13)<=(9-difficulty),
-		        	Mine =				random(1,13)<=(7-difficulty),
-		        	Nuke =				random(1,13)<=(5-difficulty),
-		        	EMP =				random(1,13)<=(6-difficulty),
-		        },
+				weapon_available = {
+					Homing =			random(1,13)<=(8-difficulty),
+					HVLI =				random(1,13)<=(9-difficulty),
+					Mine =				random(1,13)<=(7-difficulty),
+					Nuke =				random(1,13)<=(5-difficulty),
+					EMP =				random(1,13)<=(6-difficulty),
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
-		        reputation_cost_multipliers = {
-		        	friend = 1.0,
-		        	neutral = 2.0,
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
+				reputation_cost_multipliers = {
+					friend = 1.0,
+					neutral = 2.0,
+				},
 				goods = {
 					luxury = {
 						quantity =	5,
@@ -4952,27 +4952,27 @@ function populateStationPool()
 				history = "",
 			},
 			["Okun"] = {
-		        weapon_available = {
-		        	Homing =			random(1,13)<=(8-difficulty),
-		        	HVLI =				random(1,13)<=(9-difficulty),
-		        	Mine =				false,
-		        	Nuke =				random(1,13)<=(5-difficulty),
-		        	EMP =				random(1,13)<=(6-difficulty),
-		        },
+				weapon_available = {
+					Homing =			random(1,13)<=(8-difficulty),
+					HVLI =				random(1,13)<=(9-difficulty),
+					Mine =				false,
+					Nuke =				random(1,13)<=(5-difficulty),
+					EMP =				random(1,13)<=(6-difficulty),
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
-		        reputation_cost_multipliers = {
-		        	friend = 1.0,
-		        	neutral = 3.0,
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
+				reputation_cost_multipliers = {
+					friend = 1.0,
+					neutral = 3.0,
+				},
 				goods = {},
 				trade = {
 					food = false,
@@ -4984,27 +4984,27 @@ function populateStationPool()
 				history = "",
 			},
 			["Outpost-15"] = {
-		        weapon_available = {
-		        	Homing =			random(1,13)<=(8-difficulty),
-		        	HVLI =				random(1,13)<=(9-difficulty),
-		        	Mine =				random(1,13)<=(7-difficulty),
-		        	Nuke =				random(1,13)<=(5-difficulty),
-		        	EMP =				random(1,13)<=(6-difficulty),
-		        },
+				weapon_available = {
+					Homing =			random(1,13)<=(8-difficulty),
+					HVLI =				random(1,13)<=(9-difficulty),
+					Mine =				random(1,13)<=(7-difficulty),
+					Nuke =				random(1,13)<=(5-difficulty),
+					EMP =				random(1,13)<=(6-difficulty),
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
-		        reputation_cost_multipliers = {
-		        	friend = 1.0,
-		        	neutral = 2.0,
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
+				reputation_cost_multipliers = {
+					friend = 1.0,
+					neutral = 2.0,
+				},
 				goods = {
 					luxury = {
 						quantity =	5,
@@ -5021,27 +5021,27 @@ function populateStationPool()
 				history = "",
 			},
 			["Outpost-21"] = {
-		        weapon_available = {
-		        	Homing =			random(1,13)<=(8-difficulty),
-		        	HVLI =				random(1,13)<=(9-difficulty),
-		        	Mine =				random(1,13)<=(7-difficulty),
-		        	Nuke =				random(1,13)<=(5-difficulty),
-		        	EMP =				random(1,13)<=(6-difficulty),
-		        },
+				weapon_available = {
+					Homing =			random(1,13)<=(8-difficulty),
+					HVLI =				random(1,13)<=(9-difficulty),
+					Mine =				random(1,13)<=(7-difficulty),
+					Nuke =				random(1,13)<=(5-difficulty),
+					EMP =				random(1,13)<=(6-difficulty),
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
-		        reputation_cost_multipliers = {
-		        	friend = 1.0,
-		        	neutral = 2.0,
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
+				reputation_cost_multipliers = {
+					friend = 1.0,
+					neutral = 2.0,
+				},
 				goods = {
 					luxury = {
 						quantity =	5,
@@ -5058,27 +5058,27 @@ function populateStationPool()
 				history = "",
 			},
 			["Outpost-7"] = {
-		        weapon_available = {
-		        	Homing =			random(1,13)<=(8-difficulty),
-		        	HVLI =				random(1,13)<=(9-difficulty),
-		        	Mine =				random(1,13)<=(7-difficulty),
-		        	Nuke =				random(1,13)<=(5-difficulty),
-		        	EMP =				random(1,13)<=(6-difficulty),
-		        },
+				weapon_available = {
+					Homing =			random(1,13)<=(8-difficulty),
+					HVLI =				random(1,13)<=(9-difficulty),
+					Mine =				random(1,13)<=(7-difficulty),
+					Nuke =				random(1,13)<=(5-difficulty),
+					EMP =				random(1,13)<=(6-difficulty),
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
-		        reputation_cost_multipliers = {
-		        	friend = 1.0,
-		        	neutral = 2.0,
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
+				reputation_cost_multipliers = {
+					friend = 1.0,
+					neutral = 2.0,
+				},
 				goods = {
 					luxury = {
 						quantity =	5,
@@ -5095,27 +5095,27 @@ function populateStationPool()
 				history = "",
 			},
 			["Outpost-8"] = {
-		        weapon_available = {
-		        	Homing =			random(1,13)<=(8-difficulty),
-		        	HVLI =				random(1,13)<=(9-difficulty),
-		        	Mine =				random(1,13)<=(7-difficulty),
-		        	Nuke =				random(1,13)<=(5-difficulty),
-		        	EMP =				random(1,13)<=(6-difficulty),
-		        },
+				weapon_available = {
+					Homing =			random(1,13)<=(8-difficulty),
+					HVLI =				random(1,13)<=(9-difficulty),
+					Mine =				random(1,13)<=(7-difficulty),
+					Nuke =				random(1,13)<=(5-difficulty),
+					EMP =				random(1,13)<=(6-difficulty),
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
-		        reputation_cost_multipliers = {
-		        	friend = 1.0,
-		        	neutral = 2.0,
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
+				reputation_cost_multipliers = {
+					friend = 1.0,
+					neutral = 2.0,
+				},
 				goods = {
 					luxury = {
 						quantity =	5,
@@ -5132,27 +5132,27 @@ function populateStationPool()
 				history = "",
 			},
 			["Outpost-33"] = {
-		        weapon_available = {
-		        	Homing =			random(1,13)<=(8-difficulty),
-		        	HVLI =				random(1,13)<=(9-difficulty),
-		        	Mine =				random(1,13)<=(7-difficulty),
-		        	Nuke =				random(1,13)<=(5-difficulty),
-		        	EMP =				random(1,13)<=(6-difficulty),
-		        },
+				weapon_available = {
+					Homing =			random(1,13)<=(8-difficulty),
+					HVLI =				random(1,13)<=(9-difficulty),
+					Mine =				random(1,13)<=(7-difficulty),
+					Nuke =				random(1,13)<=(5-difficulty),
+					EMP =				random(1,13)<=(6-difficulty),
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
-		        reputation_cost_multipliers = {
-		        	friend = 1.0,
-		        	neutral = 2.0,
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
+				reputation_cost_multipliers = {
+					friend = 1.0,
+					neutral = 2.0,
+				},
 				goods = {
 					luxury = {
 						quantity =	5,
@@ -5169,27 +5169,27 @@ function populateStationPool()
 				history = "",
 			},
 			["Prada"] = {
-		        weapon_available = {
-		        	Homing =			random(1,13)<=(8-difficulty),
-		        	HVLI =				random(1,13)<=(9-difficulty),
-		        	Mine =				false,
-		        	Nuke =				random(1,13)<=(5-difficulty),
-		        	EMP =				random(1,13)<=(6-difficulty),
-		        },
+				weapon_available = {
+					Homing =			random(1,13)<=(8-difficulty),
+					HVLI =				random(1,13)<=(9-difficulty),
+					Mine =				false,
+					Nuke =				random(1,13)<=(5-difficulty),
+					EMP =				random(1,13)<=(6-difficulty),
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
-		        reputation_cost_multipliers = {
-		        	friend = 1.0,
-		        	neutral = 2.0,
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
+				reputation_cost_multipliers = {
+					friend = 1.0,
+					neutral = 2.0,
+				},
 				goods = {},
 				trade = {
 					food = false,
@@ -5201,27 +5201,27 @@ function populateStationPool()
 				history = "",
 			},
 			["Research-11"] = {
-		        weapon_available = {
-		        	Homing =			random(1,13)<=(8-difficulty),
-		        	HVLI =				random(1,13)<=(9-difficulty),
-		        	Mine =				random(1,13)<=(7-difficulty),
-		        	Nuke =				random(1,13)<=(5-difficulty),
-		        	EMP =				random(1,13)<=(6-difficulty),
-		        },
+				weapon_available = {
+					Homing =			random(1,13)<=(8-difficulty),
+					HVLI =				random(1,13)<=(9-difficulty),
+					Mine =				random(1,13)<=(7-difficulty),
+					Nuke =				random(1,13)<=(5-difficulty),
+					EMP =				random(1,13)<=(6-difficulty),
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
-		        reputation_cost_multipliers = {
-		        	friend = 1.0,
-		        	neutral = 2.0,
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
+				reputation_cost_multipliers = {
+					friend = 1.0,
+					neutral = 2.0,
+				},
 				goods = {
 					medicine = {
 						quantity =	5,
@@ -5238,59 +5238,59 @@ function populateStationPool()
 				history = "",
 			},
 			["Research-19"] = {
-		        weapon_available ={
-		        	Homing =			random(1,13)<=(8-difficulty),
-		        	HVLI =				random(1,13)<=(9-difficulty),
-		        	Mine =				random(1,13)<=(7-difficulty),
-		        	Nuke =				random(1,13)<=(5-difficulty),
-		        	EMP =				random(1,13)<=(6-difficulty),
-		        },
+				weapon_available ={
+					Homing =			random(1,13)<=(8-difficulty),
+					HVLI =				random(1,13)<=(9-difficulty),
+					Mine =				random(1,13)<=(7-difficulty),
+					Nuke =				random(1,13)<=(5-difficulty),
+					EMP =				random(1,13)<=(6-difficulty),
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
-		        reputation_cost_multipliers = {
-		        	friend = 1.0,
-		        	neutral = 2.0,
-		        },
-		        goods = {},
-		        trade = {
-		        	food = false,
-		        	medicine = false,
-		        	luxury = false,
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
+				reputation_cost_multipliers = {
+					friend = 1.0,
+					neutral = 2.0,
+				},
+				goods = {},
+				trade = {
+					food = false,
+					medicine = false,
+					luxury = false,
+				},
 				description = "Low gravity research",
 				general = "",
 				history = "",
 			},
 			["Rubis"] = {
-		        weapon_available = {
-		        	Homing =			random(1,13)<=(8-difficulty),
-		        	HVLI =				random(1,13)<=(9-difficulty),
-		        	Mine =				random(1,13)<=(7-difficulty),
-		        	Nuke =				random(1,13)<=(5-difficulty),
-		        	EMP =				random(1,13)<=(6-difficulty),
-		        },
+				weapon_available = {
+					Homing =			random(1,13)<=(8-difficulty),
+					HVLI =				random(1,13)<=(9-difficulty),
+					Mine =				random(1,13)<=(7-difficulty),
+					Nuke =				random(1,13)<=(5-difficulty),
+					EMP =				random(1,13)<=(6-difficulty),
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
-		        reputation_cost_multipliers = {
-		        	friend = 1.0,
-		        	neutral = 3.0,
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
+				reputation_cost_multipliers = {
+					friend = 1.0,
+					neutral = 3.0,
+				},
 				goods = {
 					luxury = {
 						quantity =	5,
@@ -5307,23 +5307,23 @@ function populateStationPool()
 				history = "",
 			},
 			["Science-2"] = {
-		        weapon_available = {
-		        	Homing =			random(1,13)<=(8-difficulty),
-		        	HVLI =				random(1,13)<=(9-difficulty),
-		        	Mine =				random(1,13)<=(7-difficulty),
-		        	Nuke =				random(1,13)<=(5-difficulty),
-		        	EMP =				random(1,13)<=(6-difficulty),
-		        },
+				weapon_available = {
+					Homing =			random(1,13)<=(8-difficulty),
+					HVLI =				random(1,13)<=(9-difficulty),
+					Mine =				random(1,13)<=(7-difficulty),
+					Nuke =				random(1,13)<=(5-difficulty),
+					EMP =				random(1,13)<=(6-difficulty),
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
 				goods = {
 					circuit = {
 						quantity =	5,
@@ -5340,27 +5340,27 @@ function populateStationPool()
 				history = "",
 			},
 			["Science-4"] = {
-		        weapon_available = {
-		        	Homing =			random(1,13)<=(8-difficulty),
-		        	HVLI =				random(1,13)<=(9-difficulty),
-		        	Mine =				random(1,13)<=(7-difficulty),
-		        	Nuke =				random(1,13)<=(5-difficulty),
-		        	EMP =				random(1,13)<=(6-difficulty),
-		        },
+				weapon_available = {
+					Homing =			random(1,13)<=(8-difficulty),
+					HVLI =				random(1,13)<=(9-difficulty),
+					Mine =				random(1,13)<=(7-difficulty),
+					Nuke =				random(1,13)<=(5-difficulty),
+					EMP =				random(1,13)<=(6-difficulty),
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
-		        reputation_cost_multipliers = {
-		        	friend = 1.0,
-		        	neutral = 2.0,
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
+				reputation_cost_multipliers = {
+					friend = 1.0,
+					neutral = 2.0,
+				},
 				goods = {
 					medicine = {
 						quantity =	5,
@@ -5381,23 +5381,23 @@ function populateStationPool()
 				history = "",
 			},
 			["Science-7"] = {
-		        weapon_available = {
-		        	Homing =			random(1,13)<=(8-difficulty),
-		        	HVLI =				random(1,13)<=(9-difficulty),
-		        	Mine =				random(1,13)<=(7-difficulty),
-		        	Nuke =				random(1,13)<=(5-difficulty),
-		        	EMP =				random(1,13)<=(6-difficulty),
-		        },
+				weapon_available = {
+					Homing =			random(1,13)<=(8-difficulty),
+					HVLI =				random(1,13)<=(9-difficulty),
+					Mine =				random(1,13)<=(7-difficulty),
+					Nuke =				random(1,13)<=(5-difficulty),
+					EMP =				random(1,13)<=(6-difficulty),
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
 				goods = {
 					food = {
 						quantity =	2,
@@ -5414,59 +5414,59 @@ function populateStationPool()
 				history = "",
 			},
 			["Spot"] = {
-		        weapon_available = {
-		        	Homing =			random(1,13)<=(8-difficulty),
-		        	HVLI =				random(1,13)<=(9-difficulty),
-		        	Mine =				random(1,13)<=(7-difficulty),
-		        	Nuke =				random(1,13)<=(5-difficulty),
-		        	EMP =				random(1,13)<=(6-difficulty),
-		        },
+				weapon_available = {
+					Homing =			random(1,13)<=(8-difficulty),
+					HVLI =				random(1,13)<=(9-difficulty),
+					Mine =				random(1,13)<=(7-difficulty),
+					Nuke =				random(1,13)<=(5-difficulty),
+					EMP =				random(1,13)<=(6-difficulty),
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
-		        reputation_cost_multipliers = {
-		        	friend = 1.0,
-		        	neutral = 3.0,
-		        },
-		        goods = {},
-		        trade = {
-		        	food = false,
-		        	medicine = false,
-		        	luxury = false,
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
+				reputation_cost_multipliers = {
+					friend = 1.0,
+					neutral = 3.0,
+				},
+				goods = {},
+				trade = {
+					food = false,
+					medicine = false,
+					luxury = false,
+				},
 				description = "Observatory",
 				general = "",
 				history = "",
 			},
 			["Valero"] = {
-		        weapon_available = {
-		        	Homing =			random(1,13)<=(8-difficulty),
-		        	HVLI =				random(1,13)<=(9-difficulty),
-		        	Mine =				random(1,13)<=(7-difficulty),
-		        	Nuke =				random(1,13)<=(5-difficulty),
-		        	EMP =				random(1,13)<=(6-difficulty),
-		        },
+				weapon_available = {
+					Homing =			random(1,13)<=(8-difficulty),
+					HVLI =				random(1,13)<=(9-difficulty),
+					Mine =				random(1,13)<=(7-difficulty),
+					Nuke =				random(1,13)<=(5-difficulty),
+					EMP =				random(1,13)<=(6-difficulty),
+				},
 				services = {
 					supplydrop =		"friend",
 					reinforcements =	"friend",
 					jumpsupplydrop =	"friend",
 				},
-		        service_cost = {
-		        	supplydrop =		math.random(80,120),
-		        	reinforcements =	math.random(125,175),
-		        	jumpsupplydrop =	math.random(110,140),
-		        },
-		        reputation_cost_multipliers = {
-		        	friend = 1.0,
-		        	neutral = 2.0,
-		        },
+				service_cost = {
+					supplydrop =		math.random(80,120),
+					reinforcements =	math.random(125,175),
+					jumpsupplydrop =	math.random(110,140),
+				},
+				reputation_cost_multipliers = {
+					friend = 1.0,
+					neutral = 2.0,
+				},
 				goods = {
 					luxury = {
 						quantity =	5,
@@ -7180,75 +7180,75 @@ end
 -- Station communication --
 ---------------------------
 function commsStation()
-    if comms_target.comms_data == nil then
-        comms_target.comms_data = {}
-    end
-    mergeTables(comms_target.comms_data, {
-        friendlyness = random(0.0, 100.0),
-        weapons = {
-            Homing = "neutral",
-            HVLI = "neutral",
-            Mine = "neutral",
-            Nuke = "friend",
-            EMP = "friend"
-        },
-        weapon_cost = {
-            Homing = math.random(1,4),
-            HVLI = math.random(1,3),
-            Mine = math.random(2,5),
-            Nuke = math.random(12,18),
-            EMP = math.random(7,13)
-        },
-        services = {
-            supplydrop = "friend",
-            reinforcements = "friend",
-            preorder = "friend",
-            activatedefensefleet = "neutral",
-        },
-        service_cost = {
-            supplydrop = math.random(80,120),
-            reinforcements = math.random(125,175),
-            activatedefensefleet = 20,
-        },
-        reputation_cost_multipliers = {
-            friend = 1.0,
-            neutral = 3.0
-        },
-        max_weapon_refill_amount = {
-            friend = 1.0,
-            neutral = 0.5
-        }
-    })
-    comms_data = comms_target.comms_data
+	if comms_target.comms_data == nil then
+		comms_target.comms_data = {}
+	end
+	mergeTables(comms_target.comms_data, {
+		friendlyness = random(0.0, 100.0),
+		weapons = {
+			Homing = "neutral",
+			HVLI = "neutral",
+			Mine = "neutral",
+			Nuke = "friend",
+			EMP = "friend"
+		},
+		weapon_cost = {
+			Homing = math.random(1,4),
+			HVLI = math.random(1,3),
+			Mine = math.random(2,5),
+			Nuke = math.random(12,18),
+			EMP = math.random(7,13)
+		},
+		services = {
+			supplydrop = "friend",
+			reinforcements = "friend",
+			preorder = "friend",
+			activatedefensefleet = "neutral",
+		},
+		service_cost = {
+			supplydrop = math.random(80,120),
+			reinforcements = math.random(125,175),
+			activatedefensefleet = 20,
+		},
+		reputation_cost_multipliers = {
+			friend = 1.0,
+			neutral = 3.0
+		},
+		max_weapon_refill_amount = {
+			friend = 1.0,
+			neutral = 0.5
+		}
+	})
+	comms_data = comms_target.comms_data
 	setPlayers()
-    if comms_source:isEnemy(comms_target) then
-        return false
-    end
-    if comms_target:areEnemiesInRange(5000) then
-        setCommsMessage("We are under attack! No time for chatting!");
-        return true
-    end
-    if not comms_source:isDocked(comms_target) then
-        handleUndockedState()
-    else
-        handleDockedState()
-    end
-    return true
+	if comms_source:isEnemy(comms_target) then
+		return false
+	end
+	if comms_target:areEnemiesInRange(5000) then
+		setCommsMessage("We are under attack! No time for chatting!");
+		return true
+	end
+	if not comms_source:isDocked(comms_target) then
+		handleUndockedState()
+	else
+		handleDockedState()
+	end
+	return true
 end
 function handleDockedState()
 	local ctd = comms_target.comms_data
-    if comms_source:isFriendly(comms_target) then
-    	if ctd.friendlyness > 66 then
-    		oMsg = string.format("Greetings %s!\nHow may we help you today?",comms_source:getCallSign())
-    	elseif ctd.friendlyness > 33 then
+	if comms_source:isFriendly(comms_target) then
+		if ctd.friendlyness > 66 then
+			oMsg = string.format("Greetings %s!\nHow may we help you today?",comms_source:getCallSign())
+		elseif ctd.friendlyness > 33 then
 			oMsg = "Good day, officer!\nWhat can we do for you today?"
 		else
 			oMsg = "Hello, may I help you?"
 		end
-    else
+	else
 		oMsg = "Welcome to our lovely station."
-    end
-    if comms_target:areEnemiesInRange(20000) then
+	end
+	if comms_target:areEnemiesInRange(20000) then
 		oMsg = oMsg .. "\nForgive us if we seem a little distracted. We are carefully monitoring the enemies nearby."
 	end
 	oMsg = string.format("%s\n\nReputation: %i",oMsg,math.floor(comms_source:getReputationPoints()))
@@ -7504,38 +7504,38 @@ function handleDockedState()
 			addCommsReply("Back", commsStation)
 		end)
 	end
-    if isAllowedTo(comms_target.comms_data.services.activatedefensefleet) and
-    	comms_target.comms_data.idle_defense_fleet ~= nil then
-    	local defense_fleet_count = 0
-    	for name, template in pairs(comms_target.comms_data.idle_defense_fleet) do
-    		defense_fleet_count = defense_fleet_count + 1
-    	end
-    	if defense_fleet_count > 0 then
-    		addCommsReply("Activate station defense fleet (" .. getServiceCost("activatedefensefleet") .. " rep)",function()
-    			if comms_source:takeReputationPoints(getServiceCost("activatedefensefleet")) then
-    				local out = string.format("%s defense fleet\n",comms_target:getCallSign())
-    				for name, template in pairs(comms_target.comms_data.idle_defense_fleet) do
-    					local script = Script()
+	if isAllowedTo(comms_target.comms_data.services.activatedefensefleet) and
+		comms_target.comms_data.idle_defense_fleet ~= nil then
+		local defense_fleet_count = 0
+		for name, template in pairs(comms_target.comms_data.idle_defense_fleet) do
+			defense_fleet_count = defense_fleet_count + 1
+		end
+		if defense_fleet_count > 0 then
+			addCommsReply("Activate station defense fleet (" .. getServiceCost("activatedefensefleet") .. " rep)",function()
+				if comms_source:takeReputationPoints(getServiceCost("activatedefensefleet")) then
+					local out = string.format("%s defense fleet\n",comms_target:getCallSign())
+					for name, template in pairs(comms_target.comms_data.idle_defense_fleet) do
+						local script = Script()
 						local position_x, position_y = comms_target:getPosition()
 						local station_name = comms_target:getCallSign()
 						script:setVariable("position_x", position_x):setVariable("position_y", position_y)
 						script:setVariable("station_name",station_name)
-    					script:setVariable("name",name)
-    					script:setVariable("template",template)
-    					script:setVariable("faction_id",comms_target:getFactionId())
-    					script:run("border_defend_station.lua")
-    					out = out .. " " .. name
-    					comms_target.comms_data.idle_defense_fleet[name] = nil
-    				end
-    				out = out .. "\nactivated"
-    				setCommsMessage(out)
-    			else
-    				setCommsMessage("Insufficient reputation")
-    			end
+						script:setVariable("name",name)
+						script:setVariable("template",template)
+						script:setVariable("faction_id",comms_target:getFactionId())
+						script:run("border_defend_station.lua")
+						out = out .. " " .. name
+						comms_target.comms_data.idle_defense_fleet[name] = nil
+					end
+					out = out .. "\nactivated"
+					setCommsMessage(out)
+				else
+					setCommsMessage("Insufficient reputation")
+				end
 				addCommsReply("Back", mainMenu)
-    		end)
+			end)
 		end
-    end
+	end
 	local has_gossip = random(1,100) < (100 - (30 * (difficulty - .5)))
 	if (comms_target.comms_data.general ~= nil and comms_target.comms_data.general ~= "") or
 		(comms_target.comms_data.history ~= nil and comms_target.comms_data.history ~= "") or
@@ -8362,35 +8362,35 @@ function setOptionalOrders()
 	optionalOrders = ""
 end
 function isAllowedTo(state)
-    if state == "friend" and comms_source:isFriendly(comms_target) then
-        return true
-    end
-    if state == "neutral" and not comms_source:isEnemy(comms_target) then
-        return true
-    end
-    return false
+	if state == "friend" and comms_source:isFriendly(comms_target) then
+		return true
+	end
+	if state == "neutral" and not comms_source:isEnemy(comms_target) then
+		return true
+	end
+	return false
 end
 function handleWeaponRestock(weapon)
-    if not comms_source:isDocked(comms_target) then
+	if not comms_source:isDocked(comms_target) then
 		setCommsMessage("You need to stay docked for that action.")
 		return
 	end
-    if not isAllowedTo(comms_data.weapons[weapon]) then
-        if weapon == "Nuke" then setCommsMessage("We do not deal in weapons of mass destruction.")
-        elseif weapon == "EMP" then setCommsMessage("We do not deal in weapons of mass disruption.")
-        else setCommsMessage("We do not deal in those weapons.") end
-        return
-    end
-    local points_per_item = getWeaponCost(weapon)
-    local item_amount = math.floor(comms_source:getWeaponStorageMax(weapon) * comms_data.max_weapon_refill_amount[getFriendStatus()]) - comms_source:getWeaponStorage(weapon)
-    if item_amount <= 0 then
-        if weapon == "Nuke" then
-            setCommsMessage("All nukes are charged and primed for destruction.");
-        else
-            setCommsMessage("Sorry, sir, but you are as fully stocked as I can allow.");
-        end
-        addCommsReply("Back", commsStation)
-    else
+	if not isAllowedTo(comms_data.weapons[weapon]) then
+		if weapon == "Nuke" then setCommsMessage("We do not deal in weapons of mass destruction.")
+		elseif weapon == "EMP" then setCommsMessage("We do not deal in weapons of mass disruption.")
+		else setCommsMessage("We do not deal in those weapons.") end
+		return
+	end
+	local points_per_item = getWeaponCost(weapon)
+	local item_amount = math.floor(comms_source:getWeaponStorageMax(weapon) * comms_data.max_weapon_refill_amount[getFriendStatus()]) - comms_source:getWeaponStorage(weapon)
+	if item_amount <= 0 then
+		if weapon == "Nuke" then
+			setCommsMessage("All nukes are charged and primed for destruction.");
+		else
+			setCommsMessage("Sorry, sir, but you are as fully stocked as I can allow.");
+		end
+		addCommsReply("Back", commsStation)
+	else
 		if comms_source:getReputationPoints() > points_per_item * item_amount then
 			if comms_source:takeReputationPoints(points_per_item * item_amount) then
 				comms_source:setWeaponStorage(weapon, comms_source:getWeaponStorage(weapon) + item_amount)
@@ -8424,21 +8424,21 @@ function handleWeaponRestock(weapon)
 				return
 			end
 		end
-        addCommsReply("Back", commsStation)
-    end
+		addCommsReply("Back", commsStation)
+	end
 end
 function getWeaponCost(weapon)
-    return math.ceil(comms_data.weapon_cost[weapon] * comms_data.reputation_cost_multipliers[getFriendStatus()])
+	return math.ceil(comms_data.weapon_cost[weapon] * comms_data.reputation_cost_multipliers[getFriendStatus()])
 end
 function handleUndockedState()
-    --Handle communications when we are not docked with the station.
-    local ctd = comms_target.comms_data
-    if comms_source:isFriendly(comms_target) then
-        oMsg = "Good day, officer.\nIf you need supplies, please dock with us first."
-    else
-        oMsg = "Greetings.\nIf you want to do business, please dock with us first."
-    end
-    if comms_target:areEnemiesInRange(20000) then
+	--Handle communications when we are not docked with the station.
+	local ctd = comms_target.comms_data
+	if comms_source:isFriendly(comms_target) then
+		oMsg = "Good day, officer.\nIf you need supplies, please dock with us first."
+	else
+		oMsg = "Greetings.\nIf you want to do business, please dock with us first."
+	end
+	if comms_target:areEnemiesInRange(20000) then
 		oMsg = oMsg .. "\nBe aware that if enemies in the area get much closer, we will be too busy to conduct business with you."
 	end
 	setCommsMessage(oMsg)
@@ -8533,7 +8533,7 @@ function handleUndockedState()
 			addCommsReply("Back", commsStation)
 		end)
 	end
- 	addCommsReply("I need information", function()
+	addCommsReply("I need information", function()
 		setCommsMessage("What kind of information do you need?")
 		addCommsReply("What are my current orders?", function()
 			setOptionalOrders()
@@ -8580,7 +8580,7 @@ function handleUndockedState()
 			addCommsReply("Back", commsStation)
 		end)
 		addCommsReply("Docking services status", function()
-	 		local ctd = comms_target.comms_data
+			local ctd = comms_target.comms_data
 			local service_status = string.format("Station %s docking services status:",comms_target:getCallSign())
 			if comms_target:getRestocksScanProbes() then
 				service_status = string.format("%s\nReplenish scan probes.",service_status)
@@ -8797,13 +8797,13 @@ function handleUndockedState()
 		end)
 	end)
 	if isAllowedTo(comms_target.comms_data.services.supplydrop) then
-        addCommsReply("Can you send a supply drop? ("..getServiceCost("supplydrop").."rep)", function()
-            if comms_source:getWaypointCount() < 1 then
-                setCommsMessage("You need to set a waypoint before you can request backup.");
-            else
-                setCommsMessage("To which waypoint should we deliver your supplies?");
-                for n=1,comms_source:getWaypointCount() do
-                    addCommsReply("WP" .. n, function()
+		addCommsReply("Can you send a supply drop? ("..getServiceCost("supplydrop").."rep)", function()
+			if comms_source:getWaypointCount() < 1 then
+				setCommsMessage("You need to set a waypoint before you can request backup.");
+			else
+				setCommsMessage("To which waypoint should we deliver your supplies?");
+				for n=1,comms_source:getWaypointCount() do
+					addCommsReply("WP" .. n, function()
 						if comms_source:takeReputationPoints(getServiceCost("supplydrop")) then
 							local position_x, position_y = comms_target:getPosition()
 							local target_x, target_y = comms_source:getWaypoint(n)
@@ -8815,21 +8815,21 @@ function handleUndockedState()
 						else
 							setCommsMessage("Not enough reputation!");
 						end
-                        addCommsReply("Back", commsStation)
-                    end)
-                end
-            end
-            addCommsReply("Back", commsStation)
-        end)
-    end
-    if isAllowedTo(comms_target.comms_data.services.reinforcements) then
-        addCommsReply("Please send reinforcements! ("..getServiceCost("reinforcements").."rep)", function()
-            if comms_source:getWaypointCount() < 1 then
-                setCommsMessage("You need to set a waypoint before you can request reinforcements.");
-            else
-                setCommsMessage("To which waypoint should we dispatch the reinforcements?");
-                for n=1,comms_source:getWaypointCount() do
-                    addCommsReply("WP" .. n, function()
+						addCommsReply("Back", commsStation)
+					end)
+				end
+			end
+			addCommsReply("Back", commsStation)
+		end)
+	end
+	if isAllowedTo(comms_target.comms_data.services.reinforcements) then
+		addCommsReply("Please send reinforcements! ("..getServiceCost("reinforcements").."rep)", function()
+			if comms_source:getWaypointCount() < 1 then
+				setCommsMessage("You need to set a waypoint before you can request reinforcements.");
+			else
+				setCommsMessage("To which waypoint should we dispatch the reinforcements?");
+				for n=1,comms_source:getWaypointCount() do
+					addCommsReply("WP" .. n, function()
 						if treaty then
 							local tempAsteroid = VisualAsteroid():setPosition(comms_source:getWaypoint(n))
 							local waypointInBorderZone = false
@@ -8866,45 +8866,45 @@ function handleUndockedState()
 								setCommsMessage("Not enough reputation!");
 							end
 						end
-                        addCommsReply("Back", commsStation)
-                    end)
-                end
-            end
-            addCommsReply("Back", commsStation)
-        end)
-    end
-    if isAllowedTo(comms_target.comms_data.services.activatedefensefleet) and
-    	comms_target.comms_data.idle_defense_fleet ~= nil then
-    	local defense_fleet_count = 0
-    	for name, template in pairs(comms_target.comms_data.idle_defense_fleet) do
-    		defense_fleet_count = defense_fleet_count + 1
-    	end
-    	if defense_fleet_count > 0 then
-    		addCommsReply("Activate station defense fleet (" .. getServiceCost("activatedefensefleet") .. " rep)",function()
-    			if comms_source:takeReputationPoints(getServiceCost("activatedefensefleet")) then
-    				local out = string.format("%s defense fleet\n",comms_target:getCallSign())
-    				for name, template in pairs(comms_target.comms_data.idle_defense_fleet) do
-    					local script = Script()
+						addCommsReply("Back", commsStation)
+					end)
+				end
+			end
+			addCommsReply("Back", commsStation)
+		end)
+	end
+	if isAllowedTo(comms_target.comms_data.services.activatedefensefleet) and
+		comms_target.comms_data.idle_defense_fleet ~= nil then
+		local defense_fleet_count = 0
+		for name, template in pairs(comms_target.comms_data.idle_defense_fleet) do
+			defense_fleet_count = defense_fleet_count + 1
+		end
+		if defense_fleet_count > 0 then
+			addCommsReply("Activate station defense fleet (" .. getServiceCost("activatedefensefleet") .. " rep)",function()
+				if comms_source:takeReputationPoints(getServiceCost("activatedefensefleet")) then
+					local out = string.format("%s defense fleet\n",comms_target:getCallSign())
+					for name, template in pairs(comms_target.comms_data.idle_defense_fleet) do
+						local script = Script()
 						local position_x, position_y = comms_target:getPosition()
 						local station_name = comms_target:getCallSign()
 						script:setVariable("position_x", position_x):setVariable("position_y", position_y)
 						script:setVariable("station_name",station_name)
-    					script:setVariable("name",name)
-    					script:setVariable("template",template)
-    					script:setVariable("faction_id",comms_target:getFactionId())
-    					script:run("border_defend_station.lua")
-    					out = out .. " " .. name
-    					comms_target.comms_data.idle_defense_fleet[name] = nil
-    				end
-    				out = out .. "\nactivated"
-    				setCommsMessage(out)
-    			else
-    				setCommsMessage("Insufficient reputation")
-    			end
+						script:setVariable("name",name)
+						script:setVariable("template",template)
+						script:setVariable("faction_id",comms_target:getFactionId())
+						script:run("border_defend_station.lua")
+						out = out .. " " .. name
+						comms_target.comms_data.idle_defense_fleet[name] = nil
+					end
+					out = out .. "\nactivated"
+					setCommsMessage(out)
+				else
+					setCommsMessage("Insufficient reputation")
+				end
 				addCommsReply("Back", mainMenu)
-    		end)
+			end)
 		end
-    end
+	end
 end
 function preOrderOrdnance()
 	setCommsMessage(preorder_message)
@@ -9076,14 +9076,14 @@ end
 function getServiceCost(service)
 -- Return the number of reputation points that a specified service costs for
 -- the current player.
-    return math.ceil(comms_data.service_cost[service])
+	return math.ceil(comms_data.service_cost[service])
 end
 function getFriendStatus()
-    if comms_source:isFriendly(comms_target) then
-        return "friend"
-    else
-        return "neutral"
-    end
+	if comms_source:isFriendly(comms_target) then
+		return "friend"
+	else
+		return "neutral"
+	end
 end
 function wartimeStatistics()
 	setCommsMessage("So, what category of wartime statistics are you interested in?")
@@ -9338,50 +9338,50 @@ function friendlyDefendComms(comms_data)
 	return true
 end
 function enemyDefendComms(comms_data)
-    if comms_data.friendlyness > 50 then
-        local faction = comms_target:getFaction()
-        local taunt_option = "We will see to your destruction!"
-        local taunt_success_reply = "Your bloodline will end here!"
-        local taunt_failed_reply = "Your feeble threats are meaningless."
-        if faction == "Kraylor" then
-            setCommsMessage("Ktzzzsss.\nYou will DIEEee weaklingsss!");
-        elseif faction == "Arlenians" then
-            setCommsMessage("We wish you no harm, but will harm you if we must.\nEnd of transmission.");
-        elseif faction == "Exuari" then
-            setCommsMessage("Stay out of our way, or your death will amuse us extremely!");
-        elseif faction == "Ghosts" then
-            setCommsMessage("One zero one.\nNo binary communication detected.\nSwitching to universal speech.\nGenerating appropriate response for target from human language archives.\n:Do not cross us:\nCommunication halted.");
-            taunt_option = "EXECUTE: SELFDESTRUCT"
-            taunt_success_reply = "Rogue command received. Targeting source."
-            taunt_failed_reply = "External command ignored."
-        elseif faction == "Ktlitans" then
-            setCommsMessage("The hive suffers no threats. Opposition to any of us is opposition to us all.\nStand down or prepare to donate your corpses toward our nutrition.");
-            taunt_option = "<Transmit 'The Itsy-Bitsy Spider' on all wavelengths>"
-            taunt_success_reply = "We do not need permission to pluck apart such an insignificant threat."
-            taunt_failed_reply = "The hive has greater priorities than exterminating pests."
-        else
-            setCommsMessage("Mind your own business!");
-        end
-        comms_data.friendlyness = comms_data.friendlyness - random(0, 10)
-        addCommsReply(taunt_option, function()
-            if random(0, 100) < 30 then
-                comms_target:orderAttack(player)
-                setCommsMessage(taunt_success_reply);
-            else
-                setCommsMessage(taunt_failed_reply);
-            end
-        end)
-        return true
-    end
-    return false
+	if comms_data.friendlyness > 50 then
+		local faction = comms_target:getFaction()
+		local taunt_option = "We will see to your destruction!"
+		local taunt_success_reply = "Your bloodline will end here!"
+		local taunt_failed_reply = "Your feeble threats are meaningless."
+		if faction == "Kraylor" then
+			setCommsMessage("Ktzzzsss.\nYou will DIEEee weaklingsss!");
+		elseif faction == "Arlenians" then
+			setCommsMessage("We wish you no harm, but will harm you if we must.\nEnd of transmission.");
+		elseif faction == "Exuari" then
+			setCommsMessage("Stay out of our way, or your death will amuse us extremely!");
+		elseif faction == "Ghosts" then
+			setCommsMessage("One zero one.\nNo binary communication detected.\nSwitching to universal speech.\nGenerating appropriate response for target from human language archives.\n:Do not cross us:\nCommunication halted.");
+			taunt_option = "EXECUTE: SELFDESTRUCT"
+			taunt_success_reply = "Rogue command received. Targeting source."
+			taunt_failed_reply = "External command ignored."
+		elseif faction == "Ktlitans" then
+			setCommsMessage("The hive suffers no threats. Opposition to any of us is opposition to us all.\nStand down or prepare to donate your corpses toward our nutrition.");
+			taunt_option = "<Transmit 'The Itsy-Bitsy Spider' on all wavelengths>"
+			taunt_success_reply = "We do not need permission to pluck apart such an insignificant threat."
+			taunt_failed_reply = "The hive has greater priorities than exterminating pests."
+		else
+			setCommsMessage("Mind your own business!");
+		end
+		comms_data.friendlyness = comms_data.friendlyness - random(0, 10)
+		addCommsReply(taunt_option, function()
+			if random(0, 100) < 30 then
+				comms_target:orderAttack(player)
+				setCommsMessage(taunt_success_reply);
+			else
+				setCommsMessage(taunt_failed_reply);
+			end
+		end)
+		return true
+	end
+	return false
 end
 function neutralDefendComms(comms_data)
-    if comms_data.friendlyness > 50 then
-        setCommsMessage("Sorry, we have no time to chat with you.\nWe are on an important mission.");
-    else
-        setCommsMessage("We have nothing for you.\nGood day.");
-    end
-    return true
+	if comms_data.friendlyness > 50 then
+		setCommsMessage("Sorry, we have no time to chat with you.\nWe are on an important mission.");
+	else
+		setCommsMessage("We have nothing for you.\nGood day.");
+	end
+	return true
 end
 ------------------------
 -- Ship communication --
@@ -10478,24 +10478,24 @@ function tableRemoveRandom(array)
 --	Remove random element from array and return it.
 	-- Returns nil if the array is empty,
 	-- analogous to `table.remove`.
-    local array_item_count = #array
-    if array_item_count == 0 then
-        return nil
-    end
-    local selected_item = math.random(array_item_count)
-    array[selected_item], array[array_item_count] = array[array_item_count], array[selected_item]
-    return table.remove(array)
+	local array_item_count = #array
+	if array_item_count == 0 then
+		return nil
+	end
+	local selected_item = math.random(array_item_count)
+	array[selected_item], array[array_item_count] = array[array_item_count], array[selected_item]
+	return table.remove(array)
 end
 function placeRandomAsteroidsAroundPoint(amount, dist_min, dist_max, x0, y0)
 -- create amount of asteroid, at a distance between dist_min and dist_max around the point (x0, y0)
-    for n=1,amount do
-        local r = random(0, 360)
-        local distance = random(dist_min, dist_max)
-        x = x0 + math.cos(r / 180 * math.pi) * distance
-        y = y0 + math.sin(r / 180 * math.pi) * distance
-        local asteroid_size = random(1,100) + random(1,75) + random(1,75) + random(1,20) + random(1,20) + random(1,20) + random(1,20) + random(1,20) + random(1,20) + random(1,20)
-        Asteroid():setPosition(x, y):setSize(asteroid_size)
-    end
+	for n=1,amount do
+		local r = random(0, 360)
+		local distance = random(dist_min, dist_max)
+		x = x0 + math.cos(r / 180 * math.pi) * distance
+		y = y0 + math.sin(r / 180 * math.pi) * distance
+		local asteroid_size = random(1,100) + random(1,75) + random(1,75) + random(1,20) + random(1,20) + random(1,20) + random(1,20) + random(1,20) + random(1,20) + random(1,20)
+		Asteroid():setPosition(x, y):setSize(asteroid_size)
+	end
 end
 function createRandomAlongArc(object_type, amount, x, y, distance, startArc, endArcClockwise, randomize)
 -- Create amount of objects of type object_type along arc
@@ -10546,25 +10546,25 @@ function createRandomAsteroidAlongArc(amount, x, y, distance, startArc, endArcCl
 		endArcClockwise = endArcClockwise + 360
 		arcLen = arcLen + 360
 	end
-    local asteroid_size = random(1,100) + random(1,75) + random(1,75) + random(1,20) + random(1,20) + random(1,20) + random(1,20) + random(1,20) + random(1,20) + random(1,20)
+	local asteroid_size = random(1,100) + random(1,75) + random(1,75) + random(1,20) + random(1,20) + random(1,20) + random(1,20) + random(1,20) + random(1,20) + random(1,20)
 	if amount > arcLen then
 		for ndex=1,arcLen do
 			local radialPoint = startArc+ndex
 			local pointDist = distance + random(-randomize,randomize)
-		    asteroid_size = random(1,100) + random(1,75) + random(1,75) + random(1,20) + random(1,20) + random(1,20) + random(1,20) + random(1,20) + random(1,20) + random(1,20)
+			asteroid_size = random(1,100) + random(1,75) + random(1,75) + random(1,20) + random(1,20) + random(1,20) + random(1,20) + random(1,20) + random(1,20) + random(1,20)
 			Asteroid():setPosition(x + math.cos(radialPoint / 180 * math.pi) * pointDist, y + math.sin(radialPoint / 180 * math.pi) * pointDist):setSize(asteroid_size)
 		end
 		for ndex=1,amount-arcLen do
 			radialPoint = random(startArc,endArcClockwise)
 			pointDist = distance + random(-randomize,randomize)
-		    asteroid_size = random(1,100) + random(1,75) + random(1,75) + random(1,20) + random(1,20) + random(1,20) + random(1,20) + random(1,20) + random(1,20) + random(1,20)
+			asteroid_size = random(1,100) + random(1,75) + random(1,75) + random(1,20) + random(1,20) + random(1,20) + random(1,20) + random(1,20) + random(1,20) + random(1,20)
 			Asteroid():setPosition(x + math.cos(radialPoint / 180 * math.pi) * pointDist, y + math.sin(radialPoint / 180 * math.pi) * pointDist):setSize(asteroid_size)
 		end
 	else
 		for ndex=1,amount do
 			radialPoint = random(startArc,endArcClockwise)
 			pointDist = distance + random(-randomize,randomize)
-		    asteroid_size = random(1,100) + random(1,75) + random(1,75) + random(1,20) + random(1,20) + random(1,20) + random(1,20) + random(1,20) + random(1,20) + random(1,20)
+			asteroid_size = random(1,100) + random(1,75) + random(1,75) + random(1,20) + random(1,20) + random(1,20) + random(1,20) + random(1,20) + random(1,20) + random(1,20)
 			Asteroid():setPosition(x + math.cos(radialPoint / 180 * math.pi) * pointDist, y + math.sin(radialPoint / 180 * math.pi) * pointDist):setSize(asteroid_size)
 		end
 	end
@@ -10573,14 +10573,14 @@ function placeRandomListAroundPoint(object_type, amount, dist_min, dist_max, x0,
 -- create amount of object_type, at a distance between dist_min and dist_max around the point (x0, y0)
 -- save in a list that is returned to caller
 	local object_list = {}
-    for n=1,amount do
-        local r = random(0, 360)
-        local distance = random(dist_min, dist_max)
-        x = x0 + math.cos(r / 180 * math.pi) * distance
-        y = y0 + math.sin(r / 180 * math.pi) * distance
-        table.insert(object_list,object_type():setPosition(x, y))
-    end
-    return object_list
+	for n=1,amount do
+		local r = random(0, 360)
+		local distance = random(dist_min, dist_max)
+		x = x0 + math.cos(r / 180 * math.pi) * distance
+		y = y0 + math.sin(r / 180 * math.pi) * distance
+		table.insert(object_list,object_type():setPosition(x, y))
+	end
+	return object_list
 end
 function closestPlayerTo(obj)
 -- Return the player ship closest to passed object parameter
@@ -15873,8 +15873,8 @@ function updateInner(delta)
 	end
 end
 function update(delta)
-    local status,error=pcall(updateInner,delta)
-    if not status then
+	local status,error=pcall(updateInner,delta)
+	if not status then
 		print("script error : - ")
 		print(error)
 		if popupGMDebug == "once" or popupGMDebug == "always" then
@@ -15883,5 +15883,5 @@ function update(delta)
 			end
 			addGMMessage("script error - \n"..error)
 		end
-    end
+	end
 end
